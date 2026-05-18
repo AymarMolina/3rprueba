@@ -73,6 +73,15 @@ Prices shown are net. Peruvian invoices add 18% IGV.
 ## Coverage
 We are based in La Molina, Lima, Peru, and work with clients across Peru and the United States.
 
+## Geo Landing Pages (Lima, Peru)
+- Digital Marketing Agency in Lima: https://3rcore.com/es/agencia-marketing-digital-lima
+- SEO Agency in Lima: https://3rcore.com/es/agencia-seo-lima
+- Web Design in Lima: https://3rcore.com/es/diseno-web-lima
+- Google Ads Agency in Lima: https://3rcore.com/es/agencia-google-ads-lima
+- Social Media Agency in Lima: https://3rcore.com/es/agencia-redes-sociales-lima
+- Branding Agency in Lima: https://3rcore.com/es/agencia-branding-lima
+All geo landings cover Miraflores, San Isidro, La Molina, Surco, San Borja, Barranco, Magdalena, Pueblo Libre, Jesús María, Lince, San Miguel and Callao. English equivalents available by replacing `/es/` with `/en/`.
+
 ## Reference Pages
 - Home: https://3rcore.com/es
 - Digital Marketing Agency in Lima: https://3rcore.com/es/agencia-marketing-digital-lima

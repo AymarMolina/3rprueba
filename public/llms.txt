@@ -22,6 +22,11 @@
 ## Pages
 - [Home](https://3rcore.com/es): Agency overview and value proposition
 - [Digital Marketing Agency in Lima](https://3rcore.com/es/agencia-marketing-digital-lima): Geo-targeted landing for Lima market with full service list and neighborhood coverage
+- [SEO Agency in Lima](https://3rcore.com/es/agencia-seo-lima): Organic Google positioning, technical SEO, link building, local SEO from S/1,500/month
+- [Web Design in Lima](https://3rcore.com/es/diseno-web-lima): Landing pages, corporate sites and e-commerce on Shopify, WooCommerce or Next.js from S/2,500
+- [Google Ads Agency in Lima](https://3rcore.com/es/agencia-google-ads-lima): Search, Performance Max, YouTube, Display and Shopping campaigns with Looker Studio reporting
+- [Social Media Agency in Lima](https://3rcore.com/es/agencia-redes-sociales-lima): Reels and TikToks production, community management and Meta + TikTok Ads from S/1,500/month
+- [Branding Agency in Lima](https://3rcore.com/es/agencia-branding-lima): Brand identity, naming, logo, brand manual and applications from S/500
 - [Pricing](https://3rcore.com/es/precios): Transparent pricing for branding, social media, SEO, Google Ads, web and e-commerce, plus combined packages with discount
 - [About](https://3rcore.com/es/nosotros): Team, founders (Alejandro, Bruno, Piero Roque), and methodology
 - [Services Overview](https://3rcore.com/es/servicios): Full catalog of digital marketing services

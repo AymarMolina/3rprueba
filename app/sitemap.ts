@@ -7,6 +7,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     { path: '', priority: 1, changeFrequency: 'weekly' as const },
     { path: '/agencia-marketing-digital-lima', priority: 0.95, changeFrequency: 'weekly' as const },
+    { path: '/agencia-seo-lima', priority: 0.92, changeFrequency: 'weekly' as const },
+    { path: '/diseno-web-lima', priority: 0.92, changeFrequency: 'weekly' as const },
+    { path: '/agencia-google-ads-lima', priority: 0.92, changeFrequency: 'weekly' as const },
+    { path: '/agencia-redes-sociales-lima', priority: 0.92, changeFrequency: 'weekly' as const },
+    { path: '/agencia-branding-lima', priority: 0.92, changeFrequency: 'weekly' as const },
     { path: '/precios', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/posicionamiento-seo', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: '/servicios', priority: 0.9, changeFrequency: 'monthly' as const },
