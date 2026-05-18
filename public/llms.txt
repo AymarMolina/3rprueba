@@ -21,7 +21,9 @@
 
 ## Pages
 - [Home](https://3rcore.com/es): Agency overview and value proposition
-- [About](https://3rcore.com/es/nosotros): Team, founders, and methodology
+- [Digital Marketing Agency in Lima](https://3rcore.com/es/agencia-marketing-digital-lima): Geo-targeted landing for Lima market with full service list and neighborhood coverage
+- [Pricing](https://3rcore.com/es/precios): Transparent pricing for branding, social media, SEO, Google Ads, web and e-commerce, plus combined packages with discount
+- [About](https://3rcore.com/es/nosotros): Team, founders (Alejandro, Bruno, Piero Roque), and methodology
 - [Services Overview](https://3rcore.com/es/servicios): Full catalog of digital marketing services
 - [FAQ](https://3rcore.com/es/preguntas): Frequently asked questions about services, timelines, and pricing
 - [Blog](https://3rcore.com/es/blogs): Articles on marketing, SEO, branding, and web development

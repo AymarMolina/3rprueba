@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
-import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { buildFAQPageSchema, buildServiceSchema, buildSpeakableSchema } from "@/lib/seoSchemas"
 import { getMessages } from "next-intl/server"
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
@@ -44,12 +44,17 @@ export default async function SocialMediaLayout({ children, params }: { children
     question: q.question,
     answer: q.answer,
   }))
-  const faqSchema = buildFAQPageSchema(faqItems)
+  const faqSchema: any = buildFAQPageSchema(faqItems)
+  faqSchema.speakable = buildSpeakableSchema(['h1', 'h2', '.faq-question', '.faq-answer'])
 
   const breadcrumbSchema = generateBreadcrumbSchema(
     [{ name: 'Inicio', path: '' }, { name: 'Servicios', path: '/servicios' }, { name: 'Social Media', path: '/servicios/socialmedia' }],
     locale
   )
+
+  const hiddenH1 = locale === 'en'
+    ? 'Social media management agency in Lima, Peru — Instagram, TikTok, Facebook and LinkedIn for businesses'
+    : 'Agencia de manejo de redes sociales en Lima, Perú — Instagram, TikTok, Facebook y LinkedIn para empresas'
 
   return (
     <>
@@ -57,6 +62,7 @@ export default async function SocialMediaLayout({ children, params }: { children
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
       />
+      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )

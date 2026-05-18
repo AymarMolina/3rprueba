@@ -6,13 +6,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticPages = [
     { path: '', priority: 1, changeFrequency: 'weekly' as const },
-    { path: '/nosotros', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/agencia-marketing-digital-lima', priority: 0.95, changeFrequency: 'weekly' as const },
+    { path: '/precios', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/posicionamiento-seo', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: '/servicios', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: '/servicios/branding', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/servicios/socialmedia', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/servicios/google-ads', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/servicios/web-development', priority: 0.8, changeFrequency: 'monthly' as const },
-    { path: '/posicionamiento-seo', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/nosotros', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/blogs', priority: 0.7, changeFrequency: 'daily' as const },
     { path: '/preguntas', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/politicas', priority: 0.3, changeFrequency: 'yearly' as const },
