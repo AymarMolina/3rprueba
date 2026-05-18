@@ -47,14 +47,26 @@ Includes: keyword research, on-page optimization, content strategy, technical SE
 URL: https://3rcore.com/es/servicios/web-development
 Tech stack: Shopify, WooCommerce, custom Next.js, and e-learning platforms.
 Site types: landing pages, corporate sites, e-commerce, e-learning platforms, service sites, blogs.
-Pricing is quoted per project based on scope.
+Starting prices:
+- Professional landing page: from S/2,500. Includes Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration.
+- Corporate website (5–8 sections): from S/4,500. Range S/4,500 – S/9,000 depending on scope.
+- E-commerce on Shopify or WooCommerce: from S/6,500. Includes catalog up to 100 products, integrated payment gateway (Culqi, Niubiz, Izipay or Mercado Pago), inventory management and admin panel. With SUNAT (electronic invoicing), ERP or multi-shipping integrations, range scales by complexity.
+- Year 1 includes domain, SSL and hosting. From year 2, hosting is billed separately (S/30 – S/120 per month depending on traffic and platform) or can be migrated to the client's own provider.
 
 ## Pricing Summary
-- Branding starter: S/500 (~$135 USD) / project
-- Social media basic: S/1,500/mo (~$400 USD)
-- SEO basic: S/1,500/mo (~$400 USD)
-- Google Ads management: S/1,800/mo (~$480 USD) + ad budget paid to Google
-- Web development: custom quote per project
+- Branding starter: from S/500 / project
+- Social media: from S/1,500/mo
+- SEO: S/1,500/mo (no mandatory contracts, progressive results)
+- Google Ads management: from S/1,800/mo + ad budget paid directly to Google (recommended minimum S/1,500/mo, S/3,000+ for highly competitive sectors like legal, real estate or healthcare)
+- Landing page: from S/2,500 / project
+- Corporate website: from S/4,500 / project
+- E-commerce: from S/6,500 / project
+
+Reference monthly investment for Lima (2026):
+- Entrepreneurs: S/2,500 – 4,500 / month (covers social + basic Ads)
+- SMBs: S/5,000 – 12,000 / month (full strategy with social, Ads, SEO and web improvements)
+- Mid-market: S/12,000 – 30,000 / month (full marketing with content production and CRO)
+What matters is not the budget but that ROI turns positive from month 3.
 
 Prices shown are net. Peruvian invoices add 18% IGV.
 

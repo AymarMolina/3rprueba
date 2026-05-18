@@ -8,34 +8,58 @@ const COPY = {
     sub: 'Branding desde S/500, Social Media y SEO desde S/1,500/mes y Google Ads desde S/1,800/mes de gestión. Precios netos en Soles peruanos. Las facturas peruanas suman 18% de IGV.',
     contactCta: 'Conversemos sobre tu proyecto',
     contactPath: '/#contacto',
-    note: 'Los precios son referenciales según paquetes base. Para alcance, redes adicionales o industrias específicas (por ejemplo: e-commerce, salud, B2B, restaurantes o retail) elaboramos cotización personalizada.',
+    note: 'Sin contratos forzosos, con reportes mensuales y resultados progresivos. Los precios son referenciales según paquetes base; cada propuesta se ajusta tras una reunión inicial.',
     tiers: [
-      { name: 'Branding inicial', price: 'S/ 500 (~$135 USD)', period: '/ proyecto', desc: 'Diseño de identidad visual con entrega en 7 días.', feats: ['Logotipo','Manual de marca básico','Paleta cromática','Tipografía corporativa','Aplicaciones esenciales'], href: '/servicios/branding', cta: 'Ver branding' },
-      { name: 'Social Media básico', price: 'S/ 1,500 (~$400 USD)', period: '/ mes', desc: 'Manejo profesional de una red social con estrategia, diseño y community management.', feats: ['8–12 piezas / mes','Reels o TikToks editados','Estrategia de contenido','Community management','Reporte mensual'], href: '/servicios/socialmedia', cta: 'Ver redes sociales' },
-      { name: 'Posicionamiento SEO', price: 'S/ 1,500 (~$400 USD)', period: '/ mes', desc: 'SEO orgánico en Google con keyword research, optimización on-page, contenidos y reporte mensual.', feats: ['Auditoría inicial','Keyword research','Optimización on-page','Contenidos SEO','Reporte mensual'], href: '/posicionamiento-seo', cta: 'Ver SEO', highlight: true },
-      { name: 'Google Ads gestión', price: 'S/ 1,800 (~$480 USD)', period: '/ mes', desc: 'Fee de gestión de campañas en Google Ads (Search, Performance Max, YouTube, Display, Shopping y Remarketing).', feats: ['Configuración de campañas','Optimización continua','Estructura por intención','Tracking de conversiones','Reporte mensual'], href: '/servicios/google-ads', cta: 'Ver Google Ads', extra: 'No incluye la pauta, que se paga directamente a Google.' },
+      { name: 'Branding inicial', price: 'desde S/ 500', period: '/ proyecto', desc: 'Diseño de identidad visual con entrega de propuesta tras sesión inicial de descubrimiento.', feats: ['Logotipo','Manual de marca','Paleta cromática','Tipografía corporativa','Aplicaciones esenciales'], href: '/servicios/branding', cta: 'Ver branding' },
+      { name: 'Social Media', price: 'desde S/ 1,500', period: '/ mes', desc: 'Manejo de TikTok, Instagram, Facebook y LinkedIn con 8–12 piezas mensuales para emprendimientos.', feats: ['8–12 piezas / mes','TikTok + IG + FB + LinkedIn','Reels / TikToks editados','Community management','Reporte mensual'], href: '/servicios/socialmedia', cta: 'Ver redes sociales' },
+      { name: 'Posicionamiento SEO', price: 'S/ 1,500', period: '/ mes', desc: 'Auditoría, planificación, optimización, escalamiento y reportes mensuales. Estrategia continua sin contratos forzosos y con resultados progresivos.', feats: ['Auditoría inicial','Planificación','Optimización on-page','Escalamiento','Reporte mensual'], href: '/posicionamiento-seo', cta: 'Ver SEO', highlight: true },
+      { name: 'Google Ads gestión', price: 'desde S/ 1,800', period: '/ mes', desc: 'Fee de gestión de campañas Search, Performance Max, YouTube, Display, Shopping y Remarketing.', feats: ['Configuración de campañas','Optimización continua','Tracking de conversiones','Reporte mensual'], href: '/servicios/google-ads', cta: 'Ver Google Ads', extra: '+ presupuesto mínimo de pauta S/ 1,500/mes pagado directamente a Google.' },
     ],
-    customTitle: '¿Diseño web, e-commerce o un mix de servicios?',
-    customDesc: 'Para desarrollo web, tiendas online (Shopify / WooCommerce), proyectos integrales o combinaciones de servicios, elaboramos una cotización a medida según el alcance.',
+    webTitle: 'Diseño y desarrollo web',
+    webNote: 'Cotización a medida tras reunión inicial. Cada propuesta incluye diseño en Figma, desarrollo responsive, SEO técnico básico, formulario de contacto y conexión a Google Analytics. El primer año incluye dominio, SSL y hosting.',
+    webTiers: [
+      { name: 'Landing page profesional', price: 'desde S/ 2,500', desc: 'Landing page con diseño a medida, SEO técnico básico y formulario de contacto.' },
+      { name: 'Web corporativa', price: 'desde S/ 4,500', desc: 'Sitio corporativo con 5–8 secciones. Rango S/ 4,500–9,000 según alcance.' },
+      { name: 'E-commerce Shopify / WooCommerce', price: 'desde S/ 6,500', desc: 'Tienda online con catálogo, pasarela de pago (Culqi, Niubiz, Izipay o Mercado Pago), gestión de inventario y panel admin.' },
+    ],
+    refTitle: 'Inversión mensual de referencia para Lima',
+    refList: [
+      { t: 'Emprendimientos', d: 'S/ 2,500 – 4,500 / mes (cubre redes + Ads básico)' },
+      { t: 'Pymes', d: 'S/ 5,000 – 12,000 / mes (estrategia integral con redes, Ads, SEO y mejoras web)' },
+      { t: 'Empresas medianas', d: 'S/ 12,000 – 30,000 / mes (marketing completo con producción de contenido y CRO)' },
+    ],
+    refNote: 'Lo importante no es el presupuesto sino que el ROI sea positivo desde el mes 3.',
     contact: '¿Tu proyecto necesita un mix distinto?',
-    contactDesc: 'Cuéntanos tu objetivo y armamos una cotización personalizada.',
+    contactDesc: 'Cuéntanos tu objetivo y armamos una cotización personalizada en la primera reunión.',
   },
   en: {
     hero: 'Digital Marketing Pricing in Lima, Peru',
     sub: 'Branding from S/500 (~$135 USD), Social Media and SEO from S/1,500/month (~$400 USD) and Google Ads management from S/1,800/month (~$480 USD). Net prices in Peruvian Soles. Peruvian invoices add 18% VAT.',
     contactCta: 'Let’s talk about your project',
     contactPath: '/#contacto',
-    note: 'Prices shown are reference packages. For additional reach, extra networks or specific industries (e.g. e-commerce, healthcare, B2B, restaurants or retail) we build a custom proposal.',
+    note: 'No mandatory contracts, monthly reports and progressive results. Prices shown are reference packages; each proposal is tailored after an initial meeting.',
     tiers: [
-      { name: 'Starter branding', price: 'S/ 500 (~$135 USD)', period: '/ project', desc: 'Visual identity design with 7-day delivery.', feats: ['Logo','Basic brand manual','Color palette','Corporate typography','Essential applications'], href: '/servicios/branding', cta: 'See branding' },
-      { name: 'Basic social media', price: 'S/ 1,500 (~$400 USD)', period: '/ month', desc: 'Professional management of one social network with strategy, design and community management.', feats: ['8–12 pieces / month','Edited Reels or TikToks','Content strategy','Community management','Monthly report'], href: '/servicios/socialmedia', cta: 'See social media' },
-      { name: 'SEO positioning', price: 'S/ 1,500 (~$400 USD)', period: '/ month', desc: 'Organic SEO on Google with keyword research, on-page optimization, content and monthly report.', feats: ['Initial audit','Keyword research','On-page optimization','SEO content','Monthly report'], href: '/posicionamiento-seo', cta: 'See SEO', highlight: true },
-      { name: 'Google Ads management', price: 'S/ 1,800 (~$480 USD)', period: '/ month', desc: 'Management fee for Google Ads campaigns (Search, Performance Max, YouTube, Display, Shopping and Remarketing).', feats: ['Campaign setup','Continuous optimization','Intent-based structure','Conversion tracking','Monthly report'], href: '/servicios/google-ads', cta: 'See Google Ads', extra: 'Does not include ad spend, which is paid directly to Google.' },
+      { name: 'Starter branding', price: 'from S/ 500 (~$135 USD)', period: '/ project', desc: 'Visual identity design. Detailed proposal after an initial discovery session.', feats: ['Logo','Brand manual','Color palette','Corporate typography','Essential applications'], href: '/servicios/branding', cta: 'See branding' },
+      { name: 'Social media', price: 'from S/ 1,500 (~$400 USD)', period: '/ month', desc: 'TikTok, Instagram, Facebook and LinkedIn management with 8–12 pieces per month for entrepreneurs.', feats: ['8–12 pieces / month','TikTok + IG + FB + LinkedIn','Edited Reels / TikToks','Community management','Monthly report'], href: '/servicios/socialmedia', cta: 'See social media' },
+      { name: 'SEO positioning', price: 'S/ 1,500 (~$400 USD)', period: '/ month', desc: 'Audit, planning, optimization, scaling and monthly reports. Continuous strategy with no mandatory contracts and progressive results.', feats: ['Initial audit','Planning','On-page optimization','Scaling','Monthly report'], href: '/posicionamiento-seo', cta: 'See SEO', highlight: true },
+      { name: 'Google Ads management', price: 'from S/ 1,800 (~$480 USD)', period: '/ month', desc: 'Management fee for Search, Performance Max, YouTube, Display, Shopping and Remarketing campaigns.', feats: ['Campaign setup','Continuous optimization','Conversion tracking','Monthly report'], href: '/servicios/google-ads', cta: 'See Google Ads', extra: '+ minimum ad spend S/ 1,500/month paid directly to Google.' },
     ],
-    customTitle: 'Web design, e-commerce or a custom service mix?',
-    customDesc: 'For web development, online stores (Shopify / WooCommerce), full projects or service combinations, we build a custom proposal based on scope.',
+    webTitle: 'Web design & development',
+    webNote: 'Custom quote after initial meeting. Each proposal includes Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration. First year includes domain, SSL and hosting.',
+    webTiers: [
+      { name: 'Professional landing page', price: 'from S/ 2,500', desc: 'Custom landing page design with basic technical SEO and contact form.' },
+      { name: 'Corporate website', price: 'from S/ 4,500', desc: '5–8 section corporate site. Range S/ 4,500–9,000 depending on scope.' },
+      { name: 'E-commerce Shopify / WooCommerce', price: 'from S/ 6,500', desc: 'Online store with catalog, payment gateway (Culqi, Niubiz, Izipay or Mercado Pago), inventory management and admin panel.' },
+    ],
+    refTitle: 'Reference monthly investment for Lima',
+    refList: [
+      { t: 'Entrepreneurs', d: 'S/ 2,500 – 4,500 / month (covers social + basic Ads)' },
+      { t: 'SMBs', d: 'S/ 5,000 – 12,000 / month (full strategy with social, Ads, SEO and web improvements)' },
+      { t: 'Mid-market', d: 'S/ 12,000 – 30,000 / month (full marketing with content production and CRO)' },
+    ],
+    refNote: 'What matters is not the budget but that ROI turns positive from month 3.',
     contact: 'Need a different mix for your project?',
-    contactDesc: 'Tell us your goal and we build a personalized proposal.',
+    contactDesc: 'Tell us your goal and we build a custom proposal in the first meeting.',
   }
 }
 
@@ -74,9 +98,30 @@ export default async function PreciosPage({ params }: Props) {
       </section>
 
       <section className="px-6 md:px-10 lg:px-20 py-16 max-w-6xl mx-auto border-t border-white/10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.customTitle}</h2>
-        <p className="text-white/70 max-w-2xl mb-6">{t.customDesc}</p>
-        <Link href={`/${locale}${t.contactPath}`} className="inline-block border border-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition">{t.contactCta}</Link>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.webTitle}</h2>
+        <p className="text-white/70 max-w-3xl mb-8">{t.webNote}</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          {t.webTiers.map((wt: any, i: number) => (
+            <div key={i} className="border border-white/10 rounded-2xl p-6">
+              <h3 className="text-lg font-semibold mb-2">{wt.name}</h3>
+              <p className="text-2xl font-bold mb-3">{wt.price}</p>
+              <p className="text-sm text-white/70">{wt.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 md:px-10 lg:px-20 py-16 max-w-6xl mx-auto border-t border-white/10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.refTitle}</h2>
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
+          {t.refList.map((r: any, i: number) => (
+            <div key={i} className="border border-white/10 rounded-2xl p-6">
+              <h3 className="text-lg font-semibold mb-2">{r.t}</h3>
+              <p className="text-sm text-white/70">{r.d}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-white/60 italic max-w-3xl">{t.refNote}</p>
       </section>
 
       <section className="px-6 md:px-10 lg:px-20 py-20 max-w-6xl mx-auto border-t border-white/10 text-center">
