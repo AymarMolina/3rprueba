@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     path: '/agencia-seo-lima',
     titleEs: 'Agencia SEO en Lima, Perú — Posicionamiento Orgánico en Google | 3R Core',
     titleEn: 'SEO Agency in Lima, Peru — Organic Google Positioning | 3R Core',
-    descriptionEs: 'Agencia SEO en Lima especializada en posicionamiento orgánico en Google: keyword research, SEO técnico, contenidos, link building y SEO local desde S/1,500/mes. Auditorías gratuitas para empresas en Perú y Estados Unidos.',
-    descriptionEn: 'SEO agency in Lima specialized in organic Google positioning: keyword research, technical SEO, content, link building and local SEO from S/1,500/month (~$400 USD). Free audits for companies in Peru and the United States.',
+    descriptionEs: 'Agencia SEO en Lima especializada en posicionamiento orgánico en Google: keyword research, SEO técnico, contenidos, link building y SEO local desde S/1,800/mes. Auditorías gratuitas para empresas en Perú y Estados Unidos.',
+    descriptionEn: 'SEO agency for US-based clients: keyword research, technical SEO, content, link building and local SEO from $500/month. Free audits.',
     ogImage: {
       url: 'https://3rcore.com/og/default.jpg',
       width: 1200,
@@ -42,9 +42,9 @@ export default async function SeoLimaLayout({ children, params }: { children: Re
     descriptionEs: 'Posicionamiento orgánico en Google con auditoría técnica, keyword research, contenidos, link building y SEO local para Lima, Perú.',
     descriptionEn: 'Organic Google positioning with technical audit, keyword research, content, link building and local SEO for Lima, Peru.',
     serviceType: 'Search Engine Optimization',
-    priceRange: 'S/1,500 - S/8,000',
-    offerPriceEs: 1500,
-    offerPriceEn: 400,
+    priceRange: 'S/1,800 - S/8,000',
+    offerPriceEs: 1800,
+    offerPriceEn: 500,
     areaServed: ['PE', 'US'],
   })
 
@@ -52,8 +52,8 @@ export default async function SeoLimaLayout({ children, params }: { children: Re
     {
       question: isEn ? 'How much does an SEO agency in Lima cost?' : '¿Cuánto cuesta una agencia SEO en Lima?',
       answer: isEn
-        ? 'Monthly SEO retainers in Lima start at S/1,500 (~$400 USD) for local businesses and small e-commerce, S/3,000 (~$800 USD) for competitive industries (real estate, legal, health, finance) and from S/5,000 (~$1,350 USD) for enterprise-level technical SEO with international scope.'
-        : 'Las mensualidades SEO en Lima parten desde S/1,500 para negocios locales y e-commerce pequeños, S/3,000 para sectores competitivos (inmobiliario, legal, salud, finanzas) y desde S/5,000 para SEO técnico enterprise con alcance internacional.',
+        ? 'Monthly SEO retainers for US clients start at $500 for local businesses and small e-commerce, $1,000 for competitive industries (real estate, legal, health, finance) and from $1,500 for enterprise-level technical SEO with international scope.'
+        : 'Las mensualidades SEO en Lima parten desde S/1,800 para negocios locales y e-commerce pequeños, S/3,000 para sectores competitivos (inmobiliario, legal, salud, finanzas) y desde S/5,000 para SEO técnico enterprise con alcance internacional.',
     },
     {
       question: isEn ? 'How long does SEO take to see results in Peru?' : '¿Cuánto tarda el SEO en dar resultados en Perú?',

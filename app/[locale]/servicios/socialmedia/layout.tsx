@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Manejo de Redes Sociales en Lima — Community Manager Profesional | 3R Core',
     titleEn: 'Social Media Management in Lima — Professional Community Manager | 3R Core',
     descriptionEs: 'Manejo profesional de redes sociales en Lima, Perú: TikTok, LinkedIn, Instagram y Facebook. Estrategia, diseño, copy y reportes mensuales desde S/1,500 con 8–12 piezas por red.',
-    descriptionEn: 'Professional social media management in Lima, Peru: TikTok, LinkedIn, Instagram and Facebook. Strategy, design, copy and monthly reports starting at S/1,500 (~$400 USD) with 8–12 pieces per network.',
+    descriptionEn: 'Professional social media management for US clients: TikTok, LinkedIn, Instagram and Facebook. Strategy, design, copy and monthly reports starting at $800/month with 8–12 pieces per network.',
     ogImage: {
       url: 'https://3rcore.com/og/socialmedia.jpg',
       width: 1200,
@@ -36,7 +36,7 @@ export default async function SocialMediaLayout({ children, params }: { children
     serviceType: 'Social Media Management / Community Manager',
     priceRange: 'S/1,500 - S/8,000',
     offerPriceEs: 1500,
-    offerPriceEn: 400,
+    offerPriceEn: 800,
     audienceTypes: ['Startups', 'Small business', 'Medium business', 'Restaurants', 'Retail', 'B2B', 'Healthcare'],
   })
 

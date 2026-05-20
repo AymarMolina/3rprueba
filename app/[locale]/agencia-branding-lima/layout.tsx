@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Agencia de Branding en Lima — Logotipo, Identidad y Manual de Marca | 3R Core',
     titleEn: 'Branding Agency in Lima — Logo, Identity & Brand Manual | 3R Core',
     descriptionEs: 'Estudio de branding e identidad de marca en Lima, Perú: logotipo, paleta cromática, tipografía, manual de marca y aplicaciones desde S/500. Rebranding y naming para empresas en Perú y Estados Unidos.',
-    descriptionEn: 'Branding and visual identity studio in Lima, Peru: logo, color palette, typography, brand manual and applications from S/500 (~$135 USD). Rebranding and naming for companies in Peru and the United States.',
+    descriptionEn: 'Branding and visual identity studio for US clients: logo, color palette, typography, brand manual and applications from $500. Rebranding and naming for companies in the United States.',
     ogImage: {
       url: 'https://3rcore.com/og/default.jpg',
       width: 1200,
@@ -44,7 +44,7 @@ export default async function BrandingLimaLayout({ children, params }: { childre
     serviceType: 'Branding and Visual Identity',
     priceRange: 'S/500 - S/12,000',
     offerPriceEs: 500,
-    offerPriceEn: 135,
+    offerPriceEn: 500,
     areaServed: ['PE', 'US'],
   })
 
@@ -52,7 +52,7 @@ export default async function BrandingLimaLayout({ children, params }: { childre
     {
       question: isEn ? 'How much does logo and branding design cost in Lima?' : '¿Cuánto cuesta diseñar un logo y branding en Lima?',
       answer: isEn
-        ? 'Reference prices: Express logo S/500 (~$135 USD), basic branding pack with manual S/1,800 (~$480 USD), full brand identity (research + naming + logo + manual + applications) from S/4,500 (~$1,200 USD) and rebranding from S/8,000 (~$2,150 USD). Net prices, Peruvian invoices add 18% VAT.'
+        ? 'Reference prices for US clients: Express logo $500, basic branding pack with manual $850, full brand identity (research + naming + logo + manual + applications) from $1,500 and rebranding from $2,500. Net prices in US Dollars.'
         : 'Precios referenciales: logo express S/500, pack branding básico con manual S/1,800, identidad de marca completa (research + naming + logo + manual + aplicaciones) desde S/4,500 y rebranding desde S/8,000. Precios netos, factura electrónica suma 18% de IGV.',
     },
     {

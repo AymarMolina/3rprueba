@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Agencia Google Ads en Lima, Perú — Campañas Search, PMax, YouTube | 3R Core',
     titleEn: 'Google Ads Agency in Lima, Peru — Search, PMax, YouTube Campaigns | 3R Core',
     descriptionEs: 'Agencia certificada Google Partner en Lima. Campañas Search, Performance Max, YouTube, Display y Shopping con fee desde S/1,800/mes. Auditoría gratuita de cuentas activas y reportes Looker Studio.',
-    descriptionEn: 'Google Partner certified agency in Lima. Search, Performance Max, YouTube, Display and Shopping campaigns with fee from S/1,800/month (~$480 USD). Free audits for active accounts and Looker Studio reporting.',
+    descriptionEn: 'Google Partner certified agency for US clients. Search, Performance Max, YouTube, Display and Shopping campaigns with fee from $800/month. Free audits for active accounts and Looker Studio reporting.',
     ogImage: {
       url: 'https://3rcore.com/og/default.jpg',
       width: 1200,
@@ -44,7 +44,7 @@ export default async function GoogleAdsLimaLayout({ children, params }: { childr
     serviceType: 'Google Ads / SEM Management',
     priceRange: 'S/1,800 - S/15,000',
     offerPriceEs: 1800,
-    offerPriceEn: 480,
+    offerPriceEn: 800,
     areaServed: ['PE', 'US'],
   })
 
@@ -52,13 +52,13 @@ export default async function GoogleAdsLimaLayout({ children, params }: { childr
     {
       question: isEn ? 'How much does a Google Ads agency in Lima cost?' : '¿Cuánto cobra una agencia Google Ads en Lima?',
       answer: isEn
-        ? 'Management fee in Lima starts at S/1,800/month (~$480 USD) for budgets up to S/3,000 in ad spend. From there we charge 15–20% of monthly ad spend with a fee floor. Ad spend is paid directly to Google with your own billing.'
+        ? 'Management fee for US clients starts at $800/month for budgets up to $1,500 in ad spend. From there we charge 15–20% of monthly ad spend with a fee floor. Ad spend is paid directly to Google with your own billing.'
         : 'El fee de gestión en Lima parte desde S/1,800/mes para budgets de hasta S/3,000 de pauta. A partir de ahí cobramos 15–20 % del gasto publicitario mensual con un piso fijo. La pauta se paga directamente a Google con tu propia facturación.',
     },
     {
       question: isEn ? 'What is the minimum ad spend you recommend?' : '¿Cuál es el budget mínimo recomendado?',
       answer: isEn
-        ? 'For Lima local businesses we recommend at least S/1,500/month in ad spend to gather statistically valid data within 30 days. For e-commerce and competitive niches (real estate, education, legal) S/4,000/month minimum.'
+        ? 'For US local businesses we recommend at least $400/month in ad spend to gather statistically valid data within 30 days. For e-commerce and competitive niches (real estate, education, legal) $1,000/month minimum.'
         : 'Para negocios locales en Lima recomendamos mínimo S/1,500/mes de pauta para tener data estadísticamente válida en 30 días. Para e-commerce y nichos competitivos (inmobiliario, educación, legal) mínimo S/4,000/mes.',
     },
     {
@@ -70,7 +70,7 @@ export default async function GoogleAdsLimaLayout({ children, params }: { childr
     {
       question: isEn ? 'Do you offer free Google Ads account audits?' : '¿Auditan cuentas Google Ads gratis?',
       answer: isEn
-        ? 'Yes. If you already invest more than S/3,000/month in Google Ads, we deliver a free audit (structure, keywords, negative keywords, ad copy, quality score, conversion tracking, CPA, ROAS) and a 90-day action plan with no commitment.'
+        ? 'Yes. If you already invest more than $800/month in Google Ads, we deliver a free audit (structure, keywords, negative keywords, ad copy, quality score, conversion tracking, CPA, ROAS) and a 90-day action plan with no commitment.'
         : 'Sí. Si ya inviertes más de S/3,000/mes en Google Ads, entregamos auditoría gratuita (estructura, keywords, negativos, copies, quality score, tracking de conversiones, CPA y ROAS) más plan de acción a 90 días sin compromiso.',
     },
     {

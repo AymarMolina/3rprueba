@@ -471,7 +471,7 @@
       },
       "q7": {
         "question": "How much does it cost to build a website in Lima, Peru?",
-        "answer": "At 3R Core, web design and development starts at $750 for landing pages and corporate sites up to 6 sections, including Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration. Full corporate sites range from $1,200 to $2,500 and e-commerce from $2,000. In the first meeting we deliver an accurate quote based on your scope."
+        "answer": "At 3R Core, web design and development for US clients starts at $850 for landing pages and corporate sites up to 6 sections, including Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration. Full corporate sites range from $1,200 to $2,500 and e-commerce from $2,000. In the first meeting we deliver an accurate quote based on your scope."
       },
       "q8": {
         "question": "How much does an online store (e-commerce) cost in Peru?",
@@ -518,7 +518,7 @@
     },
     "pricing": {
       "label": "Monthly Investment",
-      "amount": "$450",
+      "amount": "$500",
       "feature1": "Professional SEO strategy",
       "feature2": "No forced contracts",
       "feature3": "Progressive results"
@@ -587,7 +587,7 @@
     "description": "This service includes audit, planning, optimization, scaling, and monthly reporting.",
     "pricing": {
       "label": "Monthly Investment",
-      "amount": "$450",
+      "amount": "$500",
       "footer": "It is a continuous strategy focused on sustainable results."
     }
   },
@@ -621,7 +621,7 @@
       },
       "q3": {
         "question": "How much does it cost to hire a digital marketing agency in Lima?",
-        "answer": "It depends on the service and scope. As reference: our SEO plan starts at $450/month; Google Ads campaigns from $480 + ad spend; social media management depending on frequency and platforms. In our first meeting we deliver a tailored quote."
+        "answer": "It depends on the service and scope. As reference for US clients: our SEO plan starts at $500/month; Google Ads campaigns from $800/month + ad spend; social media management from $800/month; websites from $850. In our first meeting we deliver a tailored quote."
       },
       "q4": {
         "question": "How long does it take to see real results?",
@@ -675,7 +675,7 @@
       },
       "q3": {
         "question": "How much does designing my brand identity in Lima cost?",
-        "answer": "Branding projects at 3R Core start at S/500 (around $135 USD) for startups and scale according to corporate scope. We deliver a formal quote with detailed deliverables after an initial discovery session."
+        "answer": "Branding projects at 3R Core start at $500 USD for US clients and scale according to corporate scope. We deliver a formal quote with detailed deliverables after an initial discovery session."
       },
       "q4": {
         "question": "If I only want a logo, can you do that?",
@@ -721,7 +721,7 @@
     "faqs": {
       "q1": {
         "question": "How much does a professional website cost in Peru?",
-        "answer": "A professional landing page starts at $750 USD. A corporate site with 5–8 sections from $1,300. An e-commerce on Shopify or WooCommerce from $2,000 depending on catalog, payment gateways and integrations. Every quote is tailored after an initial meeting."
+        "answer": "A professional landing page starts at $850 USD. A corporate site with 5–8 sections from $1,200. An e-commerce on Shopify or WooCommerce from $1,750 depending on catalog, payment gateways and integrations. Every quote is tailored after an initial meeting."
       },
       "q2": {
         "question": "What technologies and platforms do you work with?",
@@ -759,7 +759,7 @@
     "faqs": {
       "q1": {
         "question": "How much should I invest in Google Ads to start?",
-        "answer": "We recommend a minimum ad spend of $450/month for actionable data, plus the management fee starting at $480/month. In highly competitive sectors (legal, real estate, healthcare) we suggest starting with $900+ in ad spend to stay in the auctions."
+        "answer": "We recommend a minimum ad spend of $400/month for actionable data, plus the management fee starting at $800/month. In highly competitive sectors (legal, real estate, healthcare) we suggest starting with $1,000+ in ad spend to stay in the auctions."
       },
       "q2": {
         "question": "What types of Google Ads campaigns do you manage?",
@@ -802,7 +802,7 @@
   "GoogleAdsSEO": {
     "seoTitle": "Google Ads Agency in Lima: SEM campaigns with measurable ROI",
     "p1": "Google Ads (formerly Google AdWords) is the fastest way to appear on Google when a customer searches for exactly what you sell. At 3R Core we design, launch and optimize SEM campaigns in Lima, Peru for companies that need to generate leads or sales in a predictable, measurable way.",
-    "p2": "We work with accounts of all sizes: from startups with $450 monthly budget to mid-sized companies with five-figure investments. What we never compromise on is rigor: keyword research, ad copy, geo-targeting, exclusions, aligned landing pages and properly installed conversion tracking.",
+    "p2": "We work with accounts of all sizes: from startups with $400 monthly budget to mid-sized companies with five-figure investments. What we never compromise on is rigor: keyword research, ad copy, geo-targeting, exclusions, aligned landing pages and properly installed conversion tracking.",
     "p3": "We manage the full Google Ads ecosystem: Search Ads (best for capturing active demand), Performance Max (Google's AI-powered bet), YouTube Video Ads, Display, Shopping for e-commerce and Remarketing to recover visitors who left without buying.",
     "p4": "Each client receives a monthly dashboard with clicks, cost per lead, conversions and ROAS. If your current campaign spends without converting, we run a free audit: we tell you exactly where your investment is leaking and prepare the proposal to take control.",
     "relatedTitle": "Services that boost your Google Ads campaigns"
@@ -813,7 +813,7 @@
     "faqs": {
       "q1": {
         "question": "How much does an agency charge for social media management in Lima?",
-        "answer": "Social media management plans at 3R Core start at S/1,500/month (around $400 USD) for startups (TikTok + Instagram + Facebook + LinkedIn with 8–12 pieces) and scale according to frequency, platforms and audiovisual production. We deliver a detailed proposal in our first meeting."
+        "answer": "Social media management plans at 3R Core start at $800/month for US clients (TikTok + Instagram + Facebook + LinkedIn with 8–12 pieces) and scale according to frequency, platforms and audiovisual production. We deliver a detailed proposal in our first meeting."
       },
       "q2": {
         "question": "Which social media platforms do you manage?",
@@ -867,7 +867,7 @@
     "faqs": {
       "q1": {
         "question": "What is the monthly investment for the SEO service at 3R Core?",
-        "answer": "The monthly investment for the SEO Positioning service at 3R Core is $450. This includes audit, planning, optimization, scaling and monthly reporting. It is a continuous strategy focused on sustainable results, with no forced contracts and progressive outcomes."
+        "answer": "The monthly investment for the SEO Positioning service at 3R Core is $500 for US clients. This includes audit, planning, optimization, scaling and monthly reporting. It is a continuous strategy focused on sustainable results, with no forced contracts and progressive outcomes."
       },
       "q2": {
         "question": "What does the SEO Positioning service include?",
@@ -904,7 +904,7 @@
     "p1": "At 3R Core we help your brand appear in the first Google results, both organically (SEO) and through paid ads (Google Ads). Our goal is simple: for more people to find your business, trust your brand and contact you. We improve your website's visibility on Google with a professional SEO strategy, tailored to your industry and sales opportunities for sustainable growth.",
     "p2": "We work on positioning from an integral strategy, combining analysis, content, advertising and constant optimization, so that your investment generates real and measurable results. SEO is not advertising or social media: it is a medium-term strategy that builds authority, ranking and progressive results on Google.",
     "p3": "Our service is structured in three blocks: SEO Audit & Planning (core keywords, competitor research, site structure, monthly editorial calendar of 8 to 15 optimized titles and monthly report), Interlinking Optimization (internal structure, internal linking between content and authority of key landing pages) and SEO Scaling (new ranking opportunities, continuous optimization of existing content and reinforcement of high-performing pages).",
-    "p4": "We have implemented SEO strategies for various industries, achieving top rankings for key searches such as Argentaria (jewelry and silversmithing) and As de Oros (casino and entertainment). The monthly investment is $450, includes audit, planning, optimization, scaling and monthly reports, with no forced contracts. If you are looking to build a solid digital presence and consistent traffic on Google, let's talk.",
+    "p4": "We have implemented SEO strategies for various industries, achieving top rankings for key searches such as Argentaria (jewelry and silversmithing) and As de Oros (casino and entertainment). The monthly investment is $500 for US clients, includes audit, planning, optimization, scaling and monthly reports, with no forced contracts. If you are looking to build a solid digital presence and consistent traffic on Google, let's talk.",
     "relatedTitle": "Services that complement your SEO strategy"
   }
 }

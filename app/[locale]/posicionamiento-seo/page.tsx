@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     path: '/posicionamiento-seo',
     titleEs: 'Agencia SEO en Lima — Posicionamiento Web Orgánico en Google | 3R Core',
     titleEn: 'SEO Agency in Lima — Organic Web Positioning on Google | 3R Core',
-    descriptionEs: 'Agencia de posicionamiento SEO en Lima, Perú. Auditoría, optimización, interlinks, contenido y escalamiento mensual. Inversión desde S/1,500/mes sin contratos forzosos.',
-    descriptionEn: 'SEO positioning agency in Lima, Peru. Audit, optimization, interlinks, content and monthly scaling. Investment from $450/month with no forced contracts.',
+    descriptionEs: 'Agencia de posicionamiento SEO en Lima, Perú. Auditoría, optimización, interlinks, contenido y escalamiento mensual. Inversión desde S/1,800/mes sin contratos forzosos.',
+    descriptionEn: 'SEO positioning agency for US-based clients. Audit, optimization, interlinks, content and monthly scaling. Investment from $500/month with no forced contracts.',
     ogImage: {
       url: 'https://3rcore.com/og/posicionamiento-seo.jpg',
       width: 1200,
@@ -36,9 +36,9 @@ export default async function Posicionamientoseo({ params }: { params: any }) {
     descriptionEs: 'Servicio mensual de posicionamiento SEO orgánico en Google para empresas en Lima, Perú: auditoría, palabras clave, optimización on-page, interlinks, contenido y escalamiento con reporte mensual.',
     descriptionEn: 'Monthly organic SEO positioning service on Google for companies in Lima, Peru: audit, keyword research, on-page optimization, interlinks, content and scaling with monthly reporting.',
     serviceType: 'SEO / Search Engine Optimization',
-    priceRange: 'S/1,500+',
-    offerPriceEs: 1500,
-    offerPriceEn: 450,
+    priceRange: 'S/1,800+',
+    offerPriceEs: 1800,
+    offerPriceEn: 500,
     audienceTypes: ['Small business', 'Medium business', 'Enterprise', 'E-commerce', 'B2B', 'Local business'],
   })
 

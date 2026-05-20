@@ -35,29 +35,29 @@ export default async function ServiciosLayout({ children, params }: { children: 
         name: isEn ? 'Branding & Visual Identity' : 'Branding e Identidad de Marca',
         path: '/servicios/branding',
         description: isEn
-          ? 'Logo, brand manual, color palette, corporate typography and brand applications. From S/500 (~$135 USD), delivery in 7 days.'
+          ? 'Logo, brand manual, color palette, corporate typography and brand applications. From $500 USD for US clients, delivery in 7 days.'
           : 'Logotipo, manual de marca, paleta cromática, tipografía corporativa y aplicaciones. Desde S/500 con entrega en 7 días.',
       },
       {
         name: isEn ? 'Social Media Management' : 'Manejo de Redes Sociales',
         path: '/servicios/socialmedia',
         description: isEn
-          ? 'Content strategy, post design, Reels & TikTok editing, copywriting and community management for Instagram, Facebook, TikTok and LinkedIn. From S/1,500/month.'
+          ? 'Content strategy, post design, Reels & TikTok editing, copywriting and community management for Instagram, Facebook, TikTok and LinkedIn. From $800/month for US clients.'
           : 'Estrategia, diseño, Reels y TikToks, copywriting y community management para Instagram, Facebook, TikTok y LinkedIn. Desde S/1,500/mes.',
       },
       {
         name: isEn ? 'Google Ads & SEM' : 'Google Ads y Campañas SEM',
         path: '/servicios/google-ads',
         description: isEn
-          ? 'Search, Performance Max, YouTube, Display, Shopping and Remarketing campaigns. Management fee starting at S/1,800/month (~$480 USD).'
+          ? 'Search, Performance Max, YouTube, Display, Shopping and Remarketing campaigns. Management fee starting at $800/month for US clients.'
           : 'Campañas de Search, Performance Max, YouTube, Display, Shopping y Remarketing. Fee de gestión desde S/1,800/mes.',
       },
       {
         name: isEn ? 'SEO Positioning' : 'Posicionamiento SEO',
         path: '/posicionamiento-seo',
         description: isEn
-          ? 'Organic SEO: keyword research, on-page optimization, content strategy, technical SEO, link building and monthly reports. From S/1,500/month.'
-          : 'SEO orgánico: keyword research, on-page, contenidos, SEO técnico, link building y reportes mensuales. Desde S/1,500/mes.',
+          ? 'Organic SEO: keyword research, on-page optimization, content strategy, technical SEO, link building and monthly reports. From $500/month for US clients.'
+          : 'SEO orgánico: keyword research, on-page, contenidos, SEO técnico, link building y reportes mensuales. Desde S/1,800/mes.',
       },
       {
         name: isEn ? 'Web Design & Development' : 'Diseño y Desarrollo Web',

@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     path: '/servicios/web-development',
     titleEs: 'Diseño y Creación de Páginas Web en Lima, Perú — E-commerce | 3R Core',
     titleEn: 'Web Design & Development in Lima, Peru — E-commerce & Landings | 3R Core',
-    descriptionEs: 'Diseño y creación de páginas web en Lima, Perú: sitios corporativos, landing pages, e-commerce (Shopify, WooCommerce), e-learning y blogs. SEO técnico incluido desde S/2,500.',
-    descriptionEn: 'Web design and development in Lima, Peru: corporate sites, landing pages, e-commerce (Shopify, WooCommerce), e-learning and blogs. Technical SEO included from $750.',
+    descriptionEs: 'Diseño y creación de páginas web en Lima, Perú: sitios corporativos, landing pages, e-commerce (Shopify, WooCommerce), e-learning y blogs. SEO técnico incluido desde S/1,800.',
+    descriptionEn: 'Web design and development for US clients: corporate sites, landing pages, e-commerce (Shopify, WooCommerce), e-learning and blogs. Technical SEO included from $850.',
     ogImage: {
       url: 'https://3rcore.com/og/web-development.jpg',
       width: 1200,
@@ -35,9 +35,9 @@ export default async function WebDevLayout({ children, params }: { children: Rea
     descriptionEs: 'Diseño y desarrollo de sitios web corporativos, landing pages, tiendas online (e-commerce) en Shopify y WooCommerce, plataformas e-learning, sitios de servicios y blogs. Optimización SEO técnica, mobile-first y conversión integrada.',
     descriptionEn: 'Design and development of corporate websites, landing pages, online stores (e-commerce) on Shopify and WooCommerce, e-learning platforms, service sites and blogs. Technical SEO, mobile-first optimization and built-in conversion.',
     serviceType: 'Web Development / E-commerce',
-    priceRange: 'S/2,500 - S/25,000',
-    offerPriceEs: 2500,
-    offerPriceEn: 750,
+    priceRange: 'S/1,800 - S/25,000',
+    offerPriceEs: 1800,
+    offerPriceEn: 850,
     audienceTypes: ['Startups', 'Small business', 'Medium business', 'Enterprise', 'E-commerce'],
   })
 

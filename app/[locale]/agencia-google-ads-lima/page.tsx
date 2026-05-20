@@ -37,7 +37,7 @@ const COPY = {
   en: {
     eyebrow: '3R Core · Google Ads · Lima · Peru',
     h1: 'Google Ads Agency in Lima, Peru',
-    sub: 'Search, Performance Max, YouTube, Display and Shopping campaigns with real conversion tracking and real-time Looker Studio reporting. Fee from S/1,800/month (~$480 USD).',
+    sub: 'Search, Performance Max, YouTube, Display and Shopping campaigns with real conversion tracking and real-time Looker Studio reporting. Fee from $800/month for US clients.',
     cta: 'Free account audit',
     contactPath: '/#contacto',
     why: 'A Google Ads account without serious tracking is burned money',

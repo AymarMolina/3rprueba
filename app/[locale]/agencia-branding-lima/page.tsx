@@ -44,17 +44,17 @@ const COPY = {
   en: {
     eyebrow: '3R Core · Branding · Lima · Peru',
     h1: 'Branding Agency in Lima, Peru',
-    sub: 'Brand identity with purpose: research, naming, logo, color palette, typography, brand manual and real applications. From S/500 to enterprise projects.',
+    sub: 'Brand identity with purpose: research, naming, logo, color palette, typography, brand manual and real applications. From $500 USD for US clients to enterprise projects.',
     cta: 'Get a branding quote',
     contactPath: '/#contacto',
     why: 'Branding with strategy, not decoration',
     whyDesc: 'Before proposing a single stroke we understand who you are, who you compete with and who you want to attract. Branding is born from a strategic brief, not Pinterest. That is why your pieces make sense on the street, on social media and in face-to-face sales.',
     packs: 'Branding packs',
     packsList: [
-      { title: 'Express logo', price: 'From S/500 (~$135)', desc: 'Main logo + variants (color, monochrome, isotype), delivery in SVG/PNG/PDF, basic palette and typography. 1 week.' },
-      { title: 'Basic branding', price: 'From S/1,800 (~$480)', desc: 'Logo, primary + secondary palette, two typefaces, basic mockups and mini-manual PDF. 2–3 weeks.' },
-      { title: 'Full identity', price: 'From S/4,500 (~$1,200)', desc: 'Research, optional naming, complete visual system, extensive manual, applications (cards, IG, stationery, vehicles, signage) and handoff. 6–8 weeks.' },
-      { title: 'Rebranding', price: 'From S/8,000 (~$2,150)', desc: 'Current brand audit, migration, rollout plan, prioritized applications, internal + external communication. 10–14 weeks.' },
+      { title: 'Express logo', price: 'From $500 USD', desc: 'Main logo + variants (color, monochrome, isotype), delivery in SVG/PNG/PDF, basic palette and typography. 1 week.' },
+      { title: 'Basic branding', price: 'From $850 USD', desc: 'Logo, primary + secondary palette, two typefaces, basic mockups and mini-manual PDF. 2–3 weeks.' },
+      { title: 'Full identity', price: 'From $1,500 USD', desc: 'Research, optional naming, complete visual system, extensive manual, applications (cards, IG, stationery, vehicles, signage) and handoff. 6–8 weeks.' },
+      { title: 'Rebranding', price: 'From $2,500 USD', desc: 'Current brand audit, migration, rollout plan, prioritized applications, internal + external communication. 10–14 weeks.' },
     ],
     deliverables: 'Project deliverables',
     deliverablesList: [

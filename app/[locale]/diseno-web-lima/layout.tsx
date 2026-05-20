@@ -11,8 +11,8 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     path: '/diseno-web-lima',
     titleEs: 'Diseño Web en Lima, Perú — Páginas Web y E-commerce a Medida | 3R Core',
     titleEn: 'Web Design in Lima, Peru — Custom Websites and E-commerce | 3R Core',
-    descriptionEs: 'Estudio de diseño web en Lima, Perú: landing pages desde S/2,500, webs corporativas desde S/4,500 y e-commerce Shopify, WooCommerce o Next.js. UX, velocidad y SEO técnico integrados.',
-    descriptionEn: 'Web design studio in Lima, Peru: landing pages from S/2,500 (~$670 USD), corporate sites from S/4,500 (~$1,200 USD) and e-commerce on Shopify, WooCommerce or Next.js. UX, speed and technical SEO built in.',
+    descriptionEs: 'Estudio de diseño web en Lima, Perú: landing pages desde S/1,800, webs corporativas desde S/4,500 y e-commerce Shopify, WooCommerce o Next.js. UX, velocidad y SEO técnico integrados.',
+    descriptionEn: 'Web design studio for US clients: landing pages from $850, corporate sites from $1,200 and e-commerce on Shopify, WooCommerce or Next.js. UX, speed and technical SEO built in.',
     ogImage: {
       url: 'https://3rcore.com/og/default.jpg',
       width: 1200,
@@ -42,9 +42,9 @@ export default async function DisenoWebLimaLayout({ children, params }: { childr
     descriptionEs: 'Diseño y desarrollo de landing pages, sitios corporativos y e-commerce a medida en Lima, Perú. Shopify, WooCommerce, WordPress y Next.js.',
     descriptionEn: 'Design and development of landing pages, corporate sites and custom e-commerce in Lima, Peru. Shopify, WooCommerce, WordPress and Next.js.',
     serviceType: 'Web Design and Development',
-    priceRange: 'S/2,500 - S/15,000',
-    offerPriceEs: 2500,
-    offerPriceEn: 670,
+    priceRange: 'S/1,800 - S/15,000',
+    offerPriceEs: 1800,
+    offerPriceEn: 850,
     areaServed: ['PE', 'US'],
   })
 
@@ -52,8 +52,8 @@ export default async function DisenoWebLimaLayout({ children, params }: { childr
     {
       question: isEn ? 'How much does a website cost in Lima, Peru?' : '¿Cuánto cuesta una página web en Lima, Perú?',
       answer: isEn
-        ? 'Reference prices in Lima: professional landing page from S/2,500 (~$670 USD), 5–8 section corporate site from S/4,500 (~$1,200 USD), Shopify or WooCommerce e-commerce from S/6,500 (~$1,750 USD) and Next.js / headless CMS development from S/9,500 (~$2,550 USD). Net prices, Peruvian invoices add 18% VAT.'
-        : 'Precios referenciales en Lima: landing profesional desde S/2,500, web corporativa de 5 a 8 secciones desde S/4,500, e-commerce Shopify o WooCommerce desde S/6,500 y desarrollos Next.js / headless CMS desde S/9,500. Precios netos, factura electrónica suma 18% de IGV.',
+        ? 'Reference prices for US clients: professional landing page from $850, 5–8 section corporate site from $1,200, Shopify or WooCommerce e-commerce from $1,750 and Next.js / headless CMS development from $2,550. Net prices in US Dollars.'
+        : 'Precios referenciales en Lima: landing profesional desde S/1,800, web corporativa de 5 a 8 secciones desde S/4,500, e-commerce Shopify o WooCommerce desde S/6,500 y desarrollos Next.js / headless CMS desde S/9,500. Precios netos, factura electrónica suma 18% de IGV.',
     },
     {
       question: isEn ? 'How long does it take to launch a website?' : '¿Cuánto tarda lanzar una página web?',
