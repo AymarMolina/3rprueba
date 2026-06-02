@@ -35,6 +35,17 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async rewrites() {
+    // Internal operations panel — proxied to its standalone Vercel deployment.
+    // The panel app is built with basePath "/panel", so every asset/API lives
+    // under /panel/* on the upstream and maps 1:1 here. Excluded from the i18n
+    // middleware via the matcher in proxy.ts so it is never locale-prefixed.
+    const PANEL = 'https://nebulab-dashboard-v2.vercel.app';
+    return [
+      { source: '/panel', destination: `${PANEL}/panel` },
+      { source: '/panel/:path*', destination: `${PANEL}/panel/:path*` },
+    ];
+  },
   async redirects() {
     return [
       {
