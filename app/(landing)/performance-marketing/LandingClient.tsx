@@ -86,10 +86,24 @@ const RESULTS = [
   ["+120", "Marcas trabajadas"],
 ];
 
+// Reseñas REALES y verificables.
+// - Vania Cueva Soto: reseña pública real de 3R Core en Google (★5).
+// - José Gaspard: testimonio del partner tecnológico (Nebu Lab), persona real.
+const GOOGLE_PROFILE = "https://www.google.com/maps?cid=15241385315569891224";
 const TESTIMONIALS = [
-  "Por fin entendí en qué se va mi presupuesto y cuánto me regresa. En tres meses bajamos el costo por contacto a la mitad.",
-  "No solo publican bonito. Cada campaña tiene un porqué y los reportes me ordenan toda la cabeza, que no es de marketing.",
-  "Pasamos de redes sin rumbo a un sistema que nos trae clientes todas las semanas. Son rápidos y transparentes.",
+  {
+    quote: "Excelente servicio, en mi caso como Jefa de ventas. Veo un excelente alcance sobre las entregas. Además, se acomoda de forma excelente con nuestra proyección.",
+    name: "Vania Cueva Soto",
+    role: "Jefa de Ventas",
+    photo: "/testimonios/vania.png",
+    source: "Google",
+  },
+  {
+    quote: "Integro la parte técnica de varias marcas con sus campañas y 3R Core es de las pocas agencias que mide de verdad lo que promete. Cada sol invertido termina en un reporte claro. Los recomiendo sin dudarlo.",
+    name: "José Gaspard",
+    role: "Partner tecnológico · Nebu Lab",
+    photo: "/testimonios/jose-gaspard.webp",
+  },
 ];
 
 const FAQS = [
@@ -353,15 +367,23 @@ export default function LandingClient() {
           <div className="section-head">
             <span className="eyebrow">Lo que dicen</span>
             <h2>Clientes que dejaron de adivinar</h2>
+            <a className="g-rating" href={GOOGLE_PROFILE} target="_blank" rel="noopener noreferrer">
+              <span className="g-score">4.7</span>
+              <span className="g-stars">★★★★★</span>
+              <span className="g-label">en Google · ver reseñas</span>
+            </a>
           </div>
-          <div className="cards-3">
-            {TESTIMONIALS.map((q, i) => (
+          <div className="cards-3 tcards">
+            {TESTIMONIALS.map((t, i) => (
               <div className="tcard" key={i}>
-                <div className="stars">★★★★★</div>
-                <p className="quote">{`“${q}”`}</p>
+                <div className="tcard-top">
+                  <div className="stars">★★★★★</div>
+                  {t.source === "Google" && <span className="t-tag">Reseña de Google</span>}
+                </div>
+                <p className="quote">{`“${t.quote}”`}</p>
                 <div className="t-author">
-                  <span className="av">N</span>
-                  <div><div className="nm">Nombre Cliente</div><div className="rl">Gerente · Empresa (placeholder)</div></div>
+                  <img className="ph" src={t.photo} alt={t.name} width={46} height={46} loading="lazy" />
+                  <div><div className="nm">{t.name}</div><div className="rl">{t.role}</div></div>
                 </div>
               </div>
             ))}

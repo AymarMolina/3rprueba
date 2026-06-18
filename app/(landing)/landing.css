@@ -215,6 +215,16 @@ body{
 .ga .tcard p.quote{font-size:15px;color:rgba(255,255,255,.86);margin-bottom:22px;line-height:1.65}
 .ga .t-author{display:flex;align-items:center;gap:13px}
 .ga .t-author .av{width:44px;height:44px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-family:var(--font-poppins);font-weight:700;font-size:16px;flex:none}
+.ga .t-author .ph{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none;border:1.5px solid rgba(255,255,255,.14)}
+.ga .tcards{grid-template-columns:repeat(2,minmax(0,430px));justify-content:center}
+.ga .tcard-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.ga .t-tag{font-size:11px;font-weight:600;color:rgba(255,255,255,.7);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:3px 10px}
+.ga .g-rating{display:inline-flex;align-items:center;gap:8px;margin-top:12px;text-decoration:none;color:inherit}
+.ga .g-rating .g-score{font-family:var(--font-poppins);font-weight:700;font-size:18px}
+.ga .g-rating .g-stars{color:#ffb800;letter-spacing:2px;font-size:14px}
+.ga .g-rating .g-label{font-size:13px;color:var(--muted-2)}
+.ga .g-rating:hover .g-label{color:#fff}
+@media(max-width:720px){.ga .tcards{grid-template-columns:1fr}}
 .ga .t-author .nm{font-weight:600;font-size:14.5px}
 .ga .t-author .rl{font-size:12.5px;color:var(--muted-2)}
 
