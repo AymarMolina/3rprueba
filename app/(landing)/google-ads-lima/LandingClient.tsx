@@ -143,7 +143,7 @@ export default function LandingClient() {
       {/* ============ HEADER ============ */}
       <header className="site-header">
         <div className="container nav">
-          <a href="#top" className="brand"><span className="mark" />3R<b>CORE</b></a>
+          <a href="#top" className="brand" aria-label="3R Core"><img src="/icons/LogoLetrasBlanco.webp" alt="3R Core — Agencia de Marketing Digital" className="brand-logo" /></a>
           <nav className="nav-links">
             {NAV.map(([href, label]) => (
               <a key={href} href={href}>{label}</a>
@@ -152,7 +152,7 @@ export default function LandingClient() {
           <div className="nav-cta">
             <a href="#proceso" className="btn btn-ghost">Cómo trabajamos</a>
             <a href="#contacto" className="btn btn-primary">Diagnóstico gratis</a>
-            <button className="hamburger" aria-label="Menú" onClick={() => toggleMenu(!menuOpen)}>
+            <button type="button" className="hamburger" aria-label="Menú" onClick={() => toggleMenu(!menuOpen)}>
               <span /><span /><span />
             </button>
           </div>
@@ -395,7 +395,7 @@ export default function LandingClient() {
           <div className="faq">
             {FAQS.map((f, i) => (
               <div className={`faq-item${openFaq === i ? " open" : ""}`} key={i}>
-                <button className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                <button type="button" className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   {f.q}<span className="pm">+</span>
                 </button>
                 <div className="faq-a" style={{ maxHeight: openFaq === i ? "240px" : "0" }}>
@@ -430,7 +430,7 @@ export default function LandingClient() {
                   <input type="text" name="empresa" placeholder="Empresa" />
                   <input type="tel" name="celular" placeholder="Celular / WhatsApp" required />
                   <input type="email" name="correo" placeholder="Correo electrónico" required />
-                  <select name="necesidad" required defaultValue="">
+                  <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="">
                     <option value="" disabled>¿Qué necesitas?</option>
                     <option>Google Ads</option>
                     <option>Meta Ads (Facebook / Instagram)</option>
@@ -453,7 +453,7 @@ export default function LandingClient() {
         <div className="container">
           <div className="foot-grid">
             <div className="foot-brand">
-              <a href="#top" className="brand"><span className="mark" />3R<b>CORE</b></a>
+              <a href="#top" className="brand" aria-label="3R Core"><img src="/icons/LogoLetrasBlanco.webp" alt="3R Core — Agencia de Marketing Digital" className="brand-logo" /></a>
               <p>Agencia de performance, Google Ads y redes sociales en Lima. Tu Éxito, Nuestro Éxito.</p>
             </div>
             <div className="foot-col">
@@ -472,10 +472,12 @@ export default function LandingClient() {
             </div>
             <div className="foot-col">
               <h4>Contacto</h4>
-              <li>Calle Las Caobas 170, Of. 400</li>
-              <li>Urb. El Remanso, La Molina, Lima</li>
-              <li><a href={`https://wa.me/${WA_NUMBER}`} target="_blank" rel="noopener">WhatsApp: +51 987 216 703</a></li>
-              <li>Lun a Vie · 9am a 6pm</li>
+              <ul>
+                <li>Calle Las Caobas 170, Of. 400</li>
+                <li>Urb. El Remanso, La Molina, Lima</li>
+                <li><a href={`https://wa.me/${WA_NUMBER}`} target="_blank" rel="noopener">WhatsApp: +51 987 216 703</a></li>
+                <li>Lun a Vie · 9am a 6pm</li>
+              </ul>
             </div>
           </div>
           <div className="foot-bottom">

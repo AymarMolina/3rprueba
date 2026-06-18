@@ -84,6 +84,9 @@ body{
 }
 .ga .brand .mark::after{content:"";position:absolute;inset:7px;border-radius:5px;border:2px solid rgba(255,255,255,.9)}
 .ga .brand b{font-weight:800}
+.ga .brand-logo{height:38px;width:auto;display:block}
+.ga .foot-brand .brand-logo{height:42px}
+@media(max-width:680px){.ga .brand-logo{height:32px}}
 .ga .nav-links{display:flex;align-items:center;gap:30px}
 .ga .nav-links a{font-size:14.5px;color:var(--muted);font-weight:500;transition:color .15s}
 .ga .nav-links a:hover{color:#fff}
