@@ -99,6 +99,20 @@ const TESTIMONIALS = [
     source: "Google",
   },
   {
+    quote: "¡Totalmente recomendado! Esta agencia logró cambiar mi forma de ver las cosas, superaron mis expectativas. Una agencia de marketing digital que se compromete y pone todo su compromiso con el cliente, y eso se ve muy poco, además del buen trato del personal y su amplia tarea de brindar las mejores perspectivas desde su experiencia y conocimiento para ayudarnos a triunfar en nuestros negocios. Totalmente dispuesta a volver a trabajar con 3R Core y llevar mi negocio a otro nivel.",
+    name: "Tamara Gonzales",
+    role: "Clienta de 3R Core",
+    photo: "/testimonios/tamara.png",
+    source: "Google",
+  },
+  {
+    quote: "¡Increíbles resultados! El equipo de 3R Core me ayudó a impulsar mi marca desde Los Ángeles y ahora puedo llevar un mejor manejo de mis redes y el posicionamiento de mi marca. Aún sigo trabajando con ellos en conjunto. ¡Recomendado!",
+    name: "Melanie Bdv",
+    role: "Dueña de marca · Los Ángeles",
+    photo: "/testimonios/melanie.png",
+    source: "Google",
+  },
+  {
     quote: "Integro la parte técnica de varias marcas con sus campañas y 3R Core es de las pocas agencias que mide de verdad lo que promete. Cada sol invertido termina en un reporte claro. Los recomiendo sin dudarlo.",
     name: "José Gaspard",
     role: "Partner tecnológico · Nebu Lab",
