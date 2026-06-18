@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Agencia de performance y Google Ads en Lima. Convertimos tu inversión en clientes reales con campañas medibles, ROAS claro y reportes honestos. Pide tu diagnóstico gratis.",
   alternates: {
-    canonical: `${BASE_URL}/google-ads-lima`,
+    canonical: `${BASE_URL}/performance-marketing`,
   },
   openGraph: {
     title: "Google Ads en Lima | 3R Core",
     description:
       "Más clientes, menos presupuesto quemado. Campañas de Google Ads y performance con ROI medible en Lima, Perú.",
-    url: `${BASE_URL}/google-ads-lima`,
+    url: `${BASE_URL}/performance-marketing`,
     siteName: "3R Core",
     locale: "es_PE",
     type: "website",
@@ -55,7 +55,7 @@ const jsonLd = {
     telephone: "+51987216703",
   },
   areaServed: { "@type": "City", name: "Lima" },
-  url: `${BASE_URL}/google-ads-lima`,
+  url: `${BASE_URL}/performance-marketing`,
 };
 
 export default function Page() {

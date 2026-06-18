@@ -145,14 +145,14 @@ export default function LandingClient() {
       await fetch("/api/landing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje: `Necesita: ${necesidad}`, website: "Landing /google-ads-lima" }),
+        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje: `Necesita: ${necesidad}`, website: "Landing /performance-marketing" }),
       });
     } catch { /* still confirm to user */ }
     if (typeof window !== "undefined") {
       // @ts-expect-error dataLayer injected by GTM
       window.dataLayer = window.dataLayer || [];
       // @ts-expect-error push lead event
-      window.dataLayer.push({ event: "generate_lead", form_location: "google-ads-lima", service: necesidad });
+      window.dataLayer.push({ event: "generate_lead", form_location: "performance-marketing", service: necesidad });
     }
     setSending(false);
     setSent(true);
