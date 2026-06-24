@@ -1,6 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+// Empuja un evento al dataLayer (lo consume Google Tag Manager → GA4 / Google Ads).
+const track = (event: string, params: Record<string, unknown> = {}) => {
+  if (typeof window === "undefined") return;
+  // @ts-expect-error dataLayer lo inyecta GTM
+  window.dataLayer = window.dataLayer || [];
+  // @ts-expect-error push del evento
+  window.dataLayer.push({ event, ...params });
+};
 
 const WA_NUMBER = "51987216703";
 const WA_DIAG =
@@ -152,6 +161,67 @@ export default function LandingClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const formStarted = useRef(false);
+
+  // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
+  useEffect(() => {
+    const root = document.querySelector(".ga");
+    if (!root) return;
+
+    // 1) Auto-tag de TODO click en enlaces y botones
+    const onClick = (e: Event) => {
+      const el = (e.target as HTMLElement)?.closest?.("a,button") as HTMLElement | null;
+      if (!el || !root.contains(el)) return;
+      const sec = (el.closest("[data-sec]") as HTMLElement | null)?.dataset.sec || "global";
+      const label = (el.getAttribute("data-track") || el.textContent || el.getAttribute("aria-label") || "")
+        .replace(/\s+/g, " ").trim().slice(0, 80);
+      const href = el.getAttribute("href") || "";
+      if (href.includes("wa.me") || href.includes("api.whatsapp")) {
+        track("whatsapp_click", { location: sec, label, link_url: href });
+      } else if (el.classList.contains("btn-primary") || el.getAttribute("data-cta") === "1") {
+        track("cta_click", { location: sec, label });
+      } else if (/^https?:\/\//.test(href) && !href.includes("3rcore.com")) {
+        track("outbound_click", { location: sec, label, link_url: href });
+      } else {
+        track("element_click", { location: sec, label, link_url: href });
+      }
+    };
+    root.addEventListener("click", onClick, true);
+
+    // 2) Profundidad de scroll
+    const marks = [25, 50, 75, 90];
+    const fired = new Set<number>();
+    const onScroll = () => {
+      const de = document.documentElement;
+      const pct = ((window.scrollY + window.innerHeight) / de.scrollHeight) * 100;
+      for (const m of marks) if (pct >= m && !fired.has(m)) { fired.add(m); track("scroll_depth", { percent: m }); }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    // 3) Vista de cada sección
+    const io = new IntersectionObserver((ents) => {
+      for (const en of ents) if (en.isIntersecting) {
+        track("section_view", { section: (en.target as HTMLElement).dataset.sec });
+        io.unobserve(en.target);
+      }
+    }, { threshold: 0.4 });
+    root.querySelectorAll("[data-sec]").forEach((s) => io.observe(s));
+
+    track("landing_view", { page: "performance-marketing" });
+
+    return () => {
+      root.removeEventListener("click", onClick, true);
+      window.removeEventListener("scroll", onScroll);
+      io.disconnect();
+    };
+  }, []);
+
+  const onFormFocus = () => {
+    if (formStarted.current) return;
+    formStarted.current = true;
+    track("form_start", { location: "contacto" });
+  };
 
   const toggleMenu = (open: boolean) => {
     setMenuOpen(open);
@@ -169,19 +239,23 @@ export default function LandingClient() {
     const correo = String(d.get("correo") || "");
     const necesidad = String(d.get("necesidad") || "");
     setSending(true);
+    let delivered = false;
     try {
-      await fetch("/api/landing", {
+      const r = await fetch("/api/landing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje: `Necesita: ${necesidad}`, website: "Landing /performance-marketing" }),
       });
+      delivered = r.ok;
     } catch { /* still confirm to user */ }
-    if (typeof window !== "undefined") {
-      // @ts-expect-error dataLayer injected by GTM
-      window.dataLayer = window.dataLayer || [];
-      // @ts-expect-error push lead event
-      window.dataLayer.push({ event: "generate_lead", form_location: "performance-marketing", service: necesidad });
-    }
+    // Evento de conversión (lo usa Google Ads / GA4 vía GTM)
+    track("generate_lead", {
+      form_location: "performance-marketing",
+      service: necesidad,
+      company: empresa || undefined,
+      delivered,
+    });
+    if (!delivered) track("lead_send_error", { form_location: "performance-marketing", service: necesidad });
     setSending(false);
     setSent(true);
   };
@@ -189,7 +263,7 @@ export default function LandingClient() {
   return (
     <div className="ga" id="top">
       {/* ============ HEADER ============ */}
-      <header className="site-header">
+      <header className="site-header" data-sec="header">
         <div className="container nav">
           <a href="#top" className="brand" aria-label="3R Core"><img src={LOGO} alt="3R Core — Agencia de Marketing Digital" className="brand-logo" /></a>
           <nav className="nav-links">
@@ -197,7 +271,7 @@ export default function LandingClient() {
           </nav>
           <div className="nav-cta">
             <a href="#proceso" className="btn btn-ghost">Cómo trabajamos</a>
-            <a href="#contacto" className="btn btn-primary">Diagnóstico gratis</a>
+            <a href="#contacto" className="btn btn-primary" data-track="header_diagnostico_gratis">Diagnóstico gratis</a>
             <button type="button" className="hamburger" aria-label="Menú" onClick={() => toggleMenu(!menuOpen)}><span /><span /><span /></button>
           </div>
         </div>
@@ -208,7 +282,7 @@ export default function LandingClient() {
       </header>
 
       {/* ============ HERO ============ */}
-      <section className="hero">
+      <section className="hero" data-sec="hero">
         <div className="container">
           <div className="hero-grid">
             <div className="hero-copy">
@@ -216,7 +290,7 @@ export default function LandingClient() {
               <h1>Más clientes,<br /><span className="grad-text">menos presupuesto quemado.</span></h1>
               <p className="hero-sub">Diseñamos y ejecutamos campañas de Google Ads, Meta Ads y redes sociales con una sola obsesión: que cada sol que inviertes regrese convertido en ventas.</p>
               <div className="hero-cta">
-                <a href="#contacto" className="btn btn-primary">Quiero más clientes <ArrowIcon /></a>
+                <a href="#contacto" className="btn btn-primary" data-track="hero_quiero_mas_clientes">Quiero más clientes <ArrowIcon /></a>
                 <a href="#proceso" className="btn btn-ghost">Ver cómo trabajamos</a>
               </div>
               <div className="hero-stats">
@@ -237,10 +311,10 @@ export default function LandingClient() {
                   </div>
                 </div>
                 <div className="dash-kpis">
-                  <div className="kpi"><div className="k">Inversión</div><div className="v">S/ 4,800</div></div>
-                  <div className="kpi"><div className="k">Ventas generadas</div><div className="v">S/ 20,160</div><span className="tag"><ChevUp />ROAS 4.2x</span></div>
-                  <div className="kpi"><div className="k">Leads</div><div className="v">184</div><span className="tag"><ChevUp />+52%</span></div>
-                  <div className="kpi"><div className="k">Costo por lead</div><div className="v">S/ 26</div><span className="tag"><ChevUp />-38%</span></div>
+                  <div className="kpi"><div className="k">Inversión</div><div className="v">S/ 2,800</div></div>
+                  <div className="kpi"><div className="k">Ventas generadas</div><div className="v">S/ 45,150</div><span className="tag"><ChevUp />ROAS 16.1x</span></div>
+                  <div className="kpi"><div className="k">Leads</div><div className="v">460</div><span className="tag"><ChevUp />+52%</span></div>
+                  <div className="kpi"><div className="k">Costo por lead</div><div className="v">S/ 8</div><span className="tag"><ChevUp />-38%</span></div>
                 </div>
                 <div className="dash-chart">
                   {BARS.map((h, i) => <div key={i} className="bar" style={{ height: `${h}%` }} />)}
@@ -255,7 +329,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ LOGOS ============ */}
-      <section className="logos">
+      <section className="logos" data-sec="logos">
         <div className="container">
           <div className="lbl">Marcas que ya crecen con nosotros</div>
           <div className="logos-row">
@@ -267,7 +341,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ PROBLEMA ============ */}
-      <section className="section" id="problema">
+      <section className="section" id="problema" data-sec="problema">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">El problema</span>
@@ -287,7 +361,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ SISTEMA ============ */}
-      <section className="section" style={{ background: "var(--bg-850)" }}>
+      <section className="section" data-sec="sistema" style={{ background: "var(--bg-850)" }}>
         <div className="container">
           <div className="split">
             <div>
@@ -318,7 +392,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ SERVICIOS ============ */}
-      <section className="section" id="servicios">
+      <section className="section" id="servicios" data-sec="servicios">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Servicios</span>
@@ -339,7 +413,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ PASOS ============ */}
-      <section className="section" id="proceso" style={{ background: "var(--bg-850)" }}>
+      <section className="section" id="proceso" data-sec="proceso" style={{ background: "var(--bg-850)" }}>
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Cómo trabajamos</span>
@@ -359,7 +433,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ RESULTADOS ============ */}
-      <section className="section results" id="resultados">
+      <section className="section results" id="resultados" data-sec="resultados">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Resultados</span>
@@ -376,7 +450,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ TESTIMONIOS ============ */}
-      <section className="section">
+      <section className="section" data-sec="testimonios">
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Lo que dicen</span>
@@ -406,7 +480,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ FAQ ============ */}
-      <section className="section" id="faq" style={{ background: "var(--bg-850)" }}>
+      <section className="section" id="faq" data-sec="faq" style={{ background: "var(--bg-850)" }}>
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Preguntas frecuentes</span>
@@ -426,13 +500,13 @@ export default function LandingClient() {
       </section>
 
       {/* ============ CTA FINAL / FORM ============ */}
-      <section className="cta-final" id="contacto">
+      <section className="cta-final" id="contacto" data-sec="contacto">
         <div className="container">
           <div className="cta-box">
             <div className="ct">
               <h2>Pide tu diagnóstico gratis</h2>
               <p>Te mostramos en concreto cómo convertir tu inversión en clientes. Sin compromiso y sin tecnicismos.</p>
-              <a href={WA_DIAG} target="_blank" rel="noopener" className="btn btn-wa"><WaIcon /> Escríbenos al WhatsApp</a>
+              <a href={WA_DIAG} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_cta_diagnostico"><WaIcon /> Escríbenos al WhatsApp</a>
             </div>
             {sent ? (
               <div className="form-ok">
@@ -441,13 +515,13 @@ export default function LandingClient() {
                 <p>Te contactamos el mismo día hábil con tu diagnóstico. Si quieres adelantarlo, escríbenos al WhatsApp.</p>
               </div>
             ) : (
-              <form className="lead-form" onSubmit={handleSubmit}>
+              <form className="lead-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
                 <div className="row">
                   <input type="text" name="nombre" placeholder="Nombre y apellido" required />
                   <input type="text" name="empresa" placeholder="Empresa" />
                   <input type="tel" name="celular" placeholder="Celular / WhatsApp" required />
                   <input type="email" name="correo" placeholder="Correo electrónico" required />
-                  <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="">
+                  <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="" onChange={(e) => track("form_service_select", { service: e.target.value, location: "contacto" })}>
                     <option value="" disabled>¿Qué necesitas?</option>
                     <option>Google Ads</option>
                     <option>Meta Ads (Facebook / Instagram)</option>
@@ -466,7 +540,7 @@ export default function LandingClient() {
       </section>
 
       {/* ============ FOOTER ============ */}
-      <footer className="site-footer">
+      <footer className="site-footer" data-sec="footer">
         <div className="container">
           <div className="foot-grid">
             <div className="foot-brand">
@@ -507,7 +581,7 @@ export default function LandingClient() {
         </div>
       </footer>
 
-      <a href={WA_INFO} target="_blank" rel="noopener" className="wa-float" aria-label="WhatsApp"><WaIcon size={30} /></a>
+      <a href={WA_INFO} target="_blank" rel="noopener" className="wa-float" aria-label="WhatsApp" data-track="wa_float"><WaIcon size={30} /></a>
     </div>
   );
 }
