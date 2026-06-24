@@ -320,9 +320,11 @@ export default function LandingClient() {
                   {BARS.map((h, i) => <div key={i} className="bar" style={{ height: `${h}%` }} />)}
                 </div>
               </div>
-              <div className="badge-float badge-gp"><img src="/landing-ga/google-partner.png" alt="Google Partner" /></div>
-              <div className="badge-float badge-meta"><MetaLogo /><span>Business<br />Partner</span></div>
-              <div className="badge-float badge-tt"><img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" /></div>
+              <div className="dash-badges">
+                <div className="badge-float badge-gp"><img src="/landing-ga/google-partner.png" alt="Google Partner" /></div>
+                <div className="badge-float badge-meta"><MetaLogo /><span>Business<br />Partner</span></div>
+                <div className="badge-float badge-tt"><img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" /></div>
+              </div>
             </div>
           </div>
         </div>

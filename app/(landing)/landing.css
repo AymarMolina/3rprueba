@@ -116,7 +116,7 @@ body{
 .ga .hero-stats .lbl{color:var(--muted-2);font-size:13px;margin-top:6px}
 
 /* ---- hero dashboard mockup ---- */
-.ga .dash-wrap{position:relative;max-width:520px;margin:0 auto;padding:30px 14px 40px}
+.ga .dash-wrap{position:relative;max-width:520px;margin:0 auto}
 .ga .dash{
   position:relative;background:linear-gradient(165deg,#240b2e,#15021a);
   border:1px solid var(--line-2);border-radius:22px;padding:26px 22px 22px;
@@ -131,21 +131,20 @@ body{
 .ga .live{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:#34d27e;background:rgba(52,210,126,.12);border:1px solid rgba(52,210,126,.32);border-radius:999px;padding:3px 9px;margin-top:7px}
 .ga .live::before{content:"";width:5px;height:5px;border-radius:50%;background:#34d27e;box-shadow:0 0 6px #34d27e}
 .ga .dash-kpis{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:16px}
-.ga .kpi{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:13px;padding:13px 14px;position:relative}
+.ga .kpi{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:13px;padding:13px 14px;display:flex;flex-direction:column}
 .ga .kpi .k{font-size:10.5px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.05em}
-.ga .kpi .v{font-family:var(--font-poppins);font-weight:700;font-size:21px;margin-top:5px}
-.ga .kpi .tag{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:2px;font-size:10px;font-weight:700;color:#34d27e}
+.ga .kpi .v{font-family:var(--font-poppins);font-weight:700;font-size:21px;margin-top:5px;line-height:1.1}
+.ga .kpi .tag{display:inline-flex;align-self:flex-start;align-items:center;gap:2px;font-size:10px;font-weight:700;color:#34d27e;margin-top:6px}
 .ga .dash-chart{display:flex;align-items:flex-end;gap:7px;height:86px;padding:6px 2px 0;border-top:1px solid var(--line);margin-top:4px}
 .ga .dash-chart .bar{flex:1;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#ff1a55,#9c27b0);opacity:.92}
-/* floating partner badges */
-.ga .badge-float{position:absolute;background:#fff;border-radius:13px;box-shadow:0 14px 32px -10px rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;z-index:3}
-.ga .badge-float img{display:block}
-.ga .badge-gp{top:0;right:18px;width:74px;height:60px;padding:9px}
-.ga .badge-gp img{max-width:100%;max-height:100%}
-.ga .badge-tt{bottom:8px;right:-2px;height:48px;padding:8px 12px}
-.ga .badge-tt img{height:100%;width:auto}
-.ga .badge-meta{bottom:74px;left:-4px;gap:7px;padding:8px 12px;height:46px}
-.ga .badge-meta span{font-size:9.5px;font-weight:700;line-height:1.05;color:#1c1e21;text-transform:uppercase;letter-spacing:.02em}
+/* partner badges — tira limpia centrada bajo el dashboard (sin solaparse ni desbordar) */
+.ga .dash-badges{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:18px}
+.ga .badge-float{background:#fff;border-radius:13px;box-shadow:0 12px 28px -12px rgba(0,0,0,.5);display:inline-flex;align-items:center;justify-content:center;height:54px;padding:8px 14px}
+.ga .badge-float img{display:block;max-height:38px;width:auto}
+.ga .badge-gp img{max-height:38px}
+.ga .badge-tt img{max-height:30px}
+.ga .badge-meta{gap:7px}
+.ga .badge-meta span{font-size:9.5px;font-weight:700;line-height:1.05;color:#1c1e21;text-transform:uppercase;letter-spacing:.02em;text-align:left}
 
 /* ===================== LOGOS ===================== */
 .ga .logos{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:42px 0;background:var(--bg-850)}
@@ -311,6 +310,10 @@ body{
   .ga .hero{padding:48px 0 60px}
   .ga .hero-stats{gap:26px}
   .ga .hero-stats .num{font-size:28px}
+  .ga .dash{padding:20px 16px 18px}
+  .ga .dash-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .ga .dash-camp{text-align:left}
+  .ga .dash-camp .c{margin-left:0;max-width:none}
   .ga .cards-4,.ga .cards-3,.ga .steps,.ga .results-grid{grid-template-columns:1fr}
   .ga .compare-head div,.ga .compare-row div{padding:13px 14px;font-size:13px}
   .ga .foot-grid{grid-template-columns:1fr;gap:30px}
