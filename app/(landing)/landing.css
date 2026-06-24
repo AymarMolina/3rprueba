@@ -249,8 +249,8 @@ body{
 .ga .cta-box .ct{position:relative;z-index:2}
 .ga .cta-box h2{font-size:clamp(30px,4vw,44px);font-weight:800;color:#fff;margin-bottom:16px}
 .ga .cta-box .ct p{color:rgba(255,255,255,.92);font-size:17px;margin-bottom:24px}
-.ga .cta-box .ct .btn-wa{background:#fff;color:#0d0010}
-.ga .cta-box .ct .btn-wa:hover{background:rgba(255,255,255,.9)}
+.ga .cta-box .ct .btn-wa{background:var(--wa);color:#fff;box-shadow:0 16px 36px -12px rgba(37,211,102,.7)}
+.ga .cta-box .ct .btn-wa:hover{background:var(--wa-dark)}
 .ga .lead-form{position:relative;z-index:2;background:rgba(13,0,16,.34);border:1px solid rgba(255,255,255,.28);border-radius:18px;padding:26px;backdrop-filter:blur(6px)}
 .ga .lead-form .row{display:grid;gap:13px}
 .ga .lead-form input,.ga .lead-form select{

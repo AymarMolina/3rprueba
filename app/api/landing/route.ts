@@ -3,6 +3,41 @@ import { NextResponse } from 'next/server';
 
 const logoUrl = 'https://3-rcore.vercel.app/icons/LOGO3R.png';
 
+// Registra el lead en el panel (CRM) — tabla Supabase `panel_leads`.
+// Se desactiva sin romper nada si SUPABASE_URL / SUPABASE_SERVICE_ROLE no están definidos.
+async function saveLeadToPanel(d: {
+  nombre: string; apellido?: string; email: string; telefono?: string; mensaje?: string; website?: string;
+}) {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE;
+  if (!url || !key) return;
+  const id = 'l' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  try {
+    await fetch(`${url}/rest/v1/panel_leads`, {
+      method: 'POST',
+      headers: {
+        apikey: key,
+        Authorization: `Bearer ${key}`,
+        'Content-Type': 'application/json',
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify({
+        id,
+        name: d.nombre,
+        company: d.apellido && d.apellido !== '-' ? d.apellido : null,
+        email: d.email,
+        phone: d.telefono || null,
+        source: d.website || 'Landing /performance-marketing',
+        stage: 'new',
+        score: 50,
+        notes: d.mensaje || null,
+      }),
+    });
+  } catch (e) {
+    console.error('panel_leads insert failed', e);
+  }
+}
+
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -12,6 +47,9 @@ export async function POST(request: Request) {
     if (!nombre || !email || !mensaje  || !website) {
       return NextResponse.json({ error: 'Faltan campos requeridos' }, { status: 400 });
     }
+
+    // Guarda el lead en el panel/CRM antes de enviar los correos.
+    await saveLeadToPanel({ nombre, apellido, email, telefono, mensaje, website });
 
     const responsiveStyles = `
       <style>
