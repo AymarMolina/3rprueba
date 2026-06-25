@@ -40,7 +40,9 @@ const nextConfig: NextConfig = {
     // The panel app is built with basePath "/panel", so every asset/API lives
     // under /panel/* on the upstream and maps 1:1 here. Excluded from the i18n
     // middleware via the matcher in proxy.ts so it is never locale-prefixed.
-    const PANEL = 'https://3rcore-panel.vercel.app';
+    // Repointed 2026-06-25 to the hardened panel deployment (demo creds removed,
+    // password hashing + brute-force lockout + security headers + Supabase env).
+    const PANEL = 'https://3rcore-work.vercel.app';
     return [
       { source: '/panel', destination: `${PANEL}/panel` },
       { source: '/panel/:path*', destination: `${PANEL}/panel/:path*` },
