@@ -11,7 +11,7 @@ const track = (event: string, params: Record<string, unknown> = {}) => {
   window.dataLayer.push({ event, ...params });
 };
 
-const WA_NUMBER = "51987216703";
+const WA_NUMBER = "51969791251";
 const WA_BASE = "Hola! Quiero agendar una reunión, estoy interesado en los servicios ADS de ustedes.";
 // Arma el link de WhatsApp; si hay servicio elegido lo incluye completo en el mensaje.
 const waLink = (servicio?: string) =>
@@ -580,7 +580,7 @@ export default function LandingClient() {
               <h4>Contacto</h4>
               <ul>
                 <li>Calle Las Caobas 170, Of. 400, Urb. El Remanso, La Molina, Lima</li>
-                <li><a href={WA_INFO} target="_blank" rel="noopener">WhatsApp: +51 987 216 703</a></li>
+                <li><a href={WA_INFO} target="_blank" rel="noopener">WhatsApp: +51 969 791 251</a></li>
                 <li>Lun a Vie: 9am a 6pm</li>
               </ul>
             </div>
