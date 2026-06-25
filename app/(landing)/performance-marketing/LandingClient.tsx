@@ -12,10 +12,13 @@ const track = (event: string, params: Record<string, unknown> = {}) => {
 };
 
 const WA_NUMBER = "51987216703";
-const WA_DIAG =
-  "https://wa.me/51987216703?text=Hola%203R%20Core,%20quiero%20mi%20diagn%C3%B3stico%20gratis%20de%20Google%20Ads";
-const WA_INFO =
-  "https://wa.me/51987216703?text=Hola%203R%20Core,%20quiero%20informaci%C3%B3n%20sobre%20Google%20Ads";
+const WA_BASE = "Hola! Quiero agendar una reunión, estoy interesado en los servicios ADS de ustedes.";
+// Arma el link de WhatsApp; si hay servicio elegido lo incluye completo en el mensaje.
+const waLink = (servicio?: string) =>
+  `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+    servicio && servicio.trim() ? `${WA_BASE} Servicio de interés: ${servicio}.` : WA_BASE
+  )}`;
+const WA_INFO = waLink();
 const LOGO = "/landing-ga/logo-3rcore.png";
 
 const ArrowIcon = () => (
@@ -161,6 +164,7 @@ export default function LandingClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [servicio, setServicio] = useState("");
   const formStarted = useRef(false);
 
   // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
@@ -238,13 +242,24 @@ export default function LandingClient() {
     const celular = String(d.get("celular") || "");
     const correo = String(d.get("correo") || "");
     const necesidad = String(d.get("necesidad") || "");
+    // Captura de origen para el panel/CRM (toda la data posible para mejorar la landing)
+    const qs = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
+    const utm = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"]
+      .map((k) => { const v = qs.get(k); return v ? `${k}=${v}` : null; })
+      .filter(Boolean).join(" | ");
+    const ref = typeof document !== "undefined" ? document.referrer : "";
+    const mensaje = [
+      `Servicio: ${necesidad}`,
+      utm ? `Origen: ${utm}` : null,
+      ref ? `Referente: ${ref}` : null,
+    ].filter(Boolean).join("\n");
     setSending(true);
     let delivered = false;
     try {
       const r = await fetch("/api/landing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje: `Necesita: ${necesidad}`, website: "Landing /performance-marketing" }),
+        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje, website: "Landing /performance-marketing", servicio: necesidad, utm, referrer: ref }),
       });
       delivered = r.ok;
     } catch { /* still confirm to user */ }
@@ -253,6 +268,7 @@ export default function LandingClient() {
       form_location: "performance-marketing",
       service: necesidad,
       company: empresa || undefined,
+      utm: utm || undefined,
       delivered,
     });
     if (!delivered) track("lead_send_error", { form_location: "performance-marketing", service: necesidad });
@@ -508,7 +524,7 @@ export default function LandingClient() {
             <div className="ct">
               <h2>Pide tu diagnóstico gratis</h2>
               <p>Te mostramos en concreto cómo convertir tu inversión en clientes. Sin compromiso y sin tecnicismos.</p>
-              <a href={WA_DIAG} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_cta_diagnostico"><WaIcon /> Escríbenos al WhatsApp</a>
+              <a href={waLink(servicio)} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_cta_diagnostico"><WaIcon /> Escríbenos al WhatsApp</a>
             </div>
             {sent ? (
               <div className="form-ok">
@@ -523,14 +539,11 @@ export default function LandingClient() {
                   <input type="text" name="empresa" placeholder="Empresa" />
                   <input type="tel" name="celular" placeholder="Celular / WhatsApp" required />
                   <input type="email" name="correo" placeholder="Correo electrónico" required />
-                  <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="" onChange={(e) => track("form_service_select", { service: e.target.value, location: "contacto" })}>
+                  <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="" onChange={(e) => { setServicio(e.target.value); track("form_service_select", { service: e.target.value, location: "contacto" }); }}>
                     <option value="" disabled>¿Qué necesitas?</option>
                     <option>Google Ads</option>
                     <option>Meta Ads (Facebook / Instagram)</option>
                     <option>TikTok Ads</option>
-                    <option>Social Media &amp; Community</option>
-                    <option>Landing page</option>
-                    <option>No estoy seguro / quiero asesoría</option>
                   </select>
                   <button type="submit" disabled={sending}>{sending ? "Enviando…" : "Quiero mi diagnóstico"}</button>
                 </div>
@@ -567,7 +580,7 @@ export default function LandingClient() {
               <h4>Contacto</h4>
               <ul>
                 <li>Calle Las Caobas 170, Of. 400, Urb. El Remanso, La Molina, Lima</li>
-                <li><a href={`https://wa.me/${WA_NUMBER}`} target="_blank" rel="noopener">WhatsApp: +51 987 216 703</a></li>
+                <li><a href={WA_INFO} target="_blank" rel="noopener">WhatsApp: +51 987 216 703</a></li>
                 <li>Lun a Vie: 9am a 6pm</li>
               </ul>
             </div>
