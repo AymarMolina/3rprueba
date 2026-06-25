@@ -52,7 +52,7 @@ const jsonLd = {
       addressRegion: "Lima",
       addressCountry: "PE",
     },
-    telephone: "+51987216703",
+    telephone: "+51969791251",
   },
   areaServed: { "@type": "City", name: "Lima" },
   url: `${BASE_URL}/performance-marketing`,
