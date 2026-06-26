@@ -3,38 +3,31 @@ import { NextResponse } from 'next/server';
 
 const logoUrl = 'https://3-rcore.vercel.app/icons/LOGO3R.png';
 
-// Registra el lead en el panel (CRM) — tabla Supabase `panel_leads`.
-// Se desactiva sin romper nada si SUPABASE_URL / SUPABASE_SERVICE_ROLE no están definidos.
+// Registra el lead en el panel (CRM) a través del endpoint público del panel.
+// Ventaja: NO requiere credenciales de Supabase en este proyecto (Vercel del
+// sitio público) — el panel inserta en `panel_leads` con sus propias credenciales.
+// Si el panel no responde, no rompe nada: los correos igual se envían.
 async function saveLeadToPanel(d: {
   nombre: string; apellido?: string; email: string; telefono?: string; mensaje?: string; website?: string;
 }) {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE;
-  if (!url || !key) return;
-  const id = 'l' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
   try {
-    await fetch(`${url}/rest/v1/panel_leads`, {
+    await fetch('https://3rcore.com/panel/api/lead-ingest', {
       method: 'POST',
       headers: {
-        apikey: key,
-        Authorization: `Bearer ${key}`,
         'Content-Type': 'application/json',
-        Prefer: 'return=minimal',
+        'x-3r-key': '3rlead_k7Qm2Xp9vR4nT8wL6sB1yH3dZ',
       },
       body: JSON.stringify({
-        id,
-        name: d.nombre,
-        company: d.apellido && d.apellido !== '-' ? d.apellido : null,
+        nombre: d.nombre,
+        apellido: d.apellido,
         email: d.email,
-        phone: d.telefono || null,
-        source: d.website || 'Landing /performance-marketing',
-        stage: 'new',
-        score: 50,
-        notes: d.mensaje || null,
+        telefono: d.telefono,
+        mensaje: d.mensaje,
+        website: d.website,
       }),
     });
   } catch (e) {
-    console.error('panel_leads insert failed', e);
+    console.error('panel lead-ingest failed', e);
   }
 }
 
