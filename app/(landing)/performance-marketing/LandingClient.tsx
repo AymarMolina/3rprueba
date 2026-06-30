@@ -2,13 +2,31 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// Empuja un evento al dataLayer (lo consume Google Tag Manager → GA4 / Google Ads).
+type GtagWindow = Window & {
+  dataLayer?: unknown[];
+  gtag?: (...args: unknown[]) => void;
+};
+
+// ID de la cuenta de Google Ads (ya cargada por gtag en el layout).
+const ADS_ID = "AW-17933910865";
+
+// Mide TODO: cada evento va al dataLayer (GTM) Y a GA4 directo vía gtag, para
+// que se registre aunque GTM no tenga los tags configurados.
 const track = (event: string, params: Record<string, unknown> = {}) => {
   if (typeof window === "undefined") return;
-  // @ts-expect-error dataLayer lo inyecta GTM
-  window.dataLayer = window.dataLayer || [];
-  // @ts-expect-error push del evento
-  window.dataLayer.push({ event, ...params });
+  const w = window as GtagWindow;
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event, ...params });
+  if (typeof w.gtag === "function") w.gtag("event", event, params);
+};
+
+// Dispara una conversión de Google Ads (solo si existe el label de la acción).
+const adsConversion = (label?: string, extra: Record<string, unknown> = {}) => {
+  if (typeof window === "undefined" || !label) return;
+  const w = window as GtagWindow;
+  if (typeof w.gtag === "function") {
+    w.gtag("event", "conversion", { send_to: `${ADS_ID}/${label}`, value: 1, currency: "PEN", ...extra });
+  }
 };
 
 const WA_NUMBER = "51969791251";
@@ -179,6 +197,8 @@ export default function LandingClient() {
       const href = el.getAttribute("href") || "";
       if (href.includes("wa.me") || href.includes("api.whatsapp")) {
         track("whatsapp_click", { location: sec, label, link_url: href });
+        // Conversión de Google Ads por clic a WhatsApp (si hay label configurado).
+        adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { location: sec });
       } else if (el.classList.contains("btn-primary") || el.getAttribute("data-cta") === "1") {
         track("cta_click", { location: sec, label });
       } else if (/^https?:\/\//.test(href) && !href.includes("3rcore.com")) {
@@ -288,18 +308,11 @@ export default function LandingClient() {
     if (!delivered) track("lead_send_error", { form_location: "performance-marketing", service: necesidad });
 
     // ── Conversión a Google Ads (arregla "Conversiones 0.00" en la cuenta) ──
-    // El layout ya carga gtag con AW-17933910865. Apenas el cliente cree la
-    // acción de conversión en Google Ads y ponga su label en
-    // NEXT_PUBLIC_ADS_CONVERSION_LABEL (Vercel), cada envío del form cuenta como
-    // conversión y la campaña empieza a optimizar hacia compradores reales.
-    const adsLabel = process.env.NEXT_PUBLIC_ADS_CONVERSION_LABEL;
-    if (typeof window !== "undefined" && typeof (window as { gtag?: (...a: unknown[]) => void }).gtag === "function") {
-      const g = (window as unknown as { gtag: (...a: unknown[]) => void }).gtag;
-      // Conversión específica (si hay label) + evento estándar generate_lead
-      // (sirve para importar la conversión vía vínculo GA4 ↔ Google Ads).
-      if (adsLabel) g("event", "conversion", { send_to: `AW-17933910865/${adsLabel}`, value: 1, currency: "PEN" });
-      g("event", "generate_lead", { send_to: "AW-17933910865", currency: "PEN", value: 1 });
-    }
+    // Apenas el cliente cree la acción de conversión en Google Ads y ponga su
+    // label en NEXT_PUBLIC_ADS_CONVERSION_LABEL (Vercel), cada envío del form
+    // cuenta como conversión y la campaña optimiza hacia compradores reales.
+    // (El evento generate_lead ya llegó a GA4/dataLayer vía track()).
+    adsConversion(process.env.NEXT_PUBLIC_ADS_CONVERSION_LABEL, { service: necesidad });
 
     setSending(false);
     setSent(true);
