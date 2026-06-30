@@ -165,6 +165,7 @@ export default function LandingClient() {
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [servicio, setServicio] = useState("");
+  const [waLeadUrl, setWaLeadUrl] = useState("");
   const formStarted = useRef(false);
 
   // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
@@ -253,6 +254,23 @@ export default function LandingClient() {
       utm ? `Origen: ${utm}` : null,
       ref ? `Referente: ${ref}` : null,
     ].filter(Boolean).join("\n");
+
+    // WhatsApp (click-to-chat): manda los datos del lead al WhatsApp del negocio
+    // a través del propio WhatsApp del usuario. Se abre DENTRO del gesto de envío
+    // (antes del await) para que el navegador no lo bloquee como popup.
+    const waText = [
+      "Hola, quiero mi diagnóstico gratis 👋",
+      `Nombre: ${nombre}`,
+      empresa ? `Empresa: ${empresa}` : null,
+      `Celular: ${celular}`,
+      `Correo: ${correo}`,
+      necesidad ? `Servicio: ${necesidad}` : null,
+    ].filter(Boolean).join("\n");
+    const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`;
+    setWaLeadUrl(waUrl);
+    try { window.open(waUrl, "_blank", "noopener"); } catch { /* el botón de respaldo queda visible */ }
+    track("lead_whatsapp_open", { form_location: "performance-marketing", service: necesidad });
+
     setSending(true);
     let delivered = false;
     try {
@@ -530,7 +548,8 @@ export default function LandingClient() {
               <div className="form-ok">
                 <div className="ok-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg></div>
                 <h3>¡Listo! Recibimos tu solicitud</h3>
-                <p>Te contactamos el mismo día hábil con tu diagnóstico. Si quieres adelantarlo, escríbenos al WhatsApp.</p>
+                <p>Se abrió WhatsApp con tus datos para enviarlos. Si no se abrió, toca el botón y dale enviar.</p>
+                <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_lead_confirm"><WaIcon /> Enviar mis datos por WhatsApp</a>
               </div>
             ) : (
               <form className="lead-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
