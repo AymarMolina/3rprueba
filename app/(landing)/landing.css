@@ -267,6 +267,17 @@ body{
 .ga .form-ok h3{color:#fff;font-size:22px;font-weight:700;margin-bottom:10px}
 .ga .form-ok p{color:rgba(255,255,255,.92);font-size:15px}
 
+/* ===== Formulario PRINCIPAL en el hero + sellos Partner ===== */
+.ga .hero-form-wrap{position:relative;z-index:2;width:100%;max-width:520px;margin:0 auto}
+.ga .hero-form{padding:24px}
+.ga .hero-form-head{margin-bottom:16px}
+.ga .hero-form-head h3{font-family:var(--font-poppins);font-weight:800;font-size:clamp(22px,2.6vw,27px);color:#fff;line-height:1.15}
+.ga .hero-form-head p{color:rgba(255,255,255,.82);font-size:14px;margin-top:7px}
+.ga .hero-partners{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:18px;flex-wrap:wrap}
+.ga .hero-partners img{height:38px;width:auto;opacity:.96}
+.ga .hp-meta{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:12px;font-weight:600;opacity:.92}
+.ga .hero-form.form-ok{padding:34px 26px}
+
 /* ===================== FOOTER ===================== */
 .ga .site-footer{background:var(--bg-850);border-top:1px solid var(--line);padding:64px 0 30px}
 .ga .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:46px}
@@ -297,6 +308,7 @@ body{
   .ga .hero-grid{grid-template-columns:1fr;gap:44px}
   .ga .hero-sub{max-width:none}
   .ga .dash-wrap{max-width:480px;margin:0 auto}
+  .ga .hero-form-wrap{max-width:560px}
   .ga .split{grid-template-columns:1fr;gap:38px}
   .ga .cta-box{grid-template-columns:1fr;gap:34px}
   .ga .cards-4{grid-template-columns:repeat(2,1fr)}
