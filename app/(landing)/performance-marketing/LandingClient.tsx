@@ -38,6 +38,7 @@ const waLink = (servicio?: string) =>
   )}`;
 const WA_INFO = waLink();
 const LOGO = "/landing-ga/logo-3rcore.png";
+const BARS = [41, 54, 45, 71, 63, 85, 76, 100];
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
@@ -50,6 +51,9 @@ const CheckRow = () => (
 );
 const CrossRow = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12" /></svg>
+);
+const ChevUp = () => (
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 15l-6-6-6 6" /></svg>
 );
 const GoogleG = ({ s = 18 }: { s?: number }) => (
   <svg width={s} height={s} viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" /><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z" /><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z" /><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z" /></svg>
@@ -181,6 +185,11 @@ export default function LandingClient() {
   const [servicio, setServicio] = useState("");
   const [waLeadUrl, setWaLeadUrl] = useState("");
   const formStarted = useRef(false);
+  // Captura PROPIA de WhatsApp (sin terceros): pide datos antes de abrir el chat.
+  const [waModal, setWaModal] = useState(false);
+  const [waNext, setWaNext] = useState("");
+  const [waSending, setWaSending] = useState(false);
+  const waDone = useRef(false);
 
   // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
   useEffect(() => {
@@ -199,6 +208,15 @@ export default function LandingClient() {
         track("whatsapp_click", { location: sec, label, link_url: href });
         // Conversión de Google Ads por clic a WhatsApp (si hay label configurado).
         adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { location: sec });
+        // Captura PROPIA: si el enlace NO trae ya los datos (data-wa-direct) y aún
+        // no capturamos en esta visita, interceptamos y pedimos nombre+celular.
+        if (!waDone.current && el.getAttribute("data-wa-direct") === null) {
+          e.preventDefault();
+          e.stopPropagation();
+          setWaNext(href);
+          setWaModal(true);
+          track("wa_capture_open", { location: sec });
+        }
       } else if (el.classList.contains("btn-primary") || el.getAttribute("data-cta") === "1") {
         track("cta_click", { location: sec, label });
       } else if (/^https?:\/\//.test(href) && !href.includes("3rcore.com")) {
@@ -242,6 +260,46 @@ export default function LandingClient() {
     if (formStarted.current) return;
     formStarted.current = true;
     track("form_start", { location: "contacto" });
+  };
+
+  // Captura PROPIA de WhatsApp: guarda el lead en el panel y abre el chat.
+  const handleWaCapture = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (waSending) return;
+    const d = new FormData(e.currentTarget);
+    const nombre = String(d.get("wa_nombre") || "").trim();
+    const celular = String(d.get("wa_celular") || "").trim();
+    const proyecto = String(d.get("wa_proyecto") || "").trim();
+    if (!nombre || !celular) return;
+    setWaSending(true);
+
+    const qs = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
+    const utm = ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"]
+      .map((k) => { const v = qs.get(k); return v ? `${k}=${v}` : null; }).filter(Boolean).join(" | ");
+
+    // Guarda en el PANEL propio (recursos propios, sin terceros) antes de abrir el chat.
+    try {
+      await fetch("/api/wa-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, celular, proyecto, origin: utm }),
+      });
+    } catch { /* aunque falle el guardado, igual abrimos el chat */ }
+
+    track("generate_lead", { form_location: "whatsapp-capture", service: proyecto || undefined });
+    adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { service: proyecto || undefined });
+
+    const waText = [
+      "Hola 3R Core 👋",
+      `Nombre: ${nombre}`,
+      `Celular: ${celular}`,
+      proyecto ? `Interés: ${proyecto}` : null,
+    ].filter(Boolean).join("\n");
+    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`;
+    waDone.current = true;
+    setWaSending(false);
+    setWaModal(false);
+    try { window.open(url, "_blank", "noopener"); } catch { window.location.href = url; }
   };
 
   const toggleMenu = (open: boolean) => {
@@ -358,42 +416,30 @@ export default function LandingClient() {
               </div>
             </div>
 
-            {/* Formulario PRINCIPAL en el hero — captura el lead arriba, sin scroll */}
-            <div className="hero-form-wrap" id="form-hero">
-              {sent ? (
-                <div className="lead-form hero-form form-ok">
-                  <div className="ok-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg></div>
-                  <h3>¡Listo! Recibimos tu solicitud</h3>
-                  <p>Se abrió WhatsApp con tus datos para enviarlos. Si no se abrió, toca el botón y dale enviar.</p>
-                  <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_lead_confirm_hero"><WaIcon /> Enviar mis datos por WhatsApp</a>
+            {/* dashboard mockup */}
+            <div className="dash-wrap" aria-hidden="true">
+              <div className="dash">
+                <div className="dash-head">
+                  <span className="dash-conv"><GoogleG s={18} /><span className="t">Conversiones <b>+67%</b></span></span>
+                  <div className="dash-camp">
+                    <div className="c">CAMPAÑA Google Ads Search</div>
+                    <span className="live">En vivo</span>
+                  </div>
                 </div>
-              ) : (
-                <form className="lead-form hero-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
-                  <div className="hero-form-head">
-                    <h3>Pide tu diagnóstico <span className="grad-text">gratis</span></h3>
-                    <p>Déjanos tus datos y te escribimos hoy mismo por WhatsApp.</p>
-                  </div>
-                  <div className="row">
-                    <input type="text" name="nombre" placeholder="Nombre y apellido" required />
-                    <input type="text" name="empresa" placeholder="Empresa" />
-                    <input type="tel" name="celular" placeholder="Celular / WhatsApp" required />
-                    <input type="email" name="correo" placeholder="Correo electrónico" required />
-                    <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="" onChange={(e) => { setServicio(e.target.value); track("form_service_select", { service: e.target.value, location: "hero" }); }}>
-                      <option value="" disabled>¿Qué necesitas?</option>
-                      <option>Google Ads</option>
-                      <option>Meta Ads (Facebook / Instagram)</option>
-                      <option>TikTok Ads</option>
-                    </select>
-                    <button type="submit" disabled={sending}>{sending ? "Enviando…" : "Quiero mi diagnóstico"}</button>
-                  </div>
-                  <p className="form-note">Te respondemos el mismo día hábil. Tus datos están seguros con nosotros.</p>
-                </form>
-              )}
-              {/* Sellos de confianza: Partners oficiales (debajo del formulario) */}
-              <div className="hero-partners">
-                <img src="/landing-ga/google-partner.png" alt="Google Partner" />
-                <span className="hp-meta"><MetaLogo /><b>Business Partner</b></span>
-                <img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" />
+                <div className="dash-kpis">
+                  <div className="kpi"><div className="k">Inversión</div><div className="v">S/ 2,800</div></div>
+                  <div className="kpi"><div className="k">Ventas generadas</div><div className="v">S/ 45,150</div><span className="tag"><ChevUp />ROAS 16.1x</span></div>
+                  <div className="kpi"><div className="k">Leads</div><div className="v">460</div><span className="tag"><ChevUp />+52%</span></div>
+                  <div className="kpi"><div className="k">Costo por lead</div><div className="v">S/ 8</div><span className="tag"><ChevUp />-38%</span></div>
+                </div>
+                <div className="dash-chart">
+                  {BARS.map((h, i) => <div key={i} className="bar" style={{ height: `${h}%` }} />)}
+                </div>
+              </div>
+              <div className="dash-badges">
+                <div className="badge-float badge-gp"><img src="/landing-ga/google-partner.png" alt="Google Partner" /></div>
+                <div className="badge-float badge-meta"><MetaLogo /><span>Business<br />Partner</span></div>
+                <div className="badge-float badge-tt"><img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" /></div>
               </div>
             </div>
           </div>
@@ -585,7 +631,7 @@ export default function LandingClient() {
                 <div className="ok-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg></div>
                 <h3>¡Listo! Recibimos tu solicitud</h3>
                 <p>Se abrió WhatsApp con tus datos para enviarlos. Si no se abrió, toca el botón y dale enviar.</p>
-                <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_lead_confirm"><WaIcon /> Enviar mis datos por WhatsApp</a>
+                <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" data-wa-direct className="btn btn-wa" data-track="wa_lead_confirm"><WaIcon /> Enviar mis datos por WhatsApp</a>
               </div>
             ) : (
               <form className="lead-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
@@ -652,6 +698,35 @@ export default function LandingClient() {
       </footer>
 
       <a href={WA_INFO} target="_blank" rel="noopener" className="wa-float" aria-label="WhatsApp" data-track="wa_float"><WaIcon size={30} /></a>
+
+      {/* Captura PROPIA de WhatsApp (sin terceros): pide datos y los guarda en el panel */}
+      {waModal && (
+        <div className="wa-modal-ov" onClick={() => setWaModal(false)}>
+          <div className="wa-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="wa-modal-head">
+              <span className="wa-modal-ttl"><WaIcon size={20} /> Chatea con nosotros</span>
+              <button type="button" className="wa-modal-x" aria-label="Cerrar" onClick={() => setWaModal(false)}>×</button>
+            </div>
+            <p className="wa-modal-sub">Déjanos tus datos y seguimos por WhatsApp ahora mismo.</p>
+            <form onSubmit={handleWaCapture} className="wa-modal-form">
+              <input type="text" name="wa_nombre" placeholder="Tu nombre" required autoFocus />
+              <input type="tel" name="wa_celular" placeholder="Tu celular / WhatsApp" required />
+              <select name="wa_proyecto" defaultValue="" aria-label="¿Qué necesitas?">
+                <option value="" disabled>¿Qué necesitas?</option>
+                <option>Google Ads</option>
+                <option>Meta Ads (Facebook / Instagram)</option>
+                <option>TikTok Ads</option>
+                <option>Social Media / Community</option>
+                <option>No estoy seguro / asesoría</option>
+              </select>
+              <button type="submit" className="btn btn-wa" disabled={waSending}>
+                <WaIcon /> {waSending ? "Abriendo…" : "Iniciar chat"}
+              </button>
+            </form>
+            <span className="wa-modal-foot">Tus datos están seguros con nosotros.</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
