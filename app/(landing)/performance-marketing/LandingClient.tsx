@@ -185,6 +185,11 @@ export default function LandingClient() {
   const [servicio, setServicio] = useState("");
   const [waLeadUrl, setWaLeadUrl] = useState("");
   const formStarted = useRef(false);
+  // Captura PROPIA de WhatsApp (sin terceros): pide datos antes de abrir el chat.
+  const [waModal, setWaModal] = useState(false);
+  const [waNext, setWaNext] = useState("");
+  const [waSending, setWaSending] = useState(false);
+  const waDone = useRef(false);
 
   // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
   useEffect(() => {
@@ -203,6 +208,15 @@ export default function LandingClient() {
         track("whatsapp_click", { location: sec, label, link_url: href });
         // Conversión de Google Ads por clic a WhatsApp (si hay label configurado).
         adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { location: sec });
+        // Captura PROPIA: si el enlace NO trae ya los datos (data-wa-direct) y aún
+        // no capturamos en esta visita, interceptamos y pedimos nombre+celular.
+        if (!waDone.current && el.getAttribute("data-wa-direct") === null) {
+          e.preventDefault();
+          e.stopPropagation();
+          setWaNext(href);
+          setWaModal(true);
+          track("wa_capture_open", { location: sec });
+        }
       } else if (el.classList.contains("btn-primary") || el.getAttribute("data-cta") === "1") {
         track("cta_click", { location: sec, label });
       } else if (/^https?:\/\//.test(href) && !href.includes("3rcore.com")) {
@@ -246,6 +260,46 @@ export default function LandingClient() {
     if (formStarted.current) return;
     formStarted.current = true;
     track("form_start", { location: "contacto" });
+  };
+
+  // Captura PROPIA de WhatsApp: guarda el lead en el panel y abre el chat.
+  const handleWaCapture = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (waSending) return;
+    const d = new FormData(e.currentTarget);
+    const nombre = String(d.get("wa_nombre") || "").trim();
+    const celular = String(d.get("wa_celular") || "").trim();
+    const proyecto = String(d.get("wa_proyecto") || "").trim();
+    if (!nombre || !celular) return;
+    setWaSending(true);
+
+    const qs = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
+    const utm = ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"]
+      .map((k) => { const v = qs.get(k); return v ? `${k}=${v}` : null; }).filter(Boolean).join(" | ");
+
+    // Guarda en el PANEL propio (recursos propios, sin terceros) antes de abrir el chat.
+    try {
+      await fetch("/api/wa-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, celular, proyecto, origin: utm }),
+      });
+    } catch { /* aunque falle el guardado, igual abrimos el chat */ }
+
+    track("generate_lead", { form_location: "whatsapp-capture", service: proyecto || undefined });
+    adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { service: proyecto || undefined });
+
+    const waText = [
+      "Hola 3R Core 👋",
+      `Nombre: ${nombre}`,
+      `Celular: ${celular}`,
+      proyecto ? `Interés: ${proyecto}` : null,
+    ].filter(Boolean).join("\n");
+    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`;
+    waDone.current = true;
+    setWaSending(false);
+    setWaModal(false);
+    try { window.open(url, "_blank", "noopener"); } catch { window.location.href = url; }
   };
 
   const toggleMenu = (open: boolean) => {
@@ -577,7 +631,7 @@ export default function LandingClient() {
                 <div className="ok-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg></div>
                 <h3>¡Listo! Recibimos tu solicitud</h3>
                 <p>Se abrió WhatsApp con tus datos para enviarlos. Si no se abrió, toca el botón y dale enviar.</p>
-                <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_lead_confirm"><WaIcon /> Enviar mis datos por WhatsApp</a>
+                <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" data-wa-direct className="btn btn-wa" data-track="wa_lead_confirm"><WaIcon /> Enviar mis datos por WhatsApp</a>
               </div>
             ) : (
               <form className="lead-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
@@ -644,6 +698,35 @@ export default function LandingClient() {
       </footer>
 
       <a href={WA_INFO} target="_blank" rel="noopener" className="wa-float" aria-label="WhatsApp" data-track="wa_float"><WaIcon size={30} /></a>
+
+      {/* Captura PROPIA de WhatsApp (sin terceros): pide datos y los guarda en el panel */}
+      {waModal && (
+        <div className="wa-modal-ov" onClick={() => setWaModal(false)}>
+          <div className="wa-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="wa-modal-head">
+              <span className="wa-modal-ttl"><WaIcon size={20} /> Chatea con nosotros</span>
+              <button type="button" className="wa-modal-x" aria-label="Cerrar" onClick={() => setWaModal(false)}>×</button>
+            </div>
+            <p className="wa-modal-sub">Déjanos tus datos y seguimos por WhatsApp ahora mismo.</p>
+            <form onSubmit={handleWaCapture} className="wa-modal-form">
+              <input type="text" name="wa_nombre" placeholder="Tu nombre" required autoFocus />
+              <input type="tel" name="wa_celular" placeholder="Tu celular / WhatsApp" required />
+              <select name="wa_proyecto" defaultValue="" aria-label="¿Qué necesitas?">
+                <option value="" disabled>¿Qué necesitas?</option>
+                <option>Google Ads</option>
+                <option>Meta Ads (Facebook / Instagram)</option>
+                <option>TikTok Ads</option>
+                <option>Social Media / Community</option>
+                <option>No estoy seguro / asesoría</option>
+              </select>
+              <button type="submit" className="btn btn-wa" disabled={waSending}>
+                <WaIcon /> {waSending ? "Abriendo…" : "Iniciar chat"}
+              </button>
+            </form>
+            <span className="wa-modal-foot">Tus datos están seguros con nosotros.</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
