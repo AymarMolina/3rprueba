@@ -2,13 +2,31 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// Empuja un evento al dataLayer (lo consume Google Tag Manager → GA4 / Google Ads).
+type GtagWindow = Window & {
+  dataLayer?: unknown[];
+  gtag?: (...args: unknown[]) => void;
+};
+
+// ID de la cuenta de Google Ads (ya cargada por gtag en el layout).
+const ADS_ID = "AW-17933910865";
+
+// Mide TODO: cada evento va al dataLayer (GTM) Y a GA4 directo vía gtag, para
+// que se registre aunque GTM no tenga los tags configurados.
 const track = (event: string, params: Record<string, unknown> = {}) => {
   if (typeof window === "undefined") return;
-  // @ts-expect-error dataLayer lo inyecta GTM
-  window.dataLayer = window.dataLayer || [];
-  // @ts-expect-error push del evento
-  window.dataLayer.push({ event, ...params });
+  const w = window as GtagWindow;
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ event, ...params });
+  if (typeof w.gtag === "function") w.gtag("event", event, params);
+};
+
+// Dispara una conversión de Google Ads (solo si existe el label de la acción).
+const adsConversion = (label?: string, extra: Record<string, unknown> = {}) => {
+  if (typeof window === "undefined" || !label) return;
+  const w = window as GtagWindow;
+  if (typeof w.gtag === "function") {
+    w.gtag("event", "conversion", { send_to: `${ADS_ID}/${label}`, value: 1, currency: "PEN", ...extra });
+  }
 };
 
 const WA_NUMBER = "51969791251";
@@ -32,9 +50,6 @@ const CheckRow = () => (
 );
 const CrossRow = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12" /></svg>
-);
-const ChevUp = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M18 15l-6-6-6 6" /></svg>
 );
 const GoogleG = ({ s = 18 }: { s?: number }) => (
   <svg width={s} height={s} viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" /><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z" /><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z" /><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z" /></svg>
@@ -157,7 +172,6 @@ const LOGOS = [
   ["domus.webp", "domus"],
 ];
 
-const BARS = [41, 54, 45, 71, 63, 85, 76, 100];
 
 export default function LandingClient() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -183,6 +197,8 @@ export default function LandingClient() {
       const href = el.getAttribute("href") || "";
       if (href.includes("wa.me") || href.includes("api.whatsapp")) {
         track("whatsapp_click", { location: sec, label, link_url: href });
+        // Conversión de Google Ads por clic a WhatsApp (si hay label configurado).
+        adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { location: sec });
       } else if (el.classList.contains("btn-primary") || el.getAttribute("data-cta") === "1") {
         track("cta_click", { location: sec, label });
       } else if (/^https?:\/\//.test(href) && !href.includes("3rcore.com")) {
@@ -290,6 +306,14 @@ export default function LandingClient() {
       delivered,
     });
     if (!delivered) track("lead_send_error", { form_location: "performance-marketing", service: necesidad });
+
+    // ── Conversión a Google Ads (arregla "Conversiones 0.00" en la cuenta) ──
+    // Apenas el cliente cree la acción de conversión en Google Ads y ponga su
+    // label en NEXT_PUBLIC_ADS_CONVERSION_LABEL (Vercel), cada envío del form
+    // cuenta como conversión y la campaña optimiza hacia compradores reales.
+    // (El evento generate_lead ya llegó a GA4/dataLayer vía track()).
+    adsConversion(process.env.NEXT_PUBLIC_ADS_CONVERSION_LABEL, { service: necesidad });
+
     setSending(false);
     setSent(true);
   };
@@ -334,30 +358,42 @@ export default function LandingClient() {
               </div>
             </div>
 
-            {/* dashboard mockup */}
-            <div className="dash-wrap" aria-hidden="true">
-              <div className="dash">
-                <div className="dash-head">
-                  <span className="dash-conv"><GoogleG s={18} /><span className="t">Conversiones <b>+67%</b></span></span>
-                  <div className="dash-camp">
-                    <div className="c">CAMPAÑA Google Ads Search</div>
-                    <span className="live">En vivo</span>
+            {/* Formulario PRINCIPAL en el hero — captura el lead arriba, sin scroll */}
+            <div className="hero-form-wrap" id="form-hero">
+              {sent ? (
+                <div className="lead-form hero-form form-ok">
+                  <div className="ok-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg></div>
+                  <h3>¡Listo! Recibimos tu solicitud</h3>
+                  <p>Se abrió WhatsApp con tus datos para enviarlos. Si no se abrió, toca el botón y dale enviar.</p>
+                  <a href={waLeadUrl || WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="wa_lead_confirm_hero"><WaIcon /> Enviar mis datos por WhatsApp</a>
+                </div>
+              ) : (
+                <form className="lead-form hero-form" onSubmit={handleSubmit} onFocusCapture={onFormFocus}>
+                  <div className="hero-form-head">
+                    <h3>Pide tu diagnóstico <span className="grad-text">gratis</span></h3>
+                    <p>Déjanos tus datos y te escribimos hoy mismo por WhatsApp.</p>
                   </div>
-                </div>
-                <div className="dash-kpis">
-                  <div className="kpi"><div className="k">Inversión</div><div className="v">S/ 2,800</div></div>
-                  <div className="kpi"><div className="k">Ventas generadas</div><div className="v">S/ 45,150</div><span className="tag"><ChevUp />ROAS 16.1x</span></div>
-                  <div className="kpi"><div className="k">Leads</div><div className="v">460</div><span className="tag"><ChevUp />+52%</span></div>
-                  <div className="kpi"><div className="k">Costo por lead</div><div className="v">S/ 8</div><span className="tag"><ChevUp />-38%</span></div>
-                </div>
-                <div className="dash-chart">
-                  {BARS.map((h, i) => <div key={i} className="bar" style={{ height: `${h}%` }} />)}
-                </div>
-              </div>
-              <div className="dash-badges">
-                <div className="badge-float badge-gp"><img src="/landing-ga/google-partner.png" alt="Google Partner" /></div>
-                <div className="badge-float badge-meta"><MetaLogo /><span>Business<br />Partner</span></div>
-                <div className="badge-float badge-tt"><img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" /></div>
+                  <div className="row">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required />
+                    <input type="text" name="empresa" placeholder="Empresa" />
+                    <input type="tel" name="celular" placeholder="Celular / WhatsApp" required />
+                    <input type="email" name="correo" placeholder="Correo electrónico" required />
+                    <select name="necesidad" aria-label="¿Qué necesitas?" required defaultValue="" onChange={(e) => { setServicio(e.target.value); track("form_service_select", { service: e.target.value, location: "hero" }); }}>
+                      <option value="" disabled>¿Qué necesitas?</option>
+                      <option>Google Ads</option>
+                      <option>Meta Ads (Facebook / Instagram)</option>
+                      <option>TikTok Ads</option>
+                    </select>
+                    <button type="submit" disabled={sending}>{sending ? "Enviando…" : "Quiero mi diagnóstico"}</button>
+                  </div>
+                  <p className="form-note">Te respondemos el mismo día hábil. Tus datos están seguros con nosotros.</p>
+                </form>
+              )}
+              {/* Sellos de confianza: Partners oficiales (debajo del formulario) */}
+              <div className="hero-partners">
+                <img src="/landing-ga/google-partner.png" alt="Google Partner" />
+                <span className="hp-meta"><MetaLogo /><b>Business Partner</b></span>
+                <img src="/landing-ga/tiktok-partner.png" alt="TikTok Marketing Partner" />
               </div>
             </div>
           </div>
