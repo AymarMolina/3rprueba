@@ -13,12 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/agencia-redes-sociales-lima', priority: 0.92, changeFrequency: 'weekly' as const },
     { path: '/agencia-branding-lima', priority: 0.92, changeFrequency: 'weekly' as const },
     { path: '/precios', priority: 0.9, changeFrequency: 'weekly' as const },
-    { path: '/posicionamiento-seo', priority: 0.9, changeFrequency: 'monthly' as const },
-    { path: '/servicios', priority: 0.9, changeFrequency: 'monthly' as const },
-    { path: '/servicios/branding', priority: 0.8, changeFrequency: 'monthly' as const },
-    { path: '/servicios/socialmedia', priority: 0.8, changeFrequency: 'monthly' as const },
-    { path: '/servicios/google-ads', priority: 0.8, changeFrequency: 'monthly' as const },
-    { path: '/servicios/web-development', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Hub de servicios (categoría). Las subpáginas /servicios/* y
+    // /posicionamiento-seo se consolidaron por 301 hacia las money pages
+    // /agencia-*-lima (ver next.config.ts) para eliminar canibalización, por eso
+    // ya NO se listan aquí. (2026-07-01)
+    { path: '/servicios', priority: 0.7, changeFrequency: 'monthly' as const },
     { path: '/nosotros', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/blogs', priority: 0.7, changeFrequency: 'daily' as const },
     { path: '/preguntas', priority: 0.6, changeFrequency: 'monthly' as const },

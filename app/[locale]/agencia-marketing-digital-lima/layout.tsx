@@ -37,11 +37,11 @@ export default async function LimaLandingLayout({ children, params }: { children
   const itemList = buildServiceItemList({
     locale,
     items: [
-      { name: isEn ? 'Branding & Visual Identity in Lima' : 'Branding e Identidad de Marca en Lima', path: '/servicios/branding', description: isEn ? 'Logo, brand manual and corporate identity from $500 USD for US clients.' : 'Logotipo, manual de marca e identidad corporativa desde S/500.' },
-      { name: isEn ? 'Social Media Management in Lima' : 'Manejo de Redes Sociales en Lima', path: '/servicios/socialmedia', description: isEn ? 'Content strategy and community management for Instagram, TikTok, Facebook and LinkedIn from $800/month for US clients.' : 'Estrategia y community management para Instagram, TikTok, Facebook y LinkedIn desde S/1,500/mes.' },
-      { name: isEn ? 'Google Ads in Lima' : 'Google Ads en Lima', path: '/servicios/google-ads', description: isEn ? 'Search, Performance Max, YouTube, Display and Shopping campaigns. Management fee from $800/month for US clients.' : 'Campañas Search, Performance Max, YouTube, Display y Shopping. Fee de gestión desde S/1,800/mes.' },
-      { name: isEn ? 'SEO Lima' : 'SEO en Lima', path: '/posicionamiento-seo', description: isEn ? 'Organic SEO positioning on Google from $500/month for US clients.' : 'Posicionamiento orgánico en Google desde S/1,800/mes.' },
-      { name: isEn ? 'Web Design Lima' : 'Diseño Web Lima', path: '/servicios/web-development', description: isEn ? 'Landing pages, corporate sites and e-commerce on Shopify, WooCommerce or custom Next.js.' : 'Landing pages, sitios corporativos y e-commerce en Shopify, WooCommerce o Next.js a medida.' },
+      { name: isEn ? 'Branding & Visual Identity in Lima' : 'Branding e Identidad de Marca en Lima', path: '/agencia-branding-lima', description: isEn ? 'Logo, brand manual and corporate identity from $500 USD for US clients.' : 'Logotipo, manual de marca e identidad corporativa desde S/500.' },
+      { name: isEn ? 'Social Media Management in Lima' : 'Manejo de Redes Sociales en Lima', path: '/agencia-redes-sociales-lima', description: isEn ? 'Content strategy and community management for Instagram, TikTok, Facebook and LinkedIn from $800/month for US clients.' : 'Estrategia y community management para Instagram, TikTok, Facebook y LinkedIn desde S/1,500/mes.' },
+      { name: isEn ? 'Google Ads in Lima' : 'Google Ads en Lima', path: '/agencia-google-ads-lima', description: isEn ? 'Search, Performance Max, YouTube, Display and Shopping campaigns. Management fee from $800/month for US clients.' : 'Campañas Search, Performance Max, YouTube, Display y Shopping. Fee de gestión desde S/1,800/mes.' },
+      { name: isEn ? 'SEO Lima' : 'SEO en Lima', path: '/agencia-seo-lima', description: isEn ? 'Organic SEO positioning on Google from $500/month for US clients.' : 'Posicionamiento orgánico en Google desde S/1,800/mes.' },
+      { name: isEn ? 'Web Design Lima' : 'Diseño Web Lima', path: '/diseno-web-lima', description: isEn ? 'Landing pages, corporate sites and e-commerce on Shopify, WooCommerce or custom Next.js.' : 'Landing pages, sitios corporativos y e-commerce en Shopify, WooCommerce o Next.js a medida.' },
     ],
   })
 
