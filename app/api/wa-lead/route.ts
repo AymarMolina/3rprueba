@@ -9,12 +9,15 @@ export const dynamic = 'force-dynamic';
 // El token del panel queda en el servidor, no se expone en el navegador.
 export async function POST(request: Request) {
   try {
-    const { nombre, celular, proyecto, origin } = await request.json();
+    const { nombre, celular, proyecto, origin, gclid } = await request.json();
     if (!nombre || !celular) {
       return NextResponse.json({ ok: false, error: 'name_and_phone_required' }, { status: 400 });
     }
+    // El GCLID va en su propia línea para poder exportar conversiones offline a
+    // Google Ads (subir gclid + fecha/hora de conversión cuando el lead cierre).
     const mensaje = [
       proyecto ? `Servicio: ${proyecto}` : null,
+      gclid ? `GCLID: ${gclid}` : null,
       origin ? `Origen: ${origin}` : null,
     ].filter(Boolean).join('\n');
 
