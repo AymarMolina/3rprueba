@@ -38,6 +38,49 @@ const waLink = (servicio?: string) =>
   )}`;
 const WA_INFO = waLink();
 const LOGO = "/landing-ga/logo-3rcore.png";
+
+// ===== Captura de GCLID (Google Ads) y demás IDs de clic =====
+// Google auto-etiqueta el anuncio con ?gclid=... (o gbraid/wbraid en iOS). Ese ID
+// es lo que Google necesita de vuelta para atribuir la conversión. Como el lead
+// suele cerrarse por WhatsApp (offline), guardamos el gclid en cookie + localStorage
+// apenas cae el visitante, para que siga disponible aunque navegue y el gclid ya no
+// esté en la URL, y viaje pegado a cada lead que mandamos al panel/CRM.
+const CLICK_KEYS = ["gclid", "gbraid", "wbraid", "fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+const CLICK_STORE = "_3r_click";
+
+const captureClickData = () => {
+  if (typeof window === "undefined") return;
+  try {
+    const qs = new URLSearchParams(window.location.search);
+    const fresh: Record<string, string> = {};
+    for (const k of CLICK_KEYS) { const v = qs.get(k); if (v) fresh[k] = v; }
+    if (!Object.keys(fresh).length) return; // no sobrescribir con visita sin parámetros
+    const json = JSON.stringify({ ...fresh, ts: Date.now(), landing: window.location.pathname });
+    try { localStorage.setItem(CLICK_STORE, json); } catch { /* ignore */ }
+    // Cookie propia 90 días (ventana de conversión de Google Ads).
+    document.cookie = `${CLICK_STORE}=${encodeURIComponent(json)};path=/;max-age=${90 * 24 * 60 * 60};SameSite=Lax`;
+  } catch { /* ignore */ }
+};
+
+// Devuelve los IDs de clic: primero de la URL actual; si no están, de lo persistido.
+const getClickData = (): Record<string, string> => {
+  const out: Record<string, string> = {};
+  if (typeof window === "undefined") return out;
+  try {
+    const qs = new URLSearchParams(window.location.search);
+    for (const k of CLICK_KEYS) { const v = qs.get(k); if (v) out[k] = v; }
+    if (out.gclid || out.gbraid || out.wbraid) return out; // la URL manda si trae click id
+    const raw = localStorage.getItem(CLICK_STORE);
+    if (raw) { const s = JSON.parse(raw) as Record<string, string>; for (const k of CLICK_KEYS) if (s[k] && !out[k]) out[k] = s[k]; }
+  } catch { /* ignore */ }
+  return out;
+};
+
+// Arma el string "gclid=… | utm_source=…" que viaja al panel/CRM y a los eventos.
+const clickOriginString = () => {
+  const d = getClickData();
+  return CLICK_KEYS.map((k) => (d[k] ? `${k}=${d[k]}` : null)).filter(Boolean).join(" | ");
+};
 const BARS = [41, 54, 45, 71, 63, 85, 76, 100];
 
 const ArrowIcon = () => (
@@ -193,6 +236,9 @@ export default function LandingClient() {
 
   // ===== Medición total: cada click, WhatsApp, scroll y sección vista =====
   useEffect(() => {
+    // Guarda el gclid/gbraid/wbraid+utm de la URL apenas carga la landing.
+    captureClickData();
+
     const root = document.querySelector(".ga");
     if (!root) return;
 
@@ -273,20 +319,21 @@ export default function LandingClient() {
     if (!nombre || !celular) return;
     setWaSending(true);
 
-    const qs = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
-    const utm = ["utm_source", "utm_medium", "utm_campaign", "gclid", "fbclid"]
-      .map((k) => { const v = qs.get(k); return v ? `${k}=${v}` : null; }).filter(Boolean).join(" | ");
+    // Origen persistido (incluye gclid aunque el usuario ya haya navegado).
+    const click = getClickData();
+    const utm = clickOriginString();
+    const gclid = click.gclid || click.gbraid || click.wbraid || "";
 
     // Guarda en el PANEL propio (recursos propios, sin terceros) antes de abrir el chat.
     try {
       await fetch("/api/wa-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nombre, celular, proyecto, origin: utm }),
+        body: JSON.stringify({ nombre, celular, proyecto, origin: utm, gclid }),
       });
     } catch { /* aunque falle el guardado, igual abrimos el chat */ }
 
-    track("generate_lead", { form_location: "whatsapp-capture", service: proyecto || undefined });
+    track("generate_lead", { form_location: "whatsapp-capture", service: proyecto || undefined, gclid: gclid || undefined });
     adsConversion(process.env.NEXT_PUBLIC_ADS_WA_LABEL, { service: proyecto || undefined });
 
     const waText = [
@@ -317,14 +364,15 @@ export default function LandingClient() {
     const celular = String(d.get("celular") || "");
     const correo = String(d.get("correo") || "");
     const necesidad = String(d.get("necesidad") || "");
-    // Captura de origen para el panel/CRM (toda la data posible para mejorar la landing)
-    const qs = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
-    const utm = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"]
-      .map((k) => { const v = qs.get(k); return v ? `${k}=${v}` : null; })
-      .filter(Boolean).join(" | ");
+    // Captura de origen para el panel/CRM (gclid persistido + utm) para poder
+    // importar la conversión offline a Google Ads cuando el lead cierre.
+    const click = getClickData();
+    const utm = clickOriginString();
+    const gclid = click.gclid || click.gbraid || click.wbraid || "";
     const ref = typeof document !== "undefined" ? document.referrer : "";
     const mensaje = [
       `Servicio: ${necesidad}`,
+      gclid ? `GCLID: ${gclid}` : null,
       utm ? `Origen: ${utm}` : null,
       ref ? `Referente: ${ref}` : null,
     ].filter(Boolean).join("\n");
@@ -351,7 +399,7 @@ export default function LandingClient() {
       const r = await fetch("/api/landing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje, website: "Landing /performance-marketing", servicio: necesidad, utm, referrer: ref }),
+        body: JSON.stringify({ nombre, apellido: empresa || "-", email: correo, telefono: celular, mensaje, website: "Landing /performance-marketing", servicio: necesidad, utm, gclid, referrer: ref }),
       });
       delivered = r.ok;
     } catch { /* still confirm to user */ }
@@ -361,6 +409,7 @@ export default function LandingClient() {
       service: necesidad,
       company: empresa || undefined,
       utm: utm || undefined,
+      gclid: gclid || undefined,
       delivered,
     });
     if (!delivered) track("lead_send_error", { form_location: "performance-marketing", service: necesidad });
@@ -387,13 +436,13 @@ export default function LandingClient() {
           </nav>
           <div className="nav-cta">
             <a href="#proceso" className="btn btn-ghost">Cómo trabajamos</a>
-            <a href="#contacto" className="btn btn-primary" data-track="header_diagnostico_gratis">Diagnóstico gratis</a>
+            <a href={WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="header_whatsapp"><WaIcon size={16} /> Escríbenos al WhatsApp</a>
             <button type="button" className="hamburger" aria-label="Menú" onClick={() => toggleMenu(!menuOpen)}><span /><span /><span /></button>
           </div>
         </div>
         <div className={`mobile-menu${menuOpen ? " open" : ""}`}>
           {NAV.map(([href, label]) => <a key={href} href={href} onClick={() => toggleMenu(false)}>{label}</a>)}
-          <a href="#contacto" className="btn btn-primary" onClick={() => toggleMenu(false)}>Diagnóstico gratis</a>
+          <a href={WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="menu_whatsapp" onClick={() => toggleMenu(false)}><WaIcon size={16} /> Escríbenos al WhatsApp</a>
         </div>
       </header>
 
@@ -406,8 +455,8 @@ export default function LandingClient() {
               <h1>Más clientes,<br /><span className="grad-text">menos presupuesto quemado.</span></h1>
               <p className="hero-sub">Diseñamos y ejecutamos campañas de Google Ads, Meta Ads y redes sociales con una sola obsesión: que cada sol que inviertes regrese convertido en ventas.</p>
               <div className="hero-cta">
-                <a href="#contacto" className="btn btn-primary" data-track="hero_quiero_mas_clientes">Quiero más clientes <ArrowIcon /></a>
-                <a href="#proceso" className="btn btn-ghost">Ver cómo trabajamos</a>
+                <a href={WA_INFO} target="_blank" rel="noopener" className="btn btn-wa" data-track="hero_whatsapp"><WaIcon size={18} /> Escríbenos al WhatsApp</a>
+                <a href="#contacto" className="btn btn-ghost" data-track="hero_diagnostico_form">Pide tu diagnóstico <ArrowIcon /></a>
               </div>
               <div className="hero-stats">
                 <div><div className="num grad-text">+120</div><div className="lbl">Marcas escaladas</div></div>
