@@ -1,0 +1,58 @@
+import type { Metadata } from "next"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
+import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { getMessages } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
+  const { locale } = await params
+  return generatePageMetadata({
+    locale,
+    path: '/servicios/performance-marketing',
+    titleEs: "Performance Marketing en Lima, Perú — Adquisición con ROI | 3R Core",
+    titleEn: "Performance Marketing in Lima, Peru — ROI-driven Acquisition | 3R Core",
+    descriptionEs: "Agencia de performance marketing en Lima, Perú: adquisición multicanal (Google, Meta, TikTok), medición end-to-end, CRO y optimización por CAC y ROAS. Crece con datos, no con corazonadas.",
+    descriptionEn: "Performance marketing agency in Lima, Peru: multichannel acquisition (Google, Meta, TikTok), end-to-end measurement, CRO and CAC/ROAS optimization. Grow with data, not hunches.",
+  })
+}
+
+export default async function PerformanceMarketingLayout({ children, params }: { children: React.ReactNode; params: any }) {
+  const { locale } = await params
+  const messages = (await getMessages()) as any
+  const isEn = locale === 'en'
+  const faqMessages = messages?.PerformanceFAQ?.faqs ?? {}
+
+  const serviceSchema = buildServiceSchema({
+    locale,
+    path: '/servicios/performance-marketing',
+    nameEs: "Performance Marketing y Adquisición con ROI en Lima",
+    nameEn: "Performance Marketing and ROI Acquisition in Lima",
+    descriptionEs: "Estrategia de performance marketing multicanal para empresas en Lima y Perú: Google Ads, Meta Ads y TikTok Ads coordinados, medición end-to-end, optimización de la tasa de conversión (CRO) y gestión por CAC, ROAS y LTV.",
+    descriptionEn: "Multichannel performance marketing strategy for companies in Lima and Peru: coordinated Google Ads, Meta Ads and TikTok Ads, end-to-end measurement, conversion rate optimization (CRO) and management by CAC, ROAS and LTV.",
+    serviceType: "Performance Marketing / Growth / PPC",
+    priceRange: "S/2,500 - S/15,000",
+    offerPriceEs: 2500,
+    offerPriceEn: 700,
+    audienceTypes: ["E-commerce", "B2B", "SaaS", "Lead generation"],
+  })
+
+  const faqItems = Object.values(faqMessages).map((q: any) => ({
+    question: q.question,
+    answer: q.answer,
+  }))
+  const faqSchema = buildFAQPageSchema(faqItems)
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: isEn ? 'Services' : 'Servicios', path: '/servicios' }, { name: isEn ? "Performance Marketing" : "Performance Marketing", path: '/servicios/performance-marketing' }],
+    locale
+  )
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
+      />
+      {children}
+    </>
+  )
+}

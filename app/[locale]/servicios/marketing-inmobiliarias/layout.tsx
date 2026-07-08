@@ -1,0 +1,58 @@
+import type { Metadata } from "next"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
+import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { getMessages } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
+  const { locale } = await params
+  return generatePageMetadata({
+    locale,
+    path: '/servicios/marketing-inmobiliarias',
+    titleEs: "Marketing Digital para Inmobiliarias en Lima, Perú | 3R Core",
+    titleEn: "Digital Marketing for Real Estate in Lima, Peru | 3R Core",
+    descriptionEs: "Agencia de marketing digital para inmobiliarias y proyectos en Lima, Perú: Meta Ads y Google Ads para captar leads de departamentos, CRM y seguimiento por WhatsApp con costo por lead medible.",
+    descriptionEn: "Digital marketing agency for real estate developers in Lima, Peru: Meta Ads and Google Ads to capture apartment leads, CRM and WhatsApp follow-up with measurable cost per lead.",
+  })
+}
+
+export default async function MarketingInmobiliariasLayout({ children, params }: { children: React.ReactNode; params: any }) {
+  const { locale } = await params
+  const messages = (await getMessages()) as any
+  const isEn = locale === 'en'
+  const faqMessages = messages?.MarketingInmobiliariasFAQ?.faqs ?? {}
+
+  const serviceSchema = buildServiceSchema({
+    locale,
+    path: '/servicios/marketing-inmobiliarias',
+    nameEs: "Marketing Digital para Inmobiliarias en Lima",
+    nameEn: "Digital Marketing for Real Estate in Lima",
+    descriptionEs: "Marketing digital para inmobiliarias, desarrolladoras y proyectos en Lima y Perú: campañas de captación de leads en Meta Ads y Google Ads, landing pages de proyecto, integración con CRM y seguimiento por WhatsApp con costo por lead medible.",
+    descriptionEn: "Digital marketing for real estate developers and projects in Lima and Peru: lead generation campaigns on Meta Ads and Google Ads, project landing pages, CRM integration and WhatsApp follow-up with measurable cost per lead.",
+    serviceType: "Real Estate Marketing / Lead Generation",
+    priceRange: "S/3,000 - S/15,000",
+    offerPriceEs: 3000,
+    offerPriceEn: 850,
+    audienceTypes: ["Real estate developers", "Brokers", "Property projects"],
+  })
+
+  const faqItems = Object.values(faqMessages).map((q: any) => ({
+    question: q.question,
+    answer: q.answer,
+  }))
+  const faqSchema = buildFAQPageSchema(faqItems)
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: isEn ? 'Services' : 'Servicios', path: '/servicios' }, { name: isEn ? "Real Estate Marketing" : "Marketing Inmobiliario", path: '/servicios/marketing-inmobiliarias' }],
+    locale
+  )
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
+      />
+      {children}
+    </>
+  )
+}

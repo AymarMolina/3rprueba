@@ -1,0 +1,58 @@
+import type { Metadata } from "next"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
+import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { getMessages } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
+  const { locale } = await params
+  return generatePageMetadata({
+    locale,
+    path: '/servicios/tiktok-ads',
+    titleEs: "Agencia de TikTok Ads en Lima, Perú — Campañas que venden | 3R Core",
+    titleEn: "TikTok Ads Agency in Lima, Peru — Campaigns that Sell | 3R Core",
+    descriptionEs: "Agencia de TikTok Ads en Lima, Perú: Spark Ads, video nativo, creadores UGC y segmentación para llegar a audiencias jóvenes con ROAS medible. Gestión desde S/1,500/mes.",
+    descriptionEn: "TikTok Ads agency in Lima, Peru: Spark Ads, native video, UGC creators and targeting to reach young audiences with measurable ROAS. Managed from $420/month.",
+  })
+}
+
+export default async function TikTokAdsLayout({ children, params }: { children: React.ReactNode; params: any }) {
+  const { locale } = await params
+  const messages = (await getMessages()) as any
+  const isEn = locale === 'en'
+  const faqMessages = messages?.TikTokAdsFAQ?.faqs ?? {}
+
+  const serviceSchema = buildServiceSchema({
+    locale,
+    path: '/servicios/tiktok-ads',
+    nameEs: "Agencia de TikTok Ads en Lima",
+    nameEn: "TikTok Ads Agency in Lima",
+    descriptionEs: "Estrategia y gestión de campañas en TikTok Ads para empresas en Lima y Perú: Spark Ads, video nativo, contenido UGC, retargeting y medición con el TikTok Pixel y reportes de ROAS.",
+    descriptionEn: "Strategy and management of TikTok Ads campaigns for companies in Lima and Peru: Spark Ads, native video, UGC content, retargeting and measurement with the TikTok Pixel and ROAS reports.",
+    serviceType: "TikTok Ads / Video Advertising",
+    priceRange: "S/1,500 - S/7,000",
+    offerPriceEs: 1500,
+    offerPriceEn: 420,
+    audienceTypes: ["E-commerce", "B2C", "Local business", "Consumer brands"],
+  })
+
+  const faqItems = Object.values(faqMessages).map((q: any) => ({
+    question: q.question,
+    answer: q.answer,
+  }))
+  const faqSchema = buildFAQPageSchema(faqItems)
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: isEn ? 'Services' : 'Servicios', path: '/servicios' }, { name: isEn ? "TikTok Ads" : "TikTok Ads", path: '/servicios/tiktok-ads' }],
+    locale
+  )
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
+      />
+      {children}
+    </>
+  )
+}
