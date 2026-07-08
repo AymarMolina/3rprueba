@@ -1,0 +1,58 @@
+import type { Metadata } from "next"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
+import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { getMessages } from "next-intl/server"
+
+export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
+  const { locale } = await params
+  return generatePageMetadata({
+    locale,
+    path: '/servicios/meta-ads',
+    titleEs: "Agencia de Meta Ads (Facebook e Instagram) en Lima, Perú | 3R Core",
+    titleEn: "Meta Ads Agency (Facebook & Instagram) in Lima, Peru | 3R Core",
+    descriptionEs: "Agencia de Meta Ads en Lima, Perú: campañas en Facebook e Instagram con segmentación avanzada, retargeting y creatividades que venden. Gestión con ROAS medible desde S/1,500/mes.",
+    descriptionEn: "Meta Ads agency in Lima, Peru: Facebook and Instagram campaigns with advanced targeting, retargeting and creatives that convert. Managed with measurable ROAS from $420/month.",
+  })
+}
+
+export default async function MetaAdsLayout({ children, params }: { children: React.ReactNode; params: any }) {
+  const { locale } = await params
+  const messages = (await getMessages()) as any
+  const isEn = locale === 'en'
+  const faqMessages = messages?.MetaAdsFAQ?.faqs ?? {}
+
+  const serviceSchema = buildServiceSchema({
+    locale,
+    path: '/servicios/meta-ads',
+    nameEs: "Agencia de Meta Ads (Facebook e Instagram) en Lima",
+    nameEn: "Meta Ads Agency (Facebook & Instagram) in Lima",
+    descriptionEs: "Diseño y gestión de campañas de Meta Ads en Facebook e Instagram para empresas en Lima y Perú: prospección, retargeting, catálogos, mensajes a WhatsApp y ROAS medible con reportes mensuales.",
+    descriptionEn: "Design and management of Meta Ads campaigns on Facebook and Instagram for companies in Lima and Peru: prospecting, retargeting, catalogs, WhatsApp click-to-message and measurable ROAS with monthly reports.",
+    serviceType: "Meta Ads / Facebook Ads / Instagram Ads",
+    priceRange: "S/1,500 - S/8,000",
+    offerPriceEs: 1500,
+    offerPriceEn: 420,
+    audienceTypes: ["E-commerce", "B2C", "Local business", "Lead generation"],
+  })
+
+  const faqItems = Object.values(faqMessages).map((q: any) => ({
+    question: q.question,
+    answer: q.answer,
+  }))
+  const faqSchema = buildFAQPageSchema(faqItems)
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: isEn ? 'Services' : 'Servicios', path: '/servicios' }, { name: isEn ? "Meta Ads" : "Meta Ads", path: '/servicios/meta-ads' }],
+    locale
+  )
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
+      />
+      {children}
+    </>
+  )
+}
