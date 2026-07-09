@@ -19,6 +19,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // ya NO se listan aquí. (2026-07-01)
     { path: '/servicios', priority: 0.7, changeFrequency: 'monthly' as const },
     { path: '/nosotros', priority: 0.8, changeFrequency: 'monthly' as const },
+    // Subpáginas de servicios de nicho (NO consolidadas por 301): son landings
+    // propias sin equivalente en las money pages /agencia-*-lima, por eso SÍ se
+    // listan aquí. (SEO CREA 2026-07-08)
+    { path: '/servicios/meta-ads', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/tiktok-ads', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/performance-marketing', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/email-marketing', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/marketing-clinicas', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/marketing-inmobiliarias', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/servicios/marketing-ecommerce', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/blogs', priority: 0.7, changeFrequency: 'daily' as const },
     { path: '/preguntas', priority: 0.6, changeFrequency: 'monthly' as const },
     { path: '/politicas', priority: 0.3, changeFrequency: 'yearly' as const },

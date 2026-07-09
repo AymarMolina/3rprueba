@@ -502,27 +502,27 @@ export default function HeroHome() {
 
       <div className="absolute top-25 left-5 lg:top-auto lg:bottom-5 2xl:bottom-20 lg:left-10 2xl:left-20 z-20 text-white pointer-events-none text-left lg:text-left">
 
-        <h1 className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63] 
+        <h2 className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
               bg-clip-text text-transparent font-semibold tracking-tighter leading-tight"
             style={{
               paintOrder: 'stroke fill'
             }}>
-              
+
             3R CORE
-        </h1>
+        </h2>
         
         <h2 className="text-xl md:text-4xl xl:text-5xl font-light">
             {t('agency2')}  <span className="italic font-serif">{t('d')}</span>
         </h2>
         
         <div className="relative">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63] 
+          <h2 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
                 bg-clip-text text-transparent font-semibold tracking-tighter leading-tight "
               style={{
                 paintOrder: 'stroke fill'
               }}>
               {t('marketing')}
-          </h1>
+          </h2>
         </div>
       </div>
 

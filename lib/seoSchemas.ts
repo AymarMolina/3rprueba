@@ -75,6 +75,35 @@ export function buildServiceSchema(p: ServiceSchemaParams) {
   }
 }
 
+interface SpeakableWebPageParams {
+  locale: string
+  path: string
+  nameEs: string
+  nameEn: string
+  cssSelector?: string[]
+}
+
+// WebPage node carrying a SpeakableSpecification so voice assistants / GEO
+// engines know which passages (H1 + intro) are best to read aloud.
+export function buildSpeakableWebPage(p: SpeakableWebPageParams) {
+  const isEn = p.locale === "en"
+  const url = `${BASE_URL}/${p.locale}${p.path}`
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    "url": url,
+    "name": isEn ? p.nameEn : p.nameEs,
+    "inLanguage": isEn ? "en" : "es",
+    "isPartOf": { "@id": `${BASE_URL}/#website` },
+    "about": { "@id": `${BASE_URL}/#organization` },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": p.cssSelector ?? ["h1", "h2"],
+    },
+  }
+}
+
 interface ItemListServiceParams {
   locale: string
   items: { name: string; path: string; description: string }[]

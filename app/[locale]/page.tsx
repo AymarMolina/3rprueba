@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server"
 import HomeClient from "./HomeClient"
-import { buildServiceItemList } from "@/lib/seoSchemas"
+import { buildServiceItemList, buildSpeakableWebPage } from "@/lib/seoSchemas"
 
 export default async function HomePage({ params }: { params: any }) {
   const { locale } = await params
@@ -38,11 +38,19 @@ export default async function HomePage({ params }: { params: any }) {
     ],
   })
 
+  const speakableSchema = buildSpeakableWebPage({
+    locale,
+    path: "",
+    nameEs: "3R Core — Agencia de Marketing Digital en Lima",
+    nameEn: "3R Core — Digital Marketing Agency in Lima",
+    cssSelector: ["h1", "h2"],
+  })
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([itemListSchema, speakableSchema]) }}
       />
       <h1 className="sr-only">{tH1("home")}</h1>
       <HomeClient />

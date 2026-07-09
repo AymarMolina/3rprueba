@@ -18,6 +18,13 @@
 - [Web Development](https://3rcore.com/es/servicios/web-development): Websites, e-commerce (Shopify/WooCommerce), landing pages, e-learning platforms
 - [Google Ads / SEM](https://3rcore.com/es/servicios/google-ads): Google Ads campaigns, search intent segmentation, budget optimization
 - [SEO Positioning](https://3rcore.com/es/posicionamiento-seo): Organic SEO, keyword strategy, content optimization, monthly reporting (from S/. 1500/month)
+- [Meta Ads (Facebook & Instagram)](https://3rcore.com/es/servicios/meta-ads): Facebook and Instagram advertising campaigns, audience targeting, creative and retargeting for Peru.
+- [TikTok Ads](https://3rcore.com/es/servicios/tiktok-ads): TikTok advertising campaigns, native creative and audience targeting to reach younger buyers.
+- [Performance Marketing](https://3rcore.com/es/servicios/performance-marketing): ROI/ROAS-focused acquisition across paid channels, funnels and measurement.
+- [Email Marketing](https://3rcore.com/es/servicios/email-marketing): email campaigns and automation, list segmentation and nurturing flows.
+- [Marketing for clinics](https://3rcore.com/es/servicios/marketing-clinicas): digital marketing for clinics and medical practices to fill their appointment agenda.
+- [Marketing for real estate](https://3rcore.com/es/servicios/marketing-inmobiliarias): lead generation for real estate developers and agencies.
+- [Marketing for e-commerce](https://3rcore.com/es/servicios/marketing-ecommerce): performance marketing to scale online stores and sales.
 
 ## Pages
 - [Home](https://3rcore.com/es): Agency overview and value proposition
@@ -32,6 +39,16 @@
 - [Services Overview](https://3rcore.com/es/servicios): Full catalog of digital marketing services
 - [FAQ](https://3rcore.com/es/preguntas): Frequently asked questions about services, timelines, and pricing
 - [Blog](https://3rcore.com/es/blogs): Articles on marketing, SEO, branding, and web development
+
+## Blog — guides on paid ads, SEO and marketing in Peru
+- [Meta Ads para pymes en Perú: primera campaña rentable](https://3rcore.com/es/blogs/meta-ads-pymes-peru-guia-primera-campana-rentable)
+- [Cuánto cuesta la publicidad en Facebook e Instagram en Perú (2026)](https://3rcore.com/es/blogs/cuanto-cuesta-publicidad-facebook-instagram-peru-2026)
+- [TikTok Ads en Perú 2026: guía completa para empezar a vender](https://3rcore.com/es/blogs/tiktok-ads-peru-2026-guia-completa-empezar-vender)
+- [Qué es el ROAS y cómo calcularlo en tu negocio](https://3rcore.com/es/blogs/que-es-roas-como-calcularlo-negocio-peru)
+- [Cómo construir un embudo de ventas rentable con ads (2026)](https://3rcore.com/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026)
+- [Marketing digital para clínicas y consultorios en Perú](https://3rcore.com/es/blogs/marketing-digital-clinicas-consultorios-peru-agenda)
+- [Marketing digital para inmobiliarias en Perú](https://3rcore.com/es/blogs/marketing-digital-inmobiliarias-peru-generar-leads-calidad)
+- [Marketing para e-commerce en Perú: escalar ventas con ads](https://3rcore.com/es/blogs/marketing-ecommerce-peru-estrategia-ads-escalar-ventas)
 
 ## Contact
 - Address: Calle Las Caobas 170, Ofic. 400, Urb El Remanso, La Molina, Lima 15024, Peru

@@ -140,6 +140,14 @@ export default async function RootLayout({
     },
     "telephone": "+51986889147",
     "email": "info@3rcore.com",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "RUC",
+      "name": "RUC",
+      "value": "20609008217"
+    },
+    "taxID": "20609008217",
+    "vatID": "20609008217",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -213,7 +221,18 @@ export default async function RootLayout({
       "Performance Marketing",
       "Pay-per-click Advertising",
       "Meta Ads",
+      "Facebook Ads",
+      "Instagram Ads",
       "TikTok Ads",
+      "TikTok Advertising",
+      "Email Marketing",
+      "Email Marketing Automation",
+      "Healthcare Marketing",
+      "Marketing for Clinics",
+      "Dental Marketing",
+      "Real Estate Marketing",
+      "Marketing for Real Estate",
+      "E-commerce Marketing",
       "Web Development",
       "Web Design",
       "UX/UI Design",
@@ -304,6 +323,69 @@ export default async function RootLayout({
             "price": locale === 'en' ? 450 : 1500,
             "priceCurrency": locale === 'en' ? "USD" : "PEN",
             "valueAddedTaxIncluded": false
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": locale === 'en' ? "Meta Ads (Facebook & Instagram)" : "Meta Ads (Facebook e Instagram)",
+            "url": `${BASE_URL}/${locale}/servicios/meta-ads`,
+            "serviceType": "Meta Ads / Facebook & Instagram Advertising"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "TikTok Ads",
+            "url": `${BASE_URL}/${locale}/servicios/tiktok-ads`,
+            "serviceType": "TikTok Advertising"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Performance Marketing",
+            "url": `${BASE_URL}/${locale}/servicios/performance-marketing`,
+            "serviceType": "Performance Marketing / ROI-ROAS"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Email Marketing",
+            "url": `${BASE_URL}/${locale}/servicios/email-marketing`,
+            "serviceType": "Email Marketing / Automation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": locale === 'en' ? "Marketing for Clinics" : "Marketing para Clínicas",
+            "url": `${BASE_URL}/${locale}/servicios/marketing-clinicas`,
+            "serviceType": "Healthcare Marketing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": locale === 'en' ? "Marketing for Real Estate" : "Marketing para Inmobiliarias",
+            "url": `${BASE_URL}/${locale}/servicios/marketing-inmobiliarias`,
+            "serviceType": "Real Estate Marketing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": locale === 'en' ? "Marketing for E-commerce" : "Marketing para E-commerce",
+            "url": `${BASE_URL}/${locale}/servicios/marketing-ecommerce`,
+            "serviceType": "E-commerce Marketing"
           }
         }
       ]

@@ -1382,4 +1382,1603 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Como emprendedor peruano en 2026, no necesitas el branding más caro: necesitas el branding correcto para tu momento. Si recién validas, no inviertas S/15,000 que perderás. Si ya facturas, no escatimes con un logo de S/300 que te limita. <strong>El nivel correcto, en el momento correcto, es lo que hace la diferencia</strong>.</p>
 <p>En 3R Core trabajamos con emprendedores y pymes peruanas con planes adaptados al momento del negocio. Si quieres una sesión de orientación gratuita sobre qué nivel de branding te conviene, <a href="/es#contacto">conversemos</a>. Conoce nuestro <a href="/es/servicios/branding">servicio de branding</a> y revisa la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios 2026</a>.</p>`,
   },
+
+  // ============ META ADS — 2 BLOGS ============
+  {
+    slug: "meta-ads-pymes-peru-guia-primera-campana-rentable",
+    title: "Meta Ads para pymes peruanas: guía paso a paso para tu primera campaña rentable",
+    focus_keyword: "meta ads para pymes peru",
+    meta_title: "Meta Ads para pymes en Perú 2026 — Guía paso a paso | 3R Core",
+    meta_description: "Guía práctica de Meta Ads para pymes peruanas: cómo configurar tu primera campaña de Facebook e Instagram, estructura, presupuesto en soles y errores que queman tu dinero.",
+    excerpt: "Todo lo que una pyme en Perú necesita para lanzar su primera campaña rentable en Facebook e Instagram: objetivo correcto, estructura de campaña, presupuesto en soles, creativos y medición.",
+    og_title: "Meta Ads para pymes peruanas — Guía paso a paso 2026",
+    og_description: "Cómo lanzar tu primera campaña rentable de Facebook e Instagram en Perú: estructura, presupuesto y creativos.",
+    featured_image: IMG("1611926653458-09294b3142bf"),
+    featured_image_alt: "Meta Ads para pymes en Perú - campañas de Facebook e Instagram",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> una pyme peruana puede lanzar una campaña rentable en <strong>Meta Ads (Facebook e Instagram)</strong> con un presupuesto desde <strong>S/600 al mes</strong>, siempre que elija el objetivo correcto, tenga un canal de cierre claro (WhatsApp o formulario) y mida bien. El error número uno no es el presupuesto bajo: es usar el botón "Promocionar publicación" en vez del Administrador de Anuncios. Esta guía te lleva paso a paso desde la cuenta hasta tu primera campaña optimizada.</p>
+
+<h2>Qué es Meta Ads y por qué le conviene a una pyme peruana</h2>
+<p>Meta Ads es la plataforma de publicidad de Facebook e Instagram. Para una pyme en Perú tiene tres ventajas difíciles de igualar: <strong>alcance masivo</strong> (la mayoría de peruanos usa al menos una de estas redes a diario), <strong>segmentación por intereses y comportamiento</strong>, y un <strong>costo de entrada bajo</strong> que permite probar sin arriesgar mucho. A diferencia de Google Ads, que capta a quien ya busca, Meta genera demanda mostrando tu oferta a gente que todavía no te conoce pero encaja con tu cliente ideal.</p>
+<p>La contraparte: Meta requiere <strong>buen creativo</strong>. En Google gana quien puja mejor por la palabra correcta; en Meta gana quien detiene el scroll. Por eso una pyme peruana necesita pensar primero en el mensaje y la imagen o video, y después en la configuración técnica.</p>
+
+<h2>Paso 1: Prepara tu cuenta antes de gastar un sol</h2>
+<p>Antes de crear campañas necesitas la base correcta, o vas a perder datos y dinero:</p>
+<ul>
+<li><strong>Administrador Comercial (Business Manager)</strong>: crea uno con el dominio de tu empresa, no uses tu perfil personal.</li>
+<li><strong>Cuenta publicitaria</strong> configurada en soles (PEN) y con tu método de pago validado.</li>
+<li><strong>Píxel de Meta instalado</strong> en tu web y verificado. Sin píxel, Meta optimiza a ciegas.</li>
+<li><strong>API de Conversiones</strong> si vendes online: complementa al píxel y recupera datos que el navegador bloquea.</li>
+<li><strong>Verificación del dominio</strong> para poder controlar tus eventos de conversión.</li>
+</ul>
+<p>Si vendes por WhatsApp (lo más común en pymes peruanas), asegúrate de tener un número de WhatsApp Business listo para responder rápido: el 70% de leads se pierde por respuesta lenta.</p>
+
+<h2>Paso 2: Elige el objetivo de campaña correcto</h2>
+<p>Meta te ofrece varios objetivos y aquí se cae la mayoría. Regla simple para pymes en Perú:</p>
+<table>
+<thead><tr><th>Si tu meta es...</th><th>Objetivo Meta</th><th>Para quién</th></tr></thead>
+<tbody>
+<tr><td>Recibir mensajes/consultas</td><td>Interacción → Mensajes (WhatsApp)</td><td>Servicios, negocios locales</td></tr>
+<tr><td>Captar datos de contacto</td><td>Clientes potenciales (Leads)</td><td>Inmobiliarias, clínicas, educación</td></tr>
+<tr><td>Vender en tu tienda online</td><td>Ventas (conversiones)</td><td>E-commerce con píxel activo</td></tr>
+<tr><td>Que te conozcan (marca nueva)</td><td>Reconocimiento / Alcance</td><td>Lanzamientos, marca sin historial</td></tr>
+</tbody>
+</table>
+<p>El 90% de pymes peruanas debería empezar con <strong>Mensajes a WhatsApp</strong> o <strong>Clientes potenciales</strong>, no con "Ventas", salvo que ya tengan un e-commerce funcionando con píxel maduro.</p>
+
+<h2>Paso 3: Estructura la campaña sin complicarte</h2>
+<p>Una estructura sana para empezar tiene <strong>1 campaña, 2 conjuntos de anuncios y 2 a 3 creativos por conjunto</strong>. No armes 10 conjuntos con S/20 cada uno: el algoritmo necesita al menos 50 conversiones semanales por conjunto para aprender, y con presupuesto disperso nunca lo logra.</p>
+<ul>
+<li><strong>Conjunto A</strong>: público por intereses relacionados a tu rubro (ej. "decoración del hogar", "emprendedores", "madres primerizas").</li>
+<li><strong>Conjunto B</strong>: público amplio (Advantage+) dejando que Meta encuentre a tu cliente. En 2026 el público amplio suele ganarle a la segmentación fina.</li>
+</ul>
+<p>Cuando ya tengas datos, agrega públicos <strong>lookalike</strong> a partir de quienes te escribieron o compraron.</p>
+
+<h2>Paso 4: Define presupuesto en soles con lógica</h2>
+<p>No preguntes "cuánto es lo mínimo"; pregunta "cuánto necesito para conseguir un aprendizaje válido". Guía práctica para Perú:</p>
+<ul>
+<li><strong>S/20 a S/30 diarios</strong> como piso para que un conjunto salga del modo aprendizaje.</li>
+<li><strong>S/600 a S/1,500 al mes</strong> para una pyme que recién arranca y quiere leads por WhatsApp.</li>
+<li><strong>S/1,500 a S/5,000 al mes</strong> para e-commerce que busca escalar ventas.</li>
+</ul>
+<p>La clave no es el monto sino el <strong>costo por resultado</strong>: si un lead te cuesta S/8 y cierras 1 de cada 5, cada cliente te cuesta S/40 en publicidad. Si ese cliente te deja S/300 de margen, escala sin miedo.</p>
+
+<h2>Paso 5: Crea creativos que detengan el scroll</h2>
+<p>El creativo es el 60% del resultado. Recomendaciones para el mercado peruano:</p>
+<ul>
+<li><strong>Video corto vertical (9:16)</strong> de 6 a 15 segundos supera casi siempre a la imagen estática.</li>
+<li><strong>Muestra el producto o servicio en uso real</strong>, con personas que se parezcan a tu cliente.</li>
+<li><strong>Primeros 3 segundos = gancho</strong>: precio, problema o beneficio directo.</li>
+<li><strong>Texto claro</strong> con llamada a la acción ("Escríbenos", "Cotiza hoy", "Envío a todo Lima").</li>
+<li>Prueba <strong>contenido tipo UGC</strong> (parece hecho por un cliente): rinde más que la foto de estudio perfecta.</li>
+</ul>
+
+<h2>Paso 6: Mide lo que importa y optimiza</h2>
+<p>Deja correr la campaña <strong>al menos 4 a 7 días</strong> antes de tocar nada; apagar anuncios el primer día es el error clásico. Luego revisa:</p>
+<ul>
+<li><strong>Costo por resultado</strong> (por mensaje, lead o venta).</li>
+<li><strong>CTR</strong>: por debajo de 1% en feed suele indicar creativo débil.</li>
+<li><strong>Frecuencia</strong>: si supera 3 en poco tiempo, tu público es chico o el anuncio se quemó.</li>
+</ul>
+<p>Recuerda que los datos de Meta y los de <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">Google Analytics 4</a> no siempre cuadran. Define una fuente de verdad para decidir y no te vuelvas loco cruzando plataformas.</p>
+
+<h2>Errores que queman el presupuesto de una pyme</h2>
+<ol>
+<li>Usar "Promocionar publicación" en vez del Administrador de Anuncios.</li>
+<li>Cambiar la campaña todos los días sin dejar que aprenda.</li>
+<li>Presupuesto tan bajo y disperso que nunca sale del modo aprendizaje.</li>
+<li>No responder rápido los mensajes de WhatsApp que generas.</li>
+<li>Un solo creativo: sin variantes no sabes qué funciona.</li>
+</ol>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto tarda en dar resultados una campaña de Meta Ads en Perú?</h3>
+<p>Las primeras señales aparecen en 3 a 7 días. Un rendimiento estable y optimizado suele lograrse entre la segunda y cuarta semana, cuando el algoritmo ya aprendió y tú ya probaste creativos.</p>
+<h3>¿Necesito web para hacer Meta Ads?</h3>
+<p>No es obligatorio si vendes por WhatsApp, pero una <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">página web o landing bien hecha</a> mejora la conversión y permite medir mejor con el píxel.</p>
+<h3>¿Meta Ads o TikTok Ads para mi pyme?</h3>
+<p>Depende del producto y del público. Lo vemos a fondo en nuestra <a href="/es/blogs/tiktok-ads-peru-2026-guia-completa-empezar-vender">guía de TikTok Ads en Perú</a>.</p>
+
+<h2>Cierre</h2>
+<p>Meta Ads es probablemente el canal con mejor relación costo-resultado para una pyme peruana que recién arranca, pero solo si respetas el método: base técnica lista, objetivo correcto, estructura simple, buen creativo y paciencia para dejar aprender al algoritmo. En 3R Core gestionamos campañas de <a href="/es/servicios/meta-ads">Meta Ads en Perú</a> con foco en resultados medibles. Si quieres que revisemos tu caso, <a href="/es#contacto">conversemos</a> y armamos un plan sin compromiso.</p>`,
+  },
+
+  {
+    slug: "cuanto-cuesta-publicidad-facebook-instagram-peru-2026",
+    title: "Cuánto cuesta hacer publicidad en Facebook e Instagram en Perú 2026: presupuestos reales",
+    focus_keyword: "cuanto cuesta publicidad facebook instagram peru",
+    meta_title: "Cuánto cuesta la publicidad en Facebook e Instagram en Perú 2026 | 3R Core",
+    meta_description: "Presupuestos reales de Meta Ads en Perú 2026: cuánto invertir por rubro, CPM y CPC promedio en soles, costo por lead y cómo saber si tu inversión es rentable.",
+    excerpt: "Cuánto cuesta realmente anunciar en Facebook e Instagram en Perú 2026: presupuestos por rubro, CPM y CPC en soles, costo por lead y cómo calcular si te conviene.",
+    og_title: "Cuánto cuesta la publicidad en Facebook e Instagram en Perú 2026",
+    og_description: "Presupuestos reales por rubro, CPM, CPC y costo por lead en soles. Cómo saber si tu inversión rinde.",
+    featured_image: IMG("1460925895917-afdab827c52f"),
+    featured_image_alt: "Costos de publicidad en Facebook e Instagram en Perú 2026",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> en 2026 anunciar en <strong>Facebook e Instagram (Meta Ads) en Perú</strong> tiene un piso práctico de <strong>S/600 al mes</strong> para pymes y rangos de <strong>S/1,500 a S/8,000</strong> según rubro y objetivo. El CPM (costo por mil impresiones) ronda <strong>S/8 a S/25</strong>, el CPC entre <strong>S/0.30 y S/1.50</strong>, y el costo por lead va de <strong>S/3 a S/40</strong> según industria. Lo que define tu costo real no es la plataforma: es la calidad de tu creativo, la segmentación y tu tasa de cierre.</p>
+
+<h2>Cómo funciona el costo en Meta Ads (para entender la factura)</h2>
+<p>No pagas un "precio fijo". Meta funciona por <strong>subasta</strong>: compites con otros anunciantes por mostrar tu anuncio a un mismo público. Tu costo depende de tres factores: cuánta gente quiere el mismo público, qué tan relevante es tu anuncio (buen creativo = costo más bajo) y el objetivo que elegiste. Por eso el mismo presupuesto rinde distinto en dos negocios: el que tiene mejor creativo paga menos por el mismo resultado.</p>
+
+<h2>CPM, CPC y CPL promedio en Perú 2026</h2>
+<table>
+<thead><tr><th>Métrica</th><th>Rango típico en Perú (PEN)</th><th>Qué significa</th></tr></thead>
+<tbody>
+<tr><td><strong>CPM</strong></td><td>S/8 – S/25</td><td>Costo por cada 1,000 impresiones</td></tr>
+<tr><td><strong>CPC</strong></td><td>S/0.30 – S/1.50</td><td>Costo por clic al anuncio</td></tr>
+<tr><td><strong>Costo por mensaje</strong></td><td>S/2 – S/12</td><td>Campañas de WhatsApp</td></tr>
+<tr><td><strong>Costo por lead (CPL)</strong></td><td>S/3 – S/40</td><td>Formulario o WhatsApp calificado</td></tr>
+</tbody>
+</table>
+<p>Los rangos bajos corresponden a rubros masivos (moda, comida, belleza) y los altos a rubros de ticket alto o competidos (inmobiliaria, salud, servicios profesionales).</p>
+
+<h2>Cuánto invertir según tu rubro</h2>
+<h3>Negocio local o de servicios (peluquería, restaurante, taller)</h3>
+<p>Piso de <strong>S/600 a S/1,200 al mes</strong>. El objetivo suele ser mensajes por WhatsApp o visitas. Con buen creativo, un mensaje calificado cuesta entre S/3 y S/10.</p>
+<h3>E-commerce</h3>
+<p><strong>S/1,500 a S/5,000 al mes</strong> para empezar a escalar. Aquí importa el ROAS: mira nuestra <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">guía de ROAS</a> para saber cuándo tu inversión es rentable.</p>
+<h3>Inmobiliaria, clínica o educación (ticket alto)</h3>
+<p><strong>S/2,000 a S/8,000 al mes</strong>. El CPL es más caro (S/15 a S/40) pero un solo cierre paga meses de inversión. Lo desarrollamos para inmobiliarias en <a href="/es/blogs/marketing-digital-inmobiliarias-peru-generar-leads-calidad">esta guía</a>.</p>
+
+<h2>Presupuesto de medios vs honorarios de gestión</h2>
+<p>Un error frecuente en Perú es confundir dos cosas:</p>
+<ul>
+<li><strong>Inversión en medios</strong>: lo que le pagas a Meta y va directo a mostrar anuncios.</li>
+<li><strong>Honorarios de gestión</strong>: lo que le pagas a la agencia o especialista por estrategia, creativos, configuración y optimización.</li>
+</ul>
+<p>Una agencia seria en Lima cobra honorarios de <strong>S/800 a S/3,000 mensuales</strong> según el alcance, aparte del presupuesto de medios. Desconfía de quien "gestiona gratis": termina saliendo caro en resultados perdidos.</p>
+
+<h2>Cómo saber si tu inversión es rentable</h2>
+<p>La pregunta correcta no es "cuánto cuesta", sino "cuánto me deja". Haz este cálculo simple:</p>
+<ol>
+<li>Define tu <strong>margen por venta</strong> (lo que ganas después de costos).</li>
+<li>Calcula tu <strong>costo por cliente</strong>: costo por lead dividido entre tu tasa de cierre.</li>
+<li>Si el margen supera con holgura el costo por cliente, <strong>escala</strong>.</li>
+</ol>
+<p>Ejemplo: si un lead cuesta S/8 y cierras 1 de cada 4, cada cliente te cuesta S/32 en Ads. Si ese cliente te deja S/250 de margen, cada sol invertido te devuelve varios: eso es un negocio para escalar, no para dudar.</p>
+
+<h2>Factores que suben o bajan tu costo</h2>
+<ul>
+<li><strong>Creativo</strong>: el factor que más mueve el costo. Video que engancha = CPM más bajo.</li>
+<li><strong>Segmentación</strong>: públicos muy chicos suben el costo; el público amplio con Advantage+ suele abaratar.</li>
+<li><strong>Temporada</strong>: Navidad, Black Friday y campañas escolares encarecen la subasta.</li>
+<li><strong>Tasa de respuesta</strong>: responder rápido baja tu costo real por cliente aunque no cambie el CPM.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuál es el presupuesto mínimo para empezar en Perú?</h3>
+<p>Técnicamente puedes empezar con S/20 diarios, pero para obtener aprendizajes válidos y resultados sostenidos, un piso realista es S/600 al mes en medios.</p>
+<h3>¿Por qué mi vecino paga menos por el mismo resultado?</h3>
+<p>Casi siempre por mejor creativo y mejor relevancia. Meta premia con menor costo a los anuncios que la gente quiere ver.</p>
+<h3>¿La publicidad en Instagram cuesta más que en Facebook?</h3>
+<p>Puede variar, pero en la práctica gestionas ambas desde Meta y el sistema reparte según dónde rinde mejor. Deja las ubicaciones automáticas al inicio.</p>
+
+<h2>Cierre</h2>
+<p>En 2026, hacer publicidad en Facebook e Instagram en Perú es accesible para cualquier pyme, pero rentable solo para quien mide y optimiza. Antes de mirar el precio, define tu margen y tu tasa de cierre: eso decide cuánto puedes y debes invertir. En 3R Core diseñamos y gestionamos campañas de <a href="/es/servicios/meta-ads">Meta Ads en Perú</a> con presupuestos ajustados a cada negocio. Si quieres una proyección realista para tu rubro, <a href="/es#contacto">escríbenos</a>. Y si recién empiezas, revisa nuestra <a href="/es/blogs/meta-ads-pymes-peru-guia-primera-campana-rentable">guía paso a paso de Meta Ads para pymes</a>.</p>`,
+  },
+
+  // ============ TIKTOK ADS — 2 BLOGS ============
+  {
+    slug: "tiktok-ads-peru-2026-guia-completa-empezar-vender",
+    title: "TikTok Ads en Perú 2026: guía completa para empezar a vender desde cero",
+    focus_keyword: "tiktok ads peru",
+    meta_title: "TikTok Ads en Perú 2026 — Guía completa para vender | 3R Core",
+    meta_description: "Guía completa de TikTok Ads en Perú 2026: cómo crear tu cuenta, elegir objetivo, armar creativos que venden, segmentar y medir. Ideal para negocios que empiezan.",
+    excerpt: "Cómo empezar a vender con TikTok Ads en Perú desde cero: cuenta Business, objetivos, creativos estilo nativo, segmentación, Spark Ads y medición con el píxel.",
+    og_title: "TikTok Ads en Perú 2026 — Guía completa para empezar",
+    og_description: "Desde crear la cuenta hasta medir ventas: la guía práctica de TikTok Ads para negocios peruanos.",
+    featured_image: IMG("1611605698335-8b1569810432"),
+    featured_image_alt: "TikTok Ads en Perú - guía para vender desde cero 2026",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>TikTok Ads</strong> es el canal de mayor crecimiento en Perú para captar público joven y generar demanda con video. Puedes empezar con un presupuesto desde <strong>S/700 al mes</strong>, pero la clave no es el dinero sino el creativo: en TikTok gana el contenido que <strong>parece contenido, no publicidad</strong>. Esta guía te lleva desde crear tu TikTok Ads Manager hasta lanzar y medir tu primera campaña rentable.</p>
+
+<h2>Por qué TikTok Ads en Perú 2026</h2>
+<p>TikTok dejó de ser "la app de bailes". En Perú concentra millones de usuarios activos que descubren productos y servicios a diario, con un formato de video vertical que impulsa la compra por impulso. Sus ventajas para un negocio peruano:</p>
+<ul>
+<li><strong>Alcance orgánico y pagado altos</strong>: un buen video llega lejos con poco presupuesto.</li>
+<li><strong>Costo de entrada competitivo</strong>: los CPM suelen ser más bajos que en Meta para público joven.</li>
+<li><strong>Formato nativo</strong>: el mismo video que subes orgánico puede convertirse en anuncio (Spark Ads).</li>
+</ul>
+<p>La contraparte: TikTok exige <strong>volumen y frescura de creativos</strong>. Un solo video no dura; necesitas producir seguido.</p>
+
+<h2>Paso 1: Crea tu cuenta TikTok Ads Manager</h2>
+<ul>
+<li>Registra una cuenta <strong>Business</strong> en TikTok Ads Manager con los datos de tu empresa.</li>
+<li>Configura tu <strong>método de pago</strong> y la moneda.</li>
+<li>Instala el <strong>Píxel de TikTok</strong> en tu web (o usa la <strong>Events API</strong> si vendes online) para medir conversiones.</li>
+<li>Vincula tu cuenta de TikTok orgánica para poder usar tus videos como Spark Ads.</li>
+</ul>
+
+<h2>Paso 2: Elige el objetivo correcto</h2>
+<table>
+<thead><tr><th>Objetivo</th><th>Cuándo usarlo</th></tr></thead>
+<tbody>
+<tr><td><strong>Alcance / Reproducciones</strong></td><td>Marca nueva que quiere darse a conocer</td></tr>
+<tr><td><strong>Tráfico</strong></td><td>Llevar gente a tu web o catálogo</td></tr>
+<tr><td><strong>Generación de leads</strong></td><td>Captar datos con formulario dentro de TikTok</td></tr>
+<tr><td><strong>Conversiones / Ventas</strong></td><td>E-commerce con píxel activo</td></tr>
+</tbody>
+</table>
+<p>Si recién empiezas y no tienes historial de píxel, arranca con <strong>Tráfico</strong> o <strong>Generación de leads</strong>; cuando acumules datos, pasa a <strong>Conversiones</strong>.</p>
+
+<h2>Paso 3: El creativo lo es todo</h2>
+<p>En TikTok el creativo pesa aún más que en Meta. Reglas para el mercado peruano:</p>
+<ul>
+<li><strong>Vertical 9:16, grabado con celular</strong>: la producción "demasiado perfecta" rinde peor.</li>
+<li><strong>Gancho en el primer segundo</strong>: pregunta, problema o resultado impactante.</li>
+<li><strong>Habla directo a cámara</strong>, con subtítulos y ritmo rápido.</li>
+<li><strong>Usa tendencias, audios populares y jerga local</strong> con naturalidad.</li>
+<li>Apuesta por <strong>UGC de creadores peruanos</strong>: parecen recomendaciones reales y convierten mejor.</li>
+</ul>
+
+<h2>Paso 4: Spark Ads, tu mejor aliado</h2>
+<p>Los <strong>Spark Ads</strong> te permiten pautar un video que ya publicaste (tuyo o de un creador con permiso). Ventaja: conserva likes, comentarios y prueba social, lo que aumenta la credibilidad y baja el costo. Estrategia recomendada: publica varios videos orgánicos, identifica el que mejor rinde y ponle presupuesto con Spark Ads.</p>
+
+<h2>Paso 5: Segmentación para Perú</h2>
+<p>TikTok segmenta por edad, ubicación (puedes filtrar por Lima o provincias), intereses y comportamientos. Consejo 2026: <strong>no cierres demasiado el público</strong>. El algoritmo de TikTok encuentra compradores rápido si le das buen creativo y un público amplio. Usa la segmentación fina solo cuando ya tengas datos.</p>
+
+<h2>Paso 6: Presupuesto y medición</h2>
+<ul>
+<li>Piso práctico: <strong>S/30 a S/50 diarios</strong> por grupo de anuncios para salir del aprendizaje.</li>
+<li><strong>S/700 a S/2,000 al mes</strong> para una pyme que arranca.</li>
+<li>Mide <strong>costo por resultado, CTR y tasa de reproducción</strong> (cuántos ven el video completo).</li>
+<li>Renueva creativos cada 1 a 2 semanas: la fatiga en TikTok llega rápido.</li>
+</ul>
+
+<h2>TikTok Ads vs Meta Ads: ¿cuál elegir?</h2>
+<p>No es excluyente. En general, TikTok brilla con público joven, productos visuales y compra por impulso; Meta ofrece más control y públicos de mayor edad. Muchos negocios peruanos corren ambos y comparan costo por resultado. Si dudas cómo repartir el presupuesto, mira nuestra <a href="/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026">guía de embudos con Ads</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Necesito aparecer yo en los videos?</h3>
+<p>No es obligatorio, pero el rostro humano rinde. Si no quieres salir, trabaja con creadores UGC peruanos o muestra el producto en uso con voz en off.</p>
+<h3>¿Cuánto tarda TikTok Ads en dar resultados?</h3>
+<p>Las primeras señales llegan en días, pero la clave está en iterar creativos durante 3 a 4 semanas hasta encontrar el ganador.</p>
+<h3>¿TikTok Ads sirve para negocios B2B en Perú?</h3>
+<p>Funciona mejor para consumo masivo, pero algunos servicios profesionales captan bien con contenido educativo. Prueba con presupuesto acotado antes de escalar.</p>
+
+<h2>Cierre</h2>
+<p>TikTok Ads en Perú 2026 es una de las mejores oportunidades para negocios que saben crear video nativo y no le temen a producir seguido. Empieza con base técnica lista, objetivo realista y creativos que parezcan contenido, no comercial. En 3R Core producimos y gestionamos campañas de <a href="/es/servicios/tiktok-ads">TikTok Ads en Perú</a> con foco en ventas. Si quieres arrancar bien, <a href="/es#contacto">conversemos</a>. Y para dimensionar la inversión, revisa <a href="/es/blogs/cuanto-cuesta-anunciar-tiktok-peru-cpm-cpa">cuánto cuesta anunciar en TikTok en Perú</a>.</p>`,
+  },
+
+  {
+    slug: "cuanto-cuesta-anunciar-tiktok-peru-cpm-cpa",
+    title: "Cuánto cuesta anunciar en TikTok en Perú: presupuestos, CPM y CPA reales",
+    focus_keyword: "cuanto cuesta anunciar en tiktok peru",
+    meta_title: "Cuánto cuesta anunciar en TikTok en Perú 2026 — CPM y CPA | 3R Core",
+    meta_description: "Presupuestos reales de TikTok Ads en Perú 2026: CPM, CPC y CPA en soles, cuánto invertir según tu objetivo y cómo saber si tu campaña es rentable.",
+    excerpt: "Cuánto cuesta realmente hacer TikTok Ads en Perú 2026: CPM, CPC y CPA en soles, presupuestos por objetivo y cómo calcular si te conviene invertir.",
+    og_title: "Cuánto cuesta anunciar en TikTok en Perú 2026",
+    og_description: "CPM, CPC y CPA reales en soles, presupuestos por objetivo y cómo medir rentabilidad.",
+    featured_image: IMG("1516251193007-45ef944ab0c6"),
+    featured_image_alt: "Costos de TikTok Ads en Perú - CPM y CPA 2026",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> anunciar en <strong>TikTok Ads en Perú</strong> en 2026 tiene un piso práctico de <strong>S/700 al mes</strong> en medios. El CPM suele ir de <strong>S/6 a S/20</strong> (a menudo más barato que Meta para público joven), el CPC entre <strong>S/0.20 y S/1.20</strong>, y el CPA (costo por adquisición) depende del rubro: de <strong>S/5 a S/45</strong>. El factor que más mueve tu costo es la frescura y calidad del creativo.</p>
+
+<h2>Cómo se cobra TikTok Ads</h2>
+<p>Igual que Meta, TikTok funciona por <strong>subasta</strong>. No hay tarifa fija: tu costo depende de la competencia por tu público, la relevancia de tu video y el objetivo elegido. La gran diferencia es que en TikTok un creativo que "engancha" abarata dramáticamente el costo, porque la plataforma premia el contenido que retiene atención.</p>
+
+<h2>CPM, CPC y CPA promedio en Perú 2026</h2>
+<table>
+<thead><tr><th>Métrica</th><th>Rango en Perú (PEN)</th><th>Qué mide</th></tr></thead>
+<tbody>
+<tr><td><strong>CPM</strong></td><td>S/6 – S/20</td><td>Costo por 1,000 impresiones</td></tr>
+<tr><td><strong>CPC</strong></td><td>S/0.20 – S/1.20</td><td>Costo por clic</td></tr>
+<tr><td><strong>Costo por lead</strong></td><td>S/4 – S/30</td><td>Formulario nativo</td></tr>
+<tr><td><strong>CPA (venta)</strong></td><td>S/5 – S/45</td><td>Costo por conversión/venta</td></tr>
+</tbody>
+</table>
+<p>Los valores bajos corresponden a productos visuales de consumo masivo (moda, belleza, snacks); los altos a servicios o tickets grandes.</p>
+
+<h2>Cuánto invertir según tu objetivo</h2>
+<ul>
+<li><strong>Dar a conocer una marca nueva</strong>: S/700 a S/1,500/mes en alcance y reproducciones.</li>
+<li><strong>Generar leads</strong>: S/1,000 a S/3,000/mes con formularios nativos.</li>
+<li><strong>Vender en e-commerce</strong>: S/1,500 a S/6,000/mes optimizando a conversiones y controlando el <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">ROAS</a>.</li>
+</ul>
+
+<h2>Presupuesto de medios vs producción de creativos</h2>
+<p>En TikTok hay un costo que Meta exige menos: <strong>producción de video</strong>. Como necesitas renovar creativos seguido, contempla:</p>
+<ul>
+<li><strong>Producción propia con celular</strong>: costo casi cero, ideal para empezar.</li>
+<li><strong>Creadores UGC peruanos</strong>: S/150 a S/600 por video según el perfil.</li>
+<li><strong>Gestión de campaña</strong> (agencia o especialista): S/800 a S/3,000/mes aparte del medio.</li>
+</ul>
+
+<h2>Cómo saber si tu campaña es rentable</h2>
+<p>Aplica la misma lógica que en cualquier canal de <a href="/es/servicios/performance-marketing">performance marketing</a>:</p>
+<ol>
+<li>Calcula tu <strong>margen por venta</strong>.</li>
+<li>Calcula tu <strong>costo por cliente</strong> = CPA dividido tasa de cierre (si el lead requiere cierre manual).</li>
+<li>Si el margen supera el costo por cliente con holgura, <strong>escala el creativo ganador</strong>.</li>
+</ol>
+<p>Ejemplo: un producto de S/120 con S/60 de margen y CPA de S/18 deja S/42 por venta. Rentable y escalable.</p>
+
+<h2>Qué encarece o abarata tu TikTok Ads</h2>
+<ul>
+<li><strong>Creativo fresco y nativo</strong>: baja el CPM.</li>
+<li><strong>Fatiga de creativo</strong>: si no renuevas, el costo sube semana a semana.</li>
+<li><strong>Público demasiado cerrado</strong>: encarece; el público amplio suele rendir mejor.</li>
+<li><strong>Temporadas altas</strong> (fin de año, campañas escolares): más competencia, más costo.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿TikTok es más barato que Meta en Perú?</h3>
+<p>En CPM para público joven suele serlo, pero el costo por venta depende de tu creativo y tu producto. Compara con datos propios, no con promedios.</p>
+<h3>¿Cuál es el presupuesto mínimo para probar?</h3>
+<p>Puedes probar con S/30 diarios, pero para obtener aprendizajes válidos apunta a S/700 al mes y varios creativos.</p>
+<h3>¿Necesito muchos videos para empezar?</h3>
+<p>Idealmente 3 a 5 variantes desde el inicio y renovación cada 1 a 2 semanas. La rotación es clave en TikTok.</p>
+
+<h2>Cierre</h2>
+<p>Anunciar en TikTok en Perú 2026 es accesible y, con buenos creativos, muy rentable. El costo real lo define tu capacidad de producir video nativo y renovarlo, no la tarifa de la plataforma. En 3R Core gestionamos <a href="/es/servicios/tiktok-ads">TikTok Ads en Perú</a> incluyendo estrategia de creativos. Si quieres una proyección para tu rubro, <a href="/es#contacto">escríbenos</a>. Y si aún no lanzas, empieza por nuestra <a href="/es/blogs/tiktok-ads-peru-2026-guia-completa-empezar-vender">guía completa de TikTok Ads</a>.</p>`,
+  },
+
+  // ============ GOOGLE ADS — 1 BLOG ============
+  {
+    slug: "google-ads-negocios-lima-guia-captar-clientes",
+    title: "Google Ads para negocios en Lima: guía para captar clientes que buscan hoy",
+    focus_keyword: "google ads para negocios lima",
+    meta_title: "Google Ads para negocios en Lima 2026 — Guía práctica | 3R Core",
+    meta_description: "Guía de Google Ads para negocios en Lima 2026: tipos de campaña, presupuesto en soles, palabras clave, negativas y cómo captar clientes que ya buscan lo que vendes.",
+    excerpt: "Cómo usar Google Ads para captar clientes que ya buscan tu servicio en Lima: tipos de campaña, presupuesto en soles, palabras clave y errores que desperdician tu inversión.",
+    og_title: "Google Ads para negocios en Lima — Guía 2026",
+    og_description: "Capta clientes que buscan hoy: campañas, presupuesto en soles, keywords y negativas.",
+    featured_image: IMG("1573804633927-bfcbcd909acd"),
+    featured_image_alt: "Google Ads para negocios en Lima 2026 - captar clientes",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>Google Ads</strong> es el canal ideal para captar a quien <strong>ya está buscando</strong> lo que vendes en Lima. A diferencia de Meta o TikTok, que generan demanda, Google la captura en el momento exacto de intención. Un negocio limeño puede empezar con <strong>S/900 al mes</strong> en medios, y la rentabilidad depende de elegir el tipo de campaña correcto, cuidar las palabras clave negativas y tener una landing que convierta.</p>
+
+<h2>Por qué Google Ads funciona distinto</h2>
+<p>Cuando alguien busca "gasfitero en Surco" o "clínica dental en Miraflores", tiene una <strong>intención de compra alta</strong>. Google Ads te pone frente a esa persona en el momento justo. Por eso suele traer leads más calientes que las redes sociales, aunque el clic sea más caro. La regla: usa Google para <strong>captar demanda existente</strong> y Meta/TikTok para <strong>crear demanda nueva</strong>.</p>
+
+<h2>Tipos de campaña de Google Ads y cuándo usarlos</h2>
+<table>
+<thead><tr><th>Tipo</th><th>Para qué sirve</th><th>Recomendado para</th></tr></thead>
+<tbody>
+<tr><td><strong>Búsqueda (Search)</strong></td><td>Anuncios de texto cuando alguien busca</td><td>Servicios y negocios locales en Lima</td></tr>
+<tr><td><strong>Performance Max</strong></td><td>Automatiza a través de toda la red Google</td><td>E-commerce con feed y datos de conversión</td></tr>
+<tr><td><strong>Shopping</strong></td><td>Muestra productos con foto y precio</td><td>Tiendas online con catálogo</td></tr>
+<tr><td><strong>YouTube (Video)</strong></td><td>Anuncios en video</td><td>Marca y recordación, no venta directa</td></tr>
+<tr><td><strong>Display / Remarketing</strong></td><td>Banners para recuperar visitantes</td><td>Recordar a quien ya te visitó</td></tr>
+</tbody>
+</table>
+<p>Para la mayoría de negocios de servicios en Lima, el corazón es la <strong>campaña de Búsqueda</strong>. Empieza ahí antes de complicarte con Performance Max.</p>
+
+<h2>Paso a paso para tu primera campaña de Búsqueda</h2>
+<ol>
+<li><strong>Define tu palabra clave principal</strong> con intención comercial ("comprar", "precio", "servicio", "cerca de mí").</li>
+<li><strong>Agrupa keywords por tema</strong> en grupos de anuncios pequeños y relevantes.</li>
+<li><strong>Escribe anuncios claros</strong> con la palabra clave, un beneficio y una llamada a la acción.</li>
+<li><strong>Agrega extensiones</strong>: ubicación, llamada, enlaces de sitio, promociones.</li>
+<li><strong>Envía el tráfico a una landing específica</strong>, no a tu home genérica.</li>
+<li><strong>Configura la conversión</strong> (llamada, formulario o WhatsApp) con GA4 y Google Tag Manager.</li>
+</ol>
+
+<h2>Palabras clave negativas: donde se salva tu presupuesto</h2>
+<p>Las <strong>palabras clave negativas</strong> evitan que pagues por búsquedas que no te sirven. Si vendes servicios pagos, agrega negativas como "gratis", "curso", "empleo", "cómo hacer". Es el ajuste que más dinero ahorra a los negocios peruanos que recién empiezan y que casi nadie configura bien.</p>
+
+<h2>Cuánto invertir en Google Ads en Lima</h2>
+<ul>
+<li><strong>Negocio local de servicios</strong>: S/900 a S/2,500/mes en medios.</li>
+<li><strong>E-commerce</strong>: S/1,500 a S/6,000/mes con Shopping y Performance Max.</li>
+<li><strong>Rubros competidos (salud, legal, inmobiliaria)</strong>: S/2,500 a S/10,000/mes; el CPC es más alto pero el ticket también.</li>
+</ul>
+<p>Calcula tu presupuesto según tu <strong>ticket promedio y margen</strong>: si cada cliente te deja S/400 y el CPC es S/2, puedes pagar varios clics por cada cierre y seguir ganando.</p>
+
+<h2>Google Ads vs Meta Ads: no es competencia</h2>
+<p>La estrategia ganadora en Perú suele combinar ambos: Google capta a quien busca, Meta y TikTok generan demanda y remarketing. Lo integramos en nuestra <a href="/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026">guía de embudos de venta con Ads</a>. Y para medir todo bien necesitas <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">Google Analytics 4</a> correctamente configurado.</p>
+
+<h2>Errores frecuentes en Google Ads</h2>
+<ol>
+<li>Enviar el tráfico a la home en lugar de una landing enfocada.</li>
+<li>No configurar palabras clave negativas.</li>
+<li>Usar solo concordancia amplia sin control.</li>
+<li>No medir conversiones: sin datos, Google optimiza a ciegas.</li>
+<li>Pausar la campaña antes de que junte datos suficientes.</li>
+</ol>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Google Ads o SEO para mi negocio en Lima?</h3>
+<p>Google Ads trae resultados inmediatos pero solo mientras pagas; el <a href="/es/posicionamiento-seo">SEO</a> es más lento pero sostenible. Lo ideal es combinarlos.</p>
+<h3>¿En cuánto tiempo veo resultados?</h3>
+<p>Con buena configuración, en la primera semana ya recibes clics y leads; la optimización fina toma de 2 a 4 semanas.</p>
+<h3>¿Necesito una web para hacer Google Ads?</h3>
+<p>Sí, al menos una landing. Google penaliza destinos lentos o irrelevantes con menor Quality Score y mayor costo.</p>
+
+<h2>Cierre</h2>
+<p>Google Ads es el canal más directo para captar clientes que ya buscan lo que ofreces en Lima, pero exige método: campaña correcta, keywords bien elegidas, negativas y una landing que convierta. En 3R Core gestionamos <a href="/es/servicios/google-ads">Google Ads en Perú</a> con foco en costo por lead y retorno. Si quieres captar más clientes desde la búsqueda, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  // ============ PERFORMANCE / ROAS — 2 BLOGS ============
+  {
+    slug: "que-es-roas-como-calcularlo-negocio-peru",
+    title: "Qué es el ROAS y cómo calcularlo bien para tu negocio en Perú",
+    focus_keyword: "que es el roas",
+    meta_title: "Qué es el ROAS y cómo calcularlo en Perú 2026 | 3R Core",
+    meta_description: "Qué es el ROAS, cómo se calcula con ejemplos en soles, cuál es un buen ROAS en Perú y por qué el ROAS solo no basta: la relación con CAC, margen y punto de equilibrio.",
+    excerpt: "Aprende qué es el ROAS, cómo calcularlo con ejemplos en soles, cuál es un buen ROAS en Perú y por qué debes mirarlo junto al margen y el CAC para tomar buenas decisiones.",
+    og_title: "Qué es el ROAS y cómo calcularlo — Guía Perú 2026",
+    og_description: "Fórmula, ejemplos en soles, ROAS de equilibrio y por qué el ROAS solo no basta.",
+    featured_image: IMG("1543286386-2e659306cd6c"),
+    featured_image_alt: "Qué es el ROAS y cómo calcularlo para negocios en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el <strong>ROAS (Return On Ad Spend)</strong> mide cuántos soles de ingreso genera cada sol invertido en publicidad. Se calcula dividiendo los ingresos atribuidos a los anuncios entre lo gastado en ellos. Un ROAS de 4 significa que por cada S/1 invertido recuperas S/4. Pero cuidado: <strong>un ROAS alto no siempre significa ganancia</strong>. Lo que decide la rentabilidad es tu margen, no el ingreso bruto.</p>
+
+<h2>Qué es el ROAS exactamente</h2>
+<p>ROAS son las siglas en inglés de "retorno de la inversión publicitaria". Es la métrica estrella del <a href="/es/servicios/performance-marketing">marketing de performance</a> porque conecta directamente lo que gastas con lo que vendes. La fórmula es simple:</p>
+<p><strong>ROAS = Ingresos generados por los anuncios / Inversión en anuncios</strong></p>
+<p>Si invertiste S/1,000 en Meta Ads y esas campañas generaron S/5,000 en ventas, tu ROAS es 5 (o 500%). Por cada sol, recuperaste cinco.</p>
+
+<h2>Ejemplos con soles</h2>
+<table>
+<thead><tr><th>Inversión</th><th>Ingresos</th><th>ROAS</th><th>Lectura</th></tr></thead>
+<tbody>
+<tr><td>S/1,000</td><td>S/2,000</td><td>2.0</td><td>Duplica ingreso, pero revisa margen</td></tr>
+<tr><td>S/1,000</td><td>S/4,000</td><td>4.0</td><td>Bueno para la mayoría de e-commerce</td></tr>
+<tr><td>S/1,000</td><td>S/8,000</td><td>8.0</td><td>Excelente, considera escalar</td></tr>
+<tr><td>S/1,000</td><td>S/900</td><td>0.9</td><td>Pierdes dinero, hay que corregir</td></tr>
+</tbody>
+</table>
+
+<h2>Por qué un ROAS alto puede engañar</h2>
+<p>Aquí está el error más caro que cometen los negocios peruanos: <strong>confundir ingreso con ganancia</strong>. Imagina que vendes un producto a S/100 pero te cuesta S/70 producirlo y entregarlo. Tu margen es S/30 (30%). Con un ROAS de 3, por cada S/1,000 de inversión generas S/3,000 en ventas, pero tu ganancia bruta es S/900 (30% de S/3,000) menos los S/1,000 de publicidad: <strong>pierdes S/100</strong>. Por eso necesitas conocer tu <strong>ROAS de equilibrio</strong>.</p>
+
+<h2>Cómo calcular tu ROAS de equilibrio (break-even)</h2>
+<p>El ROAS de equilibrio es el mínimo que necesitas para no perder dinero:</p>
+<p><strong>ROAS de equilibrio = 1 / margen de contribución</strong></p>
+<p>Si tu margen es 30% (0.30), tu ROAS de equilibrio es 1 / 0.30 = <strong>3.33</strong>. Todo lo que supere 3.33 es ganancia; por debajo, pierdes. Este número cambia todo: un ROAS de 4 es excelente para un margen de 50% pero apenas rentable para un margen de 25%.</p>
+
+<h2>Cuál es un buen ROAS en Perú</h2>
+<p>No existe un número universal; depende de tu margen y rubro. Referencias prácticas:</p>
+<ul>
+<li><strong>E-commerce de consumo masivo</strong> (margen 30–40%): apunta a ROAS 3.5 a 5.</li>
+<li><strong>Productos de alto margen</strong> (servicios digitales, moda propia): ROAS 2.5 puede ser rentable.</li>
+<li><strong>Ticket alto con ciclo largo</strong> (inmobiliaria, salud): el ROAS directo es bajo porque la venta se cierra fuera de la web; ahí mira el <strong>costo por lead</strong> y el <strong>CAC</strong>.</li>
+</ul>
+
+<h2>ROAS, CAC y LTV: el trío que debes mirar junto</h2>
+<p>El ROAS es una foto; el negocio es una película. Complétalo con:</p>
+<ul>
+<li><strong>CAC (costo de adquisición de cliente)</strong>: cuánto te cuesta conseguir un cliente nuevo.</li>
+<li><strong>LTV (valor de vida del cliente)</strong>: cuánto te deja ese cliente en el tiempo, no solo en la primera compra.</li>
+</ul>
+<p>Un negocio con clientes recurrentes puede aceptar un ROAS bajo en la primera venta porque el LTV lo compensa. Sin mirar el LTV, apagarías campañas que en realidad son rentables.</p>
+
+<h2>Cómo medir bien el ROAS en Perú</h2>
+<p>Para que el ROAS sea confiable necesitas medición limpia: <strong>píxel y API de conversiones</strong> bien instalados, y <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a> configurado. Recuerda que Meta, TikTok y GA4 suelen reportar cifras distintas por la atribución. Elige una fuente de verdad y decide con ella, sin obsesionarte con que todas cuadren al centavo.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿ROAS y ROI son lo mismo?</h3>
+<p>No. El ROAS mide ingreso sobre inversión publicitaria; el ROI mide ganancia neta sobre la inversión total, incluyendo costos del producto y operación. El ROI es más completo, el ROAS más rápido de calcular a diario.</p>
+<h3>¿Qué hago si mi ROAS es bajo?</h3>
+<p>Antes de subir presupuesto, mejora el creativo, la segmentación y la landing. Escalar una campaña poco rentable solo multiplica la pérdida.</p>
+<h3>¿Puedo tener buen ROAS y aun así quebrar?</h3>
+<p>Sí, si tu margen no cubre costos operativos y logísticos. Por eso el ROAS de equilibrio y el flujo de caja mandan.</p>
+
+<h2>Cierre</h2>
+<p>El ROAS es la brújula del marketing de performance, pero solo apunta bien si lo lees junto a tu margen, tu CAC y tu LTV. Conoce tu ROAS de equilibrio antes de decidir si escalar o corregir. En 3R Core construimos y optimizamos campañas de <a href="/es/servicios/performance-marketing">performance marketing en Perú</a> con métricas claras y reportes honestos. Si quieres saber si tu inversión está rindiendo de verdad, <a href="/es#contacto">conversemos</a>. Y para poner tu ROAS a trabajar en un sistema completo, lee <a href="/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026">cómo construir un embudo de ventas rentable</a>.</p>`,
+  },
+
+  {
+    slug: "como-construir-embudo-ventas-rentable-ads-peru-2026",
+    title: "Cómo construir un embudo de ventas rentable con Ads en Perú 2026",
+    focus_keyword: "embudo de ventas con ads peru",
+    meta_title: "Cómo construir un embudo de ventas con Ads en Perú 2026 | 3R Core",
+    meta_description: "Guía para armar un embudo de ventas rentable con Meta, TikTok y Google Ads en Perú: etapas TOFU-MOFU-BOFU, mensajes por etapa, remarketing y métricas clave.",
+    excerpt: "Cómo diseñar un embudo de ventas que convierta desconocidos en clientes usando Meta, TikTok y Google Ads en Perú: etapas, mensajes, remarketing y las métricas que importan.",
+    og_title: "Cómo construir un embudo de ventas con Ads en Perú 2026",
+    og_description: "Etapas TOFU-MOFU-BOFU, mensajes por etapa, remarketing y métricas para un embudo rentable.",
+    featured_image: IMG("1553729459-efe14ef6055d"),
+    featured_image_alt: "Embudo de ventas con Ads en Perú - etapas y estrategia 2026",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> un <strong>embudo de ventas con Ads</strong> guía a una persona desde que no te conoce hasta que compra, con mensajes distintos en cada etapa. En Perú 2026, el embudo rentable combina <strong>TikTok y Meta para generar demanda (TOFU)</strong>, <strong>contenido y remarketing para nutrir (MOFU)</strong> y <strong>Google Ads más ofertas directas para cerrar (BOFU)</strong>. El error más común es pedirle matrimonio en la primera cita: vender directo a público frío quema presupuesto.</p>
+
+<h2>Qué es un embudo de ventas y por qué lo necesitas</h2>
+<p>Casi nadie compra la primera vez que ve un anuncio. Un embudo reconoce esa realidad y acompaña al cliente en su recorrido. Se divide en tres etapas:</p>
+<ul>
+<li><strong>TOFU (parte alta)</strong>: gente que no te conoce. Objetivo: llamar la atención y aportar valor.</li>
+<li><strong>MOFU (parte media)</strong>: gente que ya te vio. Objetivo: generar confianza y consideración.</li>
+<li><strong>BOFU (parte baja)</strong>: gente lista para comprar. Objetivo: cerrar la venta.</li>
+</ul>
+
+<h2>Etapa 1 — TOFU: generar demanda</h2>
+<p>Aquí muestras tu marca a público frío. En Perú, <strong>TikTok Ads y Meta Ads</strong> son los mejores canales para esta etapa por su alcance y bajo costo por impresión.</p>
+<ul>
+<li><strong>Objetivo de campaña</strong>: alcance, reproducciones o tráfico.</li>
+<li><strong>Mensaje</strong>: educativo o de entretenimiento, no venta agresiva.</li>
+<li><strong>Creativo</strong>: video corto que aporta valor o engancha con un problema.</li>
+<li><strong>Meta</strong>: que te descubran y visiten tu perfil o web (alimentando tus audiencias).</li>
+</ul>
+<p>Si aún no dominas estos canales, empieza por nuestra <a href="/es/blogs/meta-ads-pymes-peru-guia-primera-campana-rentable">guía de Meta Ads</a> y la de <a href="/es/blogs/tiktok-ads-peru-2026-guia-completa-empezar-vender">TikTok Ads</a>.</p>
+
+<h2>Etapa 2 — MOFU: nutrir y generar confianza</h2>
+<p>Aquí trabajas con quienes ya interactuaron: vieron tu video, visitaron tu web o siguieron tu perfil. El objetivo es que confíen.</p>
+<ul>
+<li><strong>Públicos</strong>: remarketing de visitantes web, quienes vieron 50% de tus videos, seguidores.</li>
+<li><strong>Mensaje</strong>: prueba social (testimonios, casos), beneficios, resolver objeciones.</li>
+<li><strong>Formatos</strong>: carruseles, testimonios en video, comparativas.</li>
+</ul>
+<p>Esta etapa es la más olvidada por las pymes peruanas y la que más mejora la rentabilidad, porque convierte interés en intención.</p>
+
+<h2>Etapa 3 — BOFU: cerrar la venta</h2>
+<p>Aquí va la oferta directa a quien ya está listo:</p>
+<ul>
+<li><strong>Canales</strong>: Google Ads de búsqueda (captura intención), remarketing con oferta, anuncios de catálogo.</li>
+<li><strong>Mensaje</strong>: promoción, urgencia, garantía, facilidad de pago, envío.</li>
+<li><strong>Destino</strong>: landing de conversión o WhatsApp con respuesta rápida.</li>
+</ul>
+<p>En Perú, el cierre por <strong>WhatsApp</strong> es decisivo: gran parte de la venta se define en la conversación. Responde rápido y con guion claro.</p>
+
+<h2>Cómo repartir el presupuesto entre etapas</h2>
+<table>
+<thead><tr><th>Etapa</th><th>% de presupuesto sugerido</th><th>Canales</th></tr></thead>
+<tbody>
+<tr><td><strong>TOFU</strong></td><td>50–60%</td><td>TikTok, Meta (alcance/tráfico)</td></tr>
+<tr><td><strong>MOFU</strong></td><td>20–30%</td><td>Meta remarketing, video</td></tr>
+<tr><td><strong>BOFU</strong></td><td>15–25%</td><td>Google Ads, remarketing con oferta</td></tr>
+</tbody>
+</table>
+<p>Al inicio, si tu marca es nueva, invierte más arriba (TOFU) para llenar el embudo. Cuando ya tengas audiencias, refuerza MOFU y BOFU donde el retorno es mayor.</p>
+
+<h2>Métricas por etapa</h2>
+<ul>
+<li><strong>TOFU</strong>: CPM, alcance, tasa de reproducción, CTR.</li>
+<li><strong>MOFU</strong>: costo por visita a web, tasa de remarketing, engagement.</li>
+<li><strong>BOFU</strong>: costo por lead, costo por venta, <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">ROAS</a>.</li>
+</ul>
+<p>Para medir todo el recorrido necesitas <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a> y los píxeles bien configurados. Sin medición por etapa, no sabes dónde se rompe el embudo.</p>
+
+<h2>Errores que rompen el embudo</h2>
+<ol>
+<li>Vender directo a público frío (saltarse el TOFU).</li>
+<li>No hacer remarketing: dejas escapar a quien ya mostró interés.</li>
+<li>Landing lenta o confusa que mata el cierre.</li>
+<li>No responder rápido los mensajes de WhatsApp.</li>
+<li>Medir solo la última campaña y no todo el recorrido.</li>
+</ol>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Necesito mucho presupuesto para armar un embudo?</h3>
+<p>No. Puedes empezar con un embudo simple desde S/1,000 al mes, priorizando TOFU y remarketing básico, y crecer por etapas.</p>
+<h3>¿Cuánto tarda en madurar un embudo?</h3>
+<p>Entre 4 y 8 semanas para tener datos por etapa y optimizar. La paciencia paga: los embudos mejoran con el tiempo.</p>
+<h3>¿Sirve el mismo embudo para todos los rubros?</h3>
+<p>La estructura sí, pero los mensajes y canales cambian. No es igual vender ropa que captar pacientes para una <a href="/es/blogs/marketing-digital-clinicas-consultorios-peru-agenda">clínica</a>.</p>
+
+<h2>Cierre</h2>
+<p>Un embudo de ventas bien armado es lo que separa a quien "prueba Ads" de quien construye un sistema de adquisición rentable y escalable. Genera demanda arriba, nutre en el medio y cierra abajo, midiendo cada etapa. En 3R Core diseñamos embudos de <a href="/es/servicios/performance-marketing">performance marketing</a> integrando Meta, TikTok y Google Ads para negocios peruanos. Si quieres dejar de improvisar campañas sueltas, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  // ============ MARKETING POR RUBRO — 4 BLOGS ============
+  {
+    slug: "marketing-digital-clinicas-consultorios-peru-agenda",
+    title: "Marketing digital para clínicas y consultorios en Perú: cómo llenar tu agenda",
+    focus_keyword: "marketing digital para clinicas peru",
+    meta_title: "Marketing digital para clínicas y consultorios en Perú 2026 | 3R Core",
+    meta_description: "Guía de marketing digital para clínicas y consultorios en Perú: cómo captar pacientes con Meta y Google Ads, SEO local, reseñas y publicidad de salud sin infringir normas.",
+    excerpt: "Cómo llenar la agenda de tu clínica o consultorio en Perú con marketing digital: captación de pacientes con Ads, SEO local, reseñas, embudo por WhatsApp y buenas prácticas de salud.",
+    og_title: "Marketing digital para clínicas y consultorios en Perú 2026",
+    og_description: "Capta pacientes con Ads, SEO local y reseñas. Estrategia práctica para llenar tu agenda.",
+    featured_image: IMG("1519494026892-80bbd2d6fd0d"),
+    featured_image_alt: "Marketing digital para clínicas y consultorios en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> llenar la agenda de una <strong>clínica o consultorio en Perú</strong> no depende de "estar en redes", sino de un sistema: <strong>Meta Ads para captar demanda</strong>, <strong>Google Ads y SEO local para capturar a quien ya busca tratamiento</strong>, <strong>reseñas y Google Business Profile para generar confianza</strong>, y un <strong>cierre ágil por WhatsApp</strong>. El sector salud además exige responsabilidad: mensajes veraces, sin promesas de resultados garantizados.</p>
+
+<h2>Por qué las clínicas necesitan un enfoque distinto</h2>
+<p>La salud es una decisión sensible: el paciente investiga, compara y confía antes de agendar. Por eso el marketing de una clínica combina <strong>captación</strong> (que te encuentren) con <strong>confianza</strong> (que te elijan). Un anuncio agresivo sin respaldo de reseñas y contenido serio no funciona: genera clics, no citas.</p>
+
+<h2>Los 5 pilares del marketing para clínicas en Perú</h2>
+<h3>1. Google Business Profile y SEO local</h3>
+<p>Cuando alguien busca "dentista en San Isidro" o "dermatólogo cerca de mí", Google muestra el mapa. Optimizar tu <a href="/es/posicionamiento-seo">ficha de Google Business Profile</a> con fotos, servicios, horarios y reseñas es lo que más citas trae a bajo costo. Es la base y muchas clínicas la descuidan.</p>
+<h3>2. Reseñas: tu activo más valioso</h3>
+<p>Las reseñas positivas son el factor de confianza número uno en salud. Implementa un proceso simple para pedirle a pacientes satisfechos que dejen su reseña, y responde todas con profesionalismo (cuidando la confidencialidad).</p>
+<h3>3. Meta Ads para generar demanda</h3>
+<p>Facebook e Instagram son ideales para dar a conocer tratamientos, promociones de evaluación y educar. Usa objetivos de <strong>mensajes (WhatsApp)</strong> o <strong>clientes potenciales</strong>. Un lead de salud en Perú suele costar entre S/15 y S/40, pero una sola cita de tratamiento paga muchas veces esa inversión. Lo desarrollamos con más detalle en nuestra guía de <a href="/es/blogs/cuanto-cuesta-publicidad-facebook-instagram-peru-2026">costos de Meta Ads en Perú</a>.</p>
+<h3>4. Google Ads para captar intención</h3>
+<p>Quien busca "precio implante dental Lima" está listo para agendar. Una campaña de <a href="/es/blogs/google-ads-negocios-lima-guia-captar-clientes">Google Ads de búsqueda</a> captura esa intención con alto poder de conversión. Cuida las palabras clave negativas para no pagar por búsquedas informativas.</p>
+<h3>5. Cierre por WhatsApp</h3>
+<p>En Perú, la mayoría de citas se agenda por WhatsApp. Ten un flujo claro: respuesta rápida, precios o rango, disponibilidad y confirmación. La velocidad de respuesta define cuántos leads se convierten en pacientes.</p>
+
+<h2>El embudo de una clínica que llena su agenda</h2>
+<ol>
+<li><strong>Descubrimiento</strong>: Meta/TikTok muestran tratamientos y educan.</li>
+<li><strong>Confianza</strong>: reseñas, casos (con consentimiento), contenido del especialista.</li>
+<li><strong>Búsqueda</strong>: Google Ads y SEO local capturan a quien ya decidió tratarse.</li>
+<li><strong>Cierre</strong>: WhatsApp ágil convierte el interés en cita agendada.</li>
+</ol>
+<p>Este sistema completo lo explicamos en <a href="/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026">cómo construir un embudo de ventas con Ads</a>.</p>
+
+<h2>Publicidad de salud responsable en Perú</h2>
+<p>El rubro salud exige cuidado ético y normativo:</p>
+<ul>
+<li><strong>No prometas resultados garantizados</strong> ni cures milagrosas.</li>
+<li><strong>Usa fotos reales</strong> y, si muestras casos, con consentimiento del paciente.</li>
+<li><strong>Respeta las políticas de Meta y Google</strong> para publicidad de salud (algunas categorías tienen restricciones).</li>
+<li><strong>Cuida la confidencialidad</strong> en reseñas y mensajes.</li>
+</ul>
+
+<h2>Métricas que importan en una clínica</h2>
+<ul>
+<li><strong>Costo por lead</strong> y <strong>costo por cita agendada</strong>.</li>
+<li><strong>Tasa de asistencia</strong> (cuántos leads llegan a la cita).</li>
+<li><strong>Valor por paciente</strong> (incluye tratamientos recurrentes: el LTV es alto en salud).</li>
+</ul>
+<p>Configura <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a> y medición de conversiones de WhatsApp para saber qué canal trae los mejores pacientes.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto debe invertir una clínica en marketing digital en Perú?</h3>
+<p>Un piso realista es S/2,000 a S/5,000 al mes en medios, más gestión, según especialidad y competencia. El ticket alto de los tratamientos justifica la inversión.</p>
+<h3>¿Meta o Google Ads para mi clínica?</h3>
+<p>Ambos: Meta genera demanda y da a conocer, Google captura a quien ya busca. Empieza según tu urgencia y presupuesto, pero el sistema completo rinde más.</p>
+<h3>¿Sirve TikTok para clínicas?</h3>
+<p>Sí para especialidades visuales (estética, odontología, dermatología) con contenido educativo y de casos. Para otras, prioriza Meta y Google.</p>
+
+<h2>Cierre</h2>
+<p>Llenar la agenda de tu clínica es cuestión de sistema, no de suerte: capta, genera confianza, captura intención y cierra rápido. En 3R Core diseñamos estrategias de <a href="/es/servicios/marketing-clinicas">marketing digital para clínicas en Perú</a> que respetan la ética del sector y priorizan citas reales. Si quieres una agenda llena de pacientes calificados, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "marketing-digital-inmobiliarias-peru-generar-leads-calidad",
+    title: "Marketing digital para inmobiliarias en Perú: cómo generar leads de calidad",
+    focus_keyword: "marketing digital para inmobiliarias peru",
+    meta_title: "Marketing digital para inmobiliarias en Perú 2026 | 3R Core",
+    meta_description: "Guía de marketing digital para inmobiliarias en Perú: cómo generar leads de calidad con Meta y Google Ads, calificar prospectos, remarketing y cerrar más ventas de propiedades.",
+    excerpt: "Cómo generar leads inmobiliarios de calidad en Perú y no ahogarte en contactos que no compran: Meta y Google Ads, calificación, remarketing, landings por proyecto y CRM.",
+    og_title: "Marketing digital para inmobiliarias en Perú 2026",
+    og_description: "Genera leads de calidad con Meta y Google Ads, califica prospectos y cierra más propiedades.",
+    featured_image: IMG("1560518883-ce09059eeffa"),
+    featured_image_alt: "Marketing digital para inmobiliarias en Perú - generar leads",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el problema de las <strong>inmobiliarias en Perú</strong> no suele ser la falta de leads, sino el exceso de leads malos. La clave no es "generar más contactos", sino <strong>generar leads calificados</strong>: personas con capacidad e intención real de compra. Eso se logra combinando <strong>Meta Ads con creativos y filtros correctos</strong>, <strong>Google Ads para captar intención de compra</strong>, <strong>landings por proyecto</strong> y un <strong>CRM que ordene el seguimiento</strong>.</p>
+
+<h2>Por qué la calidad importa más que la cantidad</h2>
+<p>Una campaña que trae 200 formularios suena bien, pero si el equipo comercial pierde días llamando a curiosos sin presupuesto, esa campaña es un fracaso disfrazado. En el rubro inmobiliario, con tickets altos y ciclos largos, <strong>10 leads calificados valen más que 200 fríos</strong>. Todo el marketing debe orientarse a atraer y filtrar al comprador correcto.</p>
+
+<h2>Cómo generar leads de calidad con Meta Ads</h2>
+<p>Meta es potente para inmobiliaria, pero mal usado atrae curiosos. Claves para calificar desde el anuncio:</p>
+<ul>
+<li><strong>Muestra el rango de precio o la cuota</strong> en el creativo: filtra a quien no puede pagar.</li>
+<li><strong>Segmenta por comportamiento e intereses</strong> de compra de vivienda e inversión.</li>
+<li><strong>Usa formularios con preguntas de calificación</strong> (zona de interés, presupuesto, financiamiento) en vez de formularios de un solo clic.</li>
+<li><strong>Prioriza video</strong>: recorridos del proyecto, avances de obra, ubicación y beneficios.</li>
+</ul>
+<p>Para dimensionar la inversión, revisa nuestra guía de <a href="/es/blogs/cuanto-cuesta-publicidad-facebook-instagram-peru-2026">costos de Meta Ads en Perú</a>. En inmobiliaria el costo por lead calificado suele ir de S/20 a S/60, pero una sola venta paga meses de campaña.</p>
+
+<h2>Google Ads: captar al que ya busca departamento</h2>
+<p>Quien busca "departamentos en Surco entrega inmediata" o "proyecto inmobiliario Miraflores" tiene intención altísima. Una campaña de <a href="/es/blogs/google-ads-negocios-lima-guia-captar-clientes">Google Ads de búsqueda</a> captura esa demanda con gran calidad. Combínala con remarketing para no perder a quien visitó el proyecto y no dejó datos.</p>
+
+<h2>Landings por proyecto: el gran diferenciador</h2>
+<p>Enviar todo el tráfico a la home de la inmobiliaria es un error caro. Cada proyecto merece su <strong>landing específica</strong> con:</p>
+<ul>
+<li>Renders, recorrido virtual y avance de obra.</li>
+<li>Ubicación, áreas comunes y tipologías.</li>
+<li>Rango de precio o cuota estimada.</li>
+<li>Formulario de calificación y botón de WhatsApp.</li>
+</ul>
+<p>Una landing enfocada convierte mucho mejor que una web genérica. Si necesitas una, mira <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">cuánto cuesta una landing en Perú</a>.</p>
+
+<h2>El CRM: donde se ganan o pierden las ventas</h2>
+<p>En inmobiliaria el seguimiento lo es todo. Un lead puede tardar semanas o meses en decidir. Sin un <strong>CRM</strong> que registre cada contacto, recuerde el seguimiento y evite que los leads se enfríen, el equipo pierde ventas por desorden, no por falta de interés. Integra tus formularios de Meta y Google directamente al CRM y define tiempos de respuesta.</p>
+
+<h2>Remarketing: recuperar al comprador indeciso</h2>
+<p>La compra de vivienda casi nunca es impulsiva. El <strong>remarketing</strong> mantiene tu proyecto presente durante todo el proceso de decisión: muestra avance de obra, testimonios de compradores y beneficios de financiamiento a quienes ya visitaron tu landing. Es una de las tácticas con mejor retorno del rubro.</p>
+
+<h2>Métricas que importan en inmobiliaria</h2>
+<ul>
+<li><strong>Costo por lead calificado</strong> (no por lead total).</li>
+<li><strong>Tasa de calificación</strong>: cuántos leads pasan el filtro comercial.</li>
+<li><strong>Costo por visita al proyecto</strong> y <strong>costo por venta</strong>.</li>
+</ul>
+<p>Configura <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a> y medición de WhatsApp para atribuir cada venta a su fuente real.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto debe invertir una inmobiliaria en Perú?</h3>
+<p>Depende del proyecto, pero un piso realista es S/3,000 a S/10,000 al mes en medios durante la etapa de venta activa, más gestión y producción de contenido del proyecto.</p>
+<h3>¿Meta o Google para inmobiliaria?</h3>
+<p>Ambos y remarketing. Meta genera demanda y da a conocer el proyecto; Google captura a quien ya busca; el remarketing cierra al indeciso.</p>
+<h3>¿Los formularios de un clic sirven?</h3>
+<p>Traen volumen pero baja calidad. Para inmobiliaria conviene añadir preguntas de calificación aunque baje el número de leads: sube la calidad.</p>
+
+<h2>Cierre</h2>
+<p>El marketing inmobiliario rentable en Perú se mide en ventas, no en formularios. Atrae al comprador correcto, califícalo desde el anuncio, dale una landing por proyecto y ordena el seguimiento con un CRM. En 3R Core diseñamos estrategias de <a href="/es/servicios/marketing-inmobiliarias">marketing digital para inmobiliarias en Perú</a> enfocadas en leads de calidad y cierre. Si quieres vender más unidades con menos ruido, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "marketing-ecommerce-peru-estrategia-ads-escalar-ventas",
+    title: "Marketing para e-commerce en Perú: estrategia de Ads para escalar ventas",
+    focus_keyword: "marketing para ecommerce peru",
+    meta_title: "Marketing para e-commerce en Perú 2026 — Estrategia de Ads | 3R Core",
+    meta_description: "Estrategia de marketing digital para e-commerce en Perú: cómo escalar ventas con Meta, TikTok y Google Ads, catálogo dinámico, remarketing, ROAS y recuperación de carritos.",
+    excerpt: "Cómo escalar las ventas de tu tienda online en Perú con una estrategia de Ads que funciona: catálogo dinámico, prospección, remarketing, recuperación de carritos y control de ROAS.",
+    og_title: "Marketing para e-commerce en Perú 2026 — Estrategia de Ads",
+    og_description: "Escala tu tienda online con Meta, TikTok y Google Ads: catálogo, remarketing y ROAS.",
+    featured_image: IMG("1607082348824-0a96f2a4b9da"),
+    featured_image_alt: "Marketing para e-commerce en Perú - estrategia de Ads para escalar",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> escalar un <strong>e-commerce en Perú</strong> con Ads no es "subir el presupuesto". Es construir un sistema: <strong>catálogo y píxel bien conectados</strong>, <strong>prospección con TikTok y Meta</strong>, <strong>anuncios dinámicos de producto y remarketing</strong>, <strong>Google Shopping para captar intención</strong>, <strong>recuperación de carritos</strong> y control estricto del <strong>ROAS</strong>. Cada sol adicional debe entrar donde ya hay retorno probado.</p>
+
+<h2>La base técnica: sin esto no escalas</h2>
+<p>Antes de invertir en medios, tu tienda necesita medición y datos limpios:</p>
+<ul>
+<li><strong>Píxel de Meta + API de Conversiones</strong> y <strong>Píxel de TikTok</strong> instalados y verificados.</li>
+<li><strong>Catálogo de productos</strong> subido a Meta y a Google Merchant Center.</li>
+<li><strong>Eventos de e-commerce</strong> (ver producto, agregar al carrito, compra) midiendo bien en <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a>.</li>
+<li><strong>Pasarelas de pago locales</strong> (Culqi, Niubiz, Yape, Mercado Pago) funcionando sin fricción.</li>
+</ul>
+<p>Datos sucios = algoritmos ciegos = presupuesto quemado. Esta base es innegociable.</p>
+
+<h2>Prospección: llenar el embudo con nuevos compradores</h2>
+<p>Para crecer necesitas público nuevo constante. En Perú, <strong>TikTok y Meta</strong> son los motores de prospección:</p>
+<ul>
+<li><strong>TikTok Ads</strong>: video nativo que muestra el producto en uso, ideal para descubrimiento. Ver <a href="/es/blogs/tiktok-ads-peru-2026-guia-completa-empezar-vender">guía de TikTok Ads</a>.</li>
+<li><strong>Meta Advantage+ Shopping</strong>: deja que el algoritmo encuentre compradores con tu catálogo.</li>
+<li><strong>Creativos variados</strong>: UGC, reseñas, demostraciones, ofertas. Renueva seguido.</li>
+</ul>
+
+<h2>Anuncios dinámicos y remarketing: donde está el ROAS</h2>
+<p>Los <strong>anuncios dinámicos de producto</strong> muestran automáticamente el artículo exacto que cada persona vio en tu tienda. Combinados con remarketing, son la táctica de mayor retorno del e-commerce:</p>
+<ul>
+<li>Reimpactan a quien vio un producto pero no compró.</li>
+<li>Muestran productos relacionados a compradores previos (venta cruzada).</li>
+<li>Trabajan tu catálogo sin que armes cada anuncio a mano.</li>
+</ul>
+
+<h2>Google Shopping: capturar la intención de compra</h2>
+<p>Cuando alguien busca un producto específico en Google, Shopping muestra foto, precio y tienda. Es tráfico de intención altísima. Sube tu catálogo a Merchant Center y complementa con Performance Max cuando ya tengas datos de conversión. Lo vemos en la <a href="/es/blogs/google-ads-negocios-lima-guia-captar-clientes">guía de Google Ads</a>.</p>
+
+<h2>Recuperación de carritos abandonados</h2>
+<p>La mayoría de compradores abandona el carrito. Recuperarlos es dinero fácil:</p>
+<ul>
+<li><strong>Remarketing dinámico</strong> con el producto abandonado.</li>
+<li><strong>Email y WhatsApp</strong> automáticos recordando el carrito, a veces con incentivo. Ver <a href="/es/blogs/email-marketing-negocios-peruanos-2026-guia">guía de email marketing</a>.</li>
+</ul>
+
+<h2>Controlar el ROAS mientras escalas</h2>
+<p>Escalar sin mirar el <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">ROAS</a> es la receta para perder plata rápido. Reglas de oro:</p>
+<ul>
+<li>Conoce tu <strong>ROAS de equilibrio</strong> según tu margen antes de subir presupuesto.</li>
+<li><strong>Escala gradualmente</strong> (10–20% cada pocos días) para no romper el aprendizaje.</li>
+<li>Sube presupuesto solo donde el retorno ya es sólido, no en toda la cuenta.</li>
+</ul>
+
+<h2>La estructura de campañas que escala</h2>
+<table>
+<thead><tr><th>Nivel</th><th>Objetivo</th><th>Canal principal</th></tr></thead>
+<tbody>
+<tr><td><strong>Prospección</strong></td><td>Compradores nuevos</td><td>TikTok, Meta Advantage+</td></tr>
+<tr><td><strong>Remarketing</strong></td><td>Recuperar visitantes</td><td>Meta dinámico, Display</td></tr>
+<tr><td><strong>Intención</strong></td><td>Capturar búsqueda</td><td>Google Shopping / PMax</td></tr>
+<tr><td><strong>Retención</strong></td><td>Recompra y LTV</td><td>Email, WhatsApp, remarketing</td></tr>
+</tbody>
+</table>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto invertir para escalar un e-commerce en Perú?</h3>
+<p>Depende del margen, pero un rango común para escalar es S/3,000 a S/15,000 al mes en medios, creciendo solo donde el ROAS lo permite.</p>
+<h3>¿TikTok o Meta para vender productos en Perú?</h3>
+<p>Los mejores e-commerce usan ambos: TikTok para descubrimiento y Meta para prospección y remarketing dinámico. Compara costo por venta con datos propios.</p>
+<h3>¿Qué mato primero si el ROAS baja?</h3>
+<p>Revisa creativos con fatiga y públicos saturados antes de bajar presupuesto general. Muchas veces el problema es el creativo, no el canal.</p>
+
+<h2>Cierre</h2>
+<p>Escalar un e-commerce en Perú es un sistema de prospección, remarketing, intención y retención, sostenido por datos limpios y control del ROAS. No se trata de gastar más, sino de gastar donde ya hay retorno. En 3R Core gestionamos <a href="/es/servicios/marketing-ecommerce">marketing para e-commerce en Perú</a> integrando Meta, TikTok y Google Ads. Si quieres escalar tus ventas con cabeza, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "marketing-digital-restaurantes-peru-redes-ads",
+    title: "Marketing digital para restaurantes en Perú: cómo llenar mesas con redes y Ads",
+    focus_keyword: "marketing digital para restaurantes peru",
+    meta_title: "Marketing digital para restaurantes en Perú 2026 | 3R Core",
+    meta_description: "Guía de marketing digital para restaurantes en Perú: cómo llenar mesas con Instagram, TikTok y Meta Ads, SEO local, Google Maps, delivery propio y contenido que da hambre.",
+    excerpt: "Cómo llenar las mesas de tu restaurante en Perú con marketing digital: contenido en Instagram y TikTok, Meta Ads, Google Maps y SEO local, y cómo vender delivery directo sin apps.",
+    og_title: "Marketing digital para restaurantes en Perú 2026",
+    og_description: "Llena mesas con Instagram, TikTok, Meta Ads y Google Maps. Estrategia práctica para restaurantes.",
+    featured_image: IMG("1517248135467-4c7edcad34c4"),
+    featured_image_alt: "Marketing digital para restaurantes en Perú - llenar mesas con redes y Ads",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el marketing de un <strong>restaurante en Perú</strong> se juega en dos frentes: <strong>antojo</strong> (contenido visual en Instagram y TikTok que da hambre) y <strong>proximidad</strong> (que te encuentren en Google Maps cuando buscan dónde comer cerca). Sumado a <strong>Meta Ads geolocalizado</strong> y una estrategia para <strong>vender delivery directo</strong> sin depender solo de las apps, es lo que llena mesas de forma sostenible.</p>
+
+<h2>La comida se vende por los ojos</h2>
+<p>Ningún rubro depende tanto del contenido visual como la gastronomía. Una foto o video apetitoso genera antojo inmediato. Por eso el corazón del marketing de un restaurante es el <strong>contenido</strong>: platos, preparación, ambiente y gente disfrutando. Antes de invertir en Ads, asegúrate de tener material que provoque hambre.</p>
+
+<h2>Instagram y TikTok: donde vive el antojo</h2>
+<ul>
+<li><strong>Reels y TikToks del plato estrella</strong>: primer plano, vapor, el corte, el queso que se estira. El detalle vende.</li>
+<li><strong>Detrás de cámara</strong>: la cocina, el chef, la parrilla. Genera cercanía y confianza.</li>
+<li><strong>Contenido en vivo del ambiente</strong>: noches llenas, música, celebraciones.</li>
+<li><strong>Colaboraciones con creadores de comida peruanos</strong>: una visita de un foodie local puede llenar tu fin de semana.</li>
+</ul>
+<p>Para dominar la publicación orgánica y de pago, apóyate en un buen manejo de <a href="/es/servicios/socialmedia">redes sociales</a>.</p>
+
+<h2>Google Maps y SEO local: el "cerca de mí" que llena mesas</h2>
+<p>Gran parte de las decisiones de dónde comer empiezan con "restaurantes cerca de mí" o "menú criollo en Barranco". Optimizar tu presencia local es clave:</p>
+<ul>
+<li><strong>Google Business Profile</strong> con fotos actualizadas de platos, carta, horarios y ubicación.</li>
+<li><strong>Reseñas</strong>: pide reseñas a clientes felices y responde todas.</li>
+<li><strong>SEO local</strong> para aparecer en el pack de Maps de tu distrito (ver <a href="/es/posicionamiento-seo">posicionamiento SEO</a>).</li>
+</ul>
+<p>Este canal trae comensales listos para ir, casi sin costo por clic.</p>
+
+<h2>Meta Ads geolocalizado</h2>
+<p>Facebook e Instagram Ads te permiten mostrar tu restaurante <strong>solo a personas dentro de un radio</strong> de tu local. Úsalo para:</p>
+<ul>
+<li>Promocionar el menú del día, promos de almuerzo o happy hour.</li>
+<li>Impulsar reservas de fines de semana y fechas especiales.</li>
+<li>Anunciar tu servicio de <strong>delivery propio</strong>.</li>
+</ul>
+<p>El objetivo suele ser mensajes por WhatsApp o tráfico. Con radios pequeños, el costo por resultado es bajo. Revisa <a href="/es/blogs/meta-ads-pymes-peru-guia-primera-campana-rentable">cómo lanzar tu primera campaña de Meta Ads</a>.</p>
+
+<h2>Delivery propio vs apps: recupera tu margen</h2>
+<p>Las apps de delivery dan alcance pero se llevan comisiones altas que se comen tu margen. Una estrategia inteligente en Perú usa las apps para descubrimiento y <strong>empuja al cliente hacia tu canal directo</strong> (WhatsApp o web propia) para recompras:</p>
+<ul>
+<li>Incluye un volante o sticker con tu WhatsApp en cada pedido por app.</li>
+<li>Ofrece un beneficio por pedir directo (bebida, descuento, delivery gratis).</li>
+<li>Usa Meta Ads para promocionar tu delivery propio a tu zona.</li>
+</ul>
+
+<h2>Fechas que llenan mesas en Perú</h2>
+<p>Aprovecha el calendario: Día de la Madre, Fiestas Patrias, Día del Pisco Sour, aniversarios, campañas navideñas y fechas de tu distrito. Planifica contenido y Ads con anticipación para estas fechas donde la gente sale a comer.</p>
+
+<h2>Métricas para un restaurante</h2>
+<ul>
+<li><strong>Costo por mensaje/reserva</strong> en campañas de Meta.</li>
+<li><strong>Reseñas nuevas y calificación promedio</strong> en Google.</li>
+<li><strong>Pedidos por canal directo</strong> vs apps (para medir recuperación de margen).</li>
+<li><strong>Engagement</strong> de contenido: guarda y comparte indican antojo real.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto invierte un restaurante en marketing digital en Perú?</h3>
+<p>Un piso práctico es S/600 a S/2,000 al mes en medios, más producción de contenido. Con buen contenido, el retorno en un radio local es rápido.</p>
+<h3>¿TikTok sirve para restaurantes?</h3>
+<p>Muchísimo. El video de comida es de los que mejor rinde en TikTok. Un solo video viral puede llenar tu local un fin de semana.</p>
+<h3>¿Vale la pena una web para mi restaurante?</h3>
+<p>Sí, al menos para carta, reservas y delivery propio, y para no depender solo de las apps. Mira <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">cuánto cuesta una web en Perú</a>.</p>
+
+<h2>Cierre</h2>
+<p>Llenar mesas en Perú es combinar antojo (contenido que da hambre) con proximidad (que te encuentren cerca) y campañas geolocalizadas que empujen reservas y delivery propio. En 3R Core ayudamos a restaurantes con <a href="/es/servicios/socialmedia">gestión de redes sociales</a> y <a href="/es/servicios/meta-ads">Meta Ads</a> enfocados en llenar tu local. Si quieres más comensales y más margen, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  // ============ EMAIL MARKETING — 1 BLOG ============
+  {
+    slug: "email-marketing-negocios-peruanos-2026-guia",
+    title: "Email marketing para negocios peruanos 2026: guía para vender con tu lista",
+    focus_keyword: "email marketing para negocios peru",
+    meta_title: "Email marketing para negocios peruanos 2026 — Guía | 3R Core",
+    meta_description: "Guía de email marketing para negocios en Perú 2026: cómo construir tu lista, automatizaciones que venden, recuperar carritos, segmentar y medir aperturas y conversiones.",
+    excerpt: "Cómo vender más con email marketing en Perú: construir tu lista desde cero, automatizaciones clave, recuperación de carritos, segmentación y las métricas que de verdad importan.",
+    og_title: "Email marketing para negocios peruanos 2026",
+    og_description: "Construye tu lista, automatiza, recupera carritos y vende con el canal de mejor retorno.",
+    featured_image: IMG("1526628953301-3e589a6a8b74"),
+    featured_image_alt: "Email marketing para negocios peruanos 2026 - vender con tu lista",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el <strong>email marketing</strong> sigue siendo, en 2026, uno de los canales de mayor retorno para negocios peruanos, porque le hablas a gente que <strong>ya te dio permiso</strong> y te conoce. A diferencia de los Ads, no pagas por cada impacto: tu lista es un activo propio. La clave está en <strong>construir la lista con permiso</strong>, <strong>automatizar los correos correctos</strong> y <strong>segmentar</strong> para enviar el mensaje justo a la persona justa.</p>
+
+<h2>Por qué el email sigue vigente en Perú</h2>
+<p>Mientras los Ads dependen de presupuesto constante y las redes de algoritmos que cambian, tu lista de correos es <strong>tuya</strong>. Nadie puede quitártela ni cobrarte por acceder a ella. Para un negocio peruano, el email es ideal para <strong>fidelizar, vender de nuevo y comunicar sin intermediarios</strong>. No compite con WhatsApp: se complementan, cada uno con su momento.</p>
+
+<h2>Paso 1: Construye tu lista con permiso (nunca comprada)</h2>
+<p>La base del email marketing es una lista de gente que <strong>quiere</strong> recibirte. Comprar listas es ilegal, daña tu reputación de envío y no vende. Cómo hacerla crecer bien:</p>
+<ul>
+<li><strong>Formulario en tu web</strong> con un incentivo (guía, descuento, contenido exclusivo).</li>
+<li><strong>Captura en el checkout</strong> de tu e-commerce.</li>
+<li><strong>Lead magnets</strong>: algo de valor a cambio del correo.</li>
+<li><strong>Redes y Ads</strong>: campañas de generación de leads que alimentan tu lista.</li>
+</ul>
+<p>Respeta la <strong>Ley de Protección de Datos Personales (Ley 29733)</strong> en Perú: consentimiento claro y opción de darse de baja siempre visible.</p>
+
+<h2>Paso 2: Las automatizaciones que sí venden</h2>
+<p>El poder del email está en las <strong>automatizaciones</strong>: correos que se envían solos según el comportamiento del cliente. Las esenciales:</p>
+<table>
+<thead><tr><th>Automatización</th><th>Cuándo se dispara</th><th>Objetivo</th></tr></thead>
+<tbody>
+<tr><td><strong>Bienvenida</strong></td><td>Al suscribirse</td><td>Presentar la marca y generar confianza</td></tr>
+<tr><td><strong>Carrito abandonado</strong></td><td>Deja productos sin comprar</td><td>Recuperar la venta</td></tr>
+<tr><td><strong>Post-compra</strong></td><td>Tras comprar</td><td>Fidelizar y venta cruzada</td></tr>
+<tr><td><strong>Reactivación</strong></td><td>Cliente inactivo</td><td>Recuperar clientes dormidos</td></tr>
+</tbody>
+</table>
+<p>La de <strong>carrito abandonado</strong> es la de mayor retorno para e-commerce: recupera ventas que ya estaban casi cerradas. La integramos en nuestra <a href="/es/blogs/marketing-ecommerce-peru-estrategia-ads-escalar-ventas">estrategia de e-commerce</a>.</p>
+
+<h2>Paso 3: Segmenta para vender más</h2>
+<p>Enviar el mismo correo a toda tu lista es el error clásico. <strong>Segmentar</strong> multiplica resultados:</p>
+<ul>
+<li>Por <strong>comportamiento de compra</strong> (nuevos, recurrentes, dormidos).</li>
+<li>Por <strong>interés</strong> (categorías de producto que miraron).</li>
+<li>Por <strong>etapa</strong> (suscriptor que aún no compra vs cliente fiel).</li>
+</ul>
+<p>Un correo relevante para un segmento pequeño vende más que un correo genérico para toda la lista.</p>
+
+<h2>Paso 4: Asuntos que se abren</h2>
+<p>Si no abren el correo, nada más importa. Fórmulas que funcionan en Perú:</p>
+<ul>
+<li><strong>Beneficio directo</strong>: "Tu 20% de descuento vence hoy".</li>
+<li><strong>Curiosidad</strong>: "Esto es lo que la mayoría hace mal al comprar...".</li>
+<li><strong>Urgencia real</strong>: "Últimas horas de la promo".</li>
+<li><strong>Personalización</strong>: usa el nombre y datos relevantes.</li>
+</ul>
+<p>Evita palabras que activan filtros de spam y no engañes: el clickbait quema tu reputación de envío.</p>
+
+<h2>Email vs WhatsApp en Perú: cuándo usar cada uno</h2>
+<p>No compiten, se reparten el trabajo:</p>
+<ul>
+<li><strong>WhatsApp</strong>: inmediato, personal, ideal para cierre y atención.</li>
+<li><strong>Email</strong>: contenido más largo, promociones, newsletters, automatizaciones escalables.</li>
+</ul>
+<p>Usa WhatsApp para el uno a uno y el email para comunicar a escala sin saturar.</p>
+
+<h2>Métricas que importan</h2>
+<ul>
+<li><strong>Tasa de apertura</strong>: en Perú, 20–35% suele ser saludable según rubro.</li>
+<li><strong>Tasa de clics (CTR)</strong>: mide si el contenido interesa.</li>
+<li><strong>Conversiones</strong> atribuidas al email (lo que de verdad importa).</li>
+<li><strong>Tasa de bajas y quejas</strong>: si suben, revisa frecuencia y relevancia.</li>
+</ul>
+<p>Conecta tu plataforma de email con <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">GA4</a> para medir ventas reales, no solo aperturas.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Qué plataforma de email marketing conviene en Perú?</h3>
+<p>Hay varias buenas según tamaño y presupuesto. Lo importante no es la herramienta sino la estrategia: lista con permiso, automatizaciones y segmentación.</p>
+<h3>¿Cada cuánto debo enviar correos?</h3>
+<p>Calidad sobre cantidad. Una frecuencia sana suele ser de 1 a 4 envíos al mes más las automatizaciones. Si las bajas suben, reduce.</p>
+<h3>¿Sirve el email si mi negocio es de servicios?</h3>
+<p>Sí: newsletters de valor, recordatorios, reactivación y fidelización funcionan en cualquier rubro, no solo e-commerce.</p>
+
+<h2>Cierre</h2>
+<p>El email marketing es el canal que convierte a tus clientes actuales y suscriptores en ventas recurrentes, con un activo que es 100% tuyo. Construye tu lista con permiso, automatiza lo esencial y segmenta para ser relevante. En 3R Core diseñamos estrategias de <a href="/es/servicios/email-marketing">email marketing en Perú</a> que fidelizan y venden. Si quieres exprimir el canal de mejor retorno, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  // ============ ANALÍTICA / GA4 — 1 BLOG (soporte de medición para todos) ============
+  {
+    slug: "google-analytics-4-negocios-peruanos-que-medir",
+    title: "Google Analytics 4 para negocios peruanos: qué medir y cómo empezar",
+    focus_keyword: "google analytics 4 para negocios peru",
+    meta_title: "Google Analytics 4 para negocios peruanos 2026 — Qué medir | 3R Core",
+    meta_description: "Guía de Google Analytics 4 para negocios en Perú: qué eventos y conversiones medir, cómo instalar GA4 con Google Tag Manager, medir WhatsApp y leer tus reportes sin ser experto.",
+    excerpt: "Qué medir en Google Analytics 4 si tienes un negocio en Perú: eventos y conversiones clave, instalación con GTM, medición de WhatsApp y cómo leer tus reportes sin ser analista.",
+    og_title: "Google Analytics 4 para negocios peruanos 2026",
+    og_description: "Qué eventos y conversiones medir, cómo instalar GA4 con GTM y leer tus reportes sin ser experto.",
+    featured_image: IMG("1551288049-bebda4e38f71"),
+    featured_image_alt: "Google Analytics 4 para negocios peruanos - qué medir 2026",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>Google Analytics 4 (GA4)</strong> es la herramienta gratuita de Google para entender qué hace la gente en tu web y qué canales te traen clientes. Para un negocio peruano, no se trata de mirar todas las métricas, sino las que importan: <strong>conversiones</strong> (leads, ventas, mensajes de WhatsApp) y <strong>de dónde vienen</strong>. Bien configurado con Google Tag Manager, GA4 te dice qué campaña de Ads realmente vende y cuál desperdicia dinero.</p>
+
+<h2>Qué es GA4 y por qué lo necesitas</h2>
+<p>GA4 es la versión actual de Google Analytics, basada en <strong>eventos</strong>: cada acción del usuario (ver página, clic, compra) es un evento. A diferencia del viejo Universal Analytics, GA4 está pensado para medir el recorrido completo del cliente entre dispositivos. Sin GA4, decides tu marketing a ciegas: no sabes qué canal trae ventas ni dónde abandona la gente.</p>
+
+<h2>Qué medir según tu tipo de negocio</h2>
+<table>
+<thead><tr><th>Tipo de negocio</th><th>Conversiones clave</th></tr></thead>
+<tbody>
+<tr><td><strong>Servicios / locales</strong></td><td>Clic a WhatsApp, envío de formulario, clic a llamar</td></tr>
+<tr><td><strong>E-commerce</strong></td><td>Ver producto, agregar al carrito, compra, valor de compra</td></tr>
+<tr><td><strong>Clínicas / educación</strong></td><td>Lead de formulario, clic a WhatsApp, cita agendada</td></tr>
+<tr><td><strong>Contenido / medios</strong></td><td>Tiempo en página, suscripciones, scroll</td></tr>
+</tbody>
+</table>
+<p>Define primero <strong>cuál es tu conversión principal</strong> (la acción que vale dinero) y configúrala como conversión en GA4. Todo lo demás es secundario.</p>
+
+<h2>Cómo instalar GA4 con Google Tag Manager</h2>
+<p>La forma recomendada es usar <strong>Google Tag Manager (GTM)</strong>, que te permite gestionar todas tus etiquetas sin tocar el código cada vez:</p>
+<ol>
+<li>Crea una cuenta de <strong>GA4</strong> y obtén tu ID de medición.</li>
+<li>Instala el <strong>contenedor de GTM</strong> en tu web (una sola vez).</li>
+<li>Configura la etiqueta de <strong>GA4 Configuration</strong> en GTM.</li>
+<li>Crea etiquetas de <strong>eventos</strong> para tus conversiones (clic WhatsApp, formulario, compra).</li>
+<li>Prueba en <strong>modo vista previa</strong> antes de publicar.</li>
+<li>Marca los eventos importantes como <strong>conversiones</strong> en GA4.</li>
+</ol>
+<p>Si usas WordPress, Shopify u otra plataforma, hay integraciones que facilitan el paso. Lo importante es que las conversiones queden bien medidas desde el inicio.</p>
+
+<h2>Cómo medir conversiones de WhatsApp</h2>
+<p>En Perú, el WhatsApp es el rey del cierre, así que medir los clics al botón de WhatsApp es esencial. Con GTM configuras un <strong>evento de clic</strong> en el botón o enlace de WhatsApp y lo marcas como conversión en GA4. Así sabes cuántos contactos genera cada canal y cuánto te cuesta cada uno, cruzándolo con tus campañas de <a href="/es/servicios/meta-ads">Meta Ads</a> y <a href="/es/servicios/google-ads">Google Ads</a>.</p>
+
+<h2>UTM: saber qué anuncio trajo la venta</h2>
+<p>Los <strong>parámetros UTM</strong> son etiquetas que agregas a tus enlaces para que GA4 sepa de dónde viene cada visita. Etiqueta siempre tus campañas (fuente, medio, campaña) para poder responder la pregunta de oro: <strong>¿qué anuncio específico me trajo esta venta?</strong> Sin UTM, todo el tráfico pagado se mezcla y no puedes optimizar.</p>
+
+<h2>Los 4 reportes que un dueño de negocio debe mirar</h2>
+<ul>
+<li><strong>Adquisición</strong>: de dónde viene tu tráfico (orgánico, Ads, redes, directo).</li>
+<li><strong>Conversiones</strong>: cuántos leads/ventas y su valor.</li>
+<li><strong>Páginas y pantallas</strong>: qué contenido funciona y cuál no.</li>
+<li><strong>Recorrido / embudo</strong>: dónde abandona la gente antes de convertir.</li>
+</ul>
+<p>No necesitas ser analista: con estos cuatro reportes tomas el 90% de las decisiones de marketing.</p>
+
+<h2>Por qué GA4, Meta y TikTok no cuadran (y está bien)</h2>
+<p>Es la duda más común: GA4 dice una cifra de ventas, Meta otra y TikTok otra. Normal. Cada plataforma <strong>atribuye</strong> la conversión con su propio criterio y ventana de tiempo. La solución no es obsesionarse con que cuadren, sino <strong>elegir una fuente de verdad</strong> (usualmente GA4 o tu sistema de ventas) para decidir, y usar las plataformas para optimizar dentro de cada canal. Lo vemos también al hablar de <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">ROAS</a>.</p>
+
+<h2>Privacidad y cumplimiento en Perú</h2>
+<p>Respeta la <strong>Ley 29733 de Protección de Datos Personales</strong>: informa el uso de cookies y datos, y considera implementar <strong>Consent Mode</strong> para medir respetando el consentimiento del usuario.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿GA4 es gratis?</h3>
+<p>Sí, la versión estándar es gratuita y suficiente para la mayoría de negocios peruanos.</p>
+<h3>¿Necesito saber programar para usar GA4?</h3>
+<p>No para leer reportes. Para la instalación con GTM ayuda tener apoyo técnico, pero una vez configurado, cualquier dueño de negocio puede leer lo importante.</p>
+<h3>¿Cada cuánto debo revisar GA4?</h3>
+<p>Una revisión semanal de conversiones y adquisición basta para la mayoría; en campañas activas, hazlo con más frecuencia.</p>
+
+<h2>Cierre</h2>
+<p>GA4 convierte tu marketing de "creo que funciona" a "sé qué funciona". Configura bien tus conversiones, mide el WhatsApp, etiqueta con UTM y mira los cuatro reportes clave. Es la base para que cualquier inversión en Ads o <a href="/es/posicionamiento-seo">SEO</a> se pueda evaluar de verdad. En 3R Core configuramos GA4 y Google Tag Manager para negocios peruanos y montamos reportes claros de <a href="/es/servicios/performance-marketing">performance marketing</a>. Si quieres decidir con datos y no con corazonadas, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  // ============ WAVE 2 — 8 NUEVOS BLOGS ============
+  {
+    slug: "pixel-meta-api-conversiones-peru-configurar",
+    title: "Cómo configurar el Píxel de Meta y la API de Conversiones en Perú sin perder datos",
+    focus_keyword: "pixel de meta api de conversiones peru",
+    meta_title: "Píxel de Meta + API de Conversiones en Perú 2026 — Guía sin perder datos | 3R Core",
+    meta_description: "Guía práctica para instalar el Píxel de Meta y la API de Conversiones en Perú 2026. Eventos clave, deduplicación, WhatsApp y cómo dejar de perder datos por iOS y bloqueadores.",
+    excerpt: "Con iOS y los bloqueadores, el Píxel solo ya no basta. Aprende a combinarlo con la API de Conversiones para no perder señales, medir mejor y bajar tu costo por resultado en Perú.",
+    og_title: "Píxel de Meta + API de Conversiones en Perú — Guía completa",
+    og_description: "Instala Píxel + CAPI con deduplicación, mide WhatsApp y recupera los datos que iOS te quita.",
+    featured_image: IMG("1611926653458-09294b3142bf"),
+    featured_image_alt: "Configuración del Píxel de Meta y API de Conversiones para campañas en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> desde iOS 14.5 y el auge de los bloqueadores, el <strong>Píxel de Meta por sí solo pierde entre 15% y 35% de las conversiones</strong>. La solución en 2026 es combinar el <strong>Píxel (navegador)</strong> con la <strong>API de Conversiones o CAPI (servidor)</strong> y deduplicar eventos con <code>event_id</code>. Esta guía te explica, paso a paso y para el contexto peruano, qué eventos configurar, cómo evitar duplicados, cómo medir cierres por WhatsApp y qué revisar para que tus campañas de <a href="/es/servicios/meta-ads">Meta Ads</a> reciban señales limpias y bajen su costo por resultado.</p>
+
+<h2>Por qué el Píxel solo ya no alcanza</h2>
+<p>El <strong>Píxel de Meta</strong> es un código JavaScript que vive en el navegador del usuario y reporta acciones (ver contenido, agregar al carrito, comprar). El problema: <strong>Safari con ITP, iOS con ATT y los bloqueadores de anuncios impiden que ese código dispare o envíe datos</strong>. En Perú, donde una parte importante del tráfico viene de iPhone y de navegadores con protección de rastreo, esto se traduce en campañas que "no ven" conversiones que sí ocurrieron. Meta entonces optimiza a ciegas y tu costo por resultado sube.</p>
+<p>La <strong>API de Conversiones (CAPI)</strong> resuelve esto enviando los eventos <em>desde tu servidor</em> directamente a Meta, sin depender del navegador. Al combinar ambas fuentes recuperas señal, mejoras la atribución y le das a la IA de Meta datos más completos para optimizar.</p>
+
+<h2>Píxel vs API de Conversiones: qué hace cada uno</h2>
+<table>
+<thead><tr><th>Variable</th><th>Píxel (navegador)</th><th>API de Conversiones (servidor)</th></tr></thead>
+<tbody>
+<tr><td>Dónde se dispara</td><td>Navegador del usuario</td><td>Tu servidor / plataforma</td></tr>
+<tr><td>Afectado por iOS/bloqueadores</td><td>Sí, mucho</td><td>No</td></tr>
+<tr><td>Facilidad de instalación</td><td>Alta (pegar código o GTM)</td><td>Media (requiere backend o partner)</td></tr>
+<tr><td>Datos que puede enviar</td><td>Eventos de front-end</td><td>Eventos front + back (compra confirmada, lead calificado)</td></tr>
+<tr><td>Recomendación 2026</td><td>Mantenerlo</td><td>Sumarlo, no reemplazarlo</td></tr>
+</tbody>
+</table>
+<p>La clave: <strong>no elijas uno u otro, usa los dos y deduplica</strong>. Ese es el estándar profesional en 2026.</p>
+
+<h2>Paso 1: instala el Píxel base</h2>
+<p>Crea (o ubica) tu Píxel en el <strong>Administrador de Eventos de Meta</strong>. Instálalo vía <strong>Google Tag Manager</strong> para no tocar código cada vez. Verifica con la extensión <strong>Meta Pixel Helper</strong> que dispare <code>PageView</code> en todas las páginas. Si trabajas tu web con nosotros, esto ya viene integrado en el <a href="/es/servicios/web-development">desarrollo web</a>.</p>
+
+<h2>Paso 2: define los eventos que importan</h2>
+<p>No midas todo; mide lo que decide plata. Para la mayoría de negocios peruanos:</p>
+<ul>
+<li><strong>Lead</strong>: envío de formulario o clic a WhatsApp.</li>
+<li><strong>Contact</strong>: inicio de conversación.</li>
+<li><strong>AddToCart</strong> y <strong>Purchase</strong>: solo si tienes e-commerce.</li>
+<li><strong>CompleteRegistration</strong>: si captas registros o citas.</li>
+</ul>
+<p>Asigna a cada evento un <strong>valor monetario aproximado</strong> (por ejemplo, un lead vale S/40 según tu tasa de cierre). Así Meta optimiza por valor y no solo por cantidad.</p>
+
+<h2>Paso 3: activa la API de Conversiones</h2>
+<p>Tienes tres caminos según tu stack:</p>
+<ol>
+<li><strong>Integración nativa</strong>: Shopify, WooCommerce y muchos CMS tienen conector oficial de CAPI. Es el camino más simple.</li>
+<li><strong>Conversions API Gateway</strong> o partner (Zapier, Stape): útil si no tienes desarrollador.</li>
+<li><strong>Implementación server-side con GTM</strong>: la más robusta, ideal para medir <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">eventos en GA4</a> y Meta desde un mismo contenedor de servidor.</li>
+</ol>
+
+<h2>Paso 4: deduplica para no contar doble</h2>
+<p>Si el Píxel y la CAPI envían el mismo evento, Meta podría contarlo dos veces. Para evitarlo, envía en ambos el <strong>mismo <code>event_id</code></strong> y, cuando puedas, el <strong>mismo <code>event_name</code> y parámetros</strong>. Meta reconoce el par y lo cuenta una sola vez. Verifica en el Administrador de Eventos que la columna "Deduplicado" muestre coincidencias.</p>
+
+<h2>Paso 5: mejora la calidad de coincidencia (Match Quality)</h2>
+<p>Cuantos más datos de cliente envíes <strong>hasheados</strong> (email, teléfono, nombre, ciudad), mejor empareja Meta la conversión con la persona. Apunta a un <strong>Event Match Quality de 6/10 o más</strong>. En Perú, enviar el <strong>teléfono con código +51</strong> mejora mucho el emparejamiento porque el WhatsApp es el dato rey.</p>
+
+<h2>Cómo medir cierres por WhatsApp</h2>
+<p>El 70% de las ventas B2C en Perú se cierran conversando. Para no perder esa señal: dispara un evento <strong>Lead</strong> al clic del botón de WhatsApp y, cuando el lead se convierte en venta, envía un <strong>Purchase</strong> por CAPI desde tu CRM. Así Meta aprende qué anuncios traen clientes que <em>sí compran</em>, no solo los que escriben. Profundizamos el flujo en <a href="/es/blogs/como-construir-embudo-ventas-rentable-ads-peru-2026">cómo construir un embudo de ventas rentable con Ads</a>.</p>
+
+<h2>Errores comunes en Perú</h2>
+<ul>
+<li><strong>Instalar el Píxel y olvidarse de la CAPI</strong>: pierdes hasta un tercio de los datos.</li>
+<li><strong>No deduplicar</strong>: infla conversiones y engaña tu ROAS.</li>
+<li><strong>No enviar valor</strong>: Meta optimiza por volumen de leads baratos, no por leads que compran.</li>
+<li><strong>Ignorar el Consent Mode</strong>: recuerda la <strong>Ley 29733</strong> de protección de datos; informa el uso de datos y cookies.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿La API de Conversiones es gratis?</h3>
+<p>Sí, Meta no cobra por CAPI. El costo, si lo hay, es el desarrollo o el partner que uses para implementarla.</p>
+<h3>¿Necesito programador?</h3>
+<p>Para Shopify/WooCommerce, no: usas el conector oficial. Para implementaciones server-side avanzadas o CRM, sí conviene apoyo técnico.</p>
+<h3>¿Esto reemplaza a GA4?</h3>
+<p>No. GA4 mide tu web de forma global; el Píxel + CAPI alimentan a Meta. Son complementarios. Revisa <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">qué medir en GA4</a>.</p>
+
+<h2>Cierre</h2>
+<p>En 2026, medir bien es la mitad del resultado. Un Píxel + CAPI bien deduplicados le dan a Meta la señal limpia que necesita para bajar tu costo por lead y escalar. En 3R Core dejamos tu medición impecable antes de invertir un sol en <a href="/es/servicios/meta-ads">Meta Ads</a> y conectamos todo a tu <a href="/es/servicios/performance-marketing">estrategia de performance</a>. Si quieres dejar de optimizar a ciegas, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "palabras-clave-negativas-google-ads-peru",
+    title: "Palabras clave negativas en Google Ads: la lista que salva tu inversión en Perú",
+    focus_keyword: "palabras clave negativas google ads peru",
+    meta_title: "Palabras clave negativas en Google Ads Perú 2026 — Lista que ahorra plata | 3R Core",
+    meta_description: "Las palabras clave negativas evitan clics inútiles y ahorran presupuesto en Google Ads. Guía 2026 para Perú: lista base, cómo encontrarlas y errores que queman tu inversión.",
+    excerpt: "Cada clic irrelevante en Google Ads es plata quemada. Aprende a usar palabras clave negativas para filtrar búsquedas que no compran y estirar tu presupuesto en Perú.",
+    og_title: "Palabras clave negativas en Google Ads — La lista que salva tu inversión",
+    og_description: "Lista base de negativas para Perú, cómo encontrarlas en el informe de términos y errores frecuentes.",
+    featured_image: IMG("1553729459-efe14ef6055d"),
+    featured_image_alt: "Palabras clave negativas en Google Ads para negocios en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> las <strong>palabras clave negativas</strong> son la herramienta más rentable y más ignorada de Google Ads. Le dicen a Google <em>en qué búsquedas NO quieres aparecer</em>, evitando clics que nunca compran. Una cuenta peruana promedio sin negativas <strong>desperdicia entre 20% y 40% del presupuesto</strong> en términos como "gratis", "empleo", "cómo hacer" o marcas de la competencia que no convierten. Esta guía te da una lista base para Perú, te enseña a encontrar tus propias negativas en el informe de términos de búsqueda y te evita los errores que queman plata.</p>
+
+<h2>Qué son y por qué importan tanto</h2>
+<p>Cuando pujas por "zapatillas para correr", Google también te muestra en búsquedas relacionadas: "zapatillas para correr <strong>gratis</strong>", "<strong>reparar</strong> zapatillas", "zapatillas para correr <strong>usadas baratas</strong>". Si vendes producto nuevo, esos clics te cuestan y no compran. Una <strong>palabra clave negativa</strong> ("gratis", "reparar", "usadas") impide que tu anuncio aparezca en esas búsquedas. Resultado: <strong>menos clics, pero de mayor intención de compra</strong>, y un costo por conversión más bajo. Es la base de una cuenta sana, como explicamos en <a href="/es/blogs/google-ads-negocios-lima-guia-captar-clientes">Google Ads para negocios en Lima</a>.</p>
+
+<h2>Tipos de concordancia de negativas</h2>
+<table>
+<thead><tr><th>Tipo</th><th>Cómo se escribe</th><th>Qué bloquea</th></tr></thead>
+<tbody>
+<tr><td><strong>Amplia negativa</strong></td><td>gratis</td><td>Búsquedas que contengan esa palabra en cualquier orden</td></tr>
+<tr><td><strong>Frase negativa</strong></td><td>"curso gratis"</td><td>Búsquedas que contengan esa frase exacta dentro</td></tr>
+<tr><td><strong>Exacta negativa</strong></td><td>[curso gratis]</td><td>Solo esa búsqueda exacta</td></tr>
+</tbody>
+</table>
+<p>Para la mayoría de casos, la <strong>amplia negativa</strong> a nivel de palabra suelta ("gratis", "empleo") es la más eficiente. Usa frase o exacta cuando quieras ser quirúrgico y no bloquear términos válidos.</p>
+
+<h2>Lista base de negativas para Perú (arranca con esto)</h2>
+<p>Casi cualquier campaña comercial en Perú se beneficia de estas negativas de partida:</p>
+<ul>
+<li><strong>Intención informativa/no compra:</strong> gratis, gratuito, cómo hacer, qué es, tutorial, pdf, ejemplos, significado, wikipedia.</li>
+<li><strong>Empleo:</strong> trabajo, empleo, cv, sueldo, vacante, practicante, convocatoria.</li>
+<li><strong>Segunda mano / precio bajo extremo:</strong> usado, usada, segunda mano, remate, regalado (evalúa según tu negocio).</li>
+<li><strong>Autoservicio / DIY:</strong> hazlo tú mismo, casero, manualidad, plantilla.</li>
+<li><strong>Educación no relacionada:</strong> curso, carrera, universidad, instituto (si no vendes formación).</li>
+<li><strong>Términos irrelevantes de tu rubro</strong> que descubras en el informe.</li>
+</ul>
+<p>Ojo: esta lista es un punto de partida. <strong>"Gratis" puede ser negativo para una tienda, pero clave para un lead magnet.</strong> Adáptala a tu modelo.</p>
+
+<h2>Cómo encontrar TUS negativas reales</h2>
+<p>El oro está en el <strong>informe de términos de búsqueda</strong> (Search Terms):</p>
+<ol>
+<li>Entra a tu campaña → pestaña <strong>Palabras clave</strong> → <strong>Términos de búsqueda</strong>.</li>
+<li>Filtra por últimos 30 días con clics.</li>
+<li>Revisa fila por fila: cualquier término que trajo clics pero <strong>0 conversiones</strong> y que claramente no es tu cliente, agrégalo como negativa.</li>
+<li>Repite este ritual <strong>cada semana</strong> las primeras 8 semanas, luego cada 2 semanas.</li>
+</ol>
+<p>Este mantenimiento es lo que separa una cuenta que mejora sola de una que sangra presupuesto. Es parte de lo que hacemos en la gestión continua de <a href="/es/servicios/google-ads">Google Ads</a>.</p>
+
+<h2>Listas de negativas reutilizables</h2>
+<p>Crea <strong>listas de palabras clave negativas</strong> a nivel de cuenta y aplícalas a varias campañas: una lista "empleo", una "informativas", una "competencia". Así mantienes todo en un solo lugar y lo aplicas con un clic a campañas nuevas.</p>
+
+<h2>Negativas y Performance Max</h2>
+<p>En <strong>Performance Max</strong> las negativas se aplican a nivel de cuenta (y ahora también por campaña). No descuides PMax: sin negativas, esta campaña automatizada puede gastar en búsquedas de marca o irrelevantes. Combínalo con una buena medición de <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">ROAS</a> para saber si rinde.</p>
+
+<h2>Errores que queman plata</h2>
+<ul>
+<li><strong>No revisar nunca los términos de búsqueda:</strong> el error #1. Ahí está el desperdicio.</li>
+<li><strong>Ser demasiado agresivo:</strong> agregar "barato" como negativa cuando tu ventaja <em>es</em> el precio bajo.</li>
+<li><strong>Bloquear tu propia marca por error</strong> con una amplia mal escrita.</li>
+<li><strong>No usar listas reutilizables</strong> y repetir trabajo en cada campaña.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuántas negativas debería tener una cuenta sana?</h3>
+<p>No hay número mágico. Una cuenta madura en Perú suele tener entre 50 y 300 negativas según el rubro. Importa la relevancia, no la cantidad.</p>
+<h3>¿Las negativas mejoran el Quality Score?</h3>
+<p>Indirectamente sí: al mostrar tus anuncios solo en búsquedas relevantes, tu CTR y relevancia suben, y eso ayuda al Quality Score y baja el costo por clic.</p>
+<h3>¿Sirven para Google Shopping?</h3>
+<p>Sí. En Shopping no eliges keywords, pero las negativas siguen filtrando en qué búsquedas apareces. Son esenciales para catálogos de e-commerce.</p>
+
+<h2>Cierre</h2>
+<p>Las palabras clave negativas no son glamurosas, pero son la diferencia entre una campaña que rinde y una que desangra tu presupuesto. Empieza con la lista base, revisa tus términos de búsqueda cada semana y crea listas reutilizables. En 3R Core auditamos cuentas de <a href="/es/servicios/google-ads">Google Ads</a> y solemos recuperar entre 20% y 40% del presupuesto solo con limpieza de negativas y estructura. Si sientes que tu inversión se va por el caño, <a href="/es#contacto">conversemos</a> y revisamos tu cuenta.</p>`,
+  },
+
+  {
+    slug: "posicionar-negocio-google-maps-lima",
+    title: "Cómo posicionar tu negocio en Google Maps en Lima paso a paso (2026)",
+    focus_keyword: "posicionar negocio en google maps lima",
+    meta_title: "Cómo posicionar tu negocio en Google Maps en Lima 2026 — Guía paso a paso | 3R Core",
+    meta_description: "Guía 2026 para aparecer en Google Maps en Lima: optimiza tu ficha de Google Business Profile, NAP, categorías, reseñas y fotos para entrar al pack local de tu distrito.",
+    excerpt: "Aparecer en el mapa de Google cuando buscan tu servicio en tu distrito trae clientes listos para comprar. Guía paso a paso para posicionar tu negocio en Google Maps en Lima.",
+    og_title: "Cómo posicionar tu negocio en Google Maps en Lima — Paso a paso",
+    og_description: "Optimiza tu ficha, NAP, categorías y reseñas para entrar al pack local de tu distrito en Lima.",
+    featured_image: IMG("1524661135-423995f22d0b"),
+    featured_image_alt: "Posicionar un negocio en Google Maps en Lima Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> aparecer en el <strong>pack local de Google Maps</strong> (esas 3 fichas con mapa que salen arriba cuando buscas "dentista en La Molina") es una de las fuentes de clientes más rentables para negocios con local o zona de servicio en Lima. No cuesta publicidad y trae gente con intención de compra inmediata. El motor detrás es tu <strong>Perfil de Empresa de Google (Google Business Profile)</strong>. Esta guía te lleva paso a paso: reclamar y verificar la ficha, NAP consistente, categorías correctas, reseñas, fotos y las señales que Google usa para rankear localmente en 2026.</p>
+
+<h2>Cómo funciona el ranking local de Google</h2>
+<p>Google decide qué negocios muestra en Maps con tres factores:</p>
+<ul>
+<li><strong>Relevancia:</strong> qué tan bien tu ficha coincide con lo que la persona busca.</li>
+<li><strong>Distancia:</strong> qué tan cerca estás de quien busca (o de la zona buscada).</li>
+<li><strong>Prominencia:</strong> qué tan conocido y confiable eres (reseñas, enlaces, menciones, actividad).</li>
+</ul>
+<p>No controlas la distancia, pero <strong>sí controlas la relevancia y la prominencia</strong>. Ahí trabajamos.</p>
+
+<h2>Paso 1: reclama y verifica tu ficha</h2>
+<p>Busca tu negocio en Google y reclama la ficha (o créala en <strong>business.google.com</strong>). Verifícala por el método que Google te ofrezca (video, teléfono, tarjeta postal). <strong>Sin verificar, no rankeas.</strong> Este es el paso que muchos negocios en Lima nunca completan y por eso son invisibles en el mapa.</p>
+
+<h2>Paso 2: NAP consistente en todos lados</h2>
+<p><strong>NAP = Name, Address, Phone</strong> (Nombre, Dirección, Teléfono). Google confía en negocios cuya información es <em>idéntica</em> en todas partes: tu web, tu ficha, tus redes, directorios. Un teléfono distinto aquí y allá, o "Av." vs "Avenida", confunde al algoritmo. Asegúrate de que tu NAP sea <strong>exactamente igual</strong> en tu <a href="/es/servicios/web-development">página web</a>, tu ficha y tus perfiles sociales.</p>
+
+<h2>Paso 3: elige la categoría principal correcta</h2>
+<p>La <strong>categoría principal</strong> es la señal de relevancia más fuerte. Si eres una clínica dental, tu principal debe ser "Dentista", no "Clínica" genérica. Agrega categorías secundarias relevantes, pero no las infles con las que no aplican. Investiga qué categoría usan los 3 negocios que ya rankean en tu distrito.</p>
+
+<h2>Paso 4: completa cada campo</h2>
+<ul>
+<li><strong>Descripción</strong> con tus servicios y tu distrito (natural, sin relleno de keywords).</li>
+<li><strong>Horario</strong> exacto y actualizado (y horarios especiales en feriados peruanos).</li>
+<li><strong>Servicios y productos</strong> con precios cuando aplique.</li>
+<li><strong>Atributos</strong> (estacionamiento, accesible, atención por WhatsApp, etc.).</li>
+<li><strong>Enlace a tu web</strong> y botón de acción (reservar, llamar, WhatsApp).</li>
+</ul>
+<p>Google premia las fichas <strong>100% completas</strong>. Una ficha a medias rankea peor que una completa, aunque el negocio sea mejor.</p>
+
+<h2>Paso 5: reseñas, el combustible del ranking local</h2>
+<p>Las <strong>reseñas</strong> son señal de prominencia y de conversión. No se trata solo de cantidad: importa la <strong>frecuencia</strong> (reseñas constantes, no 20 el mismo día), las <strong>palabras</strong> que usan tus clientes (si mencionan "implante dental en La Molina", refuerzas esa relevancia) y tus <strong>respuestas</strong>. Pide reseñas a clientes satisfechos con un enlace directo y <strong>responde todas</strong>, buenas y malas, con tono profesional.</p>
+
+<h2>Paso 6: fotos y publicaciones frescas</h2>
+<p>Sube <strong>fotos reales</strong> de tu local, equipo y trabajos (no stock). Google interpreta la actividad reciente como señal de que el negocio está vivo. Publica novedades u ofertas en la sección de <strong>publicaciones</strong> cada tanto. La frescura ayuda.</p>
+
+<h2>Paso 7: coherencia con tu web y SEO local</h2>
+<p>Google cruza tu ficha con tu web. Una web con tu dirección, un <strong>schema LocalBusiness</strong>, página de contacto clara y buen rendimiento móvil refuerza tu ficha. Aquí se conecta el trabajo de <a href="/es/posicionamiento-seo">posicionamiento SEO</a> con el mapa: son piezas del mismo rompecabezas.</p>
+
+<h2>Casos por rubro en Lima</h2>
+<p>El pack local es especialmente rentable para <strong>clínicas, restaurantes, servicios a domicilio y estudios profesionales</strong>. Si tienes una clínica, combínalo con captación de pacientes por Ads: lo vemos en <a href="/es/blogs/marketing-digital-clinicas-consultorios-peru-agenda">marketing digital para clínicas y consultorios</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto tarda en rankear mi ficha en Google Maps?</h3>
+<p>Una ficha nueva bien optimizada empieza a aparecer en semanas, pero competir por el pack local en zonas competidas de Lima puede tomar de 2 a 6 meses de reseñas y consistencia.</p>
+<h3>¿Necesito local físico para salir en Maps?</h3>
+<p>No siempre. Los negocios de "área de servicio" (a domicilio) pueden ocultar la dirección y definir las zonas donde atienden.</p>
+<h3>¿Puedo poner mi palabra clave en el nombre del negocio?</h3>
+<p>No. Meter keywords falsas en el nombre viola las políticas de Google y puede suspender tu ficha. Usa tu nombre real.</p>
+
+<h2>Cierre</h2>
+<p>Google Maps es tráfico gratis con intención de compra altísima, pero solo si tu ficha está verificada, completa, con NAP consistente y reseñas constantes. Empieza hoy: reclama, completa y pide tu primera tanda de reseñas. En 3R Core optimizamos tu Perfil de Empresa junto con tu <a href="/es/posicionamiento-seo">estrategia SEO</a> para que domines tu distrito. Si quieres aparecer cuando tus clientes buscan cerca, <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "seo-vs-google-ads-peru-cual-conviene",
+    title: "SEO vs Google Ads en Perú: cuál conviene según tu etapa de negocio",
+    focus_keyword: "seo vs google ads peru",
+    meta_title: "SEO vs Google Ads en Perú 2026 — Cuál conviene para tu negocio | 3R Core",
+    meta_description: "SEO vs Google Ads en Perú 2026: diferencias, costos, plazos y cuál conviene según tu etapa de negocio. Guía honesta para decidir dónde invertir tu presupuesto.",
+    excerpt: "¿Invertir en SEO o en Google Ads? Depende de tu etapa, tu urgencia y tu presupuesto. Comparación honesta con costos y plazos para negocios en Perú, y por qué juntos rinden más.",
+    og_title: "SEO vs Google Ads en Perú — Cuál conviene según tu etapa",
+    og_description: "Diferencias, costos, plazos y la estrategia combinada que da mejores resultados en Perú.",
+    featured_image: IMG("1432888622747-4eb9a8efeb07"),
+    featured_image_alt: "Comparación SEO vs Google Ads para negocios en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>Google Ads</strong> te trae clientes <em>hoy</em> pero dejas de aparecer el día que apagas la inversión; <strong>SEO</strong> tarda meses en madurar pero construye un activo que sigue trayendo tráfico sin pagar por clic. No es "uno u otro": la respuesta correcta depende de <strong>tu etapa de negocio, tu urgencia y tu presupuesto</strong>. Esta guía honesta te ayuda a decidir dónde poner tu plata en Perú 2026, con costos, plazos y el escenario donde combinarlos rinde más que cualquiera por separado.</p>
+
+<h2>La diferencia de fondo</h2>
+<p>Ambos te ponen en Google, pero de forma distinta:</p>
+<ul>
+<li><strong>Google Ads (SEM):</strong> pagas por cada clic y apareces en los espacios "Anuncio" de arriba. Enciendes y aparece; apagas y desapareces.</li>
+<li><strong>SEO (orgánico):</strong> optimizas tu web y contenido para aparecer en los resultados naturales. No pagas por clic, pero inviertes tiempo y trabajo, y los resultados llegan en meses.</li>
+</ul>
+<p>Google Ads es <strong>alquilar</strong> visibilidad; SEO es <strong>construir</strong> un activo propio. Ambos son legítimos; sirven a momentos distintos.</p>
+
+<h2>Tabla comparativa para Perú 2026</h2>
+<table>
+<thead><tr><th>Variable</th><th>Google Ads</th><th>SEO</th></tr></thead>
+<tbody>
+<tr><td><strong>Velocidad de resultados</strong></td><td>Inmediata (horas/días)</td><td>Lenta (3–6 meses)</td></tr>
+<tr><td><strong>Costo</strong></td><td>Pagas por clic, siempre</td><td>Inversión mensual fija, sin costo por clic</td></tr>
+<tr><td><strong>Durabilidad</strong></td><td>Se apaga con el presupuesto</td><td>Perdura y se acumula</td></tr>
+<tr><td><strong>Control</strong></td><td>Total (mensaje, zona, horario)</td><td>Indirecto (Google decide)</td></tr>
+<tr><td><strong>Confianza del usuario</strong></td><td>Menor (ve "Anuncio")</td><td>Mayor (resultado natural)</td></tr>
+<tr><td><strong>Rango de inversión típica</strong></td><td>Desde S/1,500/mes + medios</td><td>Desde S/1,500/mes</td></tr>
+</tbody>
+</table>
+
+<h2>Cuándo conviene Google Ads</h2>
+<ol>
+<li><strong>Recién lanzas y necesitas ventas ya.</strong> SEO no rinde en el mes 1; Ads sí.</li>
+<li><strong>Tienes una promo o temporada con fecha límite.</strong> Campañas, Cyber, Navidad.</li>
+<li><strong>Quieres validar un producto o mercado rápido</strong> antes de invertir meses en contenido.</li>
+<li><strong>Compites por búsquedas transaccionales muy peleadas</strong> donde rankear orgánico tomaría un año.</li>
+</ol>
+<p>Detalle de cómo arrancar en <a href="/es/blogs/google-ads-negocios-lima-guia-captar-clientes">Google Ads para negocios en Lima</a>, y no olvides tus <a href="/es/blogs/palabras-clave-negativas-google-ads-peru">palabras clave negativas</a> para no quemar presupuesto.</p>
+
+<h2>Cuándo conviene SEO</h2>
+<ol>
+<li><strong>Piensas a mediano/largo plazo</strong> y quieres bajar tu dependencia de la pauta.</li>
+<li><strong>Tu costo por clic en Ads es alto</strong> y erosiona el margen.</li>
+<li><strong>Tienes contenido que responde dudas de tus clientes</strong> (blogs, guías): eso rankea y educa.</li>
+<li><strong>Quieres construir autoridad de marca</strong> y aparecer también en el mapa y en IA.</li>
+</ol>
+<p>El SEO bien hecho es un activo que se paga solo con el tiempo. Es el corazón de nuestro servicio de <a href="/es/posicionamiento-seo">posicionamiento SEO</a>, y se potencia si además trabajas <a href="/es/blogs/posicionar-negocio-google-maps-lima">Google Maps local</a>.</p>
+
+<h2>La verdad incómoda: no es o/o</h2>
+<p>Los negocios que crecen sostenido en Perú <strong>usan ambos con roles distintos</strong>:</p>
+<ul>
+<li><strong>Ads</strong> cubre la demanda inmediata y las campañas.</li>
+<li><strong>SEO</strong> construye el flujo orgánico que abarata tu costo de adquisición con el tiempo.</li>
+<li>Los <strong>datos de Ads</strong> (qué keywords convierten) alimentan tu estrategia SEO, y viceversa.</li>
+</ul>
+<p>Una estrategia madura empieza pesada en Ads y, a medida que el SEO madura, reequilibra el presupuesto. Así bajas tu <strong>CAC</strong> global, algo que explicamos en <a href="/es/blogs/cac-ltv-roas-metricas-negocio-peru">CAC, LTV y ROAS</a>.</p>
+
+<h2>Cómo decidir con tu presupuesto</h2>
+<p>Regla práctica para Perú:</p>
+<ul>
+<li><strong>Presupuesto chico y urgencia:</strong> arranca 100% en Ads bien optimizado.</li>
+<li><strong>Presupuesto medio y visión:</strong> 70% Ads / 30% SEO, y reequilibra en 6 meses.</li>
+<li><strong>Negocio establecido:</strong> 50/50, con SEO ya trayendo tráfico constante.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Google Ads mejora mi SEO?</h3>
+<p>No directamente: pagar Ads no sube tu ranking orgánico. Pero los datos de conversión de Ads te dicen qué keywords priorizar en SEO.</p>
+<h3>¿Cuánto tarda el SEO en dar resultados en Perú?</h3>
+<p>Para keywords locales de baja competencia, 2–4 meses. Para términos competidos en Lima, 6–12 meses de trabajo constante.</p>
+<h3>¿Puedo hacer solo SEO y ahorrarme la pauta?</h3>
+<p>Puedes, si no tienes urgencia de ventas y aguantas los primeros meses sin resultados. La mayoría de negocios necesita Ads mientras el SEO madura.</p>
+
+<h2>Cierre</h2>
+<p>SEO vs Google Ads no es una guerra: es una secuencia. Empieza donde tu etapa lo pide y evoluciona hacia una mezcla que baje tu costo de adquisición. En 3R Core hacemos ambos y te decimos sin humo dónde invertir según tu momento: <a href="/es/servicios/google-ads">Google Ads</a> para resultados ya y <a href="/es/posicionamiento-seo">SEO</a> para construir el activo. Si no sabes por dónde empezar, <a href="/es#contacto">conversemos</a> y armamos tu plan.</p>`,
+  },
+
+  {
+    slug: "plan-contenido-redes-sociales-peru-plantilla",
+    title: "Plan de contenido para redes sociales en Perú: plantilla mensual editable",
+    focus_keyword: "plan de contenido redes sociales peru",
+    meta_title: "Plan de contenido para redes sociales en Perú 2026 — Plantilla mensual | 3R Core",
+    meta_description: "Arma tu plan de contenido mensual para redes sociales en Perú 2026 con esta plantilla y método: pilares, formatos, frecuencia y calendario para Instagram y TikTok.",
+    excerpt: "Publicar sin plan quema tiempo y no vende. Aprende a armar un plan de contenido mensual para redes en Perú con pilares, formatos y una plantilla editable lista para usar.",
+    og_title: "Plan de contenido para redes sociales en Perú — Plantilla mensual",
+    og_description: "Pilares, formatos, frecuencia y calendario editable para Instagram y TikTok en Perú.",
+    featured_image: IMG("1611162617474-5b21e879e113"),
+    featured_image_alt: "Plan de contenido mensual para redes sociales en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> publicar en redes "cuando se ocurre" quema tiempo y no vende. Un <strong>plan de contenido mensual</strong> convierte tus redes en una máquina predecible de atención y ventas. La fórmula: define <strong>3–4 pilares de contenido</strong>, asigna <strong>formatos</strong> (Reels, carruseles, historias), fija una <strong>frecuencia realista</strong> y ordena todo en un <strong>calendario</strong>. Esta guía te da el método y una plantilla mensual editable pensada para el mercado peruano, para que dejes de improvisar y empieces a construir comunidad.</p>
+
+<h2>Por qué necesitas un plan (y no solo "ganas de postear")</h2>
+<p>Sin plan pasa esto: publicas 5 días seguidos con entusiasmo, luego 3 semanas en silencio, el algoritmo te castiga y concluyes que "las redes no funcionan". Un plan resuelve tres cosas: <strong>consistencia</strong> (el algoritmo premia la regularidad), <strong>variedad</strong> (no aburres) e <strong>intención</strong> (cada post tiene un objetivo). Es la base del servicio de <a href="/es/servicios/socialmedia">manejo de redes sociales</a>.</p>
+
+<h2>Paso 1: define tus pilares de contenido</h2>
+<p>Los <strong>pilares</strong> son los 3–4 temas sobre los que siempre hablas. Evitan el bloqueo creativo. Un ejemplo para un negocio de servicios en Lima:</p>
+<ul>
+<li><strong>Educativo:</strong> tips, cómo elegir, errores comunes de tu rubro.</li>
+<li><strong>Prueba social:</strong> casos, testimonios, resultados, antes/después.</li>
+<li><strong>Detrás de cámaras:</strong> tu equipo, tu proceso, tu día a día (humaniza).</li>
+<li><strong>Oferta/venta:</strong> producto, promo, llamado a la acción directo.</li>
+</ul>
+<p>Regla de oro: <strong>por cada post de venta, publica 3 de valor</strong>. Nadie sigue una cuenta que solo vende.</p>
+
+<h2>Paso 2: elige formatos según la plataforma</h2>
+<table>
+<thead><tr><th>Formato</th><th>Mejor para</th><th>Frecuencia sugerida</th></tr></thead>
+<tbody>
+<tr><td><strong>Reels / TikTok</strong></td><td>Alcance y captar seguidores nuevos</td><td>3–5 por semana</td></tr>
+<tr><td><strong>Carrusel</strong></td><td>Educar y guardar (señal fuerte al algoritmo)</td><td>2–3 por semana</td></tr>
+<tr><td><strong>Historias</strong></td><td>Cercanía, encuestas, ventas suaves</td><td>Diario</td></tr>
+<tr><td><strong>Post estático</strong></td><td>Anuncios, frases, comunidad</td><td>1–2 por semana</td></tr>
+</tbody>
+</table>
+<p>En Perú, el <strong>video corto (Reels y TikTok) es el rey del alcance</strong> en 2026. Si tienes que priorizar, prioriza video.</p>
+
+<h2>Paso 3: fija una frecuencia que puedas sostener</h2>
+<p>Mejor <strong>4 posts consistentes por semana durante 6 meses</strong> que 15 en una semana y cero después. Sé honesto con tu capacidad. Una frecuencia base sana para una pyme peruana: <strong>4–5 publicaciones al feed + historias diarias</strong>. Puedes escalar cuando el proceso ya funcione.</p>
+
+<h2>Paso 4: arma el calendario mensual</h2>
+<p>Distribuye tus pilares a lo largo del mes. Una <strong>plantilla semanal editable</strong> puede verse así:</p>
+<table>
+<thead><tr><th>Día</th><th>Pilar</th><th>Formato</th><th>Objetivo</th></tr></thead>
+<tbody>
+<tr><td>Lunes</td><td>Educativo</td><td>Carrusel</td><td>Guardados / autoridad</td></tr>
+<tr><td>Martes</td><td>Detrás de cámaras</td><td>Reel</td><td>Alcance / cercanía</td></tr>
+<tr><td>Miércoles</td><td>Prueba social</td><td>Reel o post</td><td>Confianza</td></tr>
+<tr><td>Jueves</td><td>Educativo</td><td>Reel</td><td>Alcance</td></tr>
+<tr><td>Viernes</td><td>Oferta</td><td>Carrusel o post</td><td>Venta / clic a WhatsApp</td></tr>
+</tbody>
+</table>
+<p>Copia esta tabla a una hoja de cálculo, agrega columnas de "copy", "estado" (idea/grabado/editado/publicado) y "responsable". Ese es tu plan editable.</p>
+
+<h2>Paso 5: aprovecha las fechas comerciales peruanas</h2>
+<p>Suma al calendario las <strong>fechas clave de Perú</strong>: Día de la Madre, Fiestas Patrias, Cyber Days, Navidad, y las propias de tu rubro. El contenido estacional rinde porque conecta con lo que la gente ya tiene en la cabeza.</p>
+
+<h2>Paso 6: convierte la atención en ventas</h2>
+<p>El contenido sin llamada a la acción es entretenimiento, no marketing. Cierra tus posts de venta con un <strong>CTA claro</strong> ("escríbenos al WhatsApp", "link en bio") y responde rápido los mensajes: en Perú, la venta se cierra conversando. Si quieres amplificar el contenido que ya funciona, conviértelo en anuncios con <a href="/es/servicios/tiktok-ads">TikTok Ads</a> o <a href="/es/servicios/meta-ads">Meta Ads</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuántas veces al día debo publicar?</h3>
+<p>Al feed, 4–5 veces por semana basta si es contenido de calidad. Historias, a diario. Más no siempre es mejor: la consistencia gana.</p>
+<h3>¿Necesito equipo profesional para grabar?</h3>
+<p>No. En 2026 un celular moderno con buena luz natural produce Reels que rinden. Importa más el gancho y el mensaje que la producción.</p>
+<h3>¿Puedo reutilizar el mismo contenido en Instagram y TikTok?</h3>
+<p>Sí, pero adáptalo: TikTok premia lo nativo y crudo; Instagram tolera algo más pulido. Evita subir con la marca de agua de la otra red.</p>
+
+<h2>Cierre</h2>
+<p>Un plan de contenido convierte tus redes de hobby en canal de ventas. Define pilares, elige formatos, fija una frecuencia sostenible y ordénalo en un calendario editable. En 3R Core diseñamos y ejecutamos planes de contenido para negocios peruanos y los conectamos con pauta para escalar lo que funciona. Si quieres dejar de improvisar, conoce nuestro <a href="/es/servicios/socialmedia">servicio de redes sociales</a> o <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "automatizaciones-email-ecommerce-peru",
+    title: "Automatizaciones de email que todo e-commerce peruano debería tener en 2026",
+    focus_keyword: "automatizaciones de email ecommerce peru",
+    meta_title: "Automatizaciones de email para e-commerce en Perú 2026 — Las 6 clave | 3R Core",
+    meta_description: "Las 6 automatizaciones de email que todo e-commerce peruano debería tener en 2026: bienvenida, carrito abandonado, post-compra, recompra y más. Cómo montarlas y qué esperar.",
+    excerpt: "El email automatizado vende en piloto automático: bienvenida, carrito abandonado, post-compra y recompra. Las 6 automatizaciones que todo e-commerce peruano debería tener.",
+    og_title: "Automatizaciones de email para e-commerce en Perú — Las 6 clave",
+    og_description: "Bienvenida, carrito abandonado, post-compra, recompra y más: flujos que venden solos.",
+    featured_image: IMG("1596526131083-e8c633c948d2"),
+    featured_image_alt: "Automatizaciones de email marketing para e-commerce en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el <strong>email automatizado</strong> es el canal de mayor retorno del e-commerce (suele devolver varias veces cada sol invertido) y sin embargo la mayoría de tiendas peruanas no tiene ni un flujo activo. Las automatizaciones trabajan solas 24/7: recuperan carritos, dan la bienvenida, agradecen la compra y provocan la recompra. Esta guía cubre las <strong>6 automatizaciones que todo e-commerce peruano debería tener en 2026</strong>, qué debe decir cada una y qué resultados esperar, con enfoque en el comportamiento de compra local.</p>
+
+<h2>Por qué el email automatizado gana al email manual</h2>
+<p>Un <strong>envío manual</strong> (newsletter) se manda una vez a toda tu lista. Una <strong>automatización</strong> se dispara sola cuando el cliente hace algo (se registra, abandona un carrito, compra) y le llega en el momento exacto de mayor intención. Por eso convierte mucho mejor. Montas el flujo una vez y trabaja para siempre. Es el núcleo de nuestro servicio de <a href="/es/servicios/email-marketing">email marketing</a>.</p>
+
+<h2>1. Serie de bienvenida</h2>
+<p>Se dispara cuando alguien se suscribe o crea cuenta. Es tu <strong>mejor momento</strong>: la persona está caliente. Envía 2–3 correos en los primeros días:</p>
+<ul>
+<li><strong>Correo 1:</strong> bienvenida + tu historia + cupón de primer pedido.</li>
+<li><strong>Correo 2:</strong> tus productos estrella y por qué la gente los ama (prueba social).</li>
+<li><strong>Correo 3:</strong> recordatorio del cupón con urgencia suave.</li>
+</ul>
+<p>La bienvenida suele tener las tasas de apertura más altas de todos tus envíos. No la desperdicies.</p>
+
+<h2>2. Recuperación de carrito abandonado</h2>
+<p>El flujo más rentable de todos. <strong>7 de cada 10 carritos se abandonan.</strong> Una secuencia de 2–3 correos recupera una parte:</p>
+<ul>
+<li><strong>1 hora después:</strong> "¿olvidaste algo?" con la foto del producto.</li>
+<li><strong>24 horas después:</strong> reseñas del producto + resolver dudas (envío, pago).</li>
+<li><strong>48 horas después:</strong> incentivo pequeño (envío gratis o descuento) si aplica a tu margen.</li>
+</ul>
+<p>En Perú, agrega un <strong>botón de WhatsApp</strong> en estos correos: muchos prefieren cerrar la compra conversando.</p>
+
+<h2>3. Confirmación y post-compra</h2>
+<p>El correo transaccional de "gracias por tu compra" tiene aperturas altísimas. Aprovéchalo: confirma el pedido, da tiempos de entrega realistas y siembra confianza. Reduce los mensajes de "¿dónde está mi pedido?" y mejora la experiencia. Un cliente informado es un cliente que vuelve.</p>
+
+<h2>4. Solicitud de reseña</h2>
+<p>Se dispara días después de la entrega estimada. Pide una reseña del producto y del servicio. Las reseñas alimentan tu prueba social, mejoran conversión y ayudan a tu presencia en Google. Ofrece un pequeño incentivo para la próxima compra a cambio.</p>
+
+<h2>5. Recompra / reposición</h2>
+<p>Si vendes consumibles (cosmética, suplementos, alimentos, cuidado personal), calcula cuánto dura tu producto y envía un recordatorio de reposición justo antes de que se acabe. "Tu producto está por terminarse, repón con 1 clic." Es ventas casi regaladas.</p>
+
+<h2>6. Reactivación de inactivos</h2>
+<p>Para clientes que no compran hace 60–90 días: una secuencia de "te extrañamos" con una oferta especial. Recuperar un cliente existente cuesta mucho menos que conseguir uno nuevo, algo clave para tu <a href="/es/blogs/cac-ltv-roas-metricas-negocio-peru">CAC y LTV</a>.</p>
+
+<h2>Cómo se conecta con tus Ads</h2>
+<p>El email y la pauta se potencian: los <a href="/es/servicios/meta-ads">Meta Ads</a> traen el tráfico y capturan el correo; las automatizaciones convierten y fidelizan sin pagar por clic. Esto baja tu costo de adquisición global y es parte de una buena estrategia de <a href="/es/blogs/marketing-ecommerce-peru-estrategia-ads-escalar-ventas">marketing para e-commerce</a>.</p>
+
+<h2>Herramientas para Perú</h2>
+<p>Klaviyo (líder para e-commerce, integra con Shopify/WooCommerce), Mailchimp, Brevo o la herramienta nativa de tu plataforma. Lo importante no es la marca, sino tener los <strong>6 flujos activos</strong>. Respeta siempre la <strong>Ley 29733</strong>: envía solo a quien consintió y ofrece baja fácil.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuántos correos automatizados son "spam"?</h3>
+<p>El límite lo pone la relevancia, no el número. Correos oportunos y útiles no molestan; correos genéricos y constantes, sí. Segmenta y personaliza.</p>
+<h3>¿Necesito una lista grande para empezar?</h3>
+<p>No. Las automatizaciones funcionan desde el primer suscriptor. Cuanto antes las montes, más ventas capturas mientras tu lista crece.</p>
+<h3>¿Esto reemplaza al newsletter?</h3>
+<p>No, se complementan. Las automatizaciones trabajan por evento; el newsletter mantiene la relación y anuncia novedades y campañas.</p>
+
+<h2>Cierre</h2>
+<p>Estas 6 automatizaciones son dinero que dejas sobre la mesa si no las tienes. Empieza por bienvenida y carrito abandonado (las de mayor retorno) y suma el resto. En 3R Core montamos y optimizamos flujos de <a href="/es/servicios/email-marketing">email marketing</a> conectados a tu tienda y a tu pauta. Si tu e-commerce aún no automatiza, <a href="/es#contacto">conversemos</a> y activamos tus primeros flujos.</p>`,
+  },
+
+  {
+    slug: "meta-ads-clinicas-dentales-esteticas-lima",
+    title: "Meta Ads para clínicas dentales y estéticas en Lima: guía de captación de pacientes",
+    focus_keyword: "meta ads clinicas dentales esteticas lima",
+    meta_title: "Meta Ads para clínicas dentales y estéticas en Lima 2026 — Captar pacientes | 3R Core",
+    meta_description: "Guía 2026 de Meta Ads para clínicas dentales y estéticas en Lima: creativos que sí captan pacientes, segmentación, cumplimiento de políticas de salud y cómo cerrar por WhatsApp.",
+    excerpt: "Las clínicas dentales y estéticas en Lima llenan su agenda con Meta Ads bien hechos. Creativos que captan pacientes, segmentación, políticas de salud y cierre por WhatsApp.",
+    og_title: "Meta Ads para clínicas dentales y estéticas en Lima — Captar pacientes",
+    og_description: "Creativos, segmentación, cumplimiento de políticas de salud y cierre por WhatsApp para clínicas.",
+    featured_image: IMG("1576091160399-112ba8d25d1d"),
+    featured_image_alt: "Meta Ads para clínicas dentales y estéticas en Lima Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> las <strong>clínicas dentales y estéticas en Lima</strong> están entre los negocios que mejor rinden con <strong>Meta Ads</strong>, porque el paciente decide con emoción (verse y sentirse mejor) y busca cercanía. La clave no es solo pagar anuncios: es tener <strong>creativos que generen confianza</strong>, una <strong>segmentación geográfica precisa</strong>, respetar las <strong>políticas de salud de Meta</strong> (que son estrictas) y un <strong>cierre por WhatsApp</strong> rápido. Esta guía te muestra cómo captar pacientes con Meta Ads sin quemar presupuesto ni infringir políticas.</p>
+
+<h2>Por qué Meta Ads funciona tan bien para clínicas</h2>
+<p>En estética y odontología, la decisión es visual y emocional. Facebook e Instagram son plataformas visuales donde puedes mostrar <strong>antes/después, testimonios y confianza del equipo</strong>. Además, la segmentación por zona te permite mostrar tus anuncios solo a personas cerca de tu clínica en Lima, que es donde realmente pueden agendar. Es lo que trabajamos en <a href="/es/servicios/marketing-clinicas">marketing para clínicas</a>.</p>
+
+<h2>Primero: cumple las políticas de salud de Meta</h2>
+<p>Este es el error que hace que rechacen o suspendan cuentas de clínicas. Meta <strong>prohíbe</strong>:</p>
+<ul>
+<li>Fotos de <strong>antes/después</strong> en el creativo del anuncio (aunque sí puedes mostrarlas en tu web/landing).</li>
+<li>Señalar o "hacer sentir mal" al usuario por su cuerpo ("¿tienes los dientes amarillos?").</li>
+<li>Promesas exageradas o afirmaciones médicas no sustentadas.</li>
+</ul>
+<p>En su lugar, usa un <strong>enfoque aspiracional y positivo</strong>: "Recupera tu sonrisa con nuestro tratamiento de ortodoncia" en vez de atacar la inseguridad. Cumplir esto no es opcional: es la diferencia entre anunciar o tener la cuenta bloqueada.</p>
+
+<h2>Creativos que captan pacientes</h2>
+<ul>
+<li><strong>Video del equipo y del local:</strong> humaniza y da confianza; el paciente quiere saber quién lo va a atender.</li>
+<li><strong>Testimonios en video</strong> de pacientes reales (con su permiso): la prueba social más potente.</li>
+<li><strong>Educativo:</strong> "3 señales de que necesitas una limpieza dental", que posiciona autoridad.</li>
+<li><strong>Oferta de primera consulta</strong> a precio de entrada (evaluación gratis o a bajo costo), el gancho clásico que funciona.</li>
+</ul>
+<p>Graba nativo y vertical. Un video honesto del doctor explicando un tratamiento rinde más que producción cara y fría.</p>
+
+<h2>Segmentación para Lima</h2>
+<ul>
+<li><strong>Geográfica:</strong> radio de 5–10 km alrededor de tu clínica, o distritos específicos (La Molina, Surco, San Isidro, según tu ubicación).</li>
+<li><strong>Edad y género</strong> según el tratamiento (ortodoncia adolescente vs implantes adultos vs estética 25–50).</li>
+<li><strong>Amplia con IA:</strong> en 2026 conviene dar públicos amplios y dejar que la optimización de Meta encuentre a los interesados, apoyado en buena medición.</li>
+</ul>
+<p>Recuerda que las categorías sensibles (salud) tienen <strong>opciones de segmentación detallada limitadas</strong> por privacidad. Compénsalo con creativos claros y buena medición vía <a href="/es/blogs/pixel-meta-api-conversiones-peru-configurar">Píxel + API de Conversiones</a>.</p>
+
+<h2>La landing y el cierre por WhatsApp</h2>
+<p>El anuncio no cierra la cita; la landing y el WhatsApp sí. Envía el tráfico a una <strong>landing enfocada</strong> (un solo tratamiento, testimonios, ubicación con mapa, botón de WhatsApp) en vez de a tu home. En Perú, la mayoría de pacientes quiere <strong>conversar antes de agendar</strong>: pon el WhatsApp al frente y responde en minutos. Un lead de clínica se enfría rápido.</p>
+
+<h2>Qué medir</h2>
+<ul>
+<li><strong>Costo por lead</strong> (conversación iniciada o formulario).</li>
+<li><strong>Costo por cita agendada</strong> (más importante que el lead).</li>
+<li><strong>Costo por paciente cerrado</strong> y su <strong>valor de vida</strong>: un paciente de ortodoncia vale meses de tratamiento.</li>
+</ul>
+<p>Mide el cierre real, no solo los clics. Así sabes cuánto puedes pagar por paciente, tema que ampliamos en <a href="/es/blogs/marketing-digital-clinicas-consultorios-peru-agenda">marketing digital para clínicas y consultorios</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Puedo mostrar antes/después en Meta Ads?</h3>
+<p>En el anuncio, no. En tu landing o web, sí (con permiso del paciente). Es una regla estricta de Meta para salud y estética.</p>
+<h3>¿Cuánto invertir para empezar?</h3>
+<p>Una clínica en Lima puede validar con una inversión mensual moderada en medios; lo importante es la calidad del creativo y la velocidad de respuesta en WhatsApp más que el monto.</p>
+<h3>¿Meta Ads o Google Ads para mi clínica?</h3>
+<p>Meta capta demanda latente (te descubren); Google capta demanda activa (ya buscan "dentista cerca"). Lo ideal es combinar, y sumar tu <a href="/es/blogs/posicionar-negocio-google-maps-lima">ficha en Google Maps</a>.</p>
+
+<h2>Cierre</h2>
+<p>Meta Ads llena agendas de clínicas dentales y estéticas en Lima cuando respetas las políticas de salud, usas creativos que dan confianza, segmentas por zona y cierras rápido por WhatsApp. En 3R Core gestionamos campañas de <a href="/es/servicios/meta-ads">Meta Ads</a> para clínicas cumpliendo políticas y midiendo el paciente real, no solo el clic. Si quieres llenar tu agenda, conoce nuestro <a href="/es/servicios/marketing-clinicas">marketing para clínicas</a> o <a href="/es#contacto">conversemos</a>.</p>`,
+  },
+
+  {
+    slug: "cac-ltv-roas-metricas-negocio-peru",
+    title: "CAC, LTV y ROAS: las 3 métricas que todo negocio peruano debe controlar",
+    focus_keyword: "cac ltv roas metricas negocio peru",
+    meta_title: "CAC, LTV y ROAS en Perú 2026 — Las 3 métricas que definen tu rentabilidad | 3R Core",
+    meta_description: "CAC, LTV y ROAS explicadas simple para negocios en Perú 2026: qué son, cómo calcularlas, cómo se relacionan y qué decisiones tomar con ellas para crecer con rentabilidad.",
+    excerpt: "Si no controlas CAC, LTV y ROAS, no sabes si tu marketing gana o pierde plata. Guía simple para negocios peruanos: qué son, cómo calcularlas y qué decidir con cada una.",
+    og_title: "CAC, LTV y ROAS — Las 3 métricas que definen tu rentabilidad",
+    og_description: "Qué son, cómo calcularlas y cómo se relacionan para crecer con rentabilidad en Perú.",
+    featured_image: IMG("1551288049-bebda4e38f71"),
+    featured_image_alt: "Métricas CAC, LTV y ROAS para negocios en Perú",
+    author_name: AUTHOR,
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> tres siglas deciden si tu marketing te hace ganar o perder plata: <strong>CAC</strong> (cuánto te cuesta conseguir un cliente), <strong>LTV</strong> (cuánto te deja ese cliente en total) y <strong>ROAS</strong> (cuántos soles vendes por cada sol de pauta). Si no las controlas, estás manejando a ciegas. La regla de oro: <strong>tu LTV debe ser al menos 3 veces tu CAC</strong>, y tu ROAS debe cubrir tus costos con margen. Esta guía las explica en simple, con fórmulas y ejemplos peruanos, para que tomes decisiones con números y no con corazonadas.</p>
+
+<h2>1. CAC — Costo de Adquisición de Cliente</h2>
+<p>El <strong>CAC</strong> es cuánto gastas, en promedio, para conseguir <em>un cliente que compra</em>. Fórmula:</p>
+<p><strong>CAC = (Gasto total en marketing y ventas) ÷ (Número de clientes nuevos)</strong></p>
+<p>Ejemplo: gastas S/3,000 en Ads en un mes y consigues 30 clientes → CAC = S/100. Ojo: es <strong>por cliente que compra</strong>, no por lead. Si de 30 clientes solo cierras porque tuviste 120 leads, el costo por lead era S/25, pero tu CAC real es S/100.</p>
+
+<h2>2. LTV — Valor de Vida del Cliente</h2>
+<p>El <strong>LTV</strong> (o CLV) es cuánto dinero te deja un cliente durante <em>toda</em> su relación contigo, no solo en la primera compra. Fórmula simple:</p>
+<p><strong>LTV = Ticket promedio × Compras al año × Años que se queda</strong></p>
+<p>Ejemplo: un cliente de una barbería gasta S/40 por visita, va 12 veces al año, y se queda 3 años → LTV = 40 × 12 × 3 = <strong>S/1,440</strong>. Esa barbería puede pagar mucho más de S/40 por conseguir un cliente, porque a la larga le deja S/1,440.</p>
+<p>Muchos negocios peruanos calculan mal su publicidad porque solo miran la <strong>primera venta</strong> e ignoran el LTV. Ese error los hace apagar campañas que sí eran rentables.</p>
+
+<h2>3. ROAS — Retorno de la Inversión Publicitaria</h2>
+<p>El <strong>ROAS</strong> mide cuántos soles de venta genera cada sol de pauta. Fórmula:</p>
+<p><strong>ROAS = Ingresos por publicidad ÷ Gasto en publicidad</strong></p>
+<p>Ejemplo: inviertes S/2,000 y generas S/8,000 → ROAS = 4 (o 400%). Cuidado: <strong>un ROAS "bueno" depende de tu margen</strong>. Si tu margen es 20%, un ROAS de 4 apenas te deja parejo. Lo desarrollamos en detalle en <a href="/es/blogs/que-es-roas-como-calcularlo-negocio-peru">qué es el ROAS y cómo calcularlo</a>.</p>
+
+<h2>Cómo se relacionan las tres</h2>
+<p>Aquí está el corazón del asunto:</p>
+<ul>
+<li><strong>CAC vs LTV:</strong> la relación que define si tu negocio es sano. Meta: <strong>LTV ≥ 3 × CAC</strong>. Si tu LTV es S/1,440 y tu CAC S/100, tu ratio es 14:1 — excelente, puedes invertir más agresivo. Si tu LTV es S/120 y tu CAC S/100, estás al borde.</li>
+<li><strong>ROAS:</strong> es la foto de corto plazo de tus campañas; CAC y LTV son la película completa del negocio.</li>
+</ul>
+<table>
+<thead><tr><th>Ratio LTV:CAC</th><th>Qué significa</th></tr></thead>
+<tbody>
+<tr><td>Menor a 1:1</td><td>Pierdes plata por cada cliente. Alerta roja.</td></tr>
+<tr><td>1:1 a 3:1</td><td>Sobrevives, pero con poco margen para crecer.</td></tr>
+<tr><td>3:1 o más</td><td>Negocio sano. Puedes escalar la inversión.</td></tr>
+<tr><td>Mayor a 5:1</td><td>Quizás estás invirtiendo <em>poco</em> en marketing y dejando ventas sobre la mesa.</td></tr>
+</tbody>
+</table>
+
+<h2>Qué decisiones tomar con estas métricas</h2>
+<ol>
+<li><strong>CAC muy alto:</strong> mejora tu conversión (landing, oferta, respuesta por WhatsApp) antes de subir presupuesto. Limpia tus <a href="/es/blogs/palabras-clave-negativas-google-ads-peru">palabras clave negativas</a>.</li>
+<li><strong>LTV bajo:</strong> trabaja la recompra y fidelización (email, atención). Sube el LTV con <a href="/es/blogs/automatizaciones-email-ecommerce-peru">automatizaciones de email</a>.</li>
+<li><strong>ROAS positivo y ratio sano:</strong> escala con confianza. Es luz verde para invertir más.</li>
+</ol>
+
+<h2>Cómo medirlas en Perú</h2>
+<p>Necesitas conectar tus datos: <strong>GA4</strong> para el comportamiento web, el <strong>Píxel + API de Conversiones</strong> para las plataformas, y tu <strong>sistema de ventas/CRM</strong> para el cierre real y la recompra. Sin medición conectada, estos números son adivinanza. Empieza por <a href="/es/blogs/google-analytics-4-negocios-peruanos-que-medir">configurar GA4</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cada cuánto debo calcular CAC y LTV?</h3>
+<p>CAC, mensual (cambia con tus campañas). LTV, cada trimestre o cuando cambie tu ticket o tu tasa de recompra.</p>
+<h3>¿El ROAS incluye el costo del producto?</h3>
+<p>No. El ROAS solo relaciona ingresos con gasto en pauta. Para ver rentabilidad real necesitas cruzarlo con tu margen. Por eso CAC y LTV completan la foto.</p>
+<h3>¿Sirven para negocios de servicios, no solo e-commerce?</h3>
+<p>Totalmente. Una clínica, un estudio jurídico o una inmobiliaria también tienen CAC, LTV y ROAS. De hecho, en servicios el LTV suele ser alto y justifica invertir más en captación.</p>
+
+<h2>Cierre</h2>
+<p>CAC, LTV y ROAS son el tablero mínimo para saber si tu marketing gana o pierde. Controla los tres, apunta a un LTV de al menos 3 veces tu CAC, y decide con números. En 3R Core montamos la medición y gestionamos tu <a href="/es/servicios/performance-marketing">performance marketing</a> mirando estas métricas, no solo los clics. Si quieres saber si tu inversión rinde de verdad, <a href="/es#contacto">conversemos</a> y revisamos tus números.</p>`,
+  },
 ]

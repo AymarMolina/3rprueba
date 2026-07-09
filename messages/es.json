@@ -621,7 +621,14 @@
     "webdev": "Agencia de diseño y desarrollo web en Lima, Perú: tiendas online, landing pages y sitios corporativos",
     "googleads": "Agencia certificada en Google Ads y campañas SEM en Lima, Perú",
     "socialmedia": "Agencia de manejo de redes sociales y community manager en Lima, Perú",
-    "seo": "Agencia SEO y posicionamiento web orgánico en Google para empresas en Lima, Perú"
+    "seo": "Agencia SEO y posicionamiento web orgánico en Google para empresas en Lima, Perú",
+    "metaads": "Agencia de Meta Ads (Facebook e Instagram) en Lima, Perú",
+    "tiktokads": "Agencia de TikTok Ads en Lima, Perú",
+    "performance": "Agencia de performance marketing y adquisición con ROI en Lima, Perú",
+    "emailmarketing": "Agencia de email marketing y automatización en Lima, Perú",
+    "clinicas": "Agencia de marketing digital para clínicas y consultorios en Lima, Perú",
+    "inmobiliarias": "Agencia de marketing digital para inmobiliarias en Lima, Perú",
+    "ecommerce": "Agencia de marketing digital para e-commerce y tiendas online en Perú"
   },
   "HomeFAQ": {
     "badge": "Preguntas Frecuentes",
@@ -922,5 +929,873 @@
     "p3": "Nuestro servicio se estructura en tres bloques: Auditoría y Planificación SEO (palabras clave, competidores, estructura del sitio, calendario editorial mensual de 8 a 15 títulos optimizados y reporte mensual), Optimización de Interlinks (estructura interna, enlaces internos entre contenidos y autoridad interna de páginas principales) y Escalamiento SEO (nuevas oportunidades de posicionamiento, optimización continua de contenidos existentes y refuerzo de páginas con mejor desempeño).",
     "p4": "Hemos trabajado estrategias SEO para diferentes rubros, logrando posicionamiento en búsquedas clave como Argentaria (joyería y platería) y As de Oros (casino y entretenimiento). La inversión mensual es de S/1,800, incluye auditoría, planificación, optimización, escalamiento y reportes mensuales, sin contratos forzosos. Si buscas construir presencia digital sólida y tráfico constante en Google, conversemos.",
     "relatedTitle": "Servicios que complementan tu estrategia SEO"
+  },
+  "MetaAdsLanding": {
+    "hero": {
+      "badge": "Meta Ads · Facebook e Instagram",
+      "title": "Agencia de Meta Ads en Lima que convierte seguidores en clientes",
+      "subtitle": "Campañas en Facebook e Instagram con segmentación avanzada, retargeting y creatividades pensadas para vender. Optimizamos por ROAS, no por likes.",
+      "cta": "Solicitar propuesta"
+    },
+    "intro": {
+      "title": "Publicidad en Facebook e Instagram con foco en ventas",
+      "p1": "En 3R Core gestionamos campañas de Meta Ads para empresas de Lima y todo el Perú que quieren dejar de \"impulsar publicaciones\" y empezar a comprar resultados. Facebook e Instagram siguen siendo las plataformas donde más tiempo pasan los consumidores peruanos, y con el Administrador de Anuncios de Meta podemos poner tu oferta frente a la audiencia correcta, en el momento correcto y con el mensaje correcto.",
+      "p2": "Cada cuenta arranca con una estructura de embudo completa: campañas de prospección para captar audiencias nuevas, retargeting para reimpactar a quienes visitaron tu web o interactuaron con tu perfil, y campañas de conversión o mensajes que empujan la venta directa por WhatsApp. Configuramos el Pixel de Meta y la API de Conversiones para medir cada resultado incluso con las limitaciones de iOS.",
+      "p3": "Trabajamos con negocios locales, e-commerce, inmobiliarias, clínicas y marcas de consumo. Sea que vendas por catálogo, generes leads o cierres por WhatsApp, adaptamos la estrategia a tu ciclo de compra y a un presupuesto de pauta realista para el mercado peruano."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Todo lo que gestionamos en tu cuenta de Meta Ads",
+      "items": [
+        {
+          "title": "Estrategia de embudo completo",
+          "description": "Prospección, retargeting y conversión estructurados por objetivo, no campañas sueltas que compiten entre sí."
+        },
+        {
+          "title": "Segmentación avanzada",
+          "description": "Intereses, comportamientos, audiencias personalizadas (Custom Audiences) y similares (Lookalike) a partir de tu base de clientes."
+        },
+        {
+          "title": "Creatividades que detienen el scroll",
+          "description": "Diseño de anuncios en formato reel, carrusel, imagen e historia, con copies pensados para el consumidor peruano."
+        },
+        {
+          "title": "Pixel y API de Conversiones",
+          "description": "Instalación y verificación del Meta Pixel más la API de Conversiones para recuperar datos que iOS ya no reporta."
+        },
+        {
+          "title": "Click-to-WhatsApp",
+          "description": "Campañas de mensajes que llevan al usuario directo a tu WhatsApp, ideales para cierres consultivos y servicios."
+        },
+        {
+          "title": "Reportes mensuales de ROAS",
+          "description": "Informe claro con inversión, costo por resultado, ROAS y aprendizajes accionables para el siguiente mes."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso de gestión de Meta Ads",
+      "steps": [
+        {
+          "title": "Auditoría y objetivos",
+          "description": "Revisamos tu cuenta, píxel, historial de campañas y definimos objetivos medibles (leads, ventas o mensajes) junto a tu presupuesto de pauta."
+        },
+        {
+          "title": "Estructura y públicos",
+          "description": "Armamos la cuenta con campañas de prospección, retargeting y conversión, y construimos las audiencias personalizadas y similares."
+        },
+        {
+          "title": "Creatividades y copies",
+          "description": "Producimos las piezas y los textos, priorizando video vertical y ángulos de venta distintos para testear qué convierte mejor."
+        },
+        {
+          "title": "Optimización continua",
+          "description": "Analizamos resultados cada semana, pausamos lo que no rinde y escalamos lo ganador para bajar el costo por adquisición."
+        },
+        {
+          "title": "Reporte y escalamiento",
+          "description": "Cada mes entregamos el informe de ROAS y proponemos el plan de escalamiento para el siguiente ciclo."
+        }
+      ]
+    }
+  },
+  "MetaAdsFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿Cuánto debo invertir en Meta Ads para empezar en Perú?",
+        "answer": "Recomendamos un presupuesto de pauta mínimo de S/1,500 al mes para tener datos accionables, más el fee de gestión desde S/1,500. En rubros muy competidos conviene arrancar con S/2,500+ de pauta para salir de la fase de aprendizaje del algoritmo con rapidez."
+      },
+      "q2": {
+        "question": "¿Qué diferencia hay entre impulsar publicaciones y una campaña profesional?",
+        "answer": "Impulsar (\"boost\") solo busca interacciones y no permite estructurar embudos, audiencias personalizadas ni optimización por conversión. Nosotros trabajamos desde el Administrador de Anuncios con campañas de prospección, retargeting y conversión medidas por ROAS."
+      },
+      "q3": {
+        "question": "¿Funciona Meta Ads para vender por WhatsApp?",
+        "answer": "Sí. Las campañas de mensajes (click-to-WhatsApp) llevan al usuario directo a tu chat y son muy efectivas para servicios y ventas consultivas en el Perú. Medimos el costo por conversación iniciada y por venta."
+      },
+      "q4": {
+        "question": "¿Necesito una web o basta con mi Instagram?",
+        "answer": "Puedes empezar con campañas a WhatsApp o al perfil, pero una landing page con el Pixel instalado multiplica los resultados y permite retargeting y audiencias similares de mejor calidad."
+      },
+      "q5": {
+        "question": "¿Qué es el Pixel y la API de Conversiones?",
+        "answer": "El Pixel de Meta registra las acciones en tu web y la API de Conversiones envía esos eventos desde el servidor para recuperar datos que iOS bloquea. Los configuramos ambos para que la optimización y los reportes sean precisos."
+      },
+      "q6": {
+        "question": "¿Con qué frecuencia optimizan las campañas?",
+        "answer": "Revisamos resultados varias veces por semana, refrescamos creatividades y ajustamos audiencias y presupuestos de forma continua para bajar el costo por resultado."
+      },
+      "q7": {
+        "question": "¿Diseñan ustedes las creatividades?",
+        "answer": "Sí, producimos anuncios en formato imagen, carrusel, reel e historia con copies pensados para el consumidor peruano. También podemos trabajar con tu material o con creadores UGC."
+      },
+      "q8": {
+        "question": "¿Cuándo veré resultados?",
+        "answer": "Las campañas suelen salir de la fase de aprendizaje en 1 a 2 semanas. Los primeros resultados llegan rápido, pero el mejor rendimiento se logra al optimizar con la data de las primeras semanas."
+      }
+    }
+  },
+  "MetaAdsSEO": {
+    "seoTitle": "Agencia de Meta Ads en Lima con foco en resultados",
+    "p1": "Como agencia de Meta Ads en Lima, en 3R Core entendemos que Facebook e Instagram concentran buena parte de la atención del consumidor peruano. Por eso construimos campañas que no persiguen likes sino ventas, leads y conversaciones de WhatsApp, con una estructura de embudo que separa la prospección de nuevos clientes del retargeting de quienes ya te conocen.",
+    "p2": "Nuestra metodología parte de una medición sólida: instalamos y verificamos el Pixel de Meta junto a la API de Conversiones para recuperar los datos que las restricciones de privacidad de iOS suelen ocultar. Con esa base, el algoritmo optimiza mejor y tú recibes reportes de ROAS confiables mes a mes.",
+    "p3": "La creatividad es el otro pilar. Diseñamos anuncios en formato reel, carrusel e historia con ganchos pensados para el scroll del usuario peruano, y probamos distintos ángulos de venta hasta encontrar los que bajan el costo por resultado. Combinamos contenido de marca con material UGC de creadores cuando el rubro lo permite.",
+    "p4": "Trabajamos Meta Ads de forma integrada con Google Ads y TikTok Ads para no canibalizar presupuesto y atribuir correctamente cada resultado. Si tu negocio vive del WhatsApp, priorizamos campañas de mensajes; si vendes online, activamos catálogos dinámicos y retargeting de carrito.",
+    "p5": "Cada cuenta tiene un responsable que revisa el rendimiento varias veces por semana, refresca creatividades y ajusta audiencias y presupuestos. No dejamos las campañas en piloto automático: la optimización constante es lo que diferencia una inversión rentable de un gasto.",
+    "p6": "Si buscas una agencia de Meta Ads en Lima que hable de negocio y no solo de métricas de vanidad, en 3R Core te acompañamos desde la estrategia hasta el escalamiento, con transparencia total sobre en qué se invierte tu presupuesto y qué retorno genera.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "TikTokAdsLanding": {
+    "hero": {
+      "badge": "TikTok Ads · Video que vende",
+      "title": "Agencia de TikTok Ads en Lima para marcas que quieren crecer rápido",
+      "subtitle": "Campañas de video nativo, Spark Ads y creadores UGC que capturan a la audiencia peruana más difícil de alcanzar: la que ya no ve televisión.",
+      "cta": "Quiero pautar en TikTok"
+    },
+    "intro": {
+      "title": "Publicidad en TikTok pensada para el consumidor peruano",
+      "p1": "TikTok dejó de ser \"la app de bailes\" para convertirse en un canal de descubrimiento y compra clave en el Perú. En 3R Core diseñamos y gestionamos campañas de TikTok Ads que aprovechan el formato de video vertical para llegar a audiencias jóvenes y adultas que ya casi no consumen medios tradicionales.",
+      "p2": "No subimos un anuncio de Facebook a TikTok y esperamos que funcione. Creamos contenido que se siente nativo de la plataforma: hooks en los primeros tres segundos, sonido en tendencia, subtítulos y un guion pensado para vender sin parecer un comercial. Usamos Spark Ads para amplificar publicaciones orgánicas y contenido UGC de creadores reales que generan confianza.",
+      "p3": "Configuramos el TikTok Pixel y los eventos de conversión para medir ventas, leads y mensajes, e integramos las campañas dentro de tu embudo junto a Meta Ads y Google Ads para no canibalizar presupuesto y atribuir correctamente cada resultado."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Todo lo que gestionamos en tu cuenta de TikTok Ads",
+      "items": [
+        {
+          "title": "Spark Ads",
+          "description": "Amplificamos publicaciones orgánicas de tu marca o de creadores manteniendo los comentarios y la prueba social."
+        },
+        {
+          "title": "Video nativo y guiones",
+          "description": "Producimos o dirigimos videos verticales con hooks fuertes, sonido en tendencia y llamados a la acción claros."
+        },
+        {
+          "title": "Contenido UGC de creadores",
+          "description": "Conectamos con creadores peruanos para generar contenido auténtico que convierte mejor que el anuncio de marca."
+        },
+        {
+          "title": "Segmentación por intereses",
+          "description": "Aprovechamos intereses, comportamientos y audiencias personalizadas para llegar a tu cliente ideal."
+        },
+        {
+          "title": "TikTok Pixel y eventos",
+          "description": "Instalamos el pixel y configuramos eventos de conversión para medir ventas, leads y mensajes reales."
+        },
+        {
+          "title": "Retargeting y escalamiento",
+          "description": "Reimpactamos a quienes vieron tus videos o visitaron tu web y escalamos las creatividades ganadoras."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso de gestión de TikTok Ads",
+      "steps": [
+        {
+          "title": "Diagnóstico y ángulos",
+          "description": "Analizamos tu producto, tu audiencia y definimos ángulos de venta y ganchos que funcionan en TikTok."
+        },
+        {
+          "title": "Producción de creatividades",
+          "description": "Guionizamos y producimos (o dirigimos con creadores) varios videos para testear qué mensaje conecta."
+        },
+        {
+          "title": "Estructura de campañas",
+          "description": "Configuramos campañas de prospección y retargeting, el pixel y los eventos de conversión."
+        },
+        {
+          "title": "Optimización semanal",
+          "description": "Refrescamos creatividades con frecuencia, pausamos lo que satura y escalamos lo que rinde."
+        },
+        {
+          "title": "Reporte de resultados",
+          "description": "Entregamos un informe mensual con CPM, CTR, costo por resultado y ROAS, más el plan del siguiente ciclo."
+        }
+      ]
+    }
+  },
+  "TikTokAdsFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿TikTok Ads sirve para mi negocio en Perú?",
+        "answer": "TikTok funciona muy bien para marcas de consumo, e-commerce, gastronomía, moda, educación y servicios que pueden contarse en video. Si tu público está entre los 18 y 45 años y consume video vertical, es un canal con mucho potencial y competencia aún baja en el Perú."
+      },
+      "q2": {
+        "question": "¿Cuánto cuesta empezar en TikTok Ads?",
+        "answer": "Sugerimos un presupuesto de pauta desde S/1,500 al mes más el fee de gestión desde S/1,500. Al ser un canal aún poco saturado, los costos por mil impresiones (CPM) suelen ser competitivos frente a Meta."
+      },
+      "q3": {
+        "question": "¿Ustedes graban los videos?",
+        "answer": "Podemos guionizar y dirigir la producción, trabajar con creadores UGC peruanos o adaptar el material que ya tengas. Lo importante es que el video se sienta nativo de TikTok, no un comercial reciclado."
+      },
+      "q4": {
+        "question": "¿Qué son los Spark Ads?",
+        "answer": "Los Spark Ads permiten pautar publicaciones orgánicas (tuyas o de creadores) manteniendo los comentarios, likes y seguidores. Aprovechan la prueba social y suelen rendir mejor que un anuncio tradicional."
+      },
+      "q5": {
+        "question": "¿Se puede medir las ventas desde TikTok?",
+        "answer": "Sí. Instalamos el TikTok Pixel y configuramos eventos de conversión para medir ventas, leads y mensajes, e integramos la data en tu embudo junto a Meta y Google."
+      },
+      "q6": {
+        "question": "¿Cada cuánto hay que renovar las creatividades?",
+        "answer": "TikTok satura las creatividades más rápido que otras plataformas. Recomendamos refrescar videos cada 1 a 2 semanas para mantener el rendimiento y evitar la fatiga del anuncio."
+      },
+      "q7": {
+        "question": "¿TikTok Ads reemplaza a Meta Ads?",
+        "answer": "No necesariamente; se complementan. Muchas marcas descubren audiencias nuevas en TikTok y luego las reimpactan en Meta. Los gestionamos juntos para atribuir bien y no duplicar esfuerzos."
+      },
+      "q8": {
+        "question": "¿En cuánto tiempo veo resultados?",
+        "answer": "Los primeros datos llegan en pocos días. Como el canal depende mucho de la creatividad, las primeras semanas sirven para identificar qué videos y ganchos convierten mejor."
+      }
+    }
+  },
+  "TikTokAdsSEO": {
+    "seoTitle": "Agencia de TikTok Ads en Lima especializada en video",
+    "p1": "En 3R Core somos una agencia de TikTok Ads en Lima que entiende la lógica de la plataforma: aquí no gana el anuncio más pulido, sino el video que atrapa en los primeros tres segundos y se siente parte del feed. Diseñamos campañas de video nativo que llegan a la audiencia peruana que ya casi no consume medios tradicionales.",
+    "p2": "Aprovechamos los Spark Ads para amplificar publicaciones orgánicas y el contenido UGC de creadores reales, que genera más confianza que un comercial. Guionizamos ganchos, aprovechamos sonidos en tendencia y probamos varios ángulos hasta encontrar el que convierte al menor costo.",
+    "p3": "La medición es innegociable: instalamos el TikTok Pixel y configuramos los eventos de conversión para rastrear ventas, leads y mensajes reales, no solo vistas. Así sabemos qué video genera negocio y podemos escalarlo con confianza.",
+    "p4": "TikTok satura las creatividades rápido, por eso mantenemos un ritmo de producción constante y refrescamos los videos cada una o dos semanas. Esta disciplina evita la fatiga del anuncio y sostiene el rendimiento en el tiempo.",
+    "p5": "Integramos TikTok Ads dentro de tu estrategia de performance junto a Meta Ads y Google Ads, para descubrir audiencias nuevas y reimpactarlas en otros canales sin duplicar presupuesto ni perder la atribución.",
+    "p6": "Si quieres llevar tu marca a TikTok con una estrategia seria y medible, en 3R Core te ayudamos a producir, pautar y escalar con reportes claros de CPM, CTR, costo por resultado y ROAS.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "PerformanceLanding": {
+    "hero": {
+      "badge": "Performance Marketing · Data-driven",
+      "title": "Performance marketing en Lima que se mide en soles, no en impresiones",
+      "subtitle": "Adquisición multicanal coordinada entre Google, Meta y TikTok, con medición end-to-end y optimización constante por CAC y ROAS.",
+      "cta": "Escalar mi adquisición"
+    },
+    "intro": {
+      "title": "Adquisición de clientes con foco en el retorno",
+      "p1": "El performance marketing es la disciplina de invertir en publicidad digital solo cuando podemos medir, atribuir y mejorar cada sol invertido. En 3R Core no gestionamos canales aislados: coordinamos Google Ads, Meta Ads y TikTok Ads como un solo sistema de adquisición, evitando que compitan entre sí y atribuyendo correctamente de dónde vienen tus ventas y leads.",
+      "p2": "Todo empieza por la medición. Configuramos Google Analytics 4, Google Tag Manager, los píxeles de cada plataforma y el seguimiento de conversiones offline (por ejemplo, cierres por WhatsApp o llamadas) para tener una foto real del costo de adquisición (CAC), el retorno de la inversión publicitaria (ROAS) y, cuando el negocio lo permite, el valor del cliente en el tiempo (LTV).",
+      "p3": "Con esa data tomamos decisiones: reasignamos presupuesto al canal que rinde, mejoramos las landing pages con CRO para que más visitas se conviertan y construimos un modelo de crecimiento sostenible. Trabajamos con e-commerce, empresas B2B y negocios de servicios en Lima y provincias que quieren crecer sin quemar presupuesto."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Nuestro sistema de performance marketing",
+      "items": [
+        {
+          "title": "Estrategia multicanal",
+          "description": "Coordinamos Google, Meta y TikTok con un mismo objetivo de negocio y un presupuesto asignado por rendimiento."
+        },
+        {
+          "title": "Medición end-to-end",
+          "description": "GA4, GTM, píxeles y conversiones offline para atribuir cada venta y lead a su origen real."
+        },
+        {
+          "title": "Optimización por CAC y ROAS",
+          "description": "Gestionamos las campañas por costo de adquisición y retorno, no por métricas de vanidad."
+        },
+        {
+          "title": "CRO de landing pages",
+          "description": "Mejoramos títulos, formularios y velocidad para que más tráfico se convierta en clientes."
+        },
+        {
+          "title": "Retargeting y audiencias",
+          "description": "Aprovechamos tus datos propios (first-party) para reimpactar y construir audiencias similares de calidad."
+        },
+        {
+          "title": "Dashboards y reportes",
+          "description": "Un tablero claro con las métricas que importan y un informe mensual con próximos pasos accionables."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso de performance marketing",
+      "steps": [
+        {
+          "title": "Setup de medición",
+          "description": "Implementamos GA4, GTM, píxeles y conversiones offline para que nada quede sin medir antes de invertir."
+        },
+        {
+          "title": "Estrategia y benchmarks",
+          "description": "Definimos objetivos de CAC y ROAS por canal según tu margen y ticket promedio."
+        },
+        {
+          "title": "Lanzamiento coordinado",
+          "description": "Activamos las campañas en cada plataforma con una lógica de embudo unificada."
+        },
+        {
+          "title": "Experimentación y CRO",
+          "description": "Testeamos creatividades, audiencias y landing pages para bajar el costo por adquisición."
+        },
+        {
+          "title": "Escalamiento con datos",
+          "description": "Reasignamos presupuesto a lo que rinde y presentamos el reporte mensual con el plan de crecimiento."
+        }
+      ]
+    }
+  },
+  "PerformanceFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿Qué es exactamente el performance marketing?",
+        "answer": "Es la práctica de invertir en publicidad digital de forma medible: cada campaña tiene un objetivo de negocio (venta o lead), se mide con analítica y se optimiza por costo de adquisición (CAC) y retorno (ROAS). No se paga por promesas, se paga por resultados medibles."
+      },
+      "q2": {
+        "question": "¿En qué se diferencia de contratar solo Google o Meta Ads?",
+        "answer": "En performance no gestionamos un canal aislado: coordinamos Google, Meta y TikTok como un sistema, con medición unificada y presupuesto asignado según rendimiento. Así evitamos que los canales compitan y atribuimos mejor cada venta."
+      },
+      "q3": {
+        "question": "¿Necesito tener bien configurada la analítica?",
+        "answer": "Es lo primero que resolvemos. Implementamos GA4, Google Tag Manager, los píxeles y el seguimiento de conversiones offline antes de escalar la inversión, porque sin medición no hay optimización real."
+      },
+      "q4": {
+        "question": "¿Qué presupuesto de pauta recomiendan?",
+        "answer": "Depende de tu margen y ticket, pero solemos empezar desde S/3,000 de pauta mensual para tener suficiente data. El fee de gestión arranca en S/2,500 según la cantidad de canales y la complejidad."
+      },
+      "q5": {
+        "question": "¿Incluye mejorar mi web o landing pages?",
+        "answer": "Sí. El CRO (optimización de la tasa de conversión) es parte del servicio: mejoramos títulos, formularios, velocidad y confianza para que más tráfico se convierta y baje el costo de adquisición."
+      },
+      "q6": {
+        "question": "¿Cómo miden el retorno si vendo por WhatsApp o teléfono?",
+        "answer": "Configuramos el seguimiento de conversiones offline: importamos los cierres desde tu CRM o registramos las llamadas y conversaciones para atribuir las ventas que ocurren fuera de la web."
+      },
+      "q7": {
+        "question": "¿Cada cuánto recibo reportes?",
+        "answer": "Entregamos un reporte mensual con CAC, ROAS y aprendizajes, además de un dashboard que puedes consultar cuando quieras. En cuentas grandes hacemos revisiones quincenales."
+      },
+      "q8": {
+        "question": "¿Trabajan con e-commerce y con negocios de servicios?",
+        "answer": "Sí. Adaptamos el sistema tanto a e-commerce (ventas y ROAS) como a negocios B2B y de servicios (leads y costo por lead calificado), siempre con foco en el retorno."
+      }
+    }
+  },
+  "PerformanceSEO": {
+    "seoTitle": "Performance marketing en Lima orientado al retorno",
+    "p1": "El performance marketing es la evolución natural de la publicidad digital: en lugar de invertir a ciegas, cada sol se mide, se atribuye y se optimiza. En 3R Core aplicamos esta disciplina para empresas de Lima y el Perú que quieren crecer con previsibilidad y no depender de la suerte de una campaña puntual.",
+    "p2": "Lo primero que resolvemos es la medición. Sin una configuración correcta de Google Analytics 4, Google Tag Manager, los píxeles de cada plataforma y el seguimiento de conversiones offline, cualquier optimización es una adivinanza. Por eso dedicamos el arranque a montar la infraestructura de datos que sostiene todo lo demás.",
+    "p3": "Con la medición lista, coordinamos Google Ads, Meta Ads y TikTok Ads como un solo sistema de adquisición. Cada canal cumple un rol dentro del embudo y el presupuesto se asigna según el rendimiento real, no según modas. Gestionamos por costo de adquisición (CAC) y retorno de la inversión (ROAS).",
+    "p4": "La publicidad rentable también depende de que tu web convierta. Por eso el CRO forma parte del servicio: analizamos las landing pages, el formulario, la velocidad y las señales de confianza para que más visitantes se conviertan en clientes y baje el costo de adquisición.",
+    "p5": "Aprovechamos tus datos propios (first-party) para construir audiencias de calidad y hacer retargeting inteligente, especialmente relevante en un contexto de creciente privacidad. Cada decisión se toma con datos y se documenta en reportes claros.",
+    "p6": "Si buscas performance marketing en Lima que hable el idioma del negocio —CAC, ROAS y crecimiento sostenible— en 3R Core construimos contigo un motor de adquisición medible, transparente y escalable.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "EmailMarketingLanding": {
+    "hero": {
+      "badge": "Email Marketing · Automatización",
+      "title": "Email marketing y automatización en Lima que vende mientras duermes",
+      "subtitle": "Flujos automáticos, newsletters y segmentación que convierten tu base de contactos en el canal más rentable de tu negocio.",
+      "cta": "Activar mi email marketing"
+    },
+    "intro": {
+      "title": "El canal con mejor retorno del marketing digital",
+      "p1": "El email marketing sigue siendo, año tras año, uno de los canales con mejor retorno por sol invertido. La diferencia es que ya no se trata de enviar un correo masivo a toda tu lista: en 3R Core construimos sistemas de automatización que envían el mensaje correcto a la persona correcta según lo que hizo (o dejó de hacer) en tu web o tienda.",
+      "p2": "Diseñamos flujos automáticos clave: bienvenida para nuevos suscriptores, recuperación de carritos abandonados, post-compra para generar recompra y reseñas, y reactivación de clientes inactivos. Cada flujo se escribe, diseña y segmenta para tu marca, y se integra con plataformas como Mailchimp, Klaviyo, Brevo o el CRM que ya uses.",
+      "p3": "Además gestionamos tus campañas puntuales y newsletters, cuidando la entregabilidad (que tus correos lleguen a la bandeja de entrada y no a spam), la segmentación y el cumplimiento de las normas de protección de datos en el Perú. El objetivo: que tu base de datos deje de ser una lista dormida y se convierta en un activo que vende solo."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Todo lo que gestionamos en tu email marketing",
+      "items": [
+        {
+          "title": "Flujos de automatización",
+          "description": "Bienvenida, carrito abandonado, post-compra y reactivación diseñados para tu ciclo de venta."
+        },
+        {
+          "title": "Newsletters y campañas",
+          "description": "Correos periódicos con contenido, ofertas y lanzamientos, diseñados y segmentados por audiencia."
+        },
+        {
+          "title": "Segmentación inteligente",
+          "description": "Dividimos tu base por comportamiento, intereses y etapa del embudo para enviar mensajes relevantes."
+        },
+        {
+          "title": "Integración con CRM",
+          "description": "Conectamos tu tienda o web con Klaviyo, Mailchimp, Brevo o el CRM que uses para sincronizar datos."
+        },
+        {
+          "title": "Entregabilidad y reputación",
+          "description": "Configuramos SPF, DKIM y DMARC y cuidamos las prácticas para que tus correos lleguen a la bandeja principal."
+        },
+        {
+          "title": "Reportes de rendimiento",
+          "description": "Medimos aperturas, clics, conversiones e ingresos atribuidos a cada flujo y campaña."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso de email marketing",
+      "steps": [
+        {
+          "title": "Auditoría de la base",
+          "description": "Revisamos tu lista, plataforma actual y entregabilidad, y limpiamos contactos inactivos o inválidos."
+        },
+        {
+          "title": "Estrategia y flujos",
+          "description": "Definimos los flujos de automatización prioritarios según tu modelo de negocio y objetivos."
+        },
+        {
+          "title": "Diseño y redacción",
+          "description": "Creamos las plantillas, escribimos los copies y configuramos la segmentación y los disparadores."
+        },
+        {
+          "title": "Puesta en marcha",
+          "description": "Activamos los flujos, integramos la plataforma con tu web o tienda y verificamos que todo mida bien."
+        },
+        {
+          "title": "Optimización y reporte",
+          "description": "Testeamos asuntos y contenidos, mejoramos las tasas de conversión y entregamos el reporte mensual."
+        }
+      ]
+    }
+  },
+  "EmailMarketingFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿El email marketing sigue funcionando en 2026?",
+        "answer": "Sí, y con fuerza. Es de los canales con mejor retorno por sol invertido porque le hablas a personas que ya te dieron su contacto. La clave está en automatizar y segmentar, no en enviar el mismo correo a toda la lista."
+      },
+      "q2": {
+        "question": "¿Con qué plataformas trabajan?",
+        "answer": "Trabajamos con Mailchimp, Klaviyo, Brevo (ex Sendinblue), ActiveCampaign y otras. Recomendamos la que mejor se adapte a tu negocio; para e-commerce solemos sugerir Klaviyo por su integración con la tienda."
+      },
+      "q3": {
+        "question": "¿Qué flujos de automatización son los más importantes?",
+        "answer": "Los de mayor impacto suelen ser: bienvenida, recuperación de carrito abandonado, post-compra (recompra y reseñas) y reactivación de inactivos. Empezamos por los que más ingresos generan según tu modelo."
+      },
+      "q4": {
+        "question": "¿Qué es la entregabilidad y por qué importa?",
+        "answer": "Es la capacidad de que tus correos lleguen a la bandeja principal y no a spam. Configuramos autenticación (SPF, DKIM, DMARC) y cuidamos las prácticas de envío para proteger la reputación de tu dominio."
+      },
+      "q5": {
+        "question": "¿Necesito una lista grande para empezar?",
+        "answer": "No. Una lista pequeña pero bien segmentada y con flujos activos rinde más que una lista enorme y dormida. Además, te ayudamos a hacer crecer la base con formularios y captación."
+      },
+      "q6": {
+        "question": "¿Esto cumple con la protección de datos en el Perú?",
+        "answer": "Sí. Trabajamos con consentimiento y opción de baja en cada correo, alineados con la Ley de Protección de Datos Personales del Perú y las buenas prácticas internacionales."
+      },
+      "q7": {
+        "question": "¿Ustedes escriben y diseñan los correos?",
+        "answer": "Sí, nos encargamos de la estrategia, la redacción, el diseño de plantillas y la configuración técnica. Tú apruebas y nosotros ejecutamos."
+      },
+      "q8": {
+        "question": "¿Cómo miden los resultados?",
+        "answer": "Reportamos tasas de apertura, clics, conversiones y, cuando la plataforma lo permite, los ingresos atribuidos a cada flujo y campaña, para saber cuánto vende tu email marketing."
+      }
+    }
+  },
+  "EmailMarketingSEO": {
+    "seoTitle": "Agencia de email marketing y automatización en Lima",
+    "p1": "El email marketing es, año tras año, uno de los canales más rentables del marketing digital, y sin embargo muchas empresas peruanas lo desaprovechan enviando correos masivos sin estrategia. En 3R Core convertimos tu base de contactos en un activo que vende, mediante automatización y segmentación inteligente.",
+    "p2": "En lugar del clásico envío único a toda la lista, construimos flujos que reaccionan al comportamiento del usuario: un correo de bienvenida cuando alguien se suscribe, una secuencia de recuperación cuando abandona el carrito, mensajes post-compra para generar recompra y reseñas, y campañas de reactivación para clientes dormidos.",
+    "p3": "Cuidamos la entregabilidad como una prioridad. Configuramos la autenticación del dominio (SPF, DKIM y DMARC) y aplicamos buenas prácticas de envío para que tus correos lleguen a la bandeja principal y no a la carpeta de spam, protegiendo la reputación de tu marca.",
+    "p4": "Integramos la plataforma de email (Klaviyo, Mailchimp, Brevo u otra) con tu web o tienda para sincronizar datos y personalizar los mensajes según lo que cada contacto hizo. La segmentación por comportamiento e intereses es lo que hace que un correo se sienta relevante y no invasivo.",
+    "p5": "Todo se ejecuta respetando la Ley de Protección de Datos Personales del Perú: consentimiento claro y opción de baja en cada envío. El marketing rentable también es marketing responsable.",
+    "p6": "Si quieres que tu base de datos deje de ser una lista dormida y empiece a generar ventas de forma automática, en 3R Core diseñamos, ejecutamos y optimizamos tu email marketing con reportes de aperturas, clics e ingresos atribuidos.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "MarketingClinicasLanding": {
+    "hero": {
+      "badge": "Salud · Captación de pacientes",
+      "title": "Marketing digital para clínicas y consultorios en Lima",
+      "subtitle": "Atraemos pacientes reales para tu clínica, consultorio o especialidad con Google Ads, SEO local y campañas que respetan las normas de publicidad en salud.",
+      "cta": "Quiero más pacientes"
+    },
+    "intro": {
+      "title": "Más citas agendadas, no solo más seguidores",
+      "p1": "El paciente peruano investiga en Google y en redes antes de elegir dónde atenderse. En 3R Core ayudamos a clínicas, consultorios y profesionales de la salud en Lima y provincias a estar presentes justo en ese momento de decisión, con una estrategia que prioriza las citas agendadas por encima de las métricas de vanidad.",
+      "p2": "Combinamos Google Ads de alta intención (\"dermatólogo en Miraflores\", \"clínica dental San Isidro\") con SEO local y una ficha de Google Business Profile optimizada para aparecer en el mapa cuando alguien busca cerca de tu sede. Sumamos landing pages por especialidad y campañas de Meta Ads para tratamientos electivos, siempre midiendo el costo por cita.",
+      "p3": "Sabemos que el rubro salud tiene reglas: cuidamos que la publicidad cumpla las políticas de Google y Meta para el sector, evitamos promesas indebidas y protegemos la reputación de tu marca. El resultado es un flujo constante de pacientes calificados y un panel donde ves de dónde viene cada contacto."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Nuestro sistema de captación de pacientes",
+      "items": [
+        {
+          "title": "Google Ads de salud",
+          "description": "Campañas de búsqueda por especialidad y ubicación, con extensiones de llamada y agenda para captar en el momento de decisión."
+        },
+        {
+          "title": "SEO local y Google Maps",
+          "description": "Optimizamos tu web y tu ficha de Google Business Profile para aparecer en el mapa de tu distrito."
+        },
+        {
+          "title": "Landing pages por especialidad",
+          "description": "Páginas de aterrizaje claras por tratamiento, con formularios y botón de WhatsApp para agendar."
+        },
+        {
+          "title": "Meta Ads para tratamientos",
+          "description": "Campañas en Facebook e Instagram para procedimientos electivos y estéticos con segmentación local."
+        },
+        {
+          "title": "Cumplimiento del rubro salud",
+          "description": "Respetamos las políticas de publicidad en salud de Google y Meta para evitar rechazos y suspensiones."
+        },
+        {
+          "title": "Medición del costo por cita",
+          "description": "Rastreamos llamadas, formularios y mensajes para saber cuánto cuesta cada paciente captado."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso para clínicas",
+      "steps": [
+        {
+          "title": "Diagnóstico y especialidades",
+          "description": "Analizamos tus servicios más rentables, tu zona de influencia y la competencia local."
+        },
+        {
+          "title": "Presencia local",
+          "description": "Optimizamos tu ficha de Google Business Profile, reseñas y SEO local por distrito."
+        },
+        {
+          "title": "Campañas y landings",
+          "description": "Lanzamos Google Ads y Meta Ads con landing pages por especialidad y seguimiento de conversiones."
+        },
+        {
+          "title": "Optimización por citas",
+          "description": "Ajustamos pujas, palabras y creatividades para bajar el costo por cita agendada."
+        },
+        {
+          "title": "Reporte de pacientes",
+          "description": "Entregamos un informe con contactos, citas y costo por paciente, más el plan del siguiente mes."
+        }
+      ]
+    }
+  },
+  "MarketingClinicasFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿Puedo anunciar mi clínica en Google si es del rubro salud?",
+        "answer": "Sí, pero con reglas. Google y Meta tienen políticas específicas para salud que limitan ciertos términos y afirmaciones. En 3R Core diseñamos campañas que cumplen esas políticas para evitar rechazos y suspensiones de cuenta."
+      },
+      "q2": {
+        "question": "¿Qué tipo de pacientes puedo captar con marketing digital?",
+        "answer": "Depende de tu especialidad, pero funcionan muy bien procedimientos electivos y consultas de alta intención: odontología, dermatología, oftalmología, estética, fisioterapia, salud mental y chequeos, entre otros."
+      },
+      "q3": {
+        "question": "¿Cuánto cuesta captar un paciente?",
+        "answer": "Varía según la especialidad y la competencia en tu distrito. Por eso medimos el costo por cita agendada y optimizamos hacia él, para que sepas exactamente cuánto te cuesta cada paciente y si es rentable."
+      },
+      "q4": {
+        "question": "¿Es importante Google Business Profile para una clínica?",
+        "answer": "Muchísimo. La mayoría de pacientes busca \"cerca de mí\" o por distrito. Una ficha bien optimizada, con reseñas y fotos, es clave para aparecer en el mapa y generar llamadas y visitas."
+      },
+      "q5": {
+        "question": "¿Necesito una web o basta con redes?",
+        "answer": "Recomendamos al menos landing pages por especialidad con formulario y botón de WhatsApp. Convierten mucho mejor que enviar el tráfico al perfil de Instagram y permiten medir cada contacto."
+      },
+      "q6": {
+        "question": "¿Trabajan con consultorios individuales o solo clínicas grandes?",
+        "answer": "Con ambos. Adaptamos la estrategia y el presupuesto al tamaño del negocio, desde un consultorio de un especialista hasta clínicas con varias sedes."
+      },
+      "q7": {
+        "question": "¿Cómo protegen la reputación de mi marca?",
+        "answer": "Cuidamos los mensajes para no hacer promesas indebidas, cumplimos las políticas del rubro y podemos gestionar la estrategia de reseñas para fortalecer la confianza en tu clínica."
+      },
+      "q8": {
+        "question": "¿En cuánto tiempo veré más citas?",
+        "answer": "Las campañas de Google Ads suelen generar contactos desde la primera semana. El SEO local y las reseñas construyen resultados sostenibles en el mediano plazo."
+      }
+    }
+  },
+  "MarketingClinicasSEO": {
+    "seoTitle": "Marketing digital para clínicas en Lima con foco en pacientes",
+    "p1": "El paciente peruano investiga antes de elegir dónde atenderse: busca en Google, lee reseñas y compara opciones en redes. En 3R Core diseñamos estrategias de marketing digital para clínicas y consultorios en Lima que ponen tu servicio frente a ese paciente en el momento exacto de la decisión, priorizando siempre las citas agendadas.",
+    "p2": "Nuestro enfoque combina Google Ads de alta intención —búsquedas por especialidad y distrito— con SEO local y una ficha de Google Business Profile optimizada para aparecer en el mapa. Cuando alguien busca un dermatólogo en Miraflores o una clínica dental en San Isidro, queremos que te encuentre a ti.",
+    "p3": "Para tratamientos electivos y estéticos sumamos campañas de Meta Ads en Facebook e Instagram con segmentación local, y llevamos todo el tráfico a landing pages por especialidad con formulario y botón de WhatsApp. Cada canal se mide por su costo por cita, no por métricas de vanidad.",
+    "p4": "El rubro salud tiene reglas estrictas de publicidad. Conocemos las políticas de Google y Meta para el sector y diseñamos campañas que las cumplen, evitando promesas indebidas y protegiendo la reputación y la cuenta de tu clínica.",
+    "p5": "La confianza es determinante en salud, por eso trabajamos también las reseñas y la presencia local para que tu clínica proyecte solidez. Un paciente que ve buenas reseñas y una ficha completa tiene mucha más probabilidad de agendar.",
+    "p6": "Si buscas marketing digital para clínicas en Lima que se traduzca en más citas y no solo en más seguidores, en 3R Core construimos un sistema medible de captación de pacientes, con un panel donde ves de dónde viene cada contacto.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "MarketingInmobiliariasLanding": {
+    "hero": {
+      "badge": "Inmobiliario · Captación de leads",
+      "title": "Marketing digital para inmobiliarias en Lima que llena tu sala de ventas",
+      "subtitle": "Captamos leads calificados para tus proyectos de departamentos y lotes con Meta Ads, Google Ads y un embudo conectado a tu CRM y WhatsApp.",
+      "cta": "Quiero más leads calificados"
+    },
+    "intro": {
+      "title": "Leads inmobiliarios que sí llegan a la separación",
+      "p1": "Vender un departamento o lote no es una compra por impulso: es un proceso largo, con un ticket alto y muchos actores. En 3R Core diseñamos embudos de marketing inmobiliario que no solo generan formularios, sino leads calificados que tu fuerza de ventas puede convertir en visitas a la sala de ventas y separaciones.",
+      "p2": "Combinamos Meta Ads para despertar el interés y llegar a compradores potenciales por zona, presupuesto y momento de vida, con Google Ads para capturar la demanda activa de quien ya busca \"departamentos en Surco\" o \"proyectos en Lima\". Cada campaña lleva a una landing page de proyecto con la información que el comprador peruano necesita: ubicación, áreas, precios desde, financiamiento y bono del buen pagador.",
+      "p3": "Conectamos los formularios con tu CRM y con WhatsApp para que ningún lead se enfríe, y medimos todo el embudo: costo por lead, costo por lead calificado y, cuando el CRM lo permite, costo por separación. Trabajamos con desarrolladoras y corredores en Lima y provincias que quieren un flujo predecible de oportunidades."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Nuestro embudo de captación inmobiliaria",
+      "items": [
+        {
+          "title": "Meta Ads por proyecto y zona",
+          "description": "Campañas de prospección y retargeting segmentadas por distrito, presupuesto y momento de vida del comprador."
+        },
+        {
+          "title": "Google Ads de demanda activa",
+          "description": "Capturamos a quien ya busca departamentos o proyectos en tu zona con anuncios de búsqueda."
+        },
+        {
+          "title": "Landing pages de proyecto",
+          "description": "Páginas con ubicación, áreas, precios desde, financiamiento y formularios optimizados para conversión."
+        },
+        {
+          "title": "Integración con CRM",
+          "description": "Los leads entran directo a tu CRM con su origen, para que ventas los trabaje sin fricción."
+        },
+        {
+          "title": "Seguimiento por WhatsApp",
+          "description": "Click-to-WhatsApp y respuestas rápidas para atender al lead en caliente, cuando más convierte."
+        },
+        {
+          "title": "Medición del costo por lead",
+          "description": "Reportamos costo por lead y por lead calificado para invertir donde mejor rinde cada proyecto."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso para inmobiliarias",
+      "steps": [
+        {
+          "title": "Diagnóstico del proyecto",
+          "description": "Analizamos el proyecto, el perfil de comprador, el precio y la competencia en la zona."
+        },
+        {
+          "title": "Landing y medición",
+          "description": "Creamos la landing del proyecto, instalamos píxeles y conectamos el CRM y WhatsApp."
+        },
+        {
+          "title": "Campañas multicanal",
+          "description": "Lanzamos Meta Ads y Google Ads con mensajes por etapa del embudo y por zona."
+        },
+        {
+          "title": "Calificación de leads",
+          "description": "Optimizamos hacia leads que cumplen el perfil y filtramos el tráfico que no separa."
+        },
+        {
+          "title": "Reporte y escalamiento",
+          "description": "Entregamos el informe de costo por lead y ajustamos el presupuesto por proyecto y velocidad de venta."
+        }
+      ]
+    }
+  },
+  "MarketingInmobiliariasFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿Cómo generan leads inmobiliarios de calidad y no solo formularios?",
+        "answer": "Segmentamos por zona, presupuesto y momento de vida, y llevamos el tráfico a landing pages con información real del proyecto (precios desde, áreas, financiamiento). Además filtramos y calificamos los leads antes de pasarlos a ventas."
+      },
+      "q2": {
+        "question": "¿Qué canales funcionan mejor para vender departamentos?",
+        "answer": "Meta Ads es excelente para despertar interés y llegar a compradores potenciales; Google Ads captura la demanda activa de quien ya busca. Los combinamos según la etapa del proyecto (preventa, lanzamiento o cierre)."
+      },
+      "q3": {
+        "question": "¿Se integran con nuestro CRM?",
+        "answer": "Sí. Conectamos los formularios y los leads de WhatsApp directamente a tu CRM con su origen y campaña, para que la fuerza de ventas los trabaje sin fricción y podamos medir el embudo completo."
+      },
+      "q4": {
+        "question": "¿Cuánto presupuesto de pauta necesito por proyecto?",
+        "answer": "Depende del ticket y la velocidad de venta esperada, pero para proyectos activos solemos recomendar desde S/3,000 de pauta mensual por proyecto para mantener un flujo constante de leads calificados."
+      },
+      "q5": {
+        "question": "¿Miden el costo por lead y por separación?",
+        "answer": "Sí. Reportamos costo por lead y por lead calificado siempre, y cuando el CRM registra las separaciones, también el costo por separación, para invertir donde cada proyecto rinde mejor."
+      },
+      "q6": {
+        "question": "¿Crean las landing pages de los proyectos?",
+        "answer": "Sí, diseñamos landing pages optimizadas para conversión con la información que el comprador peruano busca: ubicación, áreas, precios desde, financiamiento, bono del buen pagador y formularios claros."
+      },
+      "q7": {
+        "question": "¿Sirve para lotes y no solo departamentos?",
+        "answer": "Sí. Aplicamos la misma metodología a lotes, casas de playa, oficinas y proyectos de segunda vivienda, ajustando la segmentación y el mensaje al tipo de comprador."
+      },
+      "q8": {
+        "question": "¿Trabajan con corredores o solo con desarrolladoras?",
+        "answer": "Con ambos. Trabajamos con desarrolladoras, constructoras y corredores independientes que quieran un flujo predecible de oportunidades bien calificadas."
+      }
+    }
+  },
+  "MarketingInmobiliariasSEO": {
+    "seoTitle": "Marketing digital para inmobiliarias en Lima que genera oportunidades",
+    "p1": "Vender un inmueble no es una compra por impulso: es una decisión de alto ticket que involucra a toda una familia y un proceso que puede durar meses. En 3R Core diseñamos estrategias de marketing digital para inmobiliarias en Lima y el Perú que generan leads calificados, no solo formularios que nunca llegan a la sala de ventas.",
+    "p2": "Combinamos Meta Ads, ideal para despertar el interés y llegar a compradores potenciales por zona, presupuesto y momento de vida, con Google Ads para capturar a quien ya busca activamente departamentos o proyectos en un distrito específico. Cada canal cumple un rol según la etapa del proyecto.",
+    "p3": "Todo el tráfico llega a landing pages de proyecto diseñadas para convertir, con la información que el comprador peruano necesita: ubicación, áreas, precios desde, opciones de financiamiento y el bono del buen pagador. Un formulario claro y un botón de WhatsApp aceleran el primer contacto.",
+    "p4": "Conectamos los leads directamente a tu CRM y a WhatsApp para que ninguno se enfríe. Sabemos que en el negocio inmobiliario la velocidad de respuesta define la conversión, por eso estructuramos el seguimiento junto a tu equipo comercial.",
+    "p5": "Medimos todo el embudo: costo por lead, costo por lead calificado y, cuando el CRM lo permite, costo por separación. Con esa data reasignamos el presupuesto hacia los proyectos y canales que mejor rinden.",
+    "p6": "Si buscas marketing digital para inmobiliarias en Lima que llene tu sala de ventas con oportunidades reales, en 3R Core construimos un embudo medible y escalable, con reportes claros que tu gerencia comercial va a entender.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "MarketingEcommerceLanding": {
+    "hero": {
+      "badge": "E-commerce · Escala tus ventas",
+      "title": "Marketing digital para e-commerce en Perú que escala tus ventas",
+      "subtitle": "Google Shopping, Meta Ads con catálogo, email marketing y CRO trabajando juntos para bajar tu costo de adquisición y subir tu ROAS.",
+      "cta": "Escalar mi tienda online"
+    },
+    "intro": {
+      "title": "Un sistema de crecimiento para tu tienda online",
+      "p1": "Tener una tienda en Shopify, WooCommerce o VTEX es solo el punto de partida. Lo difícil es conseguir tráfico rentable de forma sostenida. En 3R Core construimos un sistema de marketing para e-commerce en el Perú donde cada canal cumple un rol: adquisición, recuperación y fidelización, todo medido en ventas y ROAS.",
+      "p2": "En adquisición usamos Google Shopping y Performance Max para capturar la demanda de quien busca tus productos, y Meta Ads y TikTok Ads con catálogo dinámico para descubrir nuevos clientes y hacer retargeting a quienes vieron un producto o abandonaron el carrito. Sincronizamos tu feed de productos para que los anuncios muestren stock y precio real.",
+      "p3": "Pero la publicidad sola no basta: mejoramos tu tasa de conversión con CRO (fichas de producto, checkout, velocidad y confianza) y activamos flujos de email marketing para recuperar carritos y generar recompra. Así, cada sol de pauta rinde más porque la tienda convierte mejor y el cliente vuelve a comprar."
+    },
+    "benefits": {
+      "badge": "Qué incluye",
+      "title": "Nuestro sistema de crecimiento e-commerce",
+      "items": [
+        {
+          "title": "Google Shopping y Performance Max",
+          "description": "Configuramos Merchant Center, el feed de productos y campañas que capturan la demanda de búsqueda."
+        },
+        {
+          "title": "Meta y TikTok con catálogo",
+          "description": "Anuncios dinámicos de producto (DPA) para prospección y retargeting de carrito abandonado."
+        },
+        {
+          "title": "Feed de productos optimizado",
+          "description": "Ordenamos títulos, imágenes y atributos del catálogo para mejorar la relevancia y el rendimiento."
+        },
+        {
+          "title": "Email marketing y recompra",
+          "description": "Flujos de carrito abandonado, post-compra y reactivación integrados con tu plataforma."
+        },
+        {
+          "title": "CRO de la tienda",
+          "description": "Mejoramos fichas de producto, checkout, velocidad y señales de confianza para convertir más visitas."
+        },
+        {
+          "title": "Optimización por ROAS",
+          "description": "Gestionamos toda la inversión por retorno y reportamos ingresos atribuidos a cada canal."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Cómo trabajamos",
+      "title": "Nuestro proceso para e-commerce",
+      "steps": [
+        {
+          "title": "Auditoría de la tienda",
+          "description": "Revisamos tu plataforma, catálogo, analítica y embudo de compra para detectar fugas y oportunidades."
+        },
+        {
+          "title": "Feed y medición",
+          "description": "Configuramos Merchant Center, el feed de productos, GA4, píxeles y eventos de e-commerce."
+        },
+        {
+          "title": "Lanzamiento multicanal",
+          "description": "Activamos Shopping, Performance Max, Meta y TikTok con catálogo y campañas de retargeting."
+        },
+        {
+          "title": "CRO y email",
+          "description": "Mejoramos la conversión de la tienda y activamos los flujos de recuperación y recompra."
+        },
+        {
+          "title": "Escalamiento por ROAS",
+          "description": "Reasignamos presupuesto a los productos y canales más rentables y entregamos el reporte mensual."
+        }
+      ]
+    }
+  },
+  "MarketingEcommerceFAQ": {
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "faqs": {
+      "q1": {
+        "question": "¿Con qué plataformas de e-commerce trabajan?",
+        "answer": "Trabajamos con Shopify, WooCommerce, VTEX y otras. Configuramos el feed de productos, la analítica y los píxeles en la que uses; si aún no tienes tienda, también podemos ayudarte a desarrollarla."
+      },
+      "q2": {
+        "question": "¿Qué es Google Shopping y por qué lo necesito?",
+        "answer": "Google Shopping muestra tus productos con foto, precio y tienda directamente en los resultados de búsqueda. Captura a compradores con alta intención y suele ser uno de los canales más rentables para e-commerce."
+      },
+      "q3": {
+        "question": "¿Cómo bajan el costo de adquisición?",
+        "answer": "Con dos palancas: mejor pauta (segmentación, catálogos dinámicos, retargeting) y mejor conversión de la tienda vía CRO. Cuando la tienda convierte más, cada sol de publicidad rinde mejor."
+      },
+      "q4": {
+        "question": "¿El email marketing realmente aporta ventas en e-commerce?",
+        "answer": "Sí, y bastante. Los flujos de carrito abandonado, post-compra y reactivación suelen representar una porción significativa de los ingresos con una inversión muy baja."
+      },
+      "q5": {
+        "question": "¿Qué presupuesto de pauta recomiendan para escalar?",
+        "answer": "Depende de tu margen y catálogo, pero para escalar de forma sostenida solemos empezar desde S/2,500 de pauta mensual, ajustando según el ROAS objetivo de tu negocio."
+      },
+      "q6": {
+        "question": "¿Optimizan también las fichas de producto?",
+        "answer": "Sí. El CRO incluye mejorar títulos, imágenes, descripciones, reseñas, velocidad y checkout, porque de nada sirve traer tráfico si la ficha no convierte."
+      },
+      "q7": {
+        "question": "¿Cómo miden el retorno de la inversión?",
+        "answer": "Configuramos GA4 y los eventos de e-commerce para atribuir ingresos por canal y reportar el ROAS real. Gestionamos toda la inversión por retorno, no por clics."
+      },
+      "q8": {
+        "question": "¿En cuánto tiempo se ven resultados?",
+        "answer": "Shopping y Meta suelen generar ventas desde las primeras semanas. La combinación de mejor pauta, CRO y email marketing hace que el rendimiento crezca de forma sostenida en los meses siguientes."
+      }
+    }
+  },
+  "MarketingEcommerceSEO": {
+    "seoTitle": "Marketing digital para e-commerce en Perú que escala ventas",
+    "p1": "Montar una tienda en Shopify, WooCommerce o VTEX es solo el comienzo; el verdadero reto es conseguir tráfico rentable de forma sostenida. En 3R Core construimos sistemas de marketing digital para e-commerce en el Perú donde cada canal cumple un rol claro: adquisición, recuperación y fidelización, todo medido en ventas y ROAS.",
+    "p2": "En adquisición aprovechamos Google Shopping y Performance Max para capturar a quien busca tus productos, junto a Meta Ads y TikTok Ads con catálogo dinámico para descubrir clientes nuevos y hacer retargeting a quienes vieron un producto o abandonaron el carrito. Sincronizamos tu feed para que los anuncios muestren stock y precio real.",
+    "p3": "La publicidad sola no basta: si la tienda no convierte, cada clic es dinero perdido. Por eso el CRO es parte central del servicio. Optimizamos fichas de producto, checkout, velocidad de carga y señales de confianza para que un mayor porcentaje de visitas termine en compra.",
+    "p4": "El email marketing cierra el círculo. Activamos flujos de carrito abandonado, post-compra y reactivación que recuperan ventas que de otro modo se perderían y aumentan el valor de cada cliente en el tiempo, con una inversión muy baja frente a su retorno.",
+    "p5": "Todo se gestiona con foco en el retorno. Configuramos GA4 y los eventos de e-commerce para atribuir ingresos por canal y tomar decisiones con datos: escalar lo que rinde, pausar lo que no y reasignar el presupuesto hacia los productos más rentables.",
+    "p6": "Si buscas marketing digital para e-commerce en Perú que se traduzca en ventas y un ROAS saludable, en 3R Core integramos pauta, CRO y email marketing en un solo motor de crecimiento, con reportes mensuales claros y accionables.",
+    "relatedTitle": "Servicios relacionados"
+  },
+  "MoreServices": {
+    "badge": "Más servicios",
+    "title": "Explora todos nuestros servicios de marketing digital",
+    "cta": "Ver servicio",
+    "items": [
+      {
+        "title": "Meta Ads (Facebook e Instagram)",
+        "description": "Campañas en Facebook e Instagram con segmentación avanzada y ROAS medible.",
+        "href": "/servicios/meta-ads"
+      },
+      {
+        "title": "TikTok Ads",
+        "description": "Video nativo, Spark Ads y creadores UGC para llegar a audiencias jóvenes.",
+        "href": "/servicios/tiktok-ads"
+      },
+      {
+        "title": "Performance Marketing",
+        "description": "Adquisición multicanal medida por CAC y ROAS, con optimización continua.",
+        "href": "/servicios/performance-marketing"
+      },
+      {
+        "title": "Email Marketing y Automatización",
+        "description": "Flujos automáticos, newsletters y segmentación que venden en piloto automático.",
+        "href": "/servicios/email-marketing"
+      },
+      {
+        "title": "Marketing para Clínicas",
+        "description": "Captación de pacientes con Google Ads de salud, SEO local y landing pages.",
+        "href": "/servicios/marketing-clinicas"
+      },
+      {
+        "title": "Marketing para Inmobiliarias",
+        "description": "Leads calificados para tus proyectos con Meta Ads, Google Ads y CRM.",
+        "href": "/servicios/marketing-inmobiliarias"
+      },
+      {
+        "title": "Marketing para E-commerce",
+        "description": "Google Shopping, catálogos, email y CRO para escalar tu tienda online.",
+        "href": "/servicios/marketing-ecommerce"
+      }
+    ]
   }
 }
