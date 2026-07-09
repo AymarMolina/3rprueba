@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
-import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { buildFAQPageSchema, buildServiceSchema, buildSpeakableSchema } from "@/lib/seoSchemas"
 import { getMessages } from "next-intl/server"
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Manejo de Redes Sociales en Lima — Community Manager Profesional | 3R Core',
     titleEn: 'Social Media Management in Lima — Professional Community Manager | 3R Core',
     descriptionEs: 'Manejo profesional de redes sociales en Lima, Perú: TikTok, LinkedIn, Instagram y Facebook. Estrategia, diseño, copy y reportes mensuales desde S/1,500 con 8–12 piezas por red.',
-    descriptionEn: 'Professional social media management in Lima, Peru: TikTok, LinkedIn, Instagram and Facebook. Strategy, design, copy and monthly reports starting at S/1,500 (~$400 USD) with 8–12 pieces per network.',
+    descriptionEn: 'Professional social media management for US clients: TikTok, LinkedIn, Instagram and Facebook. Strategy, design, copy and monthly reports starting at $800/month with 8–12 pieces per network.',
     ogImage: {
       url: 'https://3rcore.com/og/socialmedia.jpg',
       width: 1200,
@@ -36,7 +36,7 @@ export default async function SocialMediaLayout({ children, params }: { children
     serviceType: 'Social Media Management / Community Manager',
     priceRange: 'S/1,500 - S/8,000',
     offerPriceEs: 1500,
-    offerPriceEn: 400,
+    offerPriceEn: 800,
     audienceTypes: ['Startups', 'Small business', 'Medium business', 'Restaurants', 'Retail', 'B2B', 'Healthcare'],
   })
 
@@ -44,12 +44,17 @@ export default async function SocialMediaLayout({ children, params }: { children
     question: q.question,
     answer: q.answer,
   }))
-  const faqSchema = buildFAQPageSchema(faqItems)
+  const faqSchema: any = buildFAQPageSchema(faqItems)
+  faqSchema.speakable = buildSpeakableSchema(['h1', 'h2', '.faq-question', '.faq-answer'])
 
   const breadcrumbSchema = generateBreadcrumbSchema(
     [{ name: 'Inicio', path: '' }, { name: 'Servicios', path: '/servicios' }, { name: 'Social Media', path: '/servicios/socialmedia' }],
     locale
   )
+
+  const hiddenH1 = locale === 'en'
+    ? 'Social media management agency in Lima, Peru — Instagram, TikTok, Facebook and LinkedIn for businesses'
+    : 'Agencia de manejo de redes sociales en Lima, Perú — Instagram, TikTok, Facebook y LinkedIn para empresas'
 
   return (
     <>
@@ -57,6 +62,7 @@ export default async function SocialMediaLayout({ children, params }: { children
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
       />
+      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )

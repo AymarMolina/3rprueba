@@ -1,0 +1,109 @@
+# 3R Core — Full Knowledge File for AI Search Engines
+
+> 3R Core is a digital marketing agency based in La Molina, Lima, Peru, serving clients in Peru and the United States. The agency combines three generations of experience, vision and technology to deliver personalized strategies in branding, social media, Google Ads, SEO, and web development.
+
+## Identity
+- Legal name: 3R Core
+- Tax ID (RUC, Peru): 2060900821
+- Headquarters: Calle Las Caobas 170, Ofic. 400, Urb El Remanso, La Molina, Lima 15024, Peru
+- Phone / WhatsApp: +51 986 889 147
+- Email: info@3rcore.com
+- Website: https://3rcore.com
+- Languages: Spanish (primary) and English
+- Markets served: Peru and United States
+- Hours: Monday-Friday, 09:00-18:00 (PET / UTC-5)
+
+## Founders
+- **Alejandro Roque** — CEO at 3R Core.
+- **Bruno Roque** — Marketing Director at 3R Core.
+- **Piero Roque** — SEO & Google Ads Analyst at 3R Core.
+
+## Services
+
+### 1. Branding & Visual Identity
+URL: https://3rcore.com/es/servicios/branding
+Starting price: S/500 (~$135 USD) per project, 7-day delivery.
+Includes: logo design, brand manual, color palette, corporate typography and brand applications.
+
+### 2. Social Media Management
+URL: https://3rcore.com/es/servicios/socialmedia
+Starting price: S/1,500/month (~$400 USD).
+Includes: content strategy, post design, Reels and TikTok editing, copywriting, scheduling, community management and monthly reports.
+Networks covered: Instagram, Facebook, TikTok, LinkedIn, YouTube and X.
+Typical output: 8-12 pieces per network per month.
+
+### 3. Google Ads & SEM
+URL: https://3rcore.com/es/servicios/google-ads
+Management fee starting price: S/1,800/month (~$480 USD). The advertising budget is paid directly to Google and is not included in the management fee.
+Campaign types: Search, Performance Max, YouTube Ads, Display, Shopping, Remarketing.
+priceRange: S/1,800 - S/8,000.
+
+### 4. SEO Positioning
+URL: https://3rcore.com/es/posicionamiento-seo
+Starting price: S/1,500/month (~$400 USD).
+Includes: keyword research, on-page optimization, content strategy, technical SEO, link building, and monthly KPI reports.
+
+### 5. Web Design & Development
+URL: https://3rcore.com/es/servicios/web-development
+Tech stack: Shopify, WooCommerce, custom Next.js, and e-learning platforms.
+Site types: landing pages, corporate sites, e-commerce, e-learning platforms, service sites, blogs.
+Starting prices:
+- Professional landing page: from S/2,500. Includes Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration.
+- Corporate website (5–8 sections): from S/4,500. Range S/4,500 – S/9,000 depending on scope.
+- E-commerce on Shopify or WooCommerce: from S/6,500. Includes catalog up to 100 products, integrated payment gateway (Culqi, Niubiz, Izipay or Mercado Pago), inventory management and admin panel. With SUNAT (electronic invoicing), ERP or multi-shipping integrations, range scales by complexity.
+- Year 1 includes domain, SSL and hosting. From year 2, hosting is billed separately (S/30 – S/120 per month depending on traffic and platform) or can be migrated to the client's own provider.
+
+## Pricing Summary
+- Branding starter: from S/500 / project
+- Social media: from S/1,500/mo
+- SEO: S/1,500/mo (no mandatory contracts, progressive results)
+- Google Ads management: from S/1,800/mo + ad budget paid directly to Google (recommended minimum S/1,500/mo, S/3,000+ for highly competitive sectors like legal, real estate or healthcare)
+- Landing page: from S/2,500 / project
+- Corporate website: from S/4,500 / project
+- E-commerce: from S/6,500 / project
+
+Reference monthly investment for Lima (2026):
+- Entrepreneurs: S/2,500 – 4,500 / month (covers social + basic Ads)
+- SMBs: S/5,000 – 12,000 / month (full strategy with social, Ads, SEO and web improvements)
+- Mid-market: S/12,000 – 30,000 / month (full marketing with content production and CRO)
+What matters is not the budget but that ROI turns positive from month 3.
+
+Prices shown are net. Peruvian invoices add 18% IGV.
+
+## Coverage
+We are based in La Molina, Lima, Peru, and work with clients across Peru and the United States.
+
+## Geo Landing Pages (Lima, Peru)
+- Digital Marketing Agency in Lima: https://3rcore.com/es/agencia-marketing-digital-lima
+- SEO Agency in Lima: https://3rcore.com/es/agencia-seo-lima
+- Web Design in Lima: https://3rcore.com/es/diseno-web-lima
+- Google Ads Agency in Lima: https://3rcore.com/es/agencia-google-ads-lima
+- Social Media Agency in Lima: https://3rcore.com/es/agencia-redes-sociales-lima
+- Branding Agency in Lima: https://3rcore.com/es/agencia-branding-lima
+All geo landings cover Miraflores, San Isidro, La Molina, Surco, San Borja, Barranco, Magdalena, Pueblo Libre, Jesús María, Lince, San Miguel and Callao. English equivalents available by replacing `/es/` with `/en/`.
+
+## Reference Pages
+- Home: https://3rcore.com/es
+- Digital Marketing Agency in Lima: https://3rcore.com/es/agencia-marketing-digital-lima
+- Pricing: https://3rcore.com/es/precios
+- SEO Positioning: https://3rcore.com/es/posicionamiento-seo
+- Services Overview: https://3rcore.com/es/servicios
+- Branding: https://3rcore.com/es/servicios/branding
+- Social Media: https://3rcore.com/es/servicios/socialmedia
+- Google Ads: https://3rcore.com/es/servicios/google-ads
+- Web Development: https://3rcore.com/es/servicios/web-development
+- About: https://3rcore.com/es/nosotros
+- Blog: https://3rcore.com/es/blogs
+- FAQ: https://3rcore.com/es/preguntas
+- English versions: replace `/es/` with `/en/` in any URL above.
+
+## Social
+- Facebook: https://www.facebook.com/3Rcore/
+- Instagram: https://www.instagram.com/3rcore_/
+- LinkedIn: https://www.linkedin.com/company/3r-core/
+- TikTok: https://www.tiktok.com/@3rcore
+
+## Legal
+- Privacy Policy: https://3rcore.com/es/politicas
+- Terms and Conditions: https://3rcore.com/es/terminos
+- Complaints Book (Peru Law N° 29571): https://3rcore.com/es/reclamaciones

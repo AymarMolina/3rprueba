@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema, BASE_URL } from "@/lib/metadata"
+import { buildSpeakableSchema } from "@/lib/seoSchemas"
 import { getMessages } from "next-intl/server"
 
 export const revalidate = 3600
@@ -9,20 +10,21 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return generatePageMetadata({
     locale,
     path: '/preguntas',
-    titleEs: 'Preguntas Frecuentes - FAQ | 3R Core',
-    titleEn: 'Frequently Asked Questions - FAQ | 3R Core',
-    descriptionEs: 'Resolvemos tus dudas sobre nuestros servicios de marketing digital: Branding, Social Media, Google Ads, SEO y Desarrollo Web.',
-    descriptionEn: 'We answer your questions about our digital marketing services: Branding, Social Media, Google Ads, SEO and Web Development.',
+    titleEs: 'Preguntas Frecuentes — Marketing Digital, SEO, Google Ads y Web | 3R Core',
+    titleEn: 'Frequently Asked Questions — Digital Marketing, SEO, Google Ads & Web | 3R Core',
+    descriptionEs: 'Respuestas a las preguntas más frecuentes sobre nuestros servicios de marketing digital en Lima, Perú: precios, plazos, contratos, branding, social media, Google Ads, SEO y desarrollo web.',
+    descriptionEn: 'Answers to the most frequently asked questions about our digital marketing services in Lima, Peru: pricing, timelines, contracts, branding, social media, Google Ads, SEO and web development.',
   })
 }
 
 export default async function PreguntasLayout({ children, params }: { children: React.ReactNode; params: any }) {
   const { locale } = await params
+  const isEn = locale === 'en'
   const messages = await getMessages() as any
   const faq = messages?.FAQ
 
   const breadcrumbSchema = generateBreadcrumbSchema(
-    [{ name: 'Inicio', path: '' }, { name: 'FAQ', path: '/preguntas' }],
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: 'FAQ', path: '/preguntas' }],
     locale
   )
 
@@ -38,8 +40,16 @@ export default async function PreguntasLayout({ children, params }: { children: 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${BASE_URL}/${locale}/preguntas#faqpage`,
+    "url": `${BASE_URL}/${locale}/preguntas`,
+    "inLanguage": isEn ? 'en' : 'es',
     "mainEntity": faqItems,
+    "speakable": buildSpeakableSchema(['h1', 'h2', '.faq-question', '.faq-answer']),
   }
+
+  const hiddenH1 = isEn
+    ? 'Frequently asked questions about digital marketing in Lima, Peru — pricing, branding, SEO, Google Ads, social media and web development'
+    : 'Preguntas frecuentes sobre marketing digital en Lima, Perú — precios, branding, SEO, Google Ads, redes sociales y desarrollo web'
 
   return (
     <>
@@ -47,6 +57,7 @@ export default async function PreguntasLayout({ children, params }: { children: 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, breadcrumbSchema]) }}
       />
+      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )

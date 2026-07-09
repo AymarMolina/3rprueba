@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Agencia Google Ads en Lima, Perú — Campañas SEM con ROI | 3R Core',
     titleEn: 'Google Ads Agency in Lima, Peru — SEM Campaigns with ROI | 3R Core',
     descriptionEs: 'Agencia Google Ads en Lima, Perú: campañas Search, Performance Max, YouTube, Display, Shopping y Remarketing. Gestión profesional desde S/1,800/mes con reportes mensuales.',
-    descriptionEn: 'Google Ads agency in Lima, Peru: Search, Performance Max, YouTube, Display, Shopping and Remarketing campaigns. Professional management from $480/month with monthly reports.',
+    descriptionEn: 'Google Ads agency for US clients: Search, Performance Max, YouTube, Display, Shopping and Remarketing campaigns. Professional management from $800/month with monthly reports.',
     ogImage: {
       url: 'https://3rcore.com/og/google-ads.jpg',
       width: 1200,
@@ -37,7 +37,7 @@ export default async function GoogleAdsLayout({ children, params }: { children: 
     serviceType: 'Google Ads / SEM / PPC',
     priceRange: 'S/1,800 - S/8,000',
     offerPriceEs: 1800,
-    offerPriceEn: 480,
+    offerPriceEn: 800,
     audienceTypes: ['E-commerce', 'B2B', 'Local business', 'Lead generation'],
   })
 

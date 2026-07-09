@@ -120,7 +120,7 @@ export default async function RootLayout({
       `${BASE_URL}/og/web-development.jpg`,
       `${BASE_URL}/og/socialmedia.jpg`,
       `${BASE_URL}/og/google-ads.jpg`,
-      `${BASE_URL}/og/posicionamiento-seo.jpg`
+      `${BASE_URL}/og/agencia-seo-lima.jpg`
     ],
     "description": locale === 'en'
       ? "Digital marketing agency in Lima, Peru. We combine Experience, Vision, and Technology into strategies: Branding, Social Media, SEO, Google Ads & Web Development."
@@ -279,7 +279,7 @@ export default async function RootLayout({
           "itemOffered": {
             "@type": "Service",
             "name": locale === 'en' ? "Corporate Branding" : "Branding Corporativo",
-            "url": `${BASE_URL}/${locale}/servicios/branding`,
+            "url": `${BASE_URL}/${locale}/agencia-branding-lima`,
             "serviceType": "Branding / Visual Identity"
           }
         },
@@ -288,7 +288,7 @@ export default async function RootLayout({
           "itemOffered": {
             "@type": "Service",
             "name": locale === 'en' ? "Social Media Management" : "Gestión de Redes Sociales",
-            "url": `${BASE_URL}/${locale}/servicios/socialmedia`,
+            "url": `${BASE_URL}/${locale}/agencia-redes-sociales-lima`,
             "serviceType": "Social Media Management"
           }
         },
@@ -297,7 +297,7 @@ export default async function RootLayout({
           "itemOffered": {
             "@type": "Service",
             "name": locale === 'en' ? "Google Ads / SEM" : "Google Ads / SEM",
-            "url": `${BASE_URL}/${locale}/servicios/google-ads`,
+            "url": `${BASE_URL}/${locale}/agencia-google-ads-lima`,
             "serviceType": "Google Ads / SEM"
           }
         },
@@ -306,7 +306,7 @@ export default async function RootLayout({
           "itemOffered": {
             "@type": "Service",
             "name": locale === 'en' ? "Web Development & E-commerce" : "Desarrollo Web y E-commerce",
-            "url": `${BASE_URL}/${locale}/servicios/web-development`,
+            "url": `${BASE_URL}/${locale}/diseno-web-lima`,
             "serviceType": "Web Development / E-commerce"
           }
         },
@@ -315,7 +315,7 @@ export default async function RootLayout({
           "itemOffered": {
             "@type": "Service",
             "name": locale === 'en' ? "SEO Positioning" : "Posicionamiento SEO",
-            "url": `${BASE_URL}/${locale}/posicionamiento-seo`,
+            "url": `${BASE_URL}/${locale}/agencia-seo-lima`,
             "serviceType": "SEO / Search Engine Optimization"
           },
           "priceSpecification": {
@@ -416,11 +416,11 @@ export default async function RootLayout({
         { name: "Home", url: `${BASE_URL}/en` },
         { name: "About Us", url: `${BASE_URL}/en/nosotros` },
         { name: "Services", url: `${BASE_URL}/en/servicios` },
-        { name: "Web Design & Development", url: `${BASE_URL}/en/servicios/web-development` },
-        { name: "Social Media Management", url: `${BASE_URL}/en/servicios/socialmedia` },
-        { name: "Corporate Branding", url: `${BASE_URL}/en/servicios/branding` },
-        { name: "Google Ads", url: `${BASE_URL}/en/servicios/google-ads` },
-        { name: "SEO Positioning", url: `${BASE_URL}/en/posicionamiento-seo` },
+        { name: "Web Design & Development", url: `${BASE_URL}/en/diseno-web-lima` },
+        { name: "Social Media Management", url: `${BASE_URL}/en/agencia-redes-sociales-lima` },
+        { name: "Corporate Branding", url: `${BASE_URL}/en/agencia-branding-lima` },
+        { name: "Google Ads", url: `${BASE_URL}/en/agencia-google-ads-lima` },
+        { name: "SEO Positioning", url: `${BASE_URL}/en/agencia-seo-lima` },
         { name: "Blog", url: `${BASE_URL}/en/blogs` },
         { name: "FAQ", url: `${BASE_URL}/en/preguntas` },
       ]
@@ -428,11 +428,11 @@ export default async function RootLayout({
         { name: "Inicio", url: `${BASE_URL}/es` },
         { name: "Nosotros", url: `${BASE_URL}/es/nosotros` },
         { name: "Servicios", url: `${BASE_URL}/es/servicios` },
-        { name: "Diseño y Desarrollo Web", url: `${BASE_URL}/es/servicios/web-development` },
-        { name: "Manejo de Redes Sociales", url: `${BASE_URL}/es/servicios/socialmedia` },
-        { name: "Branding Corporativo", url: `${BASE_URL}/es/servicios/branding` },
-        { name: "Google Ads", url: `${BASE_URL}/es/servicios/google-ads` },
-        { name: "Posicionamiento SEO", url: `${BASE_URL}/es/posicionamiento-seo` },
+        { name: "Diseño y Desarrollo Web", url: `${BASE_URL}/es/diseno-web-lima` },
+        { name: "Manejo de Redes Sociales", url: `${BASE_URL}/es/agencia-redes-sociales-lima` },
+        { name: "Branding Corporativo", url: `${BASE_URL}/es/agencia-branding-lima` },
+        { name: "Google Ads", url: `${BASE_URL}/es/agencia-google-ads-lima` },
+        { name: "Posicionamiento SEO", url: `${BASE_URL}/es/agencia-seo-lima` },
         { name: "Blog", url: `${BASE_URL}/es/blogs` },
         { name: "Preguntas Frecuentes", url: `${BASE_URL}/es/preguntas` },
       ]

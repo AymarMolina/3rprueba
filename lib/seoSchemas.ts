@@ -122,3 +122,101 @@ export function buildServiceItemList(p: ItemListServiceParams) {
     })),
   }
 }
+
+export interface FounderInput {
+  name: string
+  role: string
+  image: string
+  sameAs?: string[]
+}
+
+export function buildPersonSchemas(locale: string, founders: FounderInput[]) {
+  return founders.map((f) => ({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}/${locale}/nosotros#${f.name.toLowerCase().replace(/\s+/g, '-')}`,
+    "name": f.name,
+    "jobTitle": f.role,
+    "image": `${BASE_URL}${f.image}`,
+    "worksFor": { "@id": `${BASE_URL}/#organization` },
+    ...(f.sameAs && f.sameAs.length ? { "sameAs": f.sameAs } : {}),
+  }))
+}
+
+export function buildSpeakableSchema(cssSelectors: string[] = ['h1', 'h2', '.faq-answer']) {
+  return {
+    "@type": "SpeakableSpecification",
+    "cssSelector": cssSelectors,
+  }
+}
+
+export interface BlogListItem {
+  title: string
+  slug: string
+  excerpt: string
+  publishedAt: string
+  image?: string
+  author?: string
+}
+
+export function buildBlogSchema(locale: string, posts: BlogListItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${BASE_URL}/${locale}/blogs#blog`,
+    "url": `${BASE_URL}/${locale}/blogs`,
+    "name": locale === 'en' ? '3R Core Blog' : 'Blog 3R Core',
+    "description": locale === 'en'
+      ? 'Articles on digital marketing, SEO, branding, social media, Google Ads and web development.'
+      : 'Artículos sobre marketing digital, SEO, branding, redes sociales, Google Ads y desarrollo web.',
+    "inLanguage": locale === 'en' ? 'en' : 'es',
+    "publisher": { "@id": `${BASE_URL}/#organization` },
+    "blogPost": posts.slice(0, 10).map((p) => ({
+      "@type": "BlogPosting",
+      "headline": p.title,
+      "url": `${BASE_URL}/${locale}/blogs/${p.slug}`,
+      "datePublished": p.publishedAt,
+      "description": p.excerpt,
+      ...(p.image ? { "image": p.image } : {}),
+      ...(p.author ? { "author": { "@type": "Person", "name": p.author } } : {}),
+    })),
+  }
+}
+
+export interface PricingTier {
+  name: string
+  priceEs: number
+  priceEn: number
+  serviceType: string
+  path: string
+  descriptionEs: string
+  descriptionEn: string
+}
+
+export function buildOfferCatalogSchema(locale: string, tiers: PricingTier[]) {
+  const isEn = locale === 'en'
+  return {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "@id": `${BASE_URL}/${locale}/precios#catalog`,
+    "name": isEn ? '3R Core Pricing — Digital Marketing Services' : 'Precios 3R Core — Servicios de Marketing Digital',
+    "url": `${BASE_URL}/${locale}/precios`,
+    "itemListElement": tiers.map((t) => ({
+      "@type": "Offer",
+      "name": t.name,
+      "price": isEn ? t.priceEn : t.priceEs,
+      "priceCurrency": isEn ? 'USD' : 'PEN',
+      "availability": "https://schema.org/InStock",
+      "url": `${BASE_URL}/${locale}${t.path}`,
+      "itemOffered": {
+        "@type": "Service",
+        "name": t.name,
+        "serviceType": t.serviceType,
+        "description": isEn ? t.descriptionEn : t.descriptionEs,
+        "provider": { "@id": `${BASE_URL}/#organization` },
+        "url": `${BASE_URL}/${locale}${t.path}`,
+      },
+    })),
+  }
+}
+

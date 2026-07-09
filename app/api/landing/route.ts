@@ -3,15 +3,61 @@ import { NextResponse } from 'next/server';
 
 const logoUrl = 'https://3-rcore.vercel.app/icons/LOGO3R.png';
 
+// Registra el lead en el panel (CRM) a través del endpoint público del panel.
+// Ventaja: NO requiere credenciales de Supabase en este proyecto (Vercel del
+// sitio público) — el panel inserta en `panel_leads` con sus propias credenciales.
+// Si el panel no responde, no rompe nada: los correos igual se envían.
+async function saveLeadToPanel(d: {
+  nombre: string; apellido?: string; email: string; telefono?: string; mensaje?: string; website?: string;
+}) {
+  // Timeout duro (6s): si el panel está lento o caído, NO bloquea ni retrasa el
+  // envío de los correos. El lead igual queda en el correo aunque el panel falle.
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), 6000);
+  try {
+    await fetch('https://3rcore.com/panel/api/lead-ingest', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-3r-key': '3rlead_k7Qm2Xp9vR4nT8wL6sB1yH3dZ',
+      },
+      body: JSON.stringify({
+        nombre: d.nombre,
+        apellido: d.apellido,
+        email: d.email,
+        telefono: d.telefono,
+        mensaje: d.mensaje,
+        website: d.website,
+      }),
+      signal: ctl.signal,
+    });
+  } catch (e) {
+    console.error('panel lead-ingest failed', e);
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    const { nombre, apellido, email, telefono, mensaje, website } = await request.json();
+    const { nombre, apellido, email, telefono, mensaje, website, servicio, utm, referrer } = await request.json();
 
     if (!nombre || !email || !mensaje  || !website) {
       return NextResponse.json({ error: 'Faltan campos requeridos' }, { status: 400 });
     }
+
+    // Servicio de interés: viene como campo propio; si no, se rescata del mensaje.
+    const servicioTxt =
+      (servicio && String(servicio).trim()) ||
+      (String(mensaje).match(/Servicio:\s*(.+)/)?.[1] || '').trim() ||
+      'No especificado';
+    // Origen/campaña (UTM, gclid, referente) para saber de dónde vino el lead.
+    const origenTxt = [utm, referrer].filter(Boolean).join(' · ').trim();
+
+    // Guarda el lead en el panel/CRM antes de enviar los correos.
+    await saveLeadToPanel({ nombre, apellido, email, telefono, mensaje, website });
 
     const responsiveStyles = `
       <style>
@@ -77,8 +123,12 @@ export async function POST(request: Request) {
                           </td>
                         </tr>
                         <tr>
-                          <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">WhatsApp/Tel:</td>
-                          <td style="padding: 12px 0; color: #111827; font-weight: 500; text-align: right; font-size: 14px;" class="dark-mode-text">${telefono}</td>
+                          <td style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280; font-size: 14px;" class="dark-mode-border">WhatsApp/Tel:</td>
+                          <td style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 500; text-align: right; font-size: 14px;" class="dark-mode-border dark-mode-text">${telefono || '—'}</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 12px 0; color: #6b7280; font-size: 14px;">Servicio de interés:</td>
+                          <td style="padding: 12px 0; color: #E91E63; font-weight: 700; text-align: right; font-size: 14px;">${servicioTxt}</td>
                         </tr>
                       </table>
                     </div>
@@ -86,9 +136,9 @@ export async function POST(request: Request) {
                     <!-- Message -->
                     <div style="margin: 30px 0;">
                       <div style="background: linear-gradient(to right, #E91E63, #9C27B0); height: 3px; border-radius: 10px; margin-bottom: 15px;"></div>
-                      <h4 style="color: #E91E63; margin: 0 0 12px 0; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Mensaje</h4>
-                      <p style="line-height: 1.8; color: #374151; margin: 0; font-size: 15px; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e5e7eb;" class="dark-mode-text dark-mode-card dark-mode-border">${mensaje}</p>
-                      <p style="line-height: 1.8; color: #374151; margin: 0; font-size: 15px; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e5e7eb;" class="dark-mode-text dark-mode-card dark-mode-border">${website}</p>
+                      <h4 style="color: #E91E63; margin: 0 0 12px 0; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Detalle del lead</h4>
+                      <p style="line-height: 1.8; color: #374151; margin: 0 0 12px 0; font-size: 15px; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e5e7eb; white-space: pre-line;" class="dark-mode-text dark-mode-card dark-mode-border">${mensaje}</p>
+                      <p style="line-height: 1.6; color: #6b7280; margin: 0; font-size: 13px;">📍 Página: ${website}${origenTxt ? ` · Origen: ${origenTxt}` : ''}</p>
                     </div>
 
                     <!-- CTA -->

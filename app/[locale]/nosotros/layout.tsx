@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema, BASE_URL } from "@/lib/metadata"
+import { buildPersonSchemas, buildSpeakableSchema } from "@/lib/seoSchemas"
 
 export const revalidate = 3600
 
@@ -8,10 +9,10 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return generatePageMetadata({
     locale,
     path: '/nosotros',
-    titleEs: 'Nosotros - Equipo de Marketing Digital | 3R Core',
-    titleEn: 'About Us - Digital Marketing Team | 3R Core',
-    descriptionEs: 'Conoce al equipo de 3R Core. Somos profesionales y nativos digitales con una visión de 3 generaciones enfocados en estrategias de marketing digital en Lima, Perú.',
-    descriptionEn: 'Meet the 3R Core team. We are professionals and digital natives with a 3-generation vision focused on digital marketing strategies in Lima, Peru.',
+    titleEs: 'Nosotros — Agencia de Marketing Digital en Lima, Perú | 3R Core',
+    titleEn: 'About Us — Digital Marketing Agency in Lima, Peru | 3R Core',
+    descriptionEs: 'Conoce al equipo de 3R Core: Alejandro, Bruno y Piero Roque. Agencia familiar de marketing digital en La Molina, Lima, Perú. Branding, SEO, Google Ads, redes sociales y desarrollo web con visión de 3 generaciones.',
+    descriptionEn: 'Meet the 3R Core team: Alejandro, Bruno and Piero Roque. Family-owned digital marketing agency in La Molina, Lima, Peru. Branding, SEO, Google Ads, social media and web development with a 3-generation vision.',
   })
 }
 
@@ -26,11 +27,30 @@ export default async function NosotrosLayout({ children, params }: { children: R
     "url": `${BASE_URL}/${locale}/nosotros`,
     "name": isEn ? "About 3R Core" : "Sobre 3R Core",
     "description": isEn
-      ? "3R Core is a digital marketing agency in Lima, Peru combining Experience, Vision and Technology across branding, social media, SEO, Google Ads and web development."
-      : "3R Core es una agencia de marketing digital en Lima, Perú que combina Experiencia, Visión y Tecnología en branding, social media, SEO, Google Ads y desarrollo web.",
+      ? "3R Core is a family-owned digital marketing agency in Lima, Peru combining Experience, Vision and Technology across branding, social media, SEO, Google Ads and web development."
+      : "3R Core es una agencia familiar de marketing digital en Lima, Perú que combina Experiencia, Visión y Tecnología en branding, social media, SEO, Google Ads y desarrollo web.",
     "mainEntity": { "@id": `${BASE_URL}/#organization` },
     "inLanguage": isEn ? 'en' : 'es',
+    "speakable": buildSpeakableSchema(['h1', 'h2', '.hidden-h1', '.about-intro']),
   }
+
+  const personSchemas = buildPersonSchemas(locale, [
+    {
+      name: 'Alejandro Roque',
+      role: isEn ? 'CEO at 3R Core' : 'CEO de 3R Core',
+      image: '/images/Fundadores/AlejandroAlta1.webp',
+    },
+    {
+      name: 'Bruno Roque',
+      role: isEn ? 'Marketing Director at 3R Core' : 'Director de Marketing en 3R Core',
+      image: '/images/Fundadores/BrunoAlta.webp',
+    },
+    {
+      name: 'Piero Roque',
+      role: isEn ? 'SEO & Google Ads Analyst at 3R Core' : 'Analista de SEO y Google Ads en 3R Core',
+      image: '/images/Fundadores/PieroAlta.webp',
+    },
+  ])
 
   const breadcrumbSchema = generateBreadcrumbSchema(
     [
@@ -40,12 +60,17 @@ export default async function NosotrosLayout({ children, params }: { children: R
     locale
   )
 
+  const hiddenH1 = isEn
+    ? 'Digital marketing agency in Lima, Peru — Roque family team: branding, SEO, Google Ads, social media and web development'
+    : 'Agencia de marketing digital en Lima, Perú — equipo familiar Roque: branding, SEO, Google Ads, redes sociales y desarrollo web'
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([aboutSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([aboutSchema, breadcrumbSchema, ...personSchemas]) }}
       />
+      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )

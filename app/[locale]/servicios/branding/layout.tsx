@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
-import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { buildFAQPageSchema, buildServiceSchema, buildSpeakableSchema } from "@/lib/seoSchemas"
 import { getMessages } from "next-intl/server"
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     titleEs: 'Agencia de Branding en Lima — Diseño de Identidad de Marca | 3R Core',
     titleEn: 'Branding Agency in Lima — Brand Identity Design | 3R Core',
     descriptionEs: 'Diseño de identidad visual, logotipo, manual de marca y aplicaciones corporativas. Agencia de branding en Lima, Perú con proyectos integrales desde S/500 y entrega en 7 días.',
-    descriptionEn: 'Visual identity design, logo, brand manual and corporate applications. Branding agency in Lima, Peru with full projects starting at S/500 (~$135 USD), 7-day delivery.',
+    descriptionEn: 'Visual identity design, logo, brand manual and corporate applications. Branding services for US clients starting at $500 USD, 7-day delivery.',
     ogImage: {
       url: 'https://3rcore.com/og/branding.jpg',
       width: 1200,
@@ -36,7 +36,7 @@ export default async function BrandingLayout({ children, params }: { children: R
     serviceType: 'Branding / Visual Identity',
     priceRange: 'S/500 - S/15,000',
     offerPriceEs: 500,
-    offerPriceEn: 135,
+    offerPriceEn: 500,
     audienceTypes: ['Startups', 'Small business', 'Medium business', 'Enterprise'],
   })
 
@@ -44,12 +44,17 @@ export default async function BrandingLayout({ children, params }: { children: R
     question: q.question,
     answer: q.answer,
   }))
-  const faqSchema = buildFAQPageSchema(faqItems)
+  const faqSchema: any = buildFAQPageSchema(faqItems)
+  faqSchema.speakable = buildSpeakableSchema(['h1', 'h2', '.faq-question', '.faq-answer'])
 
   const breadcrumbSchema = generateBreadcrumbSchema(
     [{ name: 'Inicio', path: '' }, { name: 'Servicios', path: '/servicios' }, { name: 'Branding', path: '/servicios/branding' }],
     locale
   )
+
+  const hiddenH1 = locale === 'en'
+    ? 'Branding agency in Lima, Peru — logo design, brand manual, visual identity and corporate applications'
+    : 'Agencia de branding en Lima, Perú — diseño de logotipo, manual de marca, identidad visual y aplicaciones corporativas'
 
   return (
     <>
@@ -57,6 +62,7 @@ export default async function BrandingLayout({ children, params }: { children: R
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
       />
+      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )
