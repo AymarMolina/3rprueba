@@ -97,7 +97,24 @@ export default function BlogPostView({ post, locale, minutesRead, relatedPosts =
 
       {/* Article content */}
       <article ref={contentRef} className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 lg:px-0 py-16">
-        <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: post.content || '' }} />
+        {(() => {
+          // CTA inline a mitad del artículo (tras la 2ª sección) + CTA al final.
+          const html = post.content || ''
+          const marker = '</h2>'
+          let idx = -1
+          for (let i = 0; i < 2; i++) { const n = html.indexOf(marker, idx + 1); if (n === -1) break; idx = n }
+          if (idx !== -1 && html.length - idx > 900) {
+            const cut = idx + marker.length
+            return (
+              <>
+                <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(0, cut) }} />
+                <BlogCTA slug={post.slug} locale={locale} variant="inline" />
+                <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(cut) }} />
+              </>
+            )
+          }
+          return <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html }} />
+        })()}
 
         {/* CTA a servicio (medido en GTM) */}
         <BlogCTA slug={post.slug} locale={locale} variant="end" />
