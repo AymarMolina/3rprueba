@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return generatePageMetadata({
     locale,
     path: '/servicios/socialmedia',
-    titleEs: 'Manejo de Redes Sociales en Lima — Community Manager Profesional | 3R Core',
+    titleEs: 'Agencia de Redes Sociales en Lima, Perú — Community Manager | 3R Core',
     titleEn: 'Social Media Management in Lima — Professional Community Manager | 3R Core',
     descriptionEs: 'Manejo profesional de redes sociales en Lima, Perú: TikTok, LinkedIn, Instagram y Facebook. Estrategia, diseño, copy y reportes mensuales desde S/1,500 con 8–12 piezas por red.',
     descriptionEn: 'Professional social media management in Lima, Peru: TikTok, LinkedIn, Instagram and Facebook. Strategy, design, copy and monthly reports starting at S/1,500 (~$400 USD) with 8–12 pieces per network.',
