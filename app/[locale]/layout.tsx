@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
 
   return {
     title: locale === 'en'
-      ? "3R Core | Digital Marketing Agency in Lima — Web Design, Social Media, SEO & Google Ads"
-      : "3R Core | Agencia de Marketing Digital en Lima — Diseño Web, Redes Sociales, SEO y Google Ads",
+      ? "Digital Marketing Agency in Lima, Peru — Web Design, SEO & Ads | 3R Core"
+      : "Agencia de Marketing Digital en Lima, Perú — Diseño Web, SEO y Ads | 3R Core",
     description: locale === 'en'
       ? "Digital marketing agency in Lima, Peru. We design websites, manage social media, run Google Ads campaigns, position your brand on Google (SEO) and develop your corporate branding. Real ROI, monthly reports."
       : "Agencia de marketing digital en Lima, Perú. Hacemos diseño web profesional, manejo de redes sociales, campañas Google Ads, posicionamiento SEO en Google y branding corporativo. ROI medible y reportes mensuales.",
