@@ -153,11 +153,12 @@ const Navbar = () => {
   }, [isOpen]);
 
   const services = [
-    { href: "/agencia-branding-lima", label: "Branding" },
+    { href: "/tiendas-virtuales-lima", label: "Tiendas Virtuales" },
+    { href: "/agencia-seo-lima", label: "Posicionamiento SEO" },
+    { href: "/agencia-google-ads-lima", label: "Google Ads / SEM" },
+    { href: "/diseno-web-lima", label: "Diseño Web" },
     { href: "/agencia-redes-sociales-lima", label: "Social Media" },
-    { href: "/agencia-google-ads-lima", label: "Google Ads" },
-    { href: "/diseno-web-lima", label: "Web Development" },
-    { href: "/agencia-seo-lima", label: "Servicio SEO" },
+    { href: "/agencia-branding-lima", label: "Branding" },
   ];
 
   const links = [

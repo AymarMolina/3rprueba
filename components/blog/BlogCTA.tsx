@@ -17,7 +17,7 @@ const WA_PHONE = '51987216703'
 type ServiceKey =
   | 'web' | 'branding' | 'meta-ads' | 'tiktok-ads' | 'google-ads'
   | 'performance' | 'email' | 'seo' | 'social' | 'clinicas'
-  | 'inmobiliarias' | 'ecommerce'
+  | 'inmobiliarias' | 'ecommerce' | 'tiendas'
 
 interface ServiceCTA {
   path: string
@@ -27,12 +27,12 @@ interface ServiceCTA {
 
 const SERVICES: Record<ServiceKey, ServiceCTA> = {
   web: {
-    path: '/servicios/web-development',
+    path: '/diseno-web-lima',
     es: { eyebrow: 'Diseño y desarrollo web', headline: '¿Listo para una web que sí te traiga clientes?', sub: 'Diseñamos webs rápidas, optimizadas para Google y pensadas para convertir. Cotiza tu proyecto sin compromiso.', btn: 'Ver servicio de diseño web', wa: 'Cotizar mi web por WhatsApp' },
     en: { eyebrow: 'Web design & development', headline: 'Ready for a website that brings you clients?', sub: 'Fast, SEO-ready websites built to convert. Get a no-commitment quote.', btn: 'See web development service', wa: 'Quote my website on WhatsApp' },
   },
   branding: {
-    path: '/servicios/branding',
+    path: '/agencia-branding-lima',
     es: { eyebrow: 'Branding e identidad', headline: '¿Quieres una marca que se recuerde y venda?', sub: 'Construimos identidades visuales sólidas: logo, manual de marca y aplicaciones. Agenda una asesoría.', btn: 'Ver servicio de branding', wa: 'Agendar asesoría de branding' },
     en: { eyebrow: 'Branding & identity', headline: 'Want a brand people remember and buy from?', sub: 'Solid visual identities: logo, brand manual and applications. Book a consultation.', btn: 'See branding service', wa: 'Book a branding consultation' },
   },
@@ -47,7 +47,7 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
     en: { eyebrow: 'TikTok Ads', headline: 'Ready to sell on TikTok with ads that work?', sub: 'Native creative + targeting to reach young buyers. Quote your TikTok Ads campaign.', btn: 'See TikTok Ads service', wa: 'Quote a TikTok Ads campaign' },
   },
   'google-ads': {
-    path: '/servicios/google-ads',
+    path: '/agencia-google-ads-lima',
     es: { eyebrow: 'Google Ads · SEM', headline: '¿Quieres aparecer cuando tus clientes buscan hoy?', sub: 'Campañas de Google Ads con intención de compra y presupuesto optimizado. Cotiza tu cuenta.', btn: 'Ver servicio de Google Ads', wa: 'Cotizar campaña de Google Ads' },
     en: { eyebrow: 'Google Ads · SEM', headline: 'Want to show up when your clients search today?', sub: 'High-intent Google Ads campaigns with optimized budget. Get a quote.', btn: 'See Google Ads service', wa: 'Quote a Google Ads campaign' },
   },
@@ -62,12 +62,12 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
     en: { eyebrow: 'Email Marketing', headline: 'Could your contact list sell you more?', sub: 'Email campaigns and automations that nurture and convert. Get started.', btn: 'See Email Marketing service', wa: 'Start my email marketing' },
   },
   seo: {
-    path: '/posicionamiento-seo',
+    path: '/agencia-seo-lima',
     es: { eyebrow: 'Posicionamiento SEO', headline: '¿Quieres que Google te encuentre primero?', sub: 'SEO orgánico con estrategia de keywords, contenido y reportes mensuales desde S/1,500. Cotiza tu SEO.', btn: 'Ver servicio de SEO', wa: 'Cotizar mi posicionamiento SEO' },
     en: { eyebrow: 'SEO Positioning', headline: 'Want Google to find you first?', sub: 'Organic SEO with keyword strategy, content and monthly reports. Get a quote.', btn: 'See SEO service', wa: 'Quote my SEO' },
   },
   social: {
-    path: '/servicios/socialmedia',
+    path: '/agencia-redes-sociales-lima',
     es: { eyebrow: 'Social Media', headline: '¿Tus redes deberían traer clientes, no solo likes?', sub: 'Estrategia de contenido, diseño y gestión de redes que construye marca y vende. Cotiza tu plan.', btn: 'Ver servicio de Social Media', wa: 'Cotizar gestión de redes' },
     en: { eyebrow: 'Social Media', headline: 'Should your social bring clients, not just likes?', sub: 'Content strategy, design and social management that builds brand and sells. Get a quote.', btn: 'See Social Media service', wa: 'Quote social media management' },
   },
@@ -81,6 +81,11 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
     es: { eyebrow: 'Marketing inmobiliario', headline: '¿Necesitas leads de calidad para tus proyectos?', sub: 'Generación de leads para inmobiliarias y desarrolladores. Agenda una asesoría.', btn: 'Ver marketing inmobiliario', wa: 'Agendar asesoría inmobiliaria' },
     en: { eyebrow: 'Real estate marketing', headline: 'Need quality leads for your projects?', sub: 'Lead generation for real estate developers and agencies. Book a consultation.', btn: 'See real estate marketing', wa: 'Book a real estate consultation' },
   },
+  tiendas: {
+    path: '/tiendas-virtuales-lima',
+    es: { eyebrow: 'Tiendas Virtuales · E-commerce', headline: '¿Listo para vender online con una tienda que sí convierte?', sub: 'Creamos tu tienda en Shopify, WooCommerce o Tiendanube con pagos locales, lista para vender. Cotiza tu tienda virtual.', btn: 'Ver servicio de tiendas virtuales', wa: 'Cotizar mi tienda virtual' },
+    en: { eyebrow: 'Online Stores · E-commerce', headline: 'Ready to sell online with a store that converts?', sub: 'We build your store on Shopify, WooCommerce or Tiendanube with local payments, ready to sell. Get a quote.', btn: 'See online store service', wa: 'Quote my online store' },
+  },
   ecommerce: {
     path: '/servicios/marketing-ecommerce',
     es: { eyebrow: 'Marketing para e-commerce', headline: '¿Quieres escalar las ventas de tu tienda online?', sub: 'Performance marketing para e-commerce: más ventas con inversión rentable. Cotiza tu estrategia.', btn: 'Ver marketing para e-commerce', wa: 'Cotizar estrategia de e-commerce' },
@@ -91,7 +96,15 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
 // Mapeo explícito slug → servicio (31 posts actuales + los 5 nuevos).
 const SLUG_MAP: Record<string, ServiceKey> = {
   'cuanto-cuesta-pagina-web-peru-2026': 'web',
-  'shopify-vs-woocommerce-peru-2026': 'web',
+  'shopify-vs-woocommerce-peru-2026': 'tiendas',
+  // ---- cluster Tiendas Virtuales + SEO/SEM (2026-07) ----
+  'cuanto-cuesta-tienda-virtual-peru-2026': 'tiendas',
+  'como-crear-tienda-online-que-venda-peru': 'tiendas',
+  'pasarelas-pago-tienda-online-peru': 'tiendas',
+  'shopify-woocommerce-tiendanube-peru-cual-elegir': 'tiendas',
+  'errores-crear-tienda-virtual-peru': 'tiendas',
+  'seo-para-ecommerce-tienda-online-peru': 'seo',
+  'google-ads-shopping-tiendas-online-peru': 'google-ads',
   'como-elegir-agencia-diseno-web-lima': 'web',
   'diseno-web-responsive-peru-2026': 'web',
   'mejores-paginas-web-peruanas-2026': 'web',
@@ -137,7 +150,8 @@ function inferService(slug: string): ServiceKey {
   if (/(google-ads|adwords|sem|negativas)/.test(s)) return 'google-ads'
   if (/(seo|maps|posicion)/.test(s)) return 'seo'
   if (/(branding|logo|marca|rebranding)/.test(s)) return 'branding'
-  if (/(web|shopify|woocommerce|landing|pagina)/.test(s)) return 'web'
+  if (/(tienda|ecommerce|e-commerce|shopify|woocommerce|tiendanube|pasarela|carrito)/.test(s)) return 'tiendas'
+  if (/(web|landing|pagina)/.test(s)) return 'web'
   if (/email/.test(s)) return 'email'
   if (/(redes|social|contenido)/.test(s)) return 'social'
   if (/clinic/.test(s)) return 'clinicas'
