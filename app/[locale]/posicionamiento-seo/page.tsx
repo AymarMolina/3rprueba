@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return generatePageMetadata({
     locale,
     path: '/posicionamiento-seo',
-    titleEs: 'Agencia SEO en Lima — Posicionamiento Web Orgánico en Google | 3R Core',
+    titleEs: 'Agencia SEO en Lima, Perú — Posicionamiento Web en Google | 3R Core',
     titleEn: 'SEO Agency in Lima — Organic Web Positioning on Google | 3R Core',
     descriptionEs: 'Agencia de posicionamiento SEO en Lima, Perú. Auditoría, optimización, interlinks, contenido y escalamiento mensual. Inversión desde S/1,500/mes sin contratos forzosos.',
     descriptionEn: 'SEO positioning agency in Lima, Peru. Audit, optimization, interlinks, content and monthly scaling. Investment from $450/month with no forced contracts.',

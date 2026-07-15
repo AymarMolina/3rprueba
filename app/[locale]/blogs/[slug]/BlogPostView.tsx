@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { Link } from "@/i18n/navigation"
 import { Montserrat } from "next/font/google"
+import BlogCTA from "@/components/blog/BlogCTA"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import type { BlogPost } from "@/lib/supabase/types"
@@ -97,6 +98,9 @@ export default function BlogPostView({ post, locale, minutesRead, relatedPosts =
       {/* Article content */}
       <article ref={contentRef} className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 lg:px-0 py-16">
         <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: post.content || '' }} />
+
+        {/* CTA a servicio (medido en GTM) */}
+        <BlogCTA slug={post.slug} locale={locale} variant="end" />
 
         {/* Share */}
         <div className="mt-12 pt-8 border-t border-white/10">
