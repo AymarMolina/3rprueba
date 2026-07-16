@@ -45,7 +45,7 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
 <h3>1. Fee fijo mensual</h3>
 <p>Pagas un monto fijo por gestión (redes, SEO, contenido). Es el más común y predecible. Ideal para servicios donde el trabajo es constante mes a mes.</p>
 <h3>2. Fee + porcentaje de inversión publicitaria</h3>
-<p>En <a href="/es/agencia-google-ads-lima">Google Ads</a> y <a href="/es/servicios/meta-ads">Meta Ads</a>, muchas agencias cobran un fee de gestión más un 10–20% de lo que inviertes en pauta. Pregunta siempre si el porcentaje aplica sobre la inversión o sobre resultados: no es lo mismo.</p>
+<p>En <a href="/es/servicios/google-ads">Google Ads</a> y <a href="/es/servicios/meta-ads">Meta Ads</a>, muchas agencias cobran un fee de gestión más un 10–20% de lo que inviertes en pauta. Pregunta siempre si el porcentaje aplica sobre la inversión o sobre resultados: no es lo mismo.</p>
 <h3>3. Por proyecto</h3>
 <p>Web, branding y campañas puntuales se cobran como proyecto cerrado con entregables definidos. Aquí el riesgo es el "alcance abierto": exige por escrito qué incluye y cuántas revisiones.</p>
 
@@ -109,7 +109,7 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
     content: `<p class="lead"><strong>Resumen ejecutivo:</strong> elegir bien una <strong>agencia de marketing digital en Lima</strong> se reduce a tres cosas: que midan resultados de negocio (no likes), que te den acceso y propiedad de tus cuentas, y que te expliquen su estrategia en simple. Este artículo te da 9 señales de una agencia seria, 5 red flags para huir y las 7 preguntas que debes hacer en la primera reunión para filtrar en 20 minutos.</p>
 
 <h2>Primero: define qué necesitas, no qué agencia contratar</h2>
-<p>El error número uno es salir a "buscar una agencia" sin saber qué problema quieres resolver. ¿Necesitas más leads ya (Ads)? ¿Aparecer en Google a mediano plazo (<a href="/es/agencia-seo-lima">SEO</a>)? ¿Construir marca (<a href="/es/agencia-branding-lima">branding</a> y <a href="/es/agencia-redes-sociales-lima">redes</a>)? ¿Vender online (<a href="/es/servicios/marketing-ecommerce">e-commerce</a>)? Cada objetivo pide una agencia con foco distinto. Con el objetivo claro, filtras rápido.</p>
+<p>El error número uno es salir a "buscar una agencia" sin saber qué problema quieres resolver. ¿Necesitas más leads ya (Ads)? ¿Aparecer en Google a mediano plazo (<a href="/es/posicionamiento-seo">SEO</a>)? ¿Construir marca (<a href="/es/servicios/branding">branding</a> y <a href="/es/servicios/socialmedia">redes</a>)? ¿Vender online (<a href="/es/servicios/marketing-ecommerce">e-commerce</a>)? Cada objetivo pide una agencia con foco distinto. Con el objetivo claro, filtras rápido.</p>
 
 <h2>9 señales de que es la agencia correcta</h2>
 <ol>
@@ -208,7 +208,7 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
 <h2>¿Google Ads o Meta Ads? Cómo repartir</h2>
 <p>Depende de si tu cliente <em>busca</em> tu servicio o si tú tienes que <em>interrumpirlo</em> para despertar el deseo:</p>
 <ul>
-<li><strong>Demanda existente</strong> (te buscan: "gasfitero Lima", "abogado laboral"): prioriza <a href="/es/agencia-google-ads-lima">Google Ads</a>. Captas intención de compra caliente.</li>
+<li><strong>Demanda existente</strong> (te buscan: "gasfitero Lima", "abogado laboral"): prioriza <a href="/es/servicios/google-ads">Google Ads</a>. Captas intención de compra caliente.</li>
 <li><strong>Demanda que hay que crear</strong> (productos de deseo, moda, gastronomía, cursos): prioriza <a href="/es/servicios/meta-ads">Meta Ads</a>. Muestras el producto a quien aún no lo busca.</li>
 <li><strong>Lo ideal</strong>: Google para capturar intención + Meta para generar demanda y remarketing. Un reparto típico de arranque es 50/50 y luego se ajusta según el costo por lead real.</li>
 </ul>
@@ -337,7 +337,7 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
 <p>Para llevarlo a un plan mensual completo con temas por semana, usa nuestra <a href="/es/blogs/plan-contenido-redes-sociales-peru-plantilla">plantilla de plan de contenido para redes sociales en Perú</a>.</p>
 
 <h2>El paso que casi nadie da: convertir seguidores en clientes</h2>
-<p>Publicar por publicar no vende. Cada semana, al menos un contenido debe llevar a una acción: escribir por WhatsApp, cotizar, agendar. Y todo debe medirse: qué post trajo mensajes, qué formato genera más guardados. Si las redes te consumen tiempo y no ves clientes, el problema no es la creatividad, es la estrategia y la medición. Ahí entra una <a href="/es/agencia-redes-sociales-lima">gestión profesional de redes sociales</a>.</p>
+<p>Publicar por publicar no vende. Cada semana, al menos un contenido debe llevar a una acción: escribir por WhatsApp, cotizar, agendar. Y todo debe medirse: qué post trajo mensajes, qué formato genera más guardados. Si las redes te consumen tiempo y no ves clientes, el problema no es la creatividad, es la estrategia y la medición. Ahí entra una <a href="/es/servicios/socialmedia">gestión profesional de redes sociales</a>.</p>
 
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cuántas veces debo postear por semana?</h3>
@@ -348,7 +348,7 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
 <p>Sí. El contenido orgánico construye marca, pero para escalar clientes necesitas pauta. Combina redes con <a href="/es/servicios/meta-ads">Meta Ads</a> para acelerar resultados.</p>
 
 <h2>Cierre</h2>
-<p>Nunca más te quedes sin ideas: tienes 50 y una plantilla para rotarlas. Pero recuerda que postear es medio camino; el otro medio es convertir y medir. Si quieres que tus redes trabajen para traer clientes y no solo likes, en 3R Core diseñamos y gestionamos tu contenido con estrategia. Mira nuestro <a href="/es/agencia-redes-sociales-lima">servicio de social media</a> o <a href="/es#contacto">conversemos</a> sobre tu marca.</p>`,
+<p>Nunca más te quedes sin ideas: tienes 50 y una plantilla para rotarlas. Pero recuerda que postear es medio camino; el otro medio es convertir y medir. Si quieres que tus redes trabajen para traer clientes y no solo likes, en 3R Core diseñamos y gestionamos tu contenido con estrategia. Mira nuestro <a href="/es/servicios/socialmedia">servicio de social media</a> o <a href="/es#contacto">conversemos</a> sobre tu marca.</p>`,
   },
 
   // 5 ─────────────────────────────────────────────────────────────────────
@@ -367,18 +367,18 @@ export const EXTRA_POSTS_2026_07: SeedPost[] = [
     content: `<p class="lead"><strong>Resumen ejecutivo:</strong> conseguir clientes por internet en Perú no es cuestión de "estar en todas las redes", sino de elegir <strong>1 o 2 canales</strong> que encajen con cómo compra tu cliente y ejecutarlos bien. Los que realmente funcionan en 2026 son: Google Ads, Meta Ads, SEO, Google Maps, redes orgánicas, email/WhatsApp y referidos digitales. Esta guía te dice qué canal elegir según tu negocio y presupuesto, y el error que hace que ninguno convierta: enviar el tráfico a un lugar que no vende.</p>
 
 <h2>Antes de los canales: necesitas un lugar que convierta</h2>
-<p>El error que arruina todo: invertir en atraer visitas y mandarlas a un Instagram desordenado o una web lenta que no genera confianza. <strong>Primero asegura el destino, luego el tráfico.</strong> Ese destino suele ser una <a href="/es/diseno-web-lima">página web o landing</a> clara, rápida y con un llamado a la acción obvio (cotizar, agendar, escribir por WhatsApp). Sin eso, cualquier canal te traerá curiosos, no clientes.</p>
+<p>El error que arruina todo: invertir en atraer visitas y mandarlas a un Instagram desordenado o una web lenta que no genera confianza. <strong>Primero asegura el destino, luego el tráfico.</strong> Ese destino suele ser una <a href="/es/servicios/web-development">página web o landing</a> clara, rápida y con un llamado a la acción obvio (cotizar, agendar, escribir por WhatsApp). Sin eso, cualquier canal te traerá curiosos, no clientes.</p>
 
 <h2>Los 7 canales que sí funcionan en Perú 2026</h2>
 
 <h3>1. Google Ads — para quien ya te busca</h3>
-<p>Si tu cliente busca activamente tu servicio ("dentista Surco", "reparación de laptops Lima"), <a href="/es/agencia-google-ads-lima">Google Ads</a> te pone arriba justo cuando tiene la intención. Es el canal más directo para captar demanda caliente. Retorno rápido, pero requiere gestión para no quemar presupuesto.</p>
+<p>Si tu cliente busca activamente tu servicio ("dentista Surco", "reparación de laptops Lima"), <a href="/es/servicios/google-ads">Google Ads</a> te pone arriba justo cuando tiene la intención. Es el canal más directo para captar demanda caliente. Retorno rápido, pero requiere gestión para no quemar presupuesto.</p>
 
 <h3>2. Meta Ads (Facebook/Instagram) — para crear demanda</h3>
 <p>Si tu producto es de deseo o impulso (moda, gastronomía, estética, cursos), <a href="/es/servicios/meta-ads">Meta Ads</a> lo muestra a quien aún no lo busca. Excelente para generar interés y remarketing. Con Meta llegas a más de 25 millones de peruanos.</p>
 
 <h3>3. SEO — clientes gratis a mediano plazo</h3>
-<p>El <a href="/es/agencia-seo-lima">posicionamiento SEO</a> hace que aparezcas en Google sin pagar por clic. Toma 3–6 meses, pero una vez que rankeas, recibes clientes de forma constante y a bajo costo. Es inversión de mediano plazo con el mejor retorno acumulado.</p>
+<p>El <a href="/es/posicionamiento-seo">posicionamiento SEO</a> hace que aparezcas en Google sin pagar por clic. Toma 3–6 meses, pero una vez que rankeas, recibes clientes de forma constante y a bajo costo. Es inversión de mediano plazo con el mejor retorno acumulado.</p>
 
 <h3>4. Google Maps / Perfil de Empresa — oro para negocios locales</h3>
 <p>Si atiendes en un local o zona (clínica, restaurante, taller), tu <strong>Perfil de Empresa en Google</strong> es probablemente tu canal más rentable: apareces en el mapa cuando alguien cerca busca. Es gratis y muchos lo tienen abandonado. Aprende a optimizarlo en <a href="/es/blogs/posicionar-negocio-google-maps-lima">cómo posicionar tu negocio en Google Maps en Lima</a>.</p>

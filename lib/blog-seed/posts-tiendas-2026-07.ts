@@ -68,7 +68,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <p>Una tienda estándar en 2–4 semanas; una a medida, 5–8 semanas.</p>
 
 <h2>Cierre</h2>
-<p>Crear una tienda virtual en Perú cuesta lo que cuesta hacerla bien: desde S/1,500 una tienda profesional, más plataforma y pagos. El error caro no es invertir, es pagar poco por una tienda que no vende. En 3R Core creamos tu <a href="/es/tiendas-virtuales-lima">tienda virtual lista para vender</a> y la conectamos con <a href="/es/agencia-seo-lima">SEO</a> y <a href="/es/agencia-google-ads-lima">Google Ads</a> para que reciba tráfico que compra. <a href="/es#contacto">Cotiza tu tienda</a> con nosotros.</p>`,
+<p>Crear una tienda virtual en Perú cuesta lo que cuesta hacerla bien: desde S/1,500 una tienda profesional, más plataforma y pagos. El error caro no es invertir, es pagar poco por una tienda que no vende. En 3R Core creamos tu <a href="/es/tiendas-virtuales-lima">tienda virtual lista para vender</a> y la conectamos con <a href="/es/posicionamiento-seo">SEO</a> y <a href="/es/servicios/google-ads">Google Ads</a> para que reciba tráfico que compra. <a href="/es#contacto">Cotiza tu tienda</a> con nosotros.</p>`,
   },
   {
     slug: "como-crear-tienda-online-que-venda-peru",
@@ -121,7 +121,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <p>Para vender rápido, sí. El SEO trae ventas a mediano plazo; Google Ads las trae desde la primera semana.</p>
 
 <h2>Cierre</h2>
-<p>Crear una tienda online que venda es un proceso: plataforma correcta, pagos locales, diseño que convierte, medición y —clave— tráfico que compra. En 3R Core hacemos todo el camino: <a href="/es/tiendas-virtuales-lima">creamos tu tienda</a>, la <a href="/es/agencia-seo-lima">posicionamos en Google</a> y la escalamos con <a href="/es/agencia-google-ads-lima">campañas que venden</a>. <a href="/es#contacto">Conversemos</a> sobre tu proyecto.</p>`,
+<p>Crear una tienda online que venda es un proceso: plataforma correcta, pagos locales, diseño que convierte, medición y —clave— tráfico que compra. En 3R Core hacemos todo el camino: <a href="/es/tiendas-virtuales-lima">creamos tu tienda</a>, la <a href="/es/posicionamiento-seo">posicionamos en Google</a> y la escalamos con <a href="/es/servicios/google-ads">campañas que venden</a>. <a href="/es#contacto">Conversemos</a> sobre tu proyecto.</p>`,
   },
   {
     slug: "pasarelas-pago-tienda-online-peru",
@@ -278,7 +278,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <p>Sin datos de contacto, políticas claras, SSL ni reseñas, el peruano desconfía y no da su tarjeta. La confianza se construye con detalles visibles.</p>
 
 <h2>9. Lanzar sin plan de tráfico</h2>
-<p>"Si la construyo, vendrán" es falso. Una tienda necesita un plan para traer visitas que compran: <a href="/es/agencia-google-ads-lima">Google Ads</a> para ventas rápidas y <a href="/es/agencia-seo-lima">SEO</a> para tráfico sostenido.</p>
+<p>"Si la construyo, vendrán" es falso. Una tienda necesita un plan para traer visitas que compran: <a href="/es/servicios/google-ads">Google Ads</a> para ventas rápidas y <a href="/es/posicionamiento-seo">SEO</a> para tráfico sostenido.</p>
 
 <h2>10. Elegir la plataforma por moda, no por caso</h2>
 <p>Usar WooCommerce sin equipo técnico, o Shopify cuando necesitabas integraciones a medida, cuesta caro. Elige según tu negocio (ver <a href="/es/blogs/shopify-woocommerce-tiendanube-peru-cual-elegir">comparación de plataformas</a>).</p>
@@ -309,7 +309,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
     content: `<p class="lead"><strong>Resumen ejecutivo:</strong> el <strong>SEO para e-commerce</strong> hace que tu tienda aparezca en Google cuando alguien busca lo que vendes — y traiga ventas sin pagar por clic. En Perú, una tienda con buen SEO deja de depender 100% de la publicidad. Las palancas: SEO técnico (velocidad, schema, URLs), fichas de producto optimizadas, categorías que capturan búsquedas y contenido que atrae compradores. Esta guía te muestra cómo posicionar tu tienda online paso a paso.</p>
 
 <h2>Por qué el SEO es clave para una tienda online</h2>
-<p>La publicidad (Google Ads) trae ventas mientras pagas; el <a href="/es/agencia-seo-lima">SEO</a> trae ventas de forma sostenida y a bajo costo una vez que rankeas. Lo ideal es combinar ambos, pero una tienda que solo vive de Ads es frágil: el día que apagas la pauta, se apagan las ventas. El SEO construye un activo que sigue vendiendo.</p>
+<p>La publicidad (Google Ads) trae ventas mientras pagas; el <a href="/es/posicionamiento-seo">SEO</a> trae ventas de forma sostenida y a bajo costo una vez que rankeas. Lo ideal es combinar ambos, pero una tienda que solo vive de Ads es frágil: el día que apagas la pauta, se apagan las ventas. El SEO construye un activo que sigue vendiendo.</p>
 
 <h2>1. SEO técnico: la base que casi nadie hace</h2>
 <ul>
@@ -341,10 +341,10 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <h3>¿Shopify o WooCommerce es mejor para SEO?</h3>
 <p>WooCommerce da más control fino, pero ambas rankean bien con SEO técnico. Ver <a href="/es/blogs/shopify-woocommerce-tiendanube-peru-cual-elegir">comparación de plataformas</a>.</p>
 <h3>¿Ustedes hacen el SEO de mi tienda?</h3>
-<p>Sí. En 3R Core ofrecemos <a href="/es/agencia-seo-lima">posicionamiento SEO</a> para tiendas online, y si aún no tienes tienda, la <a href="/es/tiendas-virtuales-lima">creamos con SEO técnico de base</a>.</p>
+<p>Sí. En 3R Core ofrecemos <a href="/es/posicionamiento-seo">posicionamiento SEO</a> para tiendas online, y si aún no tienes tienda, la <a href="/es/tiendas-virtuales-lima">creamos con SEO técnico de base</a>.</p>
 
 <h2>Cierre</h2>
-<p>El SEO para e-commerce convierte a Google en un canal de ventas que no se apaga cuando dejas de pagar. Trabaja SEO técnico, categorías, fichas y contenido, y combínalo con Ads para lo inmediato. En 3R Core <a href="/es/agencia-seo-lima">posicionamos tu tienda</a> para que venda desde el buscador. <a href="/es#contacto">Conversemos</a>.</p>`,
+<p>El SEO para e-commerce convierte a Google en un canal de ventas que no se apaga cuando dejas de pagar. Trabaja SEO técnico, categorías, fichas y contenido, y combínalo con Ads para lo inmediato. En 3R Core <a href="/es/posicionamiento-seo">posicionamos tu tienda</a> para que venda desde el buscador. <a href="/es#contacto">Conversemos</a>.</p>`,
   },
   {
     slug: "google-ads-shopping-tiendas-online-peru",
@@ -358,7 +358,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
     featured_image: IMG("1553729459-efe14ef6055d"),
     featured_image_alt: "Google Ads y Google Shopping para tiendas online en Perú",
     author_name: AUTHOR,
-    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>Google Shopping</strong> pone tus productos —con foto, precio y tienda— justo arriba de los resultados de Google cuando alguien busca lo que vendes. Junto con <a href="/es/agencia-google-ads-lima">Google Ads</a> de búsqueda, es el canal más rápido para que una tienda online en Perú venda desde el primer día. Esta guía te explica cómo funciona, cuánto invertir y cómo configurar el feed de productos para no quemar presupuesto.</p>
+    content: `<p class="lead"><strong>Resumen ejecutivo:</strong> <strong>Google Shopping</strong> pone tus productos —con foto, precio y tienda— justo arriba de los resultados de Google cuando alguien busca lo que vendes. Junto con <a href="/es/servicios/google-ads">Google Ads</a> de búsqueda, es el canal más rápido para que una tienda online en Perú venda desde el primer día. Esta guía te explica cómo funciona, cuánto invertir y cómo configurar el feed de productos para no quemar presupuesto.</p>
 
 <h2>Qué es Google Shopping y por qué vende tanto</h2>
 <p>Cuando buscas "zapatillas running" en Google, esos productos con foto y precio arriba son Google Shopping. Vende bien porque el usuario ve el producto y el precio <em>antes</em> de hacer clic: llega a tu tienda ya interesado y listo para comprar. Para e-commerce, suele tener mejor retorno que los anuncios de solo texto.</p>
@@ -385,7 +385,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 </ol>
 
 <h2>La combinación ganadora para tu tienda</h2>
-<p>El e-commerce que crece en Perú combina: una <a href="/es/tiendas-virtuales-lima">tienda bien hecha</a> (que convierte el tráfico), <a href="/es/agencia-google-ads-lima">Google Ads + Shopping</a> (ventas inmediatas) y <a href="/es/agencia-seo-lima">SEO</a> (tráfico sostenido y barato). Tienda + SEM + SEO: ese es el triángulo.</p>
+<p>El e-commerce que crece en Perú combina: una <a href="/es/tiendas-virtuales-lima">tienda bien hecha</a> (que convierte el tráfico), <a href="/es/servicios/google-ads">Google Ads + Shopping</a> (ventas inmediatas) y <a href="/es/posicionamiento-seo">SEO</a> (tráfico sostenido y barato). Tienda + SEM + SEO: ese es el triángulo.</p>
 
 <h2>Preguntas frecuentes</h2>
 <h3>¿Google Shopping sirve para pocos productos?</h3>
@@ -393,9 +393,9 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <h3>¿En cuánto tiempo veo ventas?</h3>
 <p>Las primeras ventas suelen llegar en la primera o segunda semana, a diferencia del SEO que toma meses.</p>
 <h3>¿Ustedes gestionan mi Google Ads y Shopping?</h3>
-<p>Sí. En 3R Core gestionamos <a href="/es/agencia-google-ads-lima">Google Ads y Google Shopping</a> con feed optimizado y medición real de ventas.</p>
+<p>Sí. En 3R Core gestionamos <a href="/es/servicios/google-ads">Google Ads y Google Shopping</a> con feed optimizado y medición real de ventas.</p>
 
 <h2>Cierre</h2>
-<p>Google Shopping y Google Ads son el camino más rápido para que tu tienda venda desde el primer día. La clave es un feed optimizado, medición de ventas reales y escalar lo que rinde. En 3R Core lo gestionamos de punta a punta y lo combinamos con tu <a href="/es/tiendas-virtuales-lima">tienda</a> y <a href="/es/agencia-seo-lima">SEO</a>. <a href="/es#contacto">Cotiza tu campaña</a>.</p>`,
+<p>Google Shopping y Google Ads son el camino más rápido para que tu tienda venda desde el primer día. La clave es un feed optimizado, medición de ventas reales y escalar lo que rinde. En 3R Core lo gestionamos de punta a punta y lo combinamos con tu <a href="/es/tiendas-virtuales-lima">tienda</a> y <a href="/es/posicionamiento-seo">SEO</a>. <a href="/es#contacto">Cotiza tu campaña</a>.</p>`,
   },
 ]

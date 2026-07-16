@@ -104,7 +104,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Si tu proyecto es simple (landing, web pequeña sin integraciones) y aceptas el riesgo, un freelance bueno puede entregarte un excelente trabajo. Para proyectos con e-commerce, integraciones o presupuesto sobre S/8,000, la agencia te ahorra dolores de cabeza.</p>
 
 <h2>El mito del "diseño web barato"</h2>
-<p>Webs por S/300–S/800 existen y son legítimas: plantillas pre-armadas con tu logo y textos. <strong>El problema empieza cuando esa web tiene que rankear en Google</strong>: no rankean porque no tienen SEO técnico, son lentas, no tienen schema, y comparten plantilla con otros 200 sitios. La consecuencia es que pagas S/600 por una web que no te trae clientes y al año tienes que rehacerla pagando S/4,500. Resultado: gastaste S/5,100 cuando hubieras podido invertir S/4,500 desde el día uno con una <a href="/es/diseno-web-lima">agencia de diseño y desarrollo web</a> seria.</p>
+<p>Webs por S/300–S/800 existen y son legítimas: plantillas pre-armadas con tu logo y textos. <strong>El problema empieza cuando esa web tiene que rankear en Google</strong>: no rankean porque no tienen SEO técnico, son lentas, no tienen schema, y comparten plantilla con otros 200 sitios. La consecuencia es que pagas S/600 por una web que no te trae clientes y al año tienes que rehacerla pagando S/4,500. Resultado: gastaste S/5,100 cuando hubieras podido invertir S/4,500 desde el día uno con una <a href="/es/servicios/web-development">agencia de diseño y desarrollo web</a> seria.</p>
 
 <h2>Cómo cotizar una página web sin perder tiempo</h2>
 <ol>
@@ -130,7 +130,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Profundizamos en eso en nuestra <a href="/es/blogs/shopify-vs-woocommerce-peru-2026">guía Shopify vs WooCommerce 2026</a> con tabla comparativa por costo total, integraciones peruanas y casos de uso reales.</p>
 
 <h2>Cierre: cuánto deberías invertir tú</h2>
-<p>Si recién arrancas: invierte en una <strong>landing profesional bien hecha (S/2,500–4,500)</strong> antes que una web grande mediocre. Si ya tienes negocio establecido y estás listo para escalar: una <strong>web corporativa con SEO desde el día uno (S/4,500–9,000)</strong>. Si vendes producto físico: <strong>e-commerce serio (S/6,500+)</strong>. Y si tu objetivo final es <strong>aparecer en Google cuando tus clientes buscan</strong>, una web bien hecha es solo el primer paso: necesitas también <a href="/es/agencia-seo-lima">posicionamiento SEO</a> mensual.</p>
+<p>Si recién arrancas: invierte en una <strong>landing profesional bien hecha (S/2,500–4,500)</strong> antes que una web grande mediocre. Si ya tienes negocio establecido y estás listo para escalar: una <strong>web corporativa con SEO desde el día uno (S/4,500–9,000)</strong>. Si vendes producto físico: <strong>e-commerce serio (S/6,500+)</strong>. Y si tu objetivo final es <strong>aparecer en Google cuando tus clientes buscan</strong>, una web bien hecha es solo el primer paso: necesitas también <a href="/es/posicionamiento-seo">posicionamiento SEO</a> mensual.</p>
 <p>En 3R Core diseñamos páginas web en Lima con foco en <strong>SEO técnico, conversión y velocidad</strong> desde el primer brief. Si quieres una cotización honesta para tu proyecto, <a href="/es#contacto">conversemos</a> y te armamos propuesta sin compromiso. También puedes leer cómo <a href="/es/blogs/como-elegir-agencia-diseno-web-lima">elegir la mejor agencia de diseño web en Lima</a> para no equivocarte en la selección.</p>`,
   },
 
@@ -237,7 +237,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre: nuestra recomendación honesta</h2>
 <p>Para el <strong>80% de los pequeños y medianos negocios peruanos que arrancan en e-commerce en 2026</strong>: Shopify. Te quita preocupaciones técnicas, te deja enfocarte en marketing y vender. Para B2B, catálogos grandes o integraciones específicas peruanas: WooCommerce, con un equipo técnico detrás que sepa mantenerlo.</p>
-<p>En 3R Core implementamos ambas plataformas. Si quieres una recomendación específica para tu negocio, conversemos: revisamos tu modelo, catálogo y operación, y te decimos cuál te conviene sin sponsoreo de plataforma. Lee también <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">cuánto cuesta una página web en Perú 2026</a> para entender los rangos de inversión, y nuestro servicio de <a href="/es/diseno-web-lima">diseño y desarrollo web</a>.</p>`,
+<p>En 3R Core implementamos ambas plataformas. Si quieres una recomendación específica para tu negocio, conversemos: revisamos tu modelo, catálogo y operación, y te decimos cuál te conviene sin sponsoreo de plataforma. Lee también <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">cuánto cuesta una página web en Perú 2026</a> para entender los rangos de inversión, y nuestro servicio de <a href="/es/servicios/web-development">diseño y desarrollo web</a>.</p>`,
   },
 
   {
@@ -347,12 +347,12 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Busca en Google "[nombre agencia] reseñas" y revisa el Google Business Profile, Clutch.co, Sortlist y LinkedIn. Si las reseñas se ven todas el mismo día con perfiles sin foto, sospecha. Reseñas distribuidas en el tiempo, con detalle, son señal de autenticidad.</p>
 
 <h3>¿Qué incluye una agencia "completa" vs un estudio de diseño?</h3>
-<p>Un estudio diseña + entrega; una agencia integral suma estrategia, SEO, contenido, posiblemente publicidad. En 3R Core somos agencia integral: además de <a href="/es/diseno-web-lima">desarrollo web</a>, hacemos <a href="/es/agencia-branding-lima">branding</a>, <a href="/es/agencia-redes-sociales-lima">redes sociales</a>, <a href="/es/agencia-google-ads-lima">Google Ads</a> y <a href="/es/agencia-seo-lima">posicionamiento SEO</a>, y todo se conecta.</p>
+<p>Un estudio diseña + entrega; una agencia integral suma estrategia, SEO, contenido, posiblemente publicidad. En 3R Core somos agencia integral: además de <a href="/es/servicios/web-development">desarrollo web</a>, hacemos <a href="/es/servicios/branding">branding</a>, <a href="/es/servicios/socialmedia">redes sociales</a>, <a href="/es/servicios/google-ads">Google Ads</a> y <a href="/es/posicionamiento-seo">posicionamiento SEO</a>, y todo se conecta.</p>
 
 <h2>Cierre: tu próximo paso</h2>
 <p>No firmes la primera propuesta que te llegue. Tómate 5 días para <strong>aplicar estos 7 filtros a 3 cotizaciones distintas</strong> y verás cuál agencia juega serio. La que te explica con detalle, te da entregables claros y se sienta a entender tu negocio antes de cotizar es la que vale la pena.</p>
 <p>En 3R Core respondemos cada una de estas preguntas por escrito antes de cualquier acuerdo. Si quieres conversar tu proyecto sin compromiso, <a href="/es#contacto">escríbenos</a> y te enviamos una propuesta seria con todo lo que sí te tienen que entregar. También revisa nuestra <a href="/es/blogs/diseno-web-responsive-peru-2026">guía sobre diseño web responsive en Perú</a> y nuestra comparación de <a href="/es/blogs/shopify-vs-woocommerce-peru-2026">Shopify vs WooCommerce</a>.</p>
-<p><strong>¿Tu web va a vender online?</strong> Entonces no necesitas solo una página: necesitas una <a href="/es/tiendas-virtuales-lima">tienda virtual con pasarela de pagos</a> (Culqi, Niubiz, Izipay, Yape). Y para que esa tienda reciba clientes, la combinamos con <a href="/es/agencia-seo-lima">SEO</a> para posicionarte en Google y <a href="/es/agencia-google-ads-lima">Google Ads</a> para vender desde el primer día.</p>`,
+<p><strong>¿Tu web va a vender online?</strong> Entonces no necesitas solo una página: necesitas una <a href="/es/tiendas-virtuales-lima">tienda virtual con pasarela de pagos</a> (Culqi, Niubiz, Izipay, Yape). Y para que esa tienda reciba clientes, la combinamos con <a href="/es/posicionamiento-seo">SEO</a> para posicionarte en Google y <a href="/es/servicios/google-ads">Google Ads</a> para vender desde el primer día.</p>`,
   },
 
   {
@@ -460,7 +460,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre: deja de perder clientes</h2>
 <p>Cada día que tu web no es responsive, <strong>visitantes desde Google entran a tu sitio, lo ven roto en su celular y compran al de la competencia</strong>. La buena noticia es que arreglar esto es relativamente barato comparado con la pérdida diaria de leads. La inversión típica (S/3,000–9,000) se recupera en 3 a 8 meses.</p>
-<p>En 3R Core diseñamos webs mobile-first con SEO técnico desde el día uno y Core Web Vitals dentro de rangos verdes. Pídenos auditoría gratis de tu sitio actual: te decimos exactamente qué arreglar y cuánto invertir. Conoce nuestro servicio de <a href="/es/diseno-web-lima">diseño y desarrollo web</a> o lee primero <a href="/es/blogs/como-elegir-agencia-diseno-web-lima">cómo elegir la mejor agencia de diseño web en Lima</a>.</p>`,
+<p>En 3R Core diseñamos webs mobile-first con SEO técnico desde el día uno y Core Web Vitals dentro de rangos verdes. Pídenos auditoría gratis de tu sitio actual: te decimos exactamente qué arreglar y cuánto invertir. Conoce nuestro servicio de <a href="/es/servicios/web-development">diseño y desarrollo web</a> o lee primero <a href="/es/blogs/como-elegir-agencia-diseno-web-lima">cómo elegir la mejor agencia de diseño web en Lima</a>.</p>`,
   },
 
   {
@@ -566,7 +566,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre</h2>
 <p>Las webs que rinden no son las más bonitas, son las que <strong>resuelven la tarea del visitante en menos clicks, con menos fricción y con más confianza</strong>. La buena noticia: estos principios no requieren un diseño revolucionario, requieren disciplina. La mala noticia: la mayoría de webs peruanas en 2026 todavía no los aplican, y eso es exactamente la oportunidad de tu negocio.</p>
-<p>En 3R Core diseñamos webs aplicando estos patrones desde el primer brief. Si quieres una auditoría de tu sitio actual o explorar un rediseño, <a href="/es#contacto">conversemos</a>. Conoce más de nuestro servicio de <a href="/es/diseno-web-lima">diseño y desarrollo web</a> o lee <a href="/es/blogs/como-elegir-agencia-diseno-web-lima">cómo elegir agencia de diseño web en Lima</a>.</p>`,
+<p>En 3R Core diseñamos webs aplicando estos patrones desde el primer brief. Si quieres una auditoría de tu sitio actual o explorar un rediseño, <a href="/es#contacto">conversemos</a>. Conoce más de nuestro servicio de <a href="/es/servicios/web-development">diseño y desarrollo web</a> o lee <a href="/es/blogs/como-elegir-agencia-diseno-web-lima">cómo elegir agencia de diseño web en Lima</a>.</p>`,
   },
 
   // ============ BRANDING — 5 BLOGS ============
@@ -726,8 +726,8 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre: tu próximo paso</h2>
 <p>Antes de pedir cotizaciones, define <strong>en qué momento de negocio estás</strong> y eso determina el nivel de branding adecuado. Pedir 5 cotizaciones de "branding integral" cuando recién estás validando es desperdicio; pedir solo logo cuando ya facturas S/500K mensuales es subinversión peligrosa.</p>
-<p>En 3R Core hacemos los cuatro niveles según el momento de cada cliente. Si quieres conversar tu caso sin compromiso, <a href="/es#contacto">escríbenos</a> y te orientamos. Conoce nuestro <a href="/es/agencia-branding-lima">servicio de branding</a> o lee primero qué incluye un <a href="/es/blogs/manual-marca-estructura-plantilla">manual de marca profesional</a>.</p>
-<p><strong>El branding es el inicio, no el final.</strong> La marca recién genera retorno cuando la convertimos en ventas: una <a href="/es/tiendas-virtuales-lima">tienda virtual profesional</a> para vender online, <a href="/es/agencia-seo-lima">posicionamiento SEO</a> para que te encuentren en Google y <a href="/es/agencia-google-ads-lima">Google Ads</a> para atraer clientes desde el primer día. En 3R Core te acompañamos en todo el camino: marca → tienda → tráfico.</p>`,
+<p>En 3R Core hacemos los cuatro niveles según el momento de cada cliente. Si quieres conversar tu caso sin compromiso, <a href="/es#contacto">escríbenos</a> y te orientamos. Conoce nuestro <a href="/es/servicios/branding">servicio de branding</a> o lee primero qué incluye un <a href="/es/blogs/manual-marca-estructura-plantilla">manual de marca profesional</a>.</p>
+<p><strong>El branding es el inicio, no el final.</strong> La marca recién genera retorno cuando la convertimos en ventas: una <a href="/es/tiendas-virtuales-lima">tienda virtual profesional</a> para vender online, <a href="/es/posicionamiento-seo">posicionamiento SEO</a> para que te encuentren en Google y <a href="/es/servicios/google-ads">Google Ads</a> para atraer clientes desde el primer día. En 3R Core te acompañamos en todo el camino: marca → tienda → tráfico.</p>`,
   },
 
   {
@@ -874,7 +874,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre</h2>
 <p>El error más caro en branding peruano no es elegir mal a la agencia, es <strong>pedir el nivel equivocado</strong>. Si necesitas identidad visual y pides solo logo, en 2 años pagas el doble; si necesitas solo logo y pides branding integral, gastas hoy lo que no debías.</p>
-<p>En 3R Core te orientamos según tu momento de negocio. Conversemos sin compromiso: en una sesión inicial te decimos qué nivel necesitas y por qué. Conoce nuestro <a href="/es/agencia-branding-lima">servicio de branding</a> o lee la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios actualizada 2026</a>.</p>`,
+<p>En 3R Core te orientamos según tu momento de negocio. Conversemos sin compromiso: en una sesión inicial te decimos qué nivel necesitas y por qué. Conoce nuestro <a href="/es/servicios/branding">servicio de branding</a> o lee la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios actualizada 2026</a>.</p>`,
   },
 
   {
@@ -1065,8 +1065,8 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre</h2>
 <p>Un manual de marca no es lujo: es <strong>la diferencia entre una marca coherente que se recuerda y una marca caótica que se olvida</strong>. La inversión inicial (S/2,500–4,500 si lo haces aparte, incluido en branding integral) se paga sola en 6 meses solo en horas que tu equipo y proveedores no pierden interpretando.</p>
-<p>En 3R Core entregamos manuales de marca como parte de nuestro servicio de <a href="/es/agencia-branding-lima">branding integral</a>. Si quieres ver una muestra de manual previo o evaluar el tuyo actual, <a href="/es#contacto">conversemos</a>. Lee también <a href="/es/blogs/diferencia-logo-identidad-visual-branding">la diferencia entre logo, identidad visual y branding</a> y <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">cuánto cuesta el branding en Perú 2026</a>.</p>
-<p><strong>Una marca fuerte solo genera ventas si la gente la encuentra y le puede comprar.</strong> Por eso, después del manual, lo siguiente es tener una <a href="/es/tiendas-virtuales-lima">tienda virtual que convierta</a>, aparecer primero en Google con <a href="/es/agencia-seo-lima">posicionamiento SEO</a> y acelerar ventas con <a href="/es/agencia-google-ads-lima">campañas de Google Ads</a>. En 3R Core integramos los tres: marca, tienda y tráfico que vende.</p>`,
+<p>En 3R Core entregamos manuales de marca como parte de nuestro servicio de <a href="/es/servicios/branding">branding integral</a>. Si quieres ver una muestra de manual previo o evaluar el tuyo actual, <a href="/es#contacto">conversemos</a>. Lee también <a href="/es/blogs/diferencia-logo-identidad-visual-branding">la diferencia entre logo, identidad visual y branding</a> y <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">cuánto cuesta el branding en Perú 2026</a>.</p>
+<p><strong>Una marca fuerte solo genera ventas si la gente la encuentra y le puede comprar.</strong> Por eso, después del manual, lo siguiente es tener una <a href="/es/tiendas-virtuales-lima">tienda virtual que convierta</a>, aparecer primero en Google con <a href="/es/posicionamiento-seo">posicionamiento SEO</a> y acelerar ventas con <a href="/es/servicios/google-ads">campañas de Google Ads</a>. En 3R Core integramos los tres: marca, tienda y tráfico que vende.</p>`,
   },
 
   {
@@ -1223,7 +1223,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre</h2>
 <p>La pregunta correcta no es "rebranding o refresh", sino <strong>"qué necesita realmente mi marca para los próximos 5 años"</strong>. Si la respuesta es "verme actualizado", refresh. Si es "redefinirme", rebranding. La diferencia se mide en S/10,000, en 6 semanas más de proceso y en el riesgo de perder reconocimiento ya ganado.</p>
-<p>En 3R Core hacemos ambos. Si quieres una auditoría gratuita de tu marca actual con recomendación honesta, <a href="/es#contacto">conversemos</a>. Conoce nuestro <a href="/es/agencia-branding-lima">servicio de branding</a> y lee también la <a href="/es/blogs/diferencia-logo-identidad-visual-branding">diferencia entre logo, identidad visual y branding</a> y la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios 2026</a>.</p>`,
+<p>En 3R Core hacemos ambos. Si quieres una auditoría gratuita de tu marca actual con recomendación honesta, <a href="/es#contacto">conversemos</a>. Conoce nuestro <a href="/es/servicios/branding">servicio de branding</a> y lee también la <a href="/es/blogs/diferencia-logo-identidad-visual-branding">diferencia entre logo, identidad visual y branding</a> y la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios 2026</a>.</p>`,
   },
 
   {
@@ -1386,7 +1386,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Cierre</h2>
 <p>Como emprendedor peruano en 2026, no necesitas el branding más caro: necesitas el branding correcto para tu momento. Si recién validas, no inviertas S/15,000 que perderás. Si ya facturas, no escatimes con un logo de S/300 que te limita. <strong>El nivel correcto, en el momento correcto, es lo que hace la diferencia</strong>.</p>
-<p>En 3R Core trabajamos con emprendedores y pymes peruanas con planes adaptados al momento del negocio. Si quieres una sesión de orientación gratuita sobre qué nivel de branding te conviene, <a href="/es#contacto">conversemos</a>. Conoce nuestro <a href="/es/agencia-branding-lima">servicio de branding</a> y revisa la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios 2026</a>.</p>`,
+<p>En 3R Core trabajamos con emprendedores y pymes peruanas con planes adaptados al momento del negocio. Si quieres una sesión de orientación gratuita sobre qué nivel de branding te conviene, <a href="/es#contacto">conversemos</a>. Conoce nuestro <a href="/es/servicios/branding">servicio de branding</a> y revisa la <a href="/es/blogs/cuanto-cuesta-branding-peru-2026">tabla de precios 2026</a>.</p>`,
   },
 
   // ============ META ADS — 2 BLOGS ============
@@ -1785,14 +1785,14 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Preguntas frecuentes</h2>
 <h3>¿Google Ads o SEO para mi negocio en Lima?</h3>
-<p>Google Ads trae resultados inmediatos pero solo mientras pagas; el <a href="/es/agencia-seo-lima">SEO</a> es más lento pero sostenible. Lo ideal es combinarlos.</p>
+<p>Google Ads trae resultados inmediatos pero solo mientras pagas; el <a href="/es/posicionamiento-seo">SEO</a> es más lento pero sostenible. Lo ideal es combinarlos.</p>
 <h3>¿En cuánto tiempo veo resultados?</h3>
 <p>Con buena configuración, en la primera semana ya recibes clics y leads; la optimización fina toma de 2 a 4 semanas.</p>
 <h3>¿Necesito una web para hacer Google Ads?</h3>
 <p>Sí, al menos una landing. Google penaliza destinos lentos o irrelevantes con menor Quality Score y mayor costo.</p>
 
 <h2>Cierre</h2>
-<p>Google Ads es el canal más directo para captar clientes que ya buscan lo que ofreces en Lima, pero exige método: campaña correcta, keywords bien elegidas, negativas y una landing que convierta. En 3R Core gestionamos <a href="/es/agencia-google-ads-lima">Google Ads en Perú</a> con foco en costo por lead y retorno. Si quieres captar más clientes desde la búsqueda, <a href="/es#contacto">conversemos</a>.</p>`,
+<p>Google Ads es el canal más directo para captar clientes que ya buscan lo que ofreces en Lima, pero exige método: campaña correcta, keywords bien elegidas, negativas y una landing que convierta. En 3R Core gestionamos <a href="/es/servicios/google-ads">Google Ads en Perú</a> con foco en costo por lead y retorno. Si quieres captar más clientes desde la búsqueda, <a href="/es#contacto">conversemos</a>.</p>`,
   },
 
   // ============ PERFORMANCE / ROAS — 2 BLOGS ============
@@ -1975,7 +1975,7 @@ export const SEED_POSTS: SeedPost[] = [
 
 <h2>Los 5 pilares del marketing para clínicas en Perú</h2>
 <h3>1. Google Business Profile y SEO local</h3>
-<p>Cuando alguien busca "dentista en San Isidro" o "dermatólogo cerca de mí", Google muestra el mapa. Optimizar tu <a href="/es/agencia-seo-lima">ficha de Google Business Profile</a> con fotos, servicios, horarios y reseñas es lo que más citas trae a bajo costo. Es la base y muchas clínicas la descuidan.</p>
+<p>Cuando alguien busca "dentista en San Isidro" o "dermatólogo cerca de mí", Google muestra el mapa. Optimizar tu <a href="/es/posicionamiento-seo">ficha de Google Business Profile</a> con fotos, servicios, horarios y reseñas es lo que más citas trae a bajo costo. Es la base y muchas clínicas la descuidan.</p>
 <h3>2. Reseñas: tu activo más valioso</h3>
 <p>Las reseñas positivas son el factor de confianza número uno en salud. Implementa un proceso simple para pedirle a pacientes satisfechos que dejen su reseña, y responde todas con profesionalismo (cuidando la confidencialidad).</p>
 <h3>3. Meta Ads para generar demanda</h3>
@@ -2194,14 +2194,14 @@ export const SEED_POSTS: SeedPost[] = [
 <li><strong>Contenido en vivo del ambiente</strong>: noches llenas, música, celebraciones.</li>
 <li><strong>Colaboraciones con creadores de comida peruanos</strong>: una visita de un foodie local puede llenar tu fin de semana.</li>
 </ul>
-<p>Para dominar la publicación orgánica y de pago, apóyate en un buen manejo de <a href="/es/agencia-redes-sociales-lima">redes sociales</a>.</p>
+<p>Para dominar la publicación orgánica y de pago, apóyate en un buen manejo de <a href="/es/servicios/socialmedia">redes sociales</a>.</p>
 
 <h2>Google Maps y SEO local: el "cerca de mí" que llena mesas</h2>
 <p>Gran parte de las decisiones de dónde comer empiezan con "restaurantes cerca de mí" o "menú criollo en Barranco". Optimizar tu presencia local es clave:</p>
 <ul>
 <li><strong>Google Business Profile</strong> con fotos actualizadas de platos, carta, horarios y ubicación.</li>
 <li><strong>Reseñas</strong>: pide reseñas a clientes felices y responde todas.</li>
-<li><strong>SEO local</strong> para aparecer en el pack de Maps de tu distrito (ver <a href="/es/agencia-seo-lima">posicionamiento SEO</a>).</li>
+<li><strong>SEO local</strong> para aparecer en el pack de Maps de tu distrito (ver <a href="/es/posicionamiento-seo">posicionamiento SEO</a>).</li>
 </ul>
 <p>Este canal trae comensales listos para ir, casi sin costo por clic.</p>
 
@@ -2242,7 +2242,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Sí, al menos para carta, reservas y delivery propio, y para no depender solo de las apps. Mira <a href="/es/blogs/cuanto-cuesta-pagina-web-peru-2026">cuánto cuesta una web en Perú</a>.</p>
 
 <h2>Cierre</h2>
-<p>Llenar mesas en Perú es combinar antojo (contenido que da hambre) con proximidad (que te encuentren cerca) y campañas geolocalizadas que empujen reservas y delivery propio. En 3R Core ayudamos a restaurantes con <a href="/es/agencia-redes-sociales-lima">gestión de redes sociales</a> y <a href="/es/servicios/meta-ads">Meta Ads</a> enfocados en llenar tu local. Si quieres más comensales y más margen, <a href="/es#contacto">conversemos</a>.</p>`,
+<p>Llenar mesas en Perú es combinar antojo (contenido que da hambre) con proximidad (que te encuentren cerca) y campañas geolocalizadas que empujen reservas y delivery propio. En 3R Core ayudamos a restaurantes con <a href="/es/servicios/socialmedia">gestión de redes sociales</a> y <a href="/es/servicios/meta-ads">Meta Ads</a> enfocados en llenar tu local. Si quieres más comensales y más margen, <a href="/es#contacto">conversemos</a>.</p>`,
   },
 
   // ============ EMAIL MARKETING — 1 BLOG ============
@@ -2377,7 +2377,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Si usas WordPress, Shopify u otra plataforma, hay integraciones que facilitan el paso. Lo importante es que las conversiones queden bien medidas desde el inicio.</p>
 
 <h2>Cómo medir conversiones de WhatsApp</h2>
-<p>En Perú, el WhatsApp es el rey del cierre, así que medir los clics al botón de WhatsApp es esencial. Con GTM configuras un <strong>evento de clic</strong> en el botón o enlace de WhatsApp y lo marcas como conversión en GA4. Así sabes cuántos contactos genera cada canal y cuánto te cuesta cada uno, cruzándolo con tus campañas de <a href="/es/servicios/meta-ads">Meta Ads</a> y <a href="/es/agencia-google-ads-lima">Google Ads</a>.</p>
+<p>En Perú, el WhatsApp es el rey del cierre, así que medir los clics al botón de WhatsApp es esencial. Con GTM configuras un <strong>evento de clic</strong> en el botón o enlace de WhatsApp y lo marcas como conversión en GA4. Así sabes cuántos contactos genera cada canal y cuánto te cuesta cada uno, cruzándolo con tus campañas de <a href="/es/servicios/meta-ads">Meta Ads</a> y <a href="/es/servicios/google-ads">Google Ads</a>.</p>
 
 <h2>UTM: saber qué anuncio trajo la venta</h2>
 <p>Los <strong>parámetros UTM</strong> son etiquetas que agregas a tus enlaces para que GA4 sepa de dónde viene cada visita. Etiqueta siempre tus campañas (fuente, medio, campaña) para poder responder la pregunta de oro: <strong>¿qué anuncio específico me trajo esta venta?</strong> Sin UTM, todo el tráfico pagado se mezcla y no puedes optimizar.</p>
@@ -2406,7 +2406,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Una revisión semanal de conversiones y adquisición basta para la mayoría; en campañas activas, hazlo con más frecuencia.</p>
 
 <h2>Cierre</h2>
-<p>GA4 convierte tu marketing de "creo que funciona" a "sé qué funciona". Configura bien tus conversiones, mide el WhatsApp, etiqueta con UTM y mira los cuatro reportes clave. Es la base para que cualquier inversión en Ads o <a href="/es/agencia-seo-lima">SEO</a> se pueda evaluar de verdad. En 3R Core configuramos GA4 y Google Tag Manager para negocios peruanos y montamos reportes claros de <a href="/es/servicios/performance-marketing">performance marketing</a>. Si quieres decidir con datos y no con corazonadas, <a href="/es#contacto">conversemos</a>.</p>`,
+<p>GA4 convierte tu marketing de "creo que funciona" a "sé qué funciona". Configura bien tus conversiones, mide el WhatsApp, etiqueta con UTM y mira los cuatro reportes clave. Es la base para que cualquier inversión en Ads o <a href="/es/posicionamiento-seo">SEO</a> se pueda evaluar de verdad. En 3R Core configuramos GA4 y Google Tag Manager para negocios peruanos y montamos reportes claros de <a href="/es/servicios/performance-marketing">performance marketing</a>. Si quieres decidir con datos y no con corazonadas, <a href="/es#contacto">conversemos</a>.</p>`,
   },
 
   // ============ WAVE 2 — 8 NUEVOS BLOGS ============
@@ -2442,7 +2442,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>La clave: <strong>no elijas uno u otro, usa los dos y deduplica</strong>. Ese es el estándar profesional en 2026.</p>
 
 <h2>Paso 1: instala el Píxel base</h2>
-<p>Crea (o ubica) tu Píxel en el <strong>Administrador de Eventos de Meta</strong>. Instálalo vía <strong>Google Tag Manager</strong> para no tocar código cada vez. Verifica con la extensión <strong>Meta Pixel Helper</strong> que dispare <code>PageView</code> en todas las páginas. Si trabajas tu web con nosotros, esto ya viene integrado en el <a href="/es/diseno-web-lima">desarrollo web</a>.</p>
+<p>Crea (o ubica) tu Píxel en el <strong>Administrador de Eventos de Meta</strong>. Instálalo vía <strong>Google Tag Manager</strong> para no tocar código cada vez. Verifica con la extensión <strong>Meta Pixel Helper</strong> que dispare <code>PageView</code> en todas las páginas. Si trabajas tu web con nosotros, esto ya viene integrado en el <a href="/es/servicios/web-development">desarrollo web</a>.</p>
 
 <h2>Paso 2: define los eventos que importan</h2>
 <p>No midas todo; mide lo que decide plata. Para la mayoría de negocios peruanos:</p>
@@ -2539,7 +2539,7 @@ export const SEED_POSTS: SeedPost[] = [
 <li>Revisa fila por fila: cualquier término que trajo clics pero <strong>0 conversiones</strong> y que claramente no es tu cliente, agrégalo como negativa.</li>
 <li>Repite este ritual <strong>cada semana</strong> las primeras 8 semanas, luego cada 2 semanas.</li>
 </ol>
-<p>Este mantenimiento es lo que separa una cuenta que mejora sola de una que sangra presupuesto. Es parte de lo que hacemos en la gestión continua de <a href="/es/agencia-google-ads-lima">Google Ads</a>.</p>
+<p>Este mantenimiento es lo que separa una cuenta que mejora sola de una que sangra presupuesto. Es parte de lo que hacemos en la gestión continua de <a href="/es/servicios/google-ads">Google Ads</a>.</p>
 
 <h2>Listas de negativas reutilizables</h2>
 <p>Crea <strong>listas de palabras clave negativas</strong> a nivel de cuenta y aplícalas a varias campañas: una lista "empleo", una "informativas", una "competencia". Así mantienes todo en un solo lugar y lo aplicas con un clic a campañas nuevas.</p>
@@ -2564,7 +2564,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Sí. En Shopping no eliges keywords, pero las negativas siguen filtrando en qué búsquedas apareces. Son esenciales para catálogos de e-commerce.</p>
 
 <h2>Cierre</h2>
-<p>Las palabras clave negativas no son glamurosas, pero son la diferencia entre una campaña que rinde y una que desangra tu presupuesto. Empieza con la lista base, revisa tus términos de búsqueda cada semana y crea listas reutilizables. En 3R Core auditamos cuentas de <a href="/es/agencia-google-ads-lima">Google Ads</a> y solemos recuperar entre 20% y 40% del presupuesto solo con limpieza de negativas y estructura. Si sientes que tu inversión se va por el caño, <a href="/es#contacto">conversemos</a> y revisamos tu cuenta.</p>`,
+<p>Las palabras clave negativas no son glamurosas, pero son la diferencia entre una campaña que rinde y una que desangra tu presupuesto. Empieza con la lista base, revisa tus términos de búsqueda cada semana y crea listas reutilizables. En 3R Core auditamos cuentas de <a href="/es/servicios/google-ads">Google Ads</a> y solemos recuperar entre 20% y 40% del presupuesto solo con limpieza de negativas y estructura. Si sientes que tu inversión se va por el caño, <a href="/es#contacto">conversemos</a> y revisamos tu cuenta.</p>`,
   },
 
   {
@@ -2594,7 +2594,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Busca tu negocio en Google y reclama la ficha (o créala en <strong>business.google.com</strong>). Verifícala por el método que Google te ofrezca (video, teléfono, tarjeta postal). <strong>Sin verificar, no rankeas.</strong> Este es el paso que muchos negocios en Lima nunca completan y por eso son invisibles en el mapa.</p>
 
 <h2>Paso 2: NAP consistente en todos lados</h2>
-<p><strong>NAP = Name, Address, Phone</strong> (Nombre, Dirección, Teléfono). Google confía en negocios cuya información es <em>idéntica</em> en todas partes: tu web, tu ficha, tus redes, directorios. Un teléfono distinto aquí y allá, o "Av." vs "Avenida", confunde al algoritmo. Asegúrate de que tu NAP sea <strong>exactamente igual</strong> en tu <a href="/es/diseno-web-lima">página web</a>, tu ficha y tus perfiles sociales.</p>
+<p><strong>NAP = Name, Address, Phone</strong> (Nombre, Dirección, Teléfono). Google confía en negocios cuya información es <em>idéntica</em> en todas partes: tu web, tu ficha, tus redes, directorios. Un teléfono distinto aquí y allá, o "Av." vs "Avenida", confunde al algoritmo. Asegúrate de que tu NAP sea <strong>exactamente igual</strong> en tu <a href="/es/servicios/web-development">página web</a>, tu ficha y tus perfiles sociales.</p>
 
 <h2>Paso 3: elige la categoría principal correcta</h2>
 <p>La <strong>categoría principal</strong> es la señal de relevancia más fuerte. Si eres una clínica dental, tu principal debe ser "Dentista", no "Clínica" genérica. Agrega categorías secundarias relevantes, pero no las infles con las que no aplican. Investiga qué categoría usan los 3 negocios que ya rankean en tu distrito.</p>
@@ -2616,7 +2616,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Sube <strong>fotos reales</strong> de tu local, equipo y trabajos (no stock). Google interpreta la actividad reciente como señal de que el negocio está vivo. Publica novedades u ofertas en la sección de <strong>publicaciones</strong> cada tanto. La frescura ayuda.</p>
 
 <h2>Paso 7: coherencia con tu web y SEO local</h2>
-<p>Google cruza tu ficha con tu web. Una web con tu dirección, un <strong>schema LocalBusiness</strong>, página de contacto clara y buen rendimiento móvil refuerza tu ficha. Aquí se conecta el trabajo de <a href="/es/agencia-seo-lima">posicionamiento SEO</a> con el mapa: son piezas del mismo rompecabezas.</p>
+<p>Google cruza tu ficha con tu web. Una web con tu dirección, un <strong>schema LocalBusiness</strong>, página de contacto clara y buen rendimiento móvil refuerza tu ficha. Aquí se conecta el trabajo de <a href="/es/posicionamiento-seo">posicionamiento SEO</a> con el mapa: son piezas del mismo rompecabezas.</p>
 
 <h2>Casos por rubro en Lima</h2>
 <p>El pack local es especialmente rentable para <strong>clínicas, restaurantes, servicios a domicilio y estudios profesionales</strong>. Si tienes una clínica, combínalo con captación de pacientes por Ads: lo vemos en <a href="/es/blogs/marketing-digital-clinicas-consultorios-peru-agenda">marketing digital para clínicas y consultorios</a>.</p>
@@ -2630,7 +2630,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>No. Meter keywords falsas en el nombre viola las políticas de Google y puede suspender tu ficha. Usa tu nombre real.</p>
 
 <h2>Cierre</h2>
-<p>Google Maps es tráfico gratis con intención de compra altísima, pero solo si tu ficha está verificada, completa, con NAP consistente y reseñas constantes. Empieza hoy: reclama, completa y pide tu primera tanda de reseñas. En 3R Core optimizamos tu Perfil de Empresa junto con tu <a href="/es/agencia-seo-lima">estrategia SEO</a> para que domines tu distrito. Si quieres aparecer cuando tus clientes buscan cerca, <a href="/es#contacto">conversemos</a>.</p>`,
+<p>Google Maps es tráfico gratis con intención de compra altísima, pero solo si tu ficha está verificada, completa, con NAP consistente y reseñas constantes. Empieza hoy: reclama, completa y pide tu primera tanda de reseñas. En 3R Core optimizamos tu Perfil de Empresa junto con tu <a href="/es/posicionamiento-seo">estrategia SEO</a> para que domines tu distrito. Si quieres aparecer cuando tus clientes buscan cerca, <a href="/es#contacto">conversemos</a>.</p>`,
   },
 
   {
@@ -2684,7 +2684,7 @@ export const SEED_POSTS: SeedPost[] = [
 <li><strong>Tienes contenido que responde dudas de tus clientes</strong> (blogs, guías): eso rankea y educa.</li>
 <li><strong>Quieres construir autoridad de marca</strong> y aparecer también en el mapa y en IA.</li>
 </ol>
-<p>El SEO bien hecho es un activo que se paga solo con el tiempo. Es el corazón de nuestro servicio de <a href="/es/agencia-seo-lima">posicionamiento SEO</a>, y se potencia si además trabajas <a href="/es/blogs/posicionar-negocio-google-maps-lima">Google Maps local</a>.</p>
+<p>El SEO bien hecho es un activo que se paga solo con el tiempo. Es el corazón de nuestro servicio de <a href="/es/posicionamiento-seo">posicionamiento SEO</a>, y se potencia si además trabajas <a href="/es/blogs/posicionar-negocio-google-maps-lima">Google Maps local</a>.</p>
 
 <h2>La verdad incómoda: no es o/o</h2>
 <p>Los negocios que crecen sostenido en Perú <strong>usan ambos con roles distintos</strong>:</p>
@@ -2712,7 +2712,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Puedes, si no tienes urgencia de ventas y aguantas los primeros meses sin resultados. La mayoría de negocios necesita Ads mientras el SEO madura.</p>
 
 <h2>Cierre</h2>
-<p>SEO vs Google Ads no es una guerra: es una secuencia. Empieza donde tu etapa lo pide y evoluciona hacia una mezcla que baje tu costo de adquisición. En 3R Core hacemos ambos y te decimos sin humo dónde invertir según tu momento: <a href="/es/agencia-google-ads-lima">Google Ads</a> para resultados ya y <a href="/es/agencia-seo-lima">SEO</a> para construir el activo. Si no sabes por dónde empezar, <a href="/es#contacto">conversemos</a> y armamos tu plan.</p>`,
+<p>SEO vs Google Ads no es una guerra: es una secuencia. Empieza donde tu etapa lo pide y evoluciona hacia una mezcla que baje tu costo de adquisición. En 3R Core hacemos ambos y te decimos sin humo dónde invertir según tu momento: <a href="/es/servicios/google-ads">Google Ads</a> para resultados ya y <a href="/es/posicionamiento-seo">SEO</a> para construir el activo. Si no sabes por dónde empezar, <a href="/es#contacto">conversemos</a> y armamos tu plan.</p>`,
   },
 
   {
@@ -2730,7 +2730,7 @@ export const SEED_POSTS: SeedPost[] = [
     content: `<p class="lead"><strong>Resumen ejecutivo:</strong> publicar en redes "cuando se ocurre" quema tiempo y no vende. Un <strong>plan de contenido mensual</strong> convierte tus redes en una máquina predecible de atención y ventas. La fórmula: define <strong>3–4 pilares de contenido</strong>, asigna <strong>formatos</strong> (Reels, carruseles, historias), fija una <strong>frecuencia realista</strong> y ordena todo en un <strong>calendario</strong>. Esta guía te da el método y una plantilla mensual editable pensada para el mercado peruano, para que dejes de improvisar y empieces a construir comunidad.</p>
 
 <h2>Por qué necesitas un plan (y no solo "ganas de postear")</h2>
-<p>Sin plan pasa esto: publicas 5 días seguidos con entusiasmo, luego 3 semanas en silencio, el algoritmo te castiga y concluyes que "las redes no funcionan". Un plan resuelve tres cosas: <strong>consistencia</strong> (el algoritmo premia la regularidad), <strong>variedad</strong> (no aburres) e <strong>intención</strong> (cada post tiene un objetivo). Es la base del servicio de <a href="/es/agencia-redes-sociales-lima">manejo de redes sociales</a>.</p>
+<p>Sin plan pasa esto: publicas 5 días seguidos con entusiasmo, luego 3 semanas en silencio, el algoritmo te castiga y concluyes que "las redes no funcionan". Un plan resuelve tres cosas: <strong>consistencia</strong> (el algoritmo premia la regularidad), <strong>variedad</strong> (no aburres) e <strong>intención</strong> (cada post tiene un objetivo). Es la base del servicio de <a href="/es/servicios/socialmedia">manejo de redes sociales</a>.</p>
 
 <h2>Paso 1: define tus pilares de contenido</h2>
 <p>Los <strong>pilares</strong> son los 3–4 temas sobre los que siempre hablas. Evitan el bloqueo creativo. Un ejemplo para un negocio de servicios en Lima:</p>
@@ -2786,7 +2786,7 @@ export const SEED_POSTS: SeedPost[] = [
 <p>Sí, pero adáptalo: TikTok premia lo nativo y crudo; Instagram tolera algo más pulido. Evita subir con la marca de agua de la otra red.</p>
 
 <h2>Cierre</h2>
-<p>Un plan de contenido convierte tus redes de hobby en canal de ventas. Define pilares, elige formatos, fija una frecuencia sostenible y ordénalo en un calendario editable. En 3R Core diseñamos y ejecutamos planes de contenido para negocios peruanos y los conectamos con pauta para escalar lo que funciona. Si quieres dejar de improvisar, conoce nuestro <a href="/es/agencia-redes-sociales-lima">servicio de redes sociales</a> o <a href="/es#contacto">conversemos</a>.</p>`,
+<p>Un plan de contenido convierte tus redes de hobby en canal de ventas. Define pilares, elige formatos, fija una frecuencia sostenible y ordénalo en un calendario editable. En 3R Core diseñamos y ejecutamos planes de contenido para negocios peruanos y los conectamos con pauta para escalar lo que funciona. Si quieres dejar de improvisar, conoce nuestro <a href="/es/servicios/socialmedia">servicio de redes sociales</a> o <a href="/es#contacto">conversemos</a>.</p>`,
   },
 
   {

@@ -27,12 +27,12 @@ interface ServiceCTA {
 
 const SERVICES: Record<ServiceKey, ServiceCTA> = {
   web: {
-    path: '/diseno-web-lima',
+    path: '/servicios/web-development',
     es: { eyebrow: 'Diseño y desarrollo web', headline: '¿Listo para una web que sí te traiga clientes?', sub: 'Diseñamos webs rápidas, optimizadas para Google y pensadas para convertir. Cotiza tu proyecto sin compromiso.', btn: 'Ver servicio de diseño web', wa: 'Cotizar mi web por WhatsApp' },
     en: { eyebrow: 'Web design & development', headline: 'Ready for a website that brings you clients?', sub: 'Fast, SEO-ready websites built to convert. Get a no-commitment quote.', btn: 'See web development service', wa: 'Quote my website on WhatsApp' },
   },
   branding: {
-    path: '/agencia-branding-lima',
+    path: '/servicios/branding',
     es: { eyebrow: 'Branding e identidad', headline: '¿Quieres una marca que se recuerde y venda?', sub: 'Construimos identidades visuales sólidas: logo, manual de marca y aplicaciones. Agenda una asesoría.', btn: 'Ver servicio de branding', wa: 'Agendar asesoría de branding' },
     en: { eyebrow: 'Branding & identity', headline: 'Want a brand people remember and buy from?', sub: 'Solid visual identities: logo, brand manual and applications. Book a consultation.', btn: 'See branding service', wa: 'Book a branding consultation' },
   },
@@ -47,7 +47,7 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
     en: { eyebrow: 'TikTok Ads', headline: 'Ready to sell on TikTok with ads that work?', sub: 'Native creative + targeting to reach young buyers. Quote your TikTok Ads campaign.', btn: 'See TikTok Ads service', wa: 'Quote a TikTok Ads campaign' },
   },
   'google-ads': {
-    path: '/agencia-google-ads-lima',
+    path: '/servicios/google-ads',
     es: { eyebrow: 'Google Ads · SEM', headline: '¿Quieres aparecer cuando tus clientes buscan hoy?', sub: 'Campañas de Google Ads con intención de compra y presupuesto optimizado. Cotiza tu cuenta.', btn: 'Ver servicio de Google Ads', wa: 'Cotizar campaña de Google Ads' },
     en: { eyebrow: 'Google Ads · SEM', headline: 'Want to show up when your clients search today?', sub: 'High-intent Google Ads campaigns with optimized budget. Get a quote.', btn: 'See Google Ads service', wa: 'Quote a Google Ads campaign' },
   },
@@ -62,12 +62,12 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
     en: { eyebrow: 'Email Marketing', headline: 'Could your contact list sell you more?', sub: 'Email campaigns and automations that nurture and convert. Get started.', btn: 'See Email Marketing service', wa: 'Start my email marketing' },
   },
   seo: {
-    path: '/agencia-seo-lima',
+    path: '/posicionamiento-seo',
     es: { eyebrow: 'Posicionamiento SEO', headline: '¿Quieres que Google te encuentre primero?', sub: 'SEO orgánico con estrategia de keywords, contenido y reportes mensuales desde S/1,500. Cotiza tu SEO.', btn: 'Ver servicio de SEO', wa: 'Cotizar mi posicionamiento SEO' },
     en: { eyebrow: 'SEO Positioning', headline: 'Want Google to find you first?', sub: 'Organic SEO with keyword strategy, content and monthly reports. Get a quote.', btn: 'See SEO service', wa: 'Quote my SEO' },
   },
   social: {
-    path: '/agencia-redes-sociales-lima',
+    path: '/servicios/socialmedia',
     es: { eyebrow: 'Social Media', headline: '¿Tus redes deberían traer clientes, no solo likes?', sub: 'Estrategia de contenido, diseño y gestión de redes que construye marca y vende. Cotiza tu plan.', btn: 'Ver servicio de Social Media', wa: 'Cotizar gestión de redes' },
     en: { eyebrow: 'Social Media', headline: 'Should your social bring clients, not just likes?', sub: 'Content strategy, design and social management that builds brand and sells. Get a quote.', btn: 'See Social Media service', wa: 'Quote social media management' },
   },

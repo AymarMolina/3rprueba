@@ -50,32 +50,35 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // ── SEO: consolidación de canibalización ──────────────────────────────
-      // Las páginas /servicios/* y /posicionamiento-seo duplicaban el intent de
-      // las money pages /agencia-*-lima (title/H1 casi gemelos), partiendo la
-      // autoridad en Google. 301 permanente hacia la única página objetivo por
-      // keyword. Reversible: basta quitar la entrada. (2026-07-01)
-      { source: '/:locale(es|en)/servicios/branding', destination: '/:locale/agencia-branding-lima', permanent: true },
-      { source: '/servicios/branding', destination: '/es/agencia-branding-lima', permanent: true },
-      { source: '/:locale(es|en)/servicios/socialmedia', destination: '/:locale/agencia-redes-sociales-lima', permanent: true },
-      { source: '/servicios/socialmedia', destination: '/es/agencia-redes-sociales-lima', permanent: true },
-      { source: '/:locale(es|en)/servicios/google-ads', destination: '/:locale/agencia-google-ads-lima', permanent: true },
-      { source: '/servicios/google-ads', destination: '/es/agencia-google-ads-lima', permanent: true },
-      { source: '/:locale(es|en)/servicios/web-development', destination: '/:locale/diseno-web-lima', permanent: true },
-      { source: '/servicios/web-development', destination: '/es/diseno-web-lima', permanent: true },
-      { source: '/:locale(es|en)/servicios/seo-sem', destination: '/:locale/agencia-seo-lima', permanent: true },
-      { source: '/servicios/seo-sem', destination: '/es/agencia-seo-lima', permanent: true },
-      { source: '/:locale(es|en)/posicionamiento-seo', destination: '/:locale/agencia-seo-lima', permanent: true },
-      { source: '/posicionamiento-seo', destination: '/es/agencia-seo-lima', permanent: true },
-      // Typo histórico → ahora apunta directo a la money page (sin salto doble).
+      // ── REVERSIÓN a páginas de servicio (2026-07-15) ──────────────────────
+      // El equipo comercial vende con las páginas /servicios/* y
+      // /posicionamiento-seo (mejor diseñadas: hero, proceso, portafolio,
+      // reviews, FAQ). Se restauran como páginas objetivo y las money pages
+      // /agencia-*-lima 301 hacia ellas para conservar la autoridad acumulada.
+      // Posicionamiento en 3 pilares: SEO (/posicionamiento-seo), SEM
+      // (/servicios/google-ads) y Web/Tiendas (/servicios/web-development +
+      // /tiendas-virtuales-lima). Reversible: basta quitar la entrada.
+      { source: '/:locale(es|en)/agencia-branding-lima', destination: '/:locale/servicios/branding', permanent: true },
+      { source: '/agencia-branding-lima', destination: '/es/servicios/branding', permanent: true },
+      { source: '/:locale(es|en)/agencia-redes-sociales-lima', destination: '/:locale/servicios/socialmedia', permanent: true },
+      { source: '/agencia-redes-sociales-lima', destination: '/es/servicios/socialmedia', permanent: true },
+      { source: '/:locale(es|en)/agencia-google-ads-lima', destination: '/:locale/servicios/google-ads', permanent: true },
+      { source: '/agencia-google-ads-lima', destination: '/es/servicios/google-ads', permanent: true },
+      { source: '/:locale(es|en)/diseno-web-lima', destination: '/:locale/servicios/web-development', permanent: true },
+      { source: '/diseno-web-lima', destination: '/es/servicios/web-development', permanent: true },
+      { source: '/:locale(es|en)/agencia-seo-lima', destination: '/:locale/posicionamiento-seo', permanent: true },
+      { source: '/agencia-seo-lima', destination: '/es/posicionamiento-seo', permanent: true },
+      { source: '/:locale(es|en)/agencia-marketing-digital-lima', destination: '/:locale/servicios', permanent: true },
+      { source: '/agencia-marketing-digital-lima', destination: '/es/servicios', permanent: true },
+      // Typo histórico → página web real.
       {
         source: '/:locale(es|en)/servicios/web-deveploment',
-        destination: '/:locale/diseno-web-lima',
+        destination: '/:locale/servicios/web-development',
         permanent: true,
       },
       {
         source: '/servicios/web-deveploment',
-        destination: '/es/diseno-web-lima',
+        destination: '/es/servicios/web-development',
         permanent: true,
       },
       {
