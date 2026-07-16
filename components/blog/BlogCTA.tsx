@@ -101,6 +101,12 @@ const SLUG_MAP: Record<string, ServiceKey> = {
   'cuanto-cuesta-agencia-seo-lima-2026': 'seo',
   'cuanto-cuesta-google-ads-lima-agencia-2026': 'google-ads',
   'cuanto-cuesta-community-manager-redes-lima-2026': 'social',
+  // ---- LEADS tanda 2 (buyer-intent + verticales) ----
+  'mejores-agencias-seo-lima-como-elegir-2026': 'seo',
+  'agencia-google-ads-inmobiliarias-lima': 'google-ads',
+  'agencia-google-ads-clinicas-dentistas-lima': 'google-ads',
+  'cuanto-cuesta-mantener-tienda-virtual-peru-2026': 'tiendas',
+  'tienda-virtual-o-vender-en-marketplace-peru': 'tiendas',
   // ---- cluster Tiendas Virtuales + SEO/SEM (2026-07) ----
   'cuanto-cuesta-tienda-virtual-peru-2026': 'tiendas',
   'como-crear-tienda-online-que-venda-peru': 'tiendas',
