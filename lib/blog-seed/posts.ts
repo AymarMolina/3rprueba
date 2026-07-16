@@ -7,6 +7,7 @@
 
 import { EXTRA_POSTS_2026_07 } from "./posts-extra-2026-07"
 import { TIENDAS_POSTS_2026_07 } from "./posts-tiendas-2026-07"
+import { LEADS_POSTS_2026_07 } from "./posts-leads-2026-07"
 
 export interface SeedPost {
   title: string
@@ -2989,4 +2990,5 @@ export const SEED_POSTS: SeedPost[] = [
   },
   ...EXTRA_POSTS_2026_07,
   ...TIENDAS_POSTS_2026_07,
+  ...LEADS_POSTS_2026_07,
 ]

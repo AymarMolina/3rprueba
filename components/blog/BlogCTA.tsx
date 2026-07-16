@@ -97,6 +97,10 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
 const SLUG_MAP: Record<string, ServiceKey> = {
   'cuanto-cuesta-pagina-web-peru-2026': 'web',
   'shopify-vs-woocommerce-peru-2026': 'tiendas',
+  // ---- blogs imán de LEADS (buyer-intent, 2026-07) ----
+  'cuanto-cuesta-agencia-seo-lima-2026': 'seo',
+  'cuanto-cuesta-google-ads-lima-agencia-2026': 'google-ads',
+  'cuanto-cuesta-community-manager-redes-lima-2026': 'social',
   // ---- cluster Tiendas Virtuales + SEO/SEM (2026-07) ----
   'cuanto-cuesta-tienda-virtual-peru-2026': 'tiendas',
   'como-crear-tienda-online-que-venda-peru': 'tiendas',
