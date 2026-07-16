@@ -58,10 +58,11 @@ export default function WebDeveploment(){
           namespace="WebDevSEO"
           paragraphs={4}
           relatedLinks={[
+            { href: "/tiendas-virtuales-lima", label: "Tiendas Virtuales" },
+            { href: "/posicionamiento-seo", label: "SEO" },
+            { href: "/servicios/google-ads", label: "Google Ads" },
             { href: "/servicios/branding", label: "Branding" },
             { href: "/servicios/socialmedia", label: "Redes Sociales" },
-            { href: "/servicios/google-ads", label: "Google Ads" },
-            { href: "/posicionamiento-seo", label: "SEO" },
           ]}
         />
         <div id="contacto">
