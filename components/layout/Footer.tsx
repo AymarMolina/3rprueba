@@ -54,8 +54,8 @@ const Footer = () => {
               <ul className="space-y-3 text-sm lg:text-xs xl:text-sm text-gray-200">
                 <li>
                   <Link
-                    href="/agencia-branding-lima"
-                    onClick={() => handleScrollTop("/agencia-branding-lima")}
+                    href="/servicios/branding"
+                    onClick={() => handleScrollTop("/servicios/branding")}
                     className="hover:text-pink-500 transition-colors duration-300"
                   >
                     Branding
@@ -63,8 +63,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agencia-redes-sociales-lima"
-                    onClick={() => handleScrollTop("/agencia-redes-sociales-lima")}
+                    href="/servicios/socialmedia"
+                    onClick={() => handleScrollTop("/servicios/socialmedia")}
                     className="hover:text-pink-500 transition-colors duration-300"
                   >
                     Social Media
@@ -72,8 +72,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agencia-google-ads-lima"
-                    onClick={() => handleScrollTop("/agencia-google-ads-lima")}
+                    href="/servicios/google-ads"
+                    onClick={() => handleScrollTop("/servicios/google-ads")}
                     className="hover:text-pink-500 transition-colors duration-300"
                   >
                     Google Ads
@@ -81,8 +81,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/diseno-web-lima"
-                    onClick={() => handleScrollTop("/diseno-web-lima")}
+                    href="/servicios/web-development"
+                    onClick={() => handleScrollTop("/servicios/web-development")}
                     className="hover:text-pink-500 transition-colors duration-300"
                   >
                     Web Development

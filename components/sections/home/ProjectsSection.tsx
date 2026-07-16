@@ -47,7 +47,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 'branding',
-      href: '/agencia-branding-lima',
+      href: '/servicios/branding',
       bg: "/images/tituloCarru/brandCarrubg.webp",
       title: "/images/tituloCarru/Branding.svg",
       titleMobile: "/images/tituloCarru/brandingH.svg",
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
     },
     {
       id: 'socialmedia',
-      href: '/agencia-redes-sociales-lima',
+      href: '/servicios/socialmedia',
       bg: "/images/tituloCarru/socialCarrubg.webp",
       title: "/images/tituloCarru/SocialMedia.svg",
       titleMobile:  "/images/tituloCarru/socialMediaHorizontal.svg",
@@ -73,7 +73,7 @@ export default function ProjectsSection() {
     },
     {
       id: 'seosem',
-      href: '/agencia-seo-lima',
+      href: '/posicionamiento-seo',
       bg: "/images/tituloCarru/seoCarrubg.webp",
       title: "/images/tituloCarru/SeoSem.svg",
       titleMobile:"/images/tituloCarru/seoSemHorizontal.svg",
@@ -85,7 +85,7 @@ export default function ProjectsSection() {
     },
     {
       id: 'webdesign',
-      href: '/diseno-web-lima',
+      href: '/servicios/web-development',
       bg: "/images/tituloCarru/webCarrubg.webp",
       title:  "/images/tituloCarru/webDevelopmentV.svg",
       titleMobile: "/images/tituloCarru/webDevelopment.svg",

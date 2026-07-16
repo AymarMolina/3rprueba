@@ -153,12 +153,12 @@ const Navbar = () => {
   }, [isOpen]);
 
   const services = [
+    { href: "/posicionamiento-seo", label: "Posicionamiento SEO" },
+    { href: "/servicios/google-ads", label: "Google Ads / SEM" },
     { href: "/tiendas-virtuales-lima", label: "Tiendas Virtuales" },
-    { href: "/agencia-seo-lima", label: "Posicionamiento SEO" },
-    { href: "/agencia-google-ads-lima", label: "Google Ads / SEM" },
-    { href: "/diseno-web-lima", label: "Diseño Web" },
-    { href: "/agencia-redes-sociales-lima", label: "Social Media" },
-    { href: "/agencia-branding-lima", label: "Branding" },
+    { href: "/servicios/web-development", label: "Diseño Web" },
+    { href: "/servicios/socialmedia", label: "Social Media" },
+    { href: "/servicios/branding", label: "Branding" },
   ];
 
   const links = [

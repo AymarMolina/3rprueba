@@ -17,10 +17,10 @@ export default function ButtonServicios() {
   const backdropRef = useRef<HTMLDivElement>(null);
 
   const services = [
-    { href: "/agencia-branding-lima", label: "Branding" },
-    { href: "/agencia-redes-sociales-lima", label: "Social Media" },
-    { href: "/agencia-seo-lima", label: "Google SEO / SEM" },
-    { href: "/diseno-web-lima", label: "Web Development" },
+    { href: "/servicios/branding", label: "Branding" },
+    { href: "/servicios/socialmedia", label: "Social Media" },
+    { href: "/posicionamiento-seo", label: "Google SEO / SEM" },
+    { href: "/servicios/web-development", label: "Web Development" },
   ];
 
   const handleScrollTop = (href: string) => {

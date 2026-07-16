@@ -12,27 +12,27 @@ export default async function HomePage({ params }: { params: any }) {
     items: [
       {
         name: isEn ? "Web Design & Development" : "Diseño y Desarrollo Web",
-        path: "/diseno-web-lima",
+        path: "/servicios/web-development",
         description: isEn ? "Custom websites, landing pages and e-commerce." : "Sitios web a medida, landing pages y e-commerce.",
       },
       {
         name: isEn ? "Social Media Management" : "Manejo de Redes Sociales",
-        path: "/agencia-redes-sociales-lima",
+        path: "/servicios/socialmedia",
         description: isEn ? "Strategy, content and community management." : "Estrategia, contenido y community management.",
       },
       {
         name: isEn ? "Corporate Branding" : "Branding Corporativo",
-        path: "/agencia-branding-lima",
+        path: "/servicios/branding",
         description: isEn ? "Visual identity, logo and brand book." : "Identidad visual, logotipo y manual de marca.",
       },
       {
         name: isEn ? "Google Ads" : "Google Ads",
-        path: "/agencia-google-ads-lima",
+        path: "/servicios/google-ads",
         description: isEn ? "SEM campaigns with measurable ROI." : "Campañas SEM con ROI medible.",
       },
       {
         name: isEn ? "SEO Positioning" : "Posicionamiento SEO",
-        path: "/agencia-seo-lima",
+        path: "/posicionamiento-seo",
         description: isEn ? "Organic Google ranking and authority building." : "Ranking orgánico en Google y construcción de autoridad.",
       },
     ],
