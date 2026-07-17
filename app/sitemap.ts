@@ -61,9 +61,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .eq('status', 'published')
       .order('published_at', { ascending: false })
 
+    // Slugs consolidados por canibalización (301 en next.config.ts): siguen en
+    // la base pero ya no deben listarse — el sitemap no debe apuntar a URLs
+    // que redirigen.
+    const REDIRECTED_SLUGS = new Set([
+      'es-blogs-diseno-web-lima-peru',
+      'es-blogs-mejor-agencia-web-lima-peru',
+      'cuanto-cuesta-una-pagina-web-en-peru-en-2026-precios-reales',
+      'cuanto-cuesta-crear-una-pagina-web-en-peru-este-ano',
+      'mejores-agencias-de-publicidad',
+      'crear-tienda-online-en-peru-con-shopify-o-woocommerce-guia-2026',
+    ])
+
     if (posts) {
-      hasEnglishPosts = posts.some((p) => p.locale === 'en')
-      blogEntries = posts.map((post) => ({
+      const livePosts = posts.filter((p) => !REDIRECTED_SLUGS.has(p.slug))
+      hasEnglishPosts = livePosts.some((p) => p.locale === 'en')
+      blogEntries = livePosts.map((post) => ({
         url: `${baseUrl}/${post.locale}/blogs/${post.slug}`,
         lastModified: new Date(post.updated_at),
         changeFrequency: 'weekly' as const,

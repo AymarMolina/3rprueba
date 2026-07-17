@@ -2,22 +2,21 @@
 
 import { useEffect, useRef } from 'react'
 import { Link } from '@/i18n/navigation'
+import { serviceForSlug, guidesFor, type ServiceKey } from '@/lib/blog-cta-map'
 
 /**
  * BlogCTA — bloque de conversión al final (y opcionalmente en medio) de cada blog.
- * Mapea el slug del post al servicio 3R Core más relevante y mide TODO en GTM
- * (dataLayer): blog_cta_view (impresión, 1 vez por visible), blog_cta_click
- * (clic al servicio) y blog_cta_whatsapp (clic a WhatsApp). Recursos propios,
- * sin terceros: el WhatsApp va al número de agenda y el botón lleva a la landing
- * de servicio (que captura con el formulario/panel propio).
+ * Mapea el slug del post al servicio 3R Core más relevante (mapa compartido en
+ * lib/blog-cta-map.ts, ahora con TODO el cluster mapeado por tema) y mide TODO
+ * en GTM (dataLayer): blog_cta_view (impresión, 1 vez por visible),
+ * blog_cta_click (clic al servicio) y blog_cta_whatsapp (clic a WhatsApp).
+ * Recursos propios, sin terceros: el WhatsApp va al número de agenda y el botón
+ * lleva a la landing de servicio (que captura con el formulario/panel propio).
+ * Además enlaza 2 guías buyer-intent del mismo tema ("Sigue leyendo") para
+ * desorfanizar el cluster y empujar al lector hacia contenido de decisión.
  */
 
 const WA_PHONE = '51987216703'
-
-type ServiceKey =
-  | 'web' | 'branding' | 'meta-ads' | 'tiktok-ads' | 'google-ads'
-  | 'performance' | 'email' | 'seo' | 'social' | 'clinicas'
-  | 'inmobiliarias' | 'ecommerce' | 'tiendas'
 
 interface ServiceCTA {
   path: string
@@ -93,93 +92,6 @@ const SERVICES: Record<ServiceKey, ServiceCTA> = {
   },
 }
 
-// Mapeo explícito slug → servicio (31 posts actuales + los 5 nuevos).
-const SLUG_MAP: Record<string, ServiceKey> = {
-  'cuanto-cuesta-pagina-web-peru-2026': 'web',
-  'shopify-vs-woocommerce-peru-2026': 'tiendas',
-  // ---- blogs imán de LEADS (buyer-intent, 2026-07) ----
-  'cuanto-cuesta-agencia-seo-lima-2026': 'seo',
-  'cuanto-cuesta-google-ads-lima-agencia-2026': 'google-ads',
-  'cuanto-cuesta-community-manager-redes-lima-2026': 'social',
-  // ---- LEADS tanda 2 (buyer-intent + verticales) ----
-  'mejores-agencias-seo-lima-como-elegir-2026': 'seo',
-  'agencia-google-ads-inmobiliarias-lima': 'google-ads',
-  'agencia-google-ads-clinicas-dentistas-lima': 'google-ads',
-  'cuanto-cuesta-mantener-tienda-virtual-peru-2026': 'tiendas',
-  'tienda-virtual-o-vender-en-marketplace-peru': 'tiendas',
-  // ---- cluster Tiendas Virtuales + SEO/SEM (2026-07) ----
-  'cuanto-cuesta-tienda-virtual-peru-2026': 'tiendas',
-  'como-crear-tienda-online-que-venda-peru': 'tiendas',
-  'pasarelas-pago-tienda-online-peru': 'tiendas',
-  'shopify-woocommerce-tiendanube-peru-cual-elegir': 'tiendas',
-  'errores-crear-tienda-virtual-peru': 'tiendas',
-  'seo-para-ecommerce-tienda-online-peru': 'seo',
-  'google-ads-shopping-tiendas-online-peru': 'google-ads',
-  // ---- reenrutado de blogs legacy con tráfico (según red neuronal 2026-07) ----
-  'campana-publicitaria-peru': 'google-ads',
-  'caracteristicas-de-la-publicidad-importancia-y-claves-para-el-exito': 'google-ads',
-  'parafrasist-la-mejor-herramienta-para-resumir-textos': 'seo',
-  'crear-tienda-online-en-peru-con-shopify-o-woocommerce-guia-2026': 'tiendas',
-  'cuanto-cuesta-crear-una-pagina-web-en-peru-este-ano': 'web',
-  'seo-y-sem-importancia': 'seo',
-  'google-ads-crecer': 'google-ads',
-  'mejores-estrategias-marketing-digital-guia-completa-2023': 'seo',
-  'que-es-el-marketing-digital-y-como-emplearlo-para-hacer-crecer-tu-negocio': 'google-ads',
-  'como-elegir-agencia-diseno-web-lima': 'web',
-  'diseno-web-responsive-peru-2026': 'web',
-  'mejores-paginas-web-peruanas-2026': 'web',
-  'cuanto-cuesta-branding-peru-2026': 'branding',
-  'diferencia-logo-identidad-visual-branding': 'branding',
-  'manual-marca-estructura-plantilla': 'branding',
-  'rebranding-vs-refresh-cuando-elegir': 'branding',
-  'branding-emprendedores-peru-guia': 'branding',
-  'meta-ads-pymes-peru-guia-primera-campana-rentable': 'meta-ads',
-  'cuanto-cuesta-publicidad-facebook-instagram-peru-2026': 'meta-ads',
-  'tiktok-ads-peru-2026-guia-completa-empezar-vender': 'tiktok-ads',
-  'cuanto-cuesta-anunciar-tiktok-peru-cpm-cpa': 'tiktok-ads',
-  'google-ads-negocios-lima-guia-captar-clientes': 'google-ads',
-  'que-es-roas-como-calcularlo-negocio-peru': 'performance',
-  'como-construir-embudo-ventas-rentable-ads-peru-2026': 'performance',
-  'marketing-digital-clinicas-consultorios-peru-agenda': 'clinicas',
-  'marketing-digital-inmobiliarias-peru-generar-leads-calidad': 'inmobiliarias',
-  'marketing-ecommerce-peru-estrategia-ads-escalar-ventas': 'ecommerce',
-  'marketing-digital-restaurantes-peru-redes-ads': 'social',
-  'email-marketing-negocios-peruanos-2026-guia': 'email',
-  'google-analytics-4-negocios-peruanos-que-medir': 'performance',
-  'pixel-meta-api-conversiones-peru-configurar': 'meta-ads',
-  'palabras-clave-negativas-google-ads-peru': 'google-ads',
-  'posicionar-negocio-google-maps-lima': 'seo',
-  'seo-vs-google-ads-peru-cual-conviene': 'seo',
-  'plan-contenido-redes-sociales-peru-plantilla': 'social',
-  'automatizaciones-email-ecommerce-peru': 'email',
-  'meta-ads-clinicas-dentales-esteticas-lima': 'clinicas',
-  'cac-ltv-roas-metricas-negocio-peru': 'performance',
-  // ---- 5 blogs nuevos ----
-  'cuanto-cobra-agencia-marketing-digital-peru-2026': 'performance',
-  'como-elegir-agencia-marketing-digital-lima': 'performance',
-  'cuanto-invertir-publicidad-online-peru-negocio': 'performance',
-  'ideas-contenido-redes-sociales-negocios-peru': 'social',
-  'como-conseguir-clientes-por-internet-peru': 'performance',
-}
-
-// Fallback por heurística de palabras clave (para slugs no mapeados).
-function inferService(slug: string): ServiceKey {
-  const s = slug.toLowerCase()
-  if (/tiktok/.test(s)) return 'tiktok-ads'
-  if (/(meta-ads|facebook|instagram|pixel)/.test(s)) return 'meta-ads'
-  if (/(google-ads|adwords|sem|negativas)/.test(s)) return 'google-ads'
-  if (/(seo|maps|posicion)/.test(s)) return 'seo'
-  if (/(branding|logo|marca|rebranding)/.test(s)) return 'branding'
-  if (/(tienda|ecommerce|e-commerce|shopify|woocommerce|tiendanube|pasarela|carrito)/.test(s)) return 'tiendas'
-  if (/(web|landing|pagina)/.test(s)) return 'web'
-  if (/email/.test(s)) return 'email'
-  if (/(redes|social|contenido)/.test(s)) return 'social'
-  if (/clinic/.test(s)) return 'clinicas'
-  if (/inmobili/.test(s)) return 'inmobiliarias'
-  if (/(ecommerce|tienda)/.test(s)) return 'ecommerce'
-  return 'performance'
-}
-
 function pushDL(payload: Record<string, unknown>) {
   if (typeof window === 'undefined') return
   ;(window as any).dataLayer = (window as any).dataLayer || []
@@ -188,9 +100,10 @@ function pushDL(payload: Record<string, unknown>) {
 
 export default function BlogCTA({ slug, locale, variant = 'end' }: { slug: string; locale: string; variant?: 'end' | 'inline' }) {
   const isEn = locale === 'en'
-  const key: ServiceKey = SLUG_MAP[slug] || inferService(slug)
+  const key: ServiceKey = serviceForSlug(slug)
   const svc = SERVICES[key]
   const t = isEn ? svc.en : svc.es
+  const guides = guidesFor(slug, 2)
   const ref = useRef<HTMLDivElement>(null)
   const seen = useRef(false)
 
@@ -261,6 +174,22 @@ export default function BlogCTA({ slug, locale, variant = 'end' }: { slug: strin
           {t.wa}
         </a>
       </div>
+      {guides.length > 0 && (
+        <p className="text-white/50 text-sm mt-6 relative z-10">
+          {isEn ? 'Keep reading: ' : 'Sigue leyendo: '}
+          {guides.map((g, i) => (
+            <span key={g.slug}>
+              {i > 0 && ' · '}
+              <Link
+                href={`/blogs/${g.slug}`}
+                className="text-white/80 underline decoration-[#A21F8A]/60 underline-offset-4 hover:text-white transition-colors"
+              >
+                {g.title}
+              </Link>
+            </span>
+          ))}
+        </p>
+      )}
     </div>
   )
 }
