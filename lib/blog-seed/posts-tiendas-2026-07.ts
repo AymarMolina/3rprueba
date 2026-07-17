@@ -59,6 +59,9 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <h2>¿Y hacerla yo mismo con una plantilla?</h2>
 <p>Puedes armar una tienda básica tú mismo en Shopify o Tiendanube. El problema no es montarla, es que <strong>venda</strong>: configurar bien los pagos, que cargue rápido, que aparezca en Google y que el flujo de compra no pierda clientes. Ahí es donde una <a href="/es/tiendas-virtuales-lima">agencia de tiendas virtuales</a> paga sola: te ahorra los errores caros que hacen que una tienda tenga visitas pero cero ventas.</p>
 
+<h2>¿Cuánto cuesta una tienda virtual en Lima?</h2>
+<p>Los precios en Lima son los mismos que a nivel nacional: la implementación se trabaja 100% remota (diseño, revisiones y capacitación por videollamada), así que no pagas más por estar en Lima ni menos por estar en provincia. La diferencia práctica en Lima está en la logística: más opciones de courier para envíos el mismo día y más proveedores de fotografía de producto. Si tu negocio está en Lima y quieres verlo con alguien cara a cara, también se puede coordinar reunión presencial.</p>
+
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cuál es el mínimo para tener una tienda que venda?</h3>
 <p>Implementación desde S/1,500 en Shopify o Tiendanube, más la mensualidad de la plataforma y las comisiones de pago por venta. Con eso ya tienes una tienda profesional lista para facturar.</p>
@@ -68,7 +71,7 @@ export const TIENDAS_POSTS_2026_07: SeedPost[] = [
 <p>Una tienda estándar en 2–4 semanas; una a medida, 5–8 semanas.</p>
 
 <h2>Cierre</h2>
-<p>Crear una tienda virtual en Perú cuesta lo que cuesta hacerla bien: desde S/1,500 una tienda profesional, más plataforma y pagos. El error caro no es invertir, es pagar poco por una tienda que no vende. En 3R Core creamos tu <a href="/es/tiendas-virtuales-lima">tienda virtual lista para vender</a> y la conectamos con <a href="/es/posicionamiento-seo">SEO</a> y <a href="/es/servicios/google-ads">Google Ads</a> para que reciba tráfico que compra. <a href="/es#contacto">Cotiza tu tienda</a> con nosotros.</p>`,
+<p>Crear una tienda virtual en Perú cuesta lo que cuesta hacerla bien: desde S/1,500 una tienda profesional, más plataforma y pagos. El error caro no es invertir, es pagar poco por una tienda que no vende. En 3R Core creamos tu <a href="/es/tiendas-virtuales-lima">tienda virtual lista para vender</a> y la conectamos con <a href="/es/posicionamiento-seo">SEO</a> y <a href="/es/servicios/google-ads">Google Ads</a> para que reciba tráfico que compra. <a href="/es/tiendas-virtuales-lima#cotizar">Cotiza tu tienda</a> con nosotros.</p>`,
   },
   {
     slug: "como-crear-tienda-online-que-venda-peru",

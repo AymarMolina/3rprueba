@@ -9,6 +9,7 @@ import { EXTRA_POSTS_2026_07 } from "./posts-extra-2026-07"
 import { TIENDAS_POSTS_2026_07 } from "./posts-tiendas-2026-07"
 import { LEADS_POSTS_2026_07 } from "./posts-leads-2026-07"
 import { LEADS2_POSTS_2026_07 } from "./posts-leads2-2026-07"
+import { LEADS3_POSTS_2026_07 } from "./posts-leads3-2026-07"
 
 export interface SeedPost {
   title: string
@@ -117,6 +118,9 @@ export const SEED_POSTS: SeedPost[] = [
 <li><strong>Pide ver portfolio reciente</strong> y, si es posible, hablar con un cliente referente.</li>
 <li>Firma propuesta con <strong>cronograma, entregables y rondas de revisión por escrito</strong>.</li>
 </ol>
+
+<h2>¿Y si lo que quieres es CREAR tu primera página web?</h2>
+<p>Si estás partiendo de cero, el proceso de crear una página web en Perú tiene tres decisiones antes del precio: (1) <strong>qué necesita lograr</strong> la web (captar contactos, vender online, mostrar portafolio), (2) <strong>quién la va a mantener</strong> después del lanzamiento, y (3) <strong>cómo va a llegar la gente</strong> (Google orgánico, publicidad, redes). El error más común es decidir solo por precio y terminar con una web bonita que nadie visita. Por eso recomendamos definir primero el objetivo y recién ahí cotizar: una landing para campañas no cuesta lo mismo que una web corporativa ni que una tienda online — y para tienda online tenemos una <a href="/es/blogs/cuanto-cuesta-tienda-virtual-peru-2026">guía de precios de tiendas virtuales</a> aparte.</p>
 
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cuánto cuesta el mantenimiento mensual de una página web en Perú?</h3>
@@ -2993,4 +2997,5 @@ export const SEED_POSTS: SeedPost[] = [
   ...TIENDAS_POSTS_2026_07,
   ...LEADS_POSTS_2026_07,
   ...LEADS2_POSTS_2026_07,
+  ...LEADS3_POSTS_2026_07,
 ]

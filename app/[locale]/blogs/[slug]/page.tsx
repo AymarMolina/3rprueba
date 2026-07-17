@@ -36,7 +36,21 @@ async function getPost(slug: string, locale: string): Promise<BlogPost | null> {
   return data
 }
 
-async function getRelatedPosts(currentId: string, categoryId: string | null, locale: string, limit = 3): Promise<BlogPost[]> {
+// Hash simple y estable del slug → offset de selección. Antes los related
+// eran siempre "los 3 más recientes de la categoría": los mismos 3 posts
+// recibían todos los enlaces internos y ~99 posts del cluster quedaban
+// huérfanos (cero enlaces entrantes). Con la ventana rotada por slug, cada
+// post reparte sus enlaces a posts distintos del mismo tema y todo el cluster
+// queda enlazado, de forma determinística (estable entre builds).
+function slugOffset(slug: string, poolSize: number, take: number): number {
+  if (poolSize <= take) return 0
+  let h = 0
+  for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0
+  return h % (poolSize - take + 1)
+}
+
+async function getRelatedPosts(currentId: string, categoryId: string | null, locale: string, limit = 3, currentSlug = ''): Promise<BlogPost[]> {
+  const POOL = 12
   const supabase = createServerClient()
   let query = supabase
     .from('blog_posts')
@@ -45,10 +59,13 @@ async function getRelatedPosts(currentId: string, categoryId: string | null, loc
     .eq('locale', locale === 'en' ? 'en' : 'es')
     .eq('status', 'published')
     .order('published_at', { ascending: false })
-    .limit(limit)
+    .limit(POOL)
   if (categoryId) query = query.eq('category_id', categoryId)
   const { data } = await query
-  if (data && data.length >= limit) return data as unknown as BlogPost[]
+  if (data && data.length >= limit) {
+    const off = slugOffset(currentSlug, data.length, limit)
+    return data.slice(off, off + limit) as unknown as BlogPost[]
+  }
   const supabaseFallback = createServerClient()
   const { data: fallback } = await supabaseFallback
     .from('blog_posts')
@@ -57,8 +74,10 @@ async function getRelatedPosts(currentId: string, categoryId: string | null, loc
     .eq('locale', locale === 'en' ? 'en' : 'es')
     .eq('status', 'published')
     .order('published_at', { ascending: false })
-    .limit(limit)
-  return (fallback || []) as unknown as BlogPost[]
+    .limit(POOL)
+  const pool = (fallback || []) as unknown as BlogPost[]
+  const off = slugOffset(currentSlug, pool.length, limit)
+  return pool.slice(off, off + limit)
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; locale: string }> }): Promise<Metadata> {
@@ -117,7 +136,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const minutesRead = readingMinutes(content)
   const articleBodyExcerpt = plainText.slice(0, 500)
 
-  const relatedPosts = await getRelatedPosts(post.id, post.category_id, locale, 3)
+  const relatedPosts = await getRelatedPosts(post.id, post.category_id, locale, 3, post.slug)
 
   const blogPostSchema = {
     "@context": "https://schema.org",

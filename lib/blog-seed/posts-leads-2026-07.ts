@@ -68,6 +68,9 @@ export const LEADS_POSTS_2026_07: SeedPost[] = [
 <li>¿Me muestran casos o mejoras medibles, no solo promesas?</li>
 </ol>
 
+<h2>Qué incluye (y qué no) una mensualidad SEO seria</h2>
+<p>En 3R Core la mensualidad de S/1,800 cubre auditoría inicial, planificación de keywords, optimización on-page continua, contenido estratégico y reporte mensual con datos de Search Console — sin contratos forzosos. Lo que NO debe prometer ninguna agencia seria: posiciones garantizadas en X días (nadie controla a Google), enlaces comprados masivos (riesgo de penalización) o resultados sin tocar tu web. Si una propuesta más barata no detalla QUÉ van a hacer cada mes, ese es el costo oculto: pagar por un reporte y no por trabajo real.</p>
+
 <h2>Preguntas frecuentes</h2>
 <p><strong>¿El SEO reemplaza a Google Ads?</strong> No: se complementan. Ads te da tráfico hoy; SEO construye un activo que reduce tu costo de adquisición con el tiempo.</p>
 <p><strong>¿Necesito rehacer mi web?</strong> No siempre. La auditoría te dirá si basta con optimizar o si conviene un rediseño. Si vendes online, revisa además nuestra <a href="/es/tiendas-virtuales-lima">tienda virtual</a> optimizada para SEO.</p>
@@ -125,6 +128,9 @@ export const LEADS_POSTS_2026_07: SeedPost[] = [
 
 <h2>Transparencia: la cuenta es tuya</h2>
 <p>Una política sana: la cuenta Google Ads es del cliente, con acceso de administrador desde el inicio y billing directo con Google. Si algún día cambias de agencia, te llevas todo — cuenta, audiencias, conversiones e histórico. Si te piden trabajar sobre una cuenta "de la agencia" a la que no tienes acceso, es una bandera roja.</p>
+
+<h2>El presupuesto total real: fee + pauta</h2>
+<p>El error más común al cotizar Google Ads es mirar solo el fee de gestión. Tu inversión total mensual = <strong>fee de la agencia (desde S/1,800)</strong> + <strong>pauta pagada directo a Google (mínimo recomendado S/1,500/mes)</strong>. Con menos pauta, el algoritmo no junta datos suficientes para optimizar y las conclusiones del primer mes valen poco. La cuenta y los datos siempre deben quedar A TU NOMBRE: si la agencia se queda con la cuenta, al irte pierdes todo el historial de optimización.</p>
 
 <h2>Preguntas frecuentes</h2>
 <p><strong>¿Google Ads o SEO?</strong> Ads trae clientes hoy; el <a href="/es/posicionamiento-seo">SEO</a> baja tu costo de adquisición a mediano plazo. Lo ideal es combinarlos.</p>

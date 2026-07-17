@@ -86,6 +86,25 @@ const nextConfig: NextConfig = {
         destination: '/:locale/blogs',
         permanent: true,
       },
+      // ── Consolidación de canibalización del blog (2026-07-16) ─────────────
+      // Varios posts atacaban la MISMA keyword y se dividían las señales:
+      // 3× "cuánto cuesta página web", 3× "agencia diseño web lima" (dos con
+      // slug roto "es-blogs-*" de la migración), 2× "mejores agencias" y 2×
+      // "crear tienda con shopify/woocommerce". Se consolida cada grupo en su
+      // post canónico (el más completo) con 301. Los slugs viejos también se
+      // excluyen del sitemap (app/sitemap.ts).
+      { source: '/:locale(es|en)/blogs/es-blogs-diseno-web-lima-peru', destination: '/:locale/blogs/como-elegir-agencia-diseno-web-lima', permanent: true },
+      { source: '/blogs/es-blogs-diseno-web-lima-peru', destination: '/es/blogs/como-elegir-agencia-diseno-web-lima', permanent: true },
+      { source: '/:locale(es|en)/blogs/es-blogs-mejor-agencia-web-lima-peru', destination: '/:locale/blogs/como-elegir-agencia-diseno-web-lima', permanent: true },
+      { source: '/blogs/es-blogs-mejor-agencia-web-lima-peru', destination: '/es/blogs/como-elegir-agencia-diseno-web-lima', permanent: true },
+      { source: '/:locale(es|en)/blogs/cuanto-cuesta-una-pagina-web-en-peru-en-2026-precios-reales', destination: '/:locale/blogs/cuanto-cuesta-pagina-web-peru-2026', permanent: true },
+      { source: '/blogs/cuanto-cuesta-una-pagina-web-en-peru-en-2026-precios-reales', destination: '/es/blogs/cuanto-cuesta-pagina-web-peru-2026', permanent: true },
+      { source: '/:locale(es|en)/blogs/cuanto-cuesta-crear-una-pagina-web-en-peru-este-ano', destination: '/:locale/blogs/cuanto-cuesta-pagina-web-peru-2026', permanent: true },
+      { source: '/blogs/cuanto-cuesta-crear-una-pagina-web-en-peru-este-ano', destination: '/es/blogs/cuanto-cuesta-pagina-web-peru-2026', permanent: true },
+      { source: '/:locale(es|en)/blogs/mejores-agencias-de-publicidad', destination: '/:locale/blogs/mejores-agencias-de-marketing-digital', permanent: true },
+      { source: '/blogs/mejores-agencias-de-publicidad', destination: '/es/blogs/mejores-agencias-de-marketing-digital', permanent: true },
+      { source: '/:locale(es|en)/blogs/crear-tienda-online-en-peru-con-shopify-o-woocommerce-guia-2026', destination: '/:locale/blogs/como-crear-tienda-online-que-venda-peru', permanent: true },
+      { source: '/blogs/crear-tienda-online-en-peru-con-shopify-o-woocommerce-guia-2026', destination: '/es/blogs/como-crear-tienda-online-que-venda-peru', permanent: true },
       {
         source: '/:locale(es|en)/blog/:slug*',
         destination: '/:locale/blogs/:slug*',
