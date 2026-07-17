@@ -35,7 +35,9 @@ export async function POST(request: Request) {
           nombre,
           telefono: celular,
           mensaje,
-          website: 'WhatsApp /performance-marketing',
+          // La fuente refleja la página real de origen (el widget también vive
+          // en /posicionamiento-seo y otras páginas, no solo en la landing).
+          website: origin ? `WhatsApp ${origin}` : 'WhatsApp /performance-marketing',
         }),
         signal: ctl.signal,
       });

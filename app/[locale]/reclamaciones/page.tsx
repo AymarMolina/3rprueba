@@ -4,7 +4,6 @@ import { Montserrat } from "next/font/google";
 import { useState } from "react"; 
 import { useTranslations } from "next-intl"
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -152,7 +151,6 @@ const ComplaintsForm = () => {
             </div>
           </section>
           <ScrollContactBtn />
-          <WhatsAppBtn />
     </>
   );
 };

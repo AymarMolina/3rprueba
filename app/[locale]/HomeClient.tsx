@@ -14,7 +14,6 @@ import {useIndividualPageLoader} from '@/components/layout/useIndividualPageLoad
 import { AnimatePresence } from 'framer-motion';
 import PageLoader from '@/components/layout/PageLoader';
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 import ReviewsSection from '@/components/layout/ReviewsSection';
 
@@ -50,7 +49,6 @@ export default function HomeClient() {
           <ContactForm />
         </div>
         <ScrollContactBtn />
-        <WhatsAppBtn />
       </main>
     </>
   );

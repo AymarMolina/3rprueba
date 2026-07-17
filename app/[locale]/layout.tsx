@@ -9,6 +9,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { getMessages } from "next-intl/server";
 import ParticlesBackground from "@/components/ui/AnimatedBackground";
+import WhatsAppBtn from "@/components/ui/WhatsAppBtn";
 import ReactLenis from "lenis/react";
 import Script from "next/script";
 
@@ -464,6 +465,11 @@ export default async function RootLayout({
             </main>
             <Footer />
             <CookieBanner />
+            {/* Botón flotante de WhatsApp GLOBAL (con medición whatsapp_click).
+                Se monta una sola vez aquí para cubrir TODAS las páginas —
+                incluidos los 135 blogs y /tiendas-virtuales-lima, donde vive el
+                tráfico orgánico y antes no había ninguna vía de contacto. */}
+            <WhatsAppBtn />
           </NextIntlClientProvider>
           <noscript>
             <iframe

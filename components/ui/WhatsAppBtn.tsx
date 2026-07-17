@@ -1,19 +1,38 @@
-"use client"; 
+"use client";
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 const WhatsAppBtn = () => {
-  const phoneNumber = "51987216703"; 
+  const pathname = usePathname() || '';
+  const phoneNumber = "51987216703";
   const message = "Hola vengo de la página web, quiero agendar una reunión.";
-  
+
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  // /posicionamiento-seo monta su propio widget de captura de WhatsApp
+  // (WhatsAppBtnLanding) en la misma esquina — ahí el botón global se oculta
+  // para no superponerse.
+  if (pathname.includes('/posicionamiento-seo')) return null;
+
+  // WhatsApp es el canal que más leads reales trae — cada clic queda medido en
+  // GA4/GTM con la página de origen (antes el botón era invisible en Analytics).
+  const trackClick = () => {
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: 'whatsapp_click',
+      wa_phone: phoneNumber,
+      wa_source: window.location.pathname,
+    });
+  };
 
   return (
     <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={trackClick}
       className="fixed bottom-6 right-6 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:bg-[#128c7e] hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
       aria-label="Contactar por WhatsApp"
     >

@@ -35,9 +35,15 @@ const mapRef = useRef<HTMLDivElement>(null);
     setLoading(true);
     setStatus({ type: '', message: '' });
 
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData);
-    e.currentTarget.reset();
+    // Guardar la referencia ANTES del await: tras un await, e.currentTarget es
+    // null (React ya despachó el evento) y llamar .reset() ahí lanzaba un
+    // TypeError que caía al catch → el usuario veía "Error al enviar" aunque
+    // el correo SÍ había salido. El form solo se limpia cuando el envío fue OK,
+    // así el usuario no pierde lo escrito si hay un error real.
+    const formEl = e.currentTarget;
+    const formData = new FormData(formEl);
+    const data = Object.fromEntries(formData) as Record<string, string>;
+    data.page = typeof window !== 'undefined' ? window.location.pathname : '';
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -47,7 +53,16 @@ const mapRef = useRef<HTMLDivElement>(null);
 
       if (response.ok) {
         setStatus({ type: "success", message: "¡Mensaje enviado con éxito!" });
-        e.currentTarget.reset();
+        formEl.reset();
+        // Lead medible en GA4/GTM (antes el formulario era invisible en Analytics).
+        if (typeof window !== 'undefined') {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({
+            event: 'generate_lead',
+            lead_source: 'contact_form',
+            page_path: data.page,
+          });
+        }
       } else {
         throw new Error();
       }
