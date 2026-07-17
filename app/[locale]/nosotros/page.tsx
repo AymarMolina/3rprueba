@@ -8,7 +8,6 @@ import NosotrosSection from "@/components/sections/Nosotros/NosotrosSection";
 import Team from "@/components/sections/Nosotros/Team";
 
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 import { AnimatePresence } from "framer-motion";
 import PageLoader from "@/components/layout/PageLoader";
@@ -38,7 +37,6 @@ export default function Nosotros() {
         <ContactForm/>
       </div>
       <ScrollContactBtn />
-      <WhatsAppBtn />
     </main>
     </>
   );

@@ -3,15 +3,54 @@ import { NextResponse } from 'next/server';
 
 const logoUrl = 'https://3rcore.com/icons/LOGO3R.png';
 
+// Registra el lead en el panel (CRM) a través del endpoint público del panel —
+// mismo patrón que /api/landing. Best-effort con timeout: si el panel no
+// responde, los correos igual salen y el formulario no se entera.
+async function saveLeadToPanel(d: {
+  nombre: string; apellido?: string; email: string; telefono?: string; mensaje?: string; website?: string;
+}) {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), 6000);
+  try {
+    await fetch('https://3rcore.com/panel/api/lead-ingest', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-3r-key': '3rlead_k7Qm2Xp9vR4nT8wL6sB1yH3dZ',
+      },
+      body: JSON.stringify({
+        nombre: d.nombre,
+        apellido: d.apellido,
+        email: d.email,
+        telefono: d.telefono,
+        mensaje: d.mensaje,
+        website: d.website,
+      }),
+      signal: ctl.signal,
+    });
+  } catch (e) {
+    console.error('panel lead-ingest failed', e);
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    const { nombre, apellido, email, telefono, mensaje } = await request.json();
+    const { nombre, apellido, email, telefono, mensaje, page } = await request.json();
 
     if (!nombre || !email || !mensaje) {
       return NextResponse.json({ error: 'Faltan campos requeridos' }, { status: 400 });
     }
+
+    // El lead entra al panel/CRM además del correo (antes solo llegaba por email
+    // y el panel nunca veía los leads del formulario del sitio).
+    await saveLeadToPanel({
+      nombre, apellido, email, telefono, mensaje,
+      website: `Formulario web${page ? ` ${page}` : ''}`,
+    });
 
     const responsiveStyles = `
       <style>

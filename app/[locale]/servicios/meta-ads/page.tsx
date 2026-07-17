@@ -12,7 +12,6 @@ import { useIndividualPageLoader } from '@/components/layout/useIndividualPageLo
 import { AnimatePresence } from 'framer-motion';
 import PageLoader from '@/components/layout/PageLoader';
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 
 export default function MetaAds() {
@@ -47,7 +46,6 @@ export default function MetaAds() {
           <ContactForm/>
         </div>
         <ScrollContactBtn />
-        <WhatsAppBtn />
       </main>
     </>
   );

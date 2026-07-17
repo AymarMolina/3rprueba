@@ -82,17 +82,16 @@ export default async function ServiciosLayout({ children, params }: { children: 
     "speakable": buildSpeakableSchema(['h1', 'h2', '.services-intro']),
   }
 
-  const hiddenH1 = isEn
-    ? 'Digital marketing services in Lima, Peru: branding, social media, Google Ads, SEO and web development'
-    : 'Servicios de marketing digital en Lima, Perú: branding, redes sociales, Google Ads, SEO y desarrollo web'
-
+  // El H1 oculto vivía aquí (layout) y se renderizaba en TODAS las páginas
+  // /servicios/*, sumándose al H1 propio de cada servicio → doble H1 en
+  // google-ads, web-development, etc. Se movió a app/[locale]/servicios/page.tsx
+  // para que solo el índice (que no tenía H1 propio) lo conserve.
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionPageSchema, itemList, breadcrumbSchema]) }}
       />
-      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )

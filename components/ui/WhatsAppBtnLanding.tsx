@@ -157,6 +157,30 @@ const WhatsAppBtnLanding = () => {
       const encodedMessage = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
+      // Guardar el lead en el panel/CRM ANTES de abrir el chat (recursos
+      // propios, patrón /api/wa-lead) — antes estos datos se perdían si el
+      // usuario no completaba el mensaje en WhatsApp.
+      const origin = typeof window !== 'undefined' ? window.location.pathname : '';
+      try {
+        fetch('/api/wa-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            nombre: formData.nombre,
+            celular: `${formData.codigoPais} ${formData.numero}`.trim(),
+            proyecto: [formData.proyecto, formData.correo, formData.paginaWeb].filter(Boolean).join(' · '),
+            origin,
+          }),
+          keepalive: true,
+        }).catch(() => {});
+      } catch { /* best-effort */ }
+
+      // Medición GA4/GTM del clic (antes era invisible en Analytics).
+      if (typeof window !== 'undefined') {
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({ event: 'whatsapp_click', wa_phone: phoneNumber, wa_source: origin });
+      }
+
       gtag_report_conversion(whatsappUrl);
       window.open(whatsappUrl, '_blank');
       

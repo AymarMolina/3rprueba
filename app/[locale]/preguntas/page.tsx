@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Image from "next/image";
 import ContactForm from '@/components/layout/ContactForm';
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 
 export default function FAQ() {
@@ -124,7 +123,6 @@ export default function FAQ() {
       </section>
       <ContactForm/>
       <ScrollContactBtn />
-      <WhatsAppBtn />
     </>
   );
 }

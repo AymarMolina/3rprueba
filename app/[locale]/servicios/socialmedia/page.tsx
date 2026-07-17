@@ -14,7 +14,6 @@ import { AnimatePresence } from 'framer-motion';
 import PageLoader from '@/components/layout/PageLoader';
 
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 import ReviewsSection from "@/components/layout/ReviewsSection";
 import ServiceFAQ from "@/components/seo/ServiceFAQ";
@@ -62,7 +61,6 @@ export default function socialmedia(){
           <ContactForm/>
         </div>
         <ScrollContactBtn />
-        <WhatsAppBtn />
       </main>
 
     </>

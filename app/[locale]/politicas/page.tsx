@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
-import WhatsAppBtn from '@/components/ui/WhatsAppBtn';
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 
 export default function PrivacyPolicy() {
@@ -128,7 +127,6 @@ export default function PrivacyPolicy() {
               </div>
             </div>
             <ScrollContactBtn />
-              <WhatsAppBtn />
           </section>
     </>
   );
