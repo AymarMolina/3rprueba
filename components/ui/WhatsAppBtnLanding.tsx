@@ -1,6 +1,7 @@
 "use client"; 
 
 import React, { useState, useRef, useEffect } from 'react';
+import { WA_LANDING } from '@/lib/contact';
 import { gsap } from 'gsap';
 
 const WhatsAppBtnLanding = () => {
@@ -19,7 +20,7 @@ const WhatsAppBtnLanding = () => {
   const buttonContentRef = useRef(null);
   const formContentRef = useRef(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const phoneNumber = "51969791251";
+  const phoneNumber = WA_LANDING;
 
   const codigosPais = [
     { codigo: '+1', pais: 'Estados Unidos', iso: 'us' },

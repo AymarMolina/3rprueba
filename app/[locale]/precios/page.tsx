@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { buildFAQPageSchema } from "@/lib/seoSchemas"
 
 interface Props { params: Promise<{ locale: string }> }
 
@@ -31,6 +32,14 @@ const COPY = {
     refNote: 'Lo importante no es el presupuesto sino que el ROI sea positivo desde el mes 3.',
     contact: '¿Tu proyecto necesita un mix distinto?',
     contactDesc: 'Cuéntanos tu objetivo y armamos una cotización personalizada en la primera reunión.',
+    faqTitle: 'Preguntas frecuentes sobre precios',
+    faqs: [
+      { q: '¿Cuánto cuesta contratar una agencia de marketing digital en Lima?', a: 'Depende del mix de servicios. Como referencia mensual en Lima: emprendimientos S/ 2,500–4,500, pymes S/ 5,000–12,000 y empresas medianas S/ 12,000–30,000. Por servicio: SEO S/ 1,800/mes, gestión de Google Ads desde S/ 1,800/mes (más pauta), Social Media desde S/ 1,500/mes, branding desde S/ 500 y webs desde S/ 1,800.' },
+      { q: '¿Cuánto cuesta crear una tienda virtual o e-commerce en Perú?', a: 'Una tienda online en Shopify o WooCommerce arranca desde S/ 6,500, con catálogo, pasarela de pago local (Culqi, Niubiz, Izipay o Mercado Pago), gestión de inventario y panel de administración.' },
+      { q: '¿Cuánto cuesta el posicionamiento SEO?', a: 'El servicio de SEO cuesta S/ 1,800 al mes e incluye auditoría, planificación, optimización on-page, escalamiento y reporte mensual. Sin contratos forzosos y con resultados progresivos.' },
+      { q: '¿Cuánto debo invertir en pauta de Google Ads?', a: 'Además del fee de gestión (desde S/ 1,800/mes), recomendamos un presupuesto mínimo de pauta de S/ 1,500/mes, que se paga directamente a Google.' },
+      { q: '¿Los precios incluyen IGV? ¿Hay contratos forzosos?', a: 'Los precios son netos en soles peruanos; las facturas en Perú suman 18% de IGV. No trabajamos con contratos forzosos: el servicio es mensual, con reportes y resultados progresivos.' },
+    ],
   },
   en: {
     hero: 'Digital Marketing Pricing for US Clients',
@@ -60,6 +69,14 @@ const COPY = {
     refNote: 'What matters is not the budget but that ROI turns positive from month 3.',
     contact: 'Need a different mix for your project?',
     contactDesc: 'Tell us your goal and we build a custom proposal in the first meeting.',
+    faqTitle: 'Pricing frequently asked questions',
+    faqs: [
+      { q: 'How much does a digital marketing agency cost?', a: 'It depends on the mix of services. Reference monthly ranges: startups $750–$1,400, SMBs $1,500–$3,600 and mid-market $3,600–$9,000. Per service: SEO $500/month, Google Ads management from $800/month (plus ad spend), social media $800/month, branding from $500 and websites from $850.' },
+      { q: 'How much does an online store or e-commerce cost?', a: 'An online store on Shopify or WooCommerce starts from $1,750 USD, with catalog, payment gateway, inventory management and admin panel.' },
+      { q: 'How much does SEO positioning cost?', a: 'SEO costs $500 USD per month and includes audit, planning, on-page optimization, scaling and a monthly report. No mandatory contracts and progressive results.' },
+      { q: 'How much should I invest in Google Ads spend?', a: 'On top of the management fee (from $800/month), we recommend a minimum ad spend of $400/month, paid directly to Google.' },
+      { q: 'Are prices final? Are there mandatory contracts?', a: 'Prices are net; each proposal is tailored after an initial meeting. We do not use mandatory contracts: the service is monthly, with reports and progressive results.' },
+    ],
   }
 }
 
@@ -67,9 +84,14 @@ export default async function PreciosPage({ params }: Props) {
   const { locale } = await params
   const t = (COPY as any)[locale === 'en' ? 'en' : 'es']
   const isEn = locale === 'en'
+  const faqSchema = buildFAQPageSchema((t.faqs || []).map((f: any) => ({ question: f.q, answer: f.a })))
 
   return (
     <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="px-6 md:px-10 lg:px-20 pt-32 pb-12 max-w-6xl mx-auto">
         <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">3R Core · {isEn ? 'Pricing' : 'Precios'}</p>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">{t.hero}</h1>
@@ -122,6 +144,21 @@ export default async function PreciosPage({ params }: Props) {
           ))}
         </div>
         <p className="text-white/60 italic max-w-3xl">{t.refNote}</p>
+      </section>
+
+      <section className="px-6 md:px-10 lg:px-20 py-16 max-w-6xl mx-auto border-t border-white/10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">{t.faqTitle}</h2>
+        <div className="space-y-4 max-w-4xl">
+          {t.faqs.map((f: any, i: number) => (
+            <details key={i} className="group border border-white/10 rounded-2xl p-6">
+              <summary className="cursor-pointer list-none font-semibold text-lg flex justify-between items-center gap-4">
+                {f.q}
+                <span className="text-white/40 group-open:rotate-45 transition-transform shrink-0">+</span>
+              </summary>
+              <p className="text-white/70 mt-4 text-sm leading-relaxed faq-answer">{f.a}</p>
+            </details>
+          ))}
+        </div>
       </section>
 
       <section className="px-6 md:px-10 lg:px-20 py-20 max-w-6xl mx-auto border-t border-white/10 text-center">

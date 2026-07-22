@@ -10,6 +10,7 @@ import { routing } from '@/i18n/routing';
 import { getMessages } from "next-intl/server";
 import ParticlesBackground from "@/components/ui/AnimatedBackground";
 import WhatsAppBtn from "@/components/ui/WhatsAppBtn";
+import { TEL_MAIN } from "@/lib/contact";
 import ReactLenis from "lenis/react";
 import Script from "next/script";
 
@@ -139,7 +140,7 @@ export default async function RootLayout({
       "latitude": -12.0913,
       "longitude": -76.9494
     },
-    "telephone": "+51986889147",
+    "telephone": TEL_MAIN,
     "email": "info@3rcore.com",
     "identifier": {
       "@type": "PropertyValue",
@@ -159,7 +160,7 @@ export default async function RootLayout({
       {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "telephone": "+51986889147",
+        "telephone": TEL_MAIN,
         "email": "info@3rcore.com",
         "availableLanguage": ["Spanish", "English"],
         "areaServed": ["PE", "US"]
@@ -167,7 +168,7 @@ export default async function RootLayout({
       {
         "@type": "ContactPoint",
         "contactType": "sales",
-        "telephone": "+51986889147",
+        "telephone": TEL_MAIN,
         "email": "info@3rcore.com",
         "availableLanguage": ["Spanish", "English"],
         "areaServed": ["PE", "US"]

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { WA_LANDING } from '@/lib/contact';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslations } from 'next-intl';
@@ -15,7 +16,7 @@ export default function FourthLandingSection() {
   const r = useTranslations('SixLandingSection');
   const R = useTranslations('WebHero');
 
-  const phoneNumber = "51969791251";
+  const phoneNumber = WA_LANDING;
   const message = "Hola vengo de la página web, quiero agendar una reunión.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

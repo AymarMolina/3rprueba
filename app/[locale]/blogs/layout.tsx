@@ -63,17 +63,17 @@ export default async function BlogsLayout({ children, params }: { children: Reac
     blogSchema.speakable = buildSpeakableSchema(['h1', 'h2', '.blog-card-title', '.blog-card-excerpt'])
   }
 
-  const hiddenH1 = isEn
-    ? 'Digital marketing blog from 3R Core Lima: SEO, branding, Google Ads, social media and web development'
-    : 'Blog de marketing digital de 3R Core Lima: SEO, branding, Google Ads, redes sociales y desarrollo web'
-
+  // Nota: el H1 lo aporta cada página hija (el índice /blogs y cada post
+  // /blogs/[slug] tienen su propio <h1>). Antes este layout compartido metía
+  // un <h1 className="sr-only"> que se sumaba al de la página → DOBLE H1 en las
+  // ~139 URLs de blog (índice + todos los posts). Se elimina para dejar un solo
+  // H1 por URL.
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([blogSchema, breadcrumbSchema]) }}
       />
-      <h1 className="sr-only">{hiddenH1}</h1>
       {children}
     </>
   )
