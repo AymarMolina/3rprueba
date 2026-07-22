@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { WA_MAIN } from '@/lib/contact';
+import { WA_LEADS } from '@/lib/contact';
 
 const WhatsAppBtn = () => {
   const pathname = usePathname() || '';
-  const phoneNumber = WA_MAIN;
+  const phoneNumber = WA_LEADS;
   const message = "Hola vengo de la página web, quiero agendar una reunión.";
 
   const encodedMessage = encodeURIComponent(message);

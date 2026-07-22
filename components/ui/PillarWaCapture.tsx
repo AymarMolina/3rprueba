@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { WA_MAIN } from '@/lib/contact'
+import { WA_LEADS } from '@/lib/contact'
 
 /**
  * PillarWaCapture — captura de leads nativa para las páginas pilar (recursos
@@ -13,7 +13,7 @@ import { WA_MAIN } from '@/lib/contact'
  * (un salto de página extra hacia el formulario del home).
  */
 
-const WA_PHONE = WA_MAIN
+const WA_PHONE = WA_LEADS
 
 const COPY = {
   es: {

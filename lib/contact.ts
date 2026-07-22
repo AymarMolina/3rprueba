@@ -6,15 +6,23 @@
  *   51987216703 → botón flotante + BlogCTA + captura de pilares,
  *   51969791251 → landing de campañas de paid (/performance-marketing).
  * Esa mezcla rompía la consistencia NAP (local SEO / citations) y la
- * atribución de leads. Aquí se consolida: el SITIO PRINCIPAL usa el número
- * del schema/NAP (WA_MAIN, el mismo de Google Business Profile) y la landing
- * de paid conserva su línea de campaña propia (WA_LANDING).
+ * atribución de leads. Aquí se centralizan en UN solo lugar, PRESERVANDO el
+ * enrutamiento actual (no se reencamina ningún canal que ya convierte):
+ *   - WA_MAIN     → schema/NAP/GBP + home + páginas de servicio.
+ *   - WA_LEADS    → botón flotante + BlogCTA + captura de pilares (la línea por
+ *                   la que hoy entran los leads orgánicos: NO se toca su ruteo).
+ *   - WA_LANDING  → landing de paid (/performance-marketing).
  *
- * Para cambiar cualquier número se edita SOLO este archivo.
+ * Para cambiar cualquier número se edita SOLO este archivo. Si en el futuro se
+ * decide unificar todo al número NAP por consistencia local, basta apuntar
+ * WA_LEADS a WA_MAIN (decisión de negocio: confirmar antes qué inbox se atiende).
  */
 
-// Número principal del negocio = el del schema LocalBusiness / NAP / GBP.
+// Número del negocio en schema LocalBusiness / NAP / GBP + páginas de servicio.
 export const WA_MAIN = '51986889147'
+
+// Línea de conversión orgánica actual (botón flotante, BlogCTA, pilares).
+export const WA_LEADS = '51987216703'
 
 // Línea dedicada a campañas de paid (landing /performance-marketing).
 export const WA_LANDING = '51969791251'
