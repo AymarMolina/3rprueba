@@ -25,6 +25,7 @@ const COPY: Record<'es' | 'en', {
   localH3: string
   local: string
   closing: string
+  quoteCta: string
 }> = {
   es: {
     eyebrow: 'Agencia de marketing digital en Lima, Perú',
@@ -62,6 +63,7 @@ const COPY: Record<'es' | 'en', {
       'Nuestra oficina está en La Molina (Calle Las Caobas 170, Of. 400) y trabajamos con negocios de todos los distritos de Lima —San Isidro, Miraflores, Surco, San Borja, La Victoria, Los Olivos— y de provincias en todo el Perú. Atención de lunes a viernes de 9:00 a 18:00.',
     closing:
       '¿Tienes un negocio y quieres vender más online? Conversemos: armamos una propuesta a tu medida en la primera reunión, sin compromiso.',
+    quoteCta: 'Calcula el estimado de tu proyecto',
   },
   en: {
     eyebrow: 'Digital marketing agency in Lima, Peru',
@@ -99,6 +101,7 @@ const COPY: Record<'es' | 'en', {
       'Our office is in La Molina (Calle Las Caobas 170, Of. 400) and we work with businesses across every district of Lima —San Isidro, Miraflores, Surco, San Borja, La Victoria, Los Olivos— and throughout Peru. Open Monday to Friday, 9:00 to 18:00.',
     closing:
       'Have a business and want to sell more online? Let’s talk: we build a tailored proposal in the first meeting, no commitment.',
+    quoteCta: 'Estimate your project',
   },
 }
 
@@ -166,7 +169,16 @@ export default function HomeSeoSection({ locale }: { locale: string }) {
         <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-7 md:p-9">
           <h3 className="text-lg md:text-xl font-semibold mb-3 text-white">{t.localH3}</h3>
           <p className="text-white/55 text-sm md:text-base leading-relaxed mb-4">{t.local}</p>
-          <p className="text-white/70 text-sm md:text-base leading-relaxed">{t.closing}</p>
+          <p className="text-white/70 text-sm md:text-base leading-relaxed mb-6">{t.closing}</p>
+          <Link
+            href="/cotizar"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold uppercase tracking-[0.18em] text-[11px] text-white bg-gradient-to-r from-[#E91E63] to-[#9C27B0] hover:-translate-y-0.5 transition-all"
+          >
+            {t.quoteCta}
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M1 7h12M13 7L8 2M13 7l-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>
