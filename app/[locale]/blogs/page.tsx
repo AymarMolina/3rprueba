@@ -81,6 +81,14 @@ export default async function BlogsPage({ params }: { params: any }) {
             >
               {isEn ? 'NEWS' : 'NOTICIAS'}
             </span>
+            {/* Enriquecimiento semántico del H1 único del índice (antes esta
+                descripción vivía en el H1 sr-only del layout compartido, que
+                duplicaba H1 en cada post). */}
+            <span className="sr-only">
+              {isEn
+                ? ' — 3R Core Lima digital marketing blog: SEO, branding, Google Ads, social media and web development'
+                : ' — Blog de marketing digital de 3R Core en Lima: SEO, branding, Google Ads, redes sociales y desarrollo web'}
+            </span>
           </h1>
           <div
             className="h-[1px] w-full max-w-md mb-6"

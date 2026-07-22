@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { WA_LANDING } from "@/lib/contact";
 
 type GtagWindow = Window & {
   dataLayer?: unknown[];
@@ -29,7 +30,7 @@ const adsConversion = (label?: string, extra: Record<string, unknown> = {}) => {
   }
 };
 
-const WA_NUMBER = "51969791251";
+const WA_NUMBER = WA_LANDING;
 const WA_BASE = "Hola! Quiero agendar una reunión, estoy interesado en los servicios ADS de ustedes.";
 // Arma el link de WhatsApp; si hay servicio elegido lo incluye completo en el mensaje.
 const waLink = (servicio?: string) =>

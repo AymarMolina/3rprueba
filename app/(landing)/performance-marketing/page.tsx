@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LandingClient from "./LandingClient";
+import { TEL_LANDING } from "@/lib/contact";
 
 const BASE_URL = "https://3rcore.com";
 
@@ -52,7 +53,7 @@ const jsonLd = {
       addressRegion: "Lima",
       addressCountry: "PE",
     },
-    telephone: "+51969791251",
+    telephone: TEL_LANDING,
   },
   areaServed: { "@type": "City", name: "Lima" },
   url: `${BASE_URL}/performance-marketing`,

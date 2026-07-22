@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from '@/i18n/navigation'
 import { serviceForSlug, guidesFor, type ServiceKey } from '@/lib/blog-cta-map'
+import { WA_MAIN } from '@/lib/contact'
 
 /**
  * BlogCTA — bloque de conversión al final (y opcionalmente en medio) de cada blog.
@@ -16,7 +17,7 @@ import { serviceForSlug, guidesFor, type ServiceKey } from '@/lib/blog-cta-map'
  * desorfanizar el cluster y empujar al lector hacia contenido de decisión.
  */
 
-const WA_PHONE = '51987216703'
+const WA_PHONE = WA_MAIN
 
 interface ServiceCTA {
   path: string

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { WA_MAIN } from "@/lib/contact";
 import Image from "next/image";
 import { Playfair_Display, Poppins, Trirong } from "next/font/google";
 import gsap from "gsap";
@@ -30,7 +31,7 @@ const poppins = Poppins({
 const StatsAndCTA = () => {
   const t = useTranslations("CTA");
 
-  const phoneNumber = "51986889147";
+  const phoneNumber = WA_MAIN;
   const message = "Hola vengo de la página web, quiero agendar una reunión.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

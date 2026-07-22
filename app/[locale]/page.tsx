@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server"
 import HomeClient from "./HomeClient"
+import HomeSeoSection from "@/components/sections/home/HomeSeoSection"
 import { buildServiceItemList, buildSpeakableWebPage } from "@/lib/seoSchemas"
 
 export default async function HomePage({ params }: { params: any }) {
@@ -54,6 +55,10 @@ export default async function HomePage({ params }: { params: any }) {
       />
       <h1 className="sr-only">{tH1("home")}</h1>
       <HomeClient />
+      {/* Contenido semántico del home renderizado en el servidor (SSR real):
+          pilares + señales locales para Googlebot y bots de IA que no ejecutan
+          JS. HomeClient (arriba) es 'use client' y se hidrata en el navegador. */}
+      <HomeSeoSection locale={locale} />
     </>
   )
 }

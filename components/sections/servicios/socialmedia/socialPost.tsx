@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useTranslations } from 'next-intl';
+import { WA_MAIN } from '@/lib/contact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,7 +11,7 @@ const SocialPost = () => {
 
   const t = useTranslations('SocialMediaHero');
 
-  const phoneNumber = "51986889147";
+  const phoneNumber = WA_MAIN;
   const message = "Hola vengo de la página web, quiero agendar una reunión.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
