@@ -96,7 +96,16 @@ export default async function PreciosPage({ params }: Props) {
         <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">3R Core · {isEn ? 'Pricing' : 'Precios'}</p>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">{t.hero}</h1>
         <p className="text-lg md:text-xl text-white/80 max-w-3xl mb-4">{t.sub}</p>
-        <p className="text-sm text-white/50 max-w-3xl">{t.note}</p>
+        <p className="text-sm text-white/50 max-w-3xl mb-6">{t.note}</p>
+        <Link
+          href={`/${locale}/cotizar`}
+          className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-white/90 transition"
+        >
+          {isEn ? 'Calculate your estimate' : 'Calcula tu estimado'}
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M1 7h12M13 7L8 2M13 7l-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
       </section>
 
       <section className="px-6 md:px-10 lg:px-20 pb-20 max-w-6xl mx-auto">

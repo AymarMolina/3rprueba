@@ -14,6 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/servicios/socialmedia', priority: 0.92, changeFrequency: 'weekly' as const },
     { path: '/servicios/branding', priority: 0.92, changeFrequency: 'weekly' as const },
     { path: '/precios', priority: 0.9, changeFrequency: 'weekly' as const },
+    { path: '/cotizar', priority: 0.85, changeFrequency: 'monthly' as const },
     // Reversión (2026-07-15): las páginas de servicio /servicios/* y
     // /posicionamiento-seo vuelven a ser las páginas objetivo (las usa comercial
     // para vender). Las money pages /agencia-*-lima ahora 301 hacia ellas (ver
