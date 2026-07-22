@@ -1,5 +1,5 @@
 # 3R Core
-> Digital marketing agency in Lima, Peru specializing in branding, social media management, web development, Google Ads, and SEO. Operating in Peru and the United States.
+> Digital marketing agency in Lima, Peru specializing in online stores / e-commerce (Shopify, WooCommerce, Tiendanube), SEO positioning and Google Ads, plus web development, branding and social media management. Operating in Peru and the United States.
 
 ## About
 3R Core is a full-service digital marketing agency based in La Molina, Lima, Peru. The agency combines three generations of experience, strategic vision, and technology to create personalized digital marketing strategies. Founded with the mission to help businesses grow their digital presence across Peru and the United States.
@@ -15,6 +15,7 @@
 ## Services
 - [Branding](https://3rcore.com/es/servicios/branding): Visual identity design, brand manuals, logos, and brand applications
 - [Social Media Management](https://3rcore.com/es/servicios/socialmedia): Content strategy, post design, editorial grids, and social media management
+- [Online Stores / Tiendas Virtuales](https://3rcore.com/es/tiendas-virtuales-lima): E-commerce stores on Shopify, WooCommerce or Tiendanube with local Peruvian payment gateways (Culqi, Niubiz, Izipay, Yape, Mercado Pago), ready to sell
 - [Web Development](https://3rcore.com/es/servicios/web-development): Websites, e-commerce (Shopify/WooCommerce), landing pages, e-learning platforms
 - [Google Ads / SEM](https://3rcore.com/es/servicios/google-ads): Google Ads campaigns, search intent segmentation, budget optimization
 - [SEO Positioning](https://3rcore.com/es/posicionamiento-seo): Organic SEO, keyword strategy, content optimization, monthly reporting (from S/. 1500/month)
@@ -27,13 +28,10 @@
 - [Marketing for e-commerce](https://3rcore.com/es/servicios/marketing-ecommerce): performance marketing to scale online stores and sales.
 
 ## Pages
-- [Home](https://3rcore.com/es): Agency overview and value proposition
-- [Digital Marketing Agency in Lima](https://3rcore.com/es/agencia-marketing-digital-lima): Geo-targeted landing for Lima market with full service list and neighborhood coverage
-- [SEO Agency in Lima](https://3rcore.com/es/agencia-seo-lima): Organic Google positioning, technical SEO, link building, local SEO from S/1,500/month
-- [Web Design in Lima](https://3rcore.com/es/diseno-web-lima): Landing pages, corporate sites and e-commerce on Shopify, WooCommerce or Next.js from S/2,500
-- [Google Ads Agency in Lima](https://3rcore.com/es/agencia-google-ads-lima): Search, Performance Max, YouTube, Display and Shopping campaigns with Looker Studio reporting
-- [Social Media Agency in Lima](https://3rcore.com/es/agencia-redes-sociales-lima): Reels and TikToks production, community management and Meta + TikTok Ads from S/1,500/month
-- [Branding Agency in Lima](https://3rcore.com/es/agencia-branding-lima): Brand identity, naming, logo, brand manual and applications from S/500
+- [Home](https://3rcore.com/es): Agency overview and value proposition (online stores + SEO + Google Ads)
+- [Online Stores in Lima (Tiendas Virtuales)](https://3rcore.com/es/tiendas-virtuales-lima): E-commerce on Shopify, WooCommerce or Tiendanube with local Peruvian payment gateways, ready to sell
+- [SEO Positioning](https://3rcore.com/es/posicionamiento-seo): Organic Google positioning, technical SEO and local SEO from S/1,800/month
+- [Google Ads / SEM](https://3rcore.com/es/servicios/google-ads): Search, Performance Max, YouTube, Display and Shopping campaigns with Looker Studio reporting
 - [Pricing](https://3rcore.com/es/precios): Transparent pricing for branding, social media, SEO, Google Ads, web and e-commerce, plus combined packages with discount
 - [About](https://3rcore.com/es/nosotros): Team, founders (Alejandro, Bruno, Piero Roque), and methodology
 - [Services Overview](https://3rcore.com/es/servicios): Full catalog of digital marketing services
