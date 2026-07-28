@@ -28,7 +28,11 @@ interface ServiceSchemaParams {
   descriptionEs: string
   descriptionEn: string
   serviceType: string
-  priceRange?: string
+  // Rango de precio en soles (solo ES). `priceRange` no es una propiedad
+  // válida de Service — los validadores la marcaban como no reconocida — así
+  // que el rango va como PriceSpecification dentro del Offer.
+  minPriceEs?: number
+  maxPriceEs?: number
   offerPriceEs?: number
   offerPriceEn?: number
   areaServed?: string[]
@@ -46,6 +50,14 @@ export function buildServiceSchema(p: ServiceSchemaParams) {
       "priceCurrency": "PEN",
       "availability": "https://schema.org/InStock",
       "url": url,
+      ...(p.minPriceEs ? {
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": p.minPriceEs,
+          ...(p.maxPriceEs ? { "maxPrice": p.maxPriceEs } : {}),
+          "priceCurrency": "PEN",
+        },
+      } : {}),
     }
   }
   if (p.offerPriceEn && isEn) {
@@ -70,9 +82,24 @@ export function buildServiceSchema(p: ServiceSchemaParams) {
       "audienceType": a,
     })),
     "url": url,
-    ...(p.priceRange && { "priceRange": p.priceRange }),
     ...offers,
   }
+}
+
+// Autor para BlogPosting: los posts firmados "Equipo 3R Core" no son una
+// persona — se marcan como Organization (la propia agencia); un nombre propio
+// (p.ej. "Piero Roque") sí va como Person.
+export function buildAuthorNode(name?: string | null) {
+  const n = (name || 'Equipo 3R Core').trim()
+  if (/equipo|team|3r\s*core/i.test(n)) {
+    return {
+      "@type": "Organization",
+      "@id": `${BASE_URL}/#organization`,
+      "name": n,
+      "url": `${BASE_URL}/es/nosotros`,
+    }
+  }
+  return { "@type": "Person", "name": n }
 }
 
 interface SpeakableWebPageParams {
@@ -178,7 +205,7 @@ export function buildBlogSchema(locale: string, posts: BlogListItem[]) {
       "datePublished": p.publishedAt,
       "description": p.excerpt,
       ...(p.image ? { "image": p.image } : {}),
-      ...(p.author ? { "author": { "@type": "Person", "name": p.author } } : {}),
+      ...(p.author ? { "author": buildAuthorNode(p.author) } : {}),
     })),
   }
 }

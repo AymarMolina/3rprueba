@@ -58,12 +58,18 @@ const TeamSection = () => {
       <div className="absolute top-0 left-0 right-0 h-18 bg-gradient-to-t from-[#16021B] via-[#16021B]/10 to-black/90 z-0 pointer-events-none" />
       <div className="max-w-3xl 2xl:max-w-7xl mx-auto text-center">
         
+        {/* Las palabras animadas van en spans inline-block sin espacios reales:
+            lectores de pantalla y extractores de texto leían "Somosunequipo".
+            El texto real va en sr-only y la animación queda aria-hidden. */}
         <h2 className={`team-title ${playfair.className} text-white text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 md:mb-6 tracking-wide leading-tight`}>
-          {titleWords.map((word, index) => (
-            <span key={index} className="title-word-anim inline-block mr-[0.25em]">
-              {word}
-            </span>
-          ))}
+          <span className="sr-only">{t('title')}</span>
+          <span aria-hidden="true">
+            {titleWords.map((word, index) => (
+              <span key={index} className="title-word-anim inline-block mr-[0.25em]">
+                {word}
+              </span>
+            ))}
+          </span>
         </h2>
 
         <h3 className={`team-subtitle ${montserrat.className} text-[#D11E68] text-2xl sm:text-3xl md:text-3xl xl:text-4xl 2xl:text-5xl mb-10 tracking-tight will-change-transform`}>

@@ -128,12 +128,16 @@ const StatsAndCTA = () => {
               className={`text-[#D11E68] text-5xl xl:text-7xl ${trirong.className} italic font-bold mb-3`}
             >
               <span>{stat.prefix}</span>
+              {/* SSR con el valor real: antes renderizaba "0" y los bots que
+                  no ejecutan JS leían "+0 marcas trabajadas, +0 años…" (dato
+                  negativo activo para LLMs). GSAP lo anima desde 0 al entrar
+                  en viewport igual que antes. */}
               <span
                 ref={(el) => {
                   if (el) numbersRef.current[index] = el;
                 }}
               >
-                0
+                {stat.endValue}
               </span>
             </div>
             <p

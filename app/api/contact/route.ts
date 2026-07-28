@@ -39,10 +39,17 @@ export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    const { nombre, apellido, email, telefono, mensaje, page } = await request.json();
+    const { nombre, apellido, email, telefono, mensaje, page, sitio_web } = await request.json();
 
     if (!nombre || !email || !mensaje) {
       return NextResponse.json({ error: 'Faltan campos requeridos' }, { status: 400 });
+    }
+
+    // Honeypot del formulario: si viene lleno es un bot (el campo es invisible
+    // para humanos). Se responde éxito sin enviar correo ni registrar el lead,
+    // para no darle al bot señal de que fue detectado.
+    if (sitio_web) {
+      return NextResponse.json({ success: true });
     }
 
     // El lead entra al panel/CRM además del correo (antes solo llegaba por email

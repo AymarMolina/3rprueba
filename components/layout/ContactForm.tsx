@@ -15,6 +15,10 @@ const mapRef = useRef<HTMLDivElement>(null);
 
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<{ type: 'success' | 'error' | ''; message: string }>({ type: '', message: '' });
+  // Anti-spam sin terceros: momento de montaje para medir cuánto tardó en
+  // enviarse el formulario (los bots lo llenan en <3s; el tráfico "Direct"
+  // de EE.UU. sobre /en venía llenando el form y generando leads falsos).
+  const mountedAt = useRef(Date.now());
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -44,6 +48,17 @@ const mapRef = useRef<HTMLDivElement>(null);
     const formData = new FormData(formEl);
     const data = Object.fromEntries(formData) as Record<string, string>;
     data.page = typeof window !== 'undefined' ? window.location.pathname : '';
+
+    // Honeypot lleno o envío en menos de 3 segundos = bot. Se le muestra el
+    // mensaje de éxito (para no darle señal de bloqueo) pero NO se envía nada:
+    // ni correo, ni panel, ni evento generate_lead (dejaba de contaminar GA4).
+    const elapsed = Date.now() - mountedAt.current;
+    if (data.sitio_web || elapsed < 3000) {
+      setStatus({ type: "success", message: "¡Mensaje enviado con éxito!" });
+      formEl.reset();
+      setLoading(false);
+      return;
+    }
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -99,7 +114,13 @@ const mapRef = useRef<HTMLDivElement>(null);
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
           <div className="flex items-center justify-center">
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 w-full">
-              
+              {/* Honeypot: campo invisible para humanos; los bots lo rellenan.
+                  aria-hidden + tabIndex -1 para que no lo toque un usuario real. */}
+              <div aria-hidden="true" className="absolute -left-[9999px] top-auto w-px h-px overflow-hidden">
+                <label htmlFor="sitio_web_hp">Sitio web</label>
+                <input id="sitio_web_hp" name="sitio_web" type="text" tabIndex={-1} autoComplete="off" />
+              </div>
+
               <div className="flex flex-col gap-2 relative group/field">
                 <label className="text-white text-[10px] uppercase tracking-widest">{t('fieldName')}</label>
                 <input name="nombre" required type="text" className="bg-transparent border-b border-white/30 py-2 text-white focus:outline-none transition-colors peer" />

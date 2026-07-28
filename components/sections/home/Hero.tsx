@@ -502,27 +502,31 @@ export default function HeroHome() {
 
       <div className="absolute top-25 left-5 lg:top-auto lg:bottom-5 2xl:bottom-20 lg:left-10 2xl:left-20 z-20 text-white pointer-events-none text-left lg:text-left">
 
-        <h2 className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
+        {/* Texto decorativo del hero: antes eran tres <h2> fragmentados
+            ("3R CORE" / "Agencia de" / "Marketing Digital") que ensuciaban el
+            outline de headings del home. Mismo estilo visual, sin rango de
+            heading; el H2 semántico del home vive en HomeSeoSection. */}
+        <p className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
               bg-clip-text text-transparent font-semibold tracking-tighter leading-tight"
             style={{
               paintOrder: 'stroke fill'
             }}>
 
             3R CORE
-        </h2>
-        
-        <h2 className="text-xl md:text-4xl xl:text-5xl font-light">
+        </p>
+
+        <p className="text-xl md:text-4xl xl:text-5xl font-light">
             {t('agency2')}  <span className="italic font-serif">{t('d')}</span>
-        </h2>
-        
+        </p>
+
         <div className="relative">
-          <h2 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
+          <p className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl bg-gradient-to-r from-[#9C27B0] to-[#E91E63]
                 bg-clip-text text-transparent font-semibold tracking-tighter leading-tight "
               style={{
                 paintOrder: 'stroke fill'
               }}>
               {t('marketing')}
-          </h2>
+          </p>
         </div>
       </div>
 

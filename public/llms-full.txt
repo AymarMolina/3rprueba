@@ -4,7 +4,7 @@
 
 ## Identity
 - Legal name: 3R Core
-- Tax ID (RUC, Peru): 2060900821
+- Tax ID (RUC, Peru): 20609008217
 - Headquarters: Calle Las Caobas 170, Ofic. 400, Urb El Remanso, La Molina, Lima 15024, Peru
 - Phone / WhatsApp: +51 986 889 147
 - Email: info@3rcore.com
@@ -40,7 +40,7 @@ priceRange: S/1,800 - S/8,000.
 
 ### 4. SEO Positioning
 URL: https://3rcore.com/es/posicionamiento-seo
-Starting price: S/1,500/month (~$400 USD).
+Starting price: S/1,800/month (~$480 USD).
 Includes: keyword research, on-page optimization, content strategy, technical SEO, link building, and monthly KPI reports.
 
 ### 5. Web Design & Development
@@ -48,7 +48,7 @@ URL: https://3rcore.com/es/servicios/web-development
 Tech stack: Shopify, WooCommerce, custom Next.js, and e-learning platforms.
 Site types: landing pages, corporate sites, e-commerce, e-learning platforms, service sites, blogs.
 Starting prices:
-- Professional landing page: from S/2,500. Includes Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration.
+- Professional landing page: from S/1,800. Includes Figma design, responsive development, basic technical SEO, contact form and Google Analytics integration.
 - Corporate website (5–8 sections): from S/4,500. Range S/4,500 – S/9,000 depending on scope.
 - E-commerce on Shopify or WooCommerce: from S/6,500. Includes catalog up to 100 products, integrated payment gateway (Culqi, Niubiz, Izipay or Mercado Pago), inventory management and admin panel. With SUNAT (electronic invoicing), ERP or multi-shipping integrations, range scales by complexity.
 - Year 1 includes domain, SSL and hosting. From year 2, hosting is billed separately (S/30 – S/120 per month depending on traffic and platform) or can be migrated to the client's own provider.
@@ -56,9 +56,9 @@ Starting prices:
 ## Pricing Summary
 - Branding starter: from S/500 / project
 - Social media: from S/1,500/mo
-- SEO: S/1,500/mo (no mandatory contracts, progressive results)
+- SEO: S/1,800/mo (no mandatory contracts, progressive results)
 - Google Ads management: from S/1,800/mo + ad budget paid directly to Google (recommended minimum S/1,500/mo, S/3,000+ for highly competitive sectors like legal, real estate or healthcare)
-- Landing page: from S/2,500 / project
+- Landing page: from S/1,800 / project
 - Corporate website: from S/4,500 / project
 - E-commerce: from S/6,500 / project
 

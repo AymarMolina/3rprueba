@@ -10,7 +10,7 @@
 - Languages: Spanish (primary), English
 - Areas of expertise: branding, social media, SEO, Google Ads / SEM, web development, e-commerce
 - Tech stack offered: Shopify, WooCommerce, custom Next.js, e-learning platforms
-- Tax ID (RUC): 2060900821
+- Tax ID (RUC): 20609008217
 
 ## Services
 - [Branding](https://3rcore.com/es/servicios/branding): Visual identity design, brand manuals, logos, and brand applications
@@ -18,7 +18,7 @@
 - [Online Stores / Tiendas Virtuales](https://3rcore.com/es/tiendas-virtuales-lima): E-commerce stores on Shopify, WooCommerce or Tiendanube with local Peruvian payment gateways (Culqi, Niubiz, Izipay, Yape, Mercado Pago), ready to sell
 - [Web Development](https://3rcore.com/es/servicios/web-development): Websites, e-commerce (Shopify/WooCommerce), landing pages, e-learning platforms
 - [Google Ads / SEM](https://3rcore.com/es/servicios/google-ads): Google Ads campaigns, search intent segmentation, budget optimization
-- [SEO Positioning](https://3rcore.com/es/posicionamiento-seo): Organic SEO, keyword strategy, content optimization, monthly reporting (from S/. 1500/month)
+- [SEO Positioning](https://3rcore.com/es/posicionamiento-seo): Organic SEO, keyword strategy, content optimization, monthly reporting (S/1,800/month)
 - [Meta Ads (Facebook & Instagram)](https://3rcore.com/es/servicios/meta-ads): Facebook and Instagram advertising campaigns, audience targeting, creative and retargeting for Peru.
 - [TikTok Ads](https://3rcore.com/es/servicios/tiktok-ads): TikTok advertising campaigns, native creative and audience targeting to reach younger buyers.
 - [Performance Marketing](https://3rcore.com/es/servicios/performance-marketing): ROI/ROAS-focused acquisition across paid channels, funnels and measurement.

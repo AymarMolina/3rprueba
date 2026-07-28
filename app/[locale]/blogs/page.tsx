@@ -3,7 +3,8 @@ import { Link } from "@/i18n/routing"
 import { Montserrat } from "next/font/google"
 import { createServerClient } from "@/lib/supabase/server"
 import type { BlogPost } from "@/lib/supabase/types"
-import { BASE_URL } from "@/lib/metadata"
+import { BASE_URL, generateBreadcrumbSchema } from "@/lib/metadata"
+import { buildAuthorNode } from "@/lib/seoSchemas"
 
 const montserrat = Montserrat({ subsets: ["latin"] })
 
@@ -40,10 +41,17 @@ export default async function BlogsPage({ params }: { params: any }) {
       "url": `${BASE_URL}/${locale}/blogs/${p.slug}`,
       "datePublished": p.published_at || p.created_at,
       "dateModified": p.updated_at,
-      "author": { "@type": "Person", "name": p.author_name },
+      "author": buildAuthorNode(p.author_name),
       "image": p.featured_image || p.og_image || undefined,
     })),
   }
+
+  // Breadcrumb del índice (antes vivía en el layout y se heredaba en cada post,
+  // que ya trae el suyo → dos BreadcrumbList por URL).
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: isEn ? 'Home' : 'Inicio', path: '' }, { name: 'Blog', path: '/blogs' }],
+    locale
+  )
 
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -60,7 +68,7 @@ export default async function BlogsPage({ params }: { params: any }) {
     <main className={`${montserrat.className} min-h-screen bg-[#0D0010] text-white overflow-x-hidden`}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([blogSchema, itemListSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([blogSchema, itemListSchema, breadcrumbSchema]) }}
       />
       {/* Ambient background */}
       <div className="fixed inset-0 pointer-events-none z-0">
