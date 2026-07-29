@@ -1,11 +1,10 @@
 "use client";
+import { montserrat } from "@/lib/fonts"
 
-import { Montserrat } from "next/font/google";
 import { useEffect, useRef, useState } from "react"; 
 import { useTranslations } from "next-intl"
 
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const ContactForm = () => {
   const [isInteractive, setIsInteractive] = useState(false);

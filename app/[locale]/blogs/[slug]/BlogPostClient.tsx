@@ -1,15 +1,14 @@
 "use client";
+import { montserrat } from "@/lib/fonts"
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { Montserrat } from "next/font/google";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 interface WPPost {
   title: { rendered: string };

@@ -1,7 +1,7 @@
 "use client";
+import { montserrat, playfair } from "@/lib/fonts"
 
 import { useRef } from "react";
-import { Playfair_Display, Montserrat } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -9,16 +9,7 @@ import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const playfair = Playfair_Display({ 
-  subsets: ["latin"], 
-  style: ['italic'], 
-  weight: ["400"]
-});
 
-const montserrat = Montserrat({ 
-  subsets: ["latin"], 
-  weight: ["300", "400", "500", "700"] 
-});
 
 const TeamSection = () => {
   const t = useTranslations('TeamSection');

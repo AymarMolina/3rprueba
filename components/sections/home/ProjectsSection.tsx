@@ -390,9 +390,9 @@ export default function ProjectsSection() {
       <div className='w-full pt-14 md:pt-16 2xl:py-16'>
         <div className="contenedor-imagenes-hovers">
           <div className="col col-static">
-            <img src="/images/tituloCarru/serviciosbg.webp" className="fondopro" alt="Background" />
-            <img src={t('ver')} className="titulo-img" alt="Our Projects" />
-            <img src={t('hor')} className="titulo-img-horizon" alt="Our Projects" />
+            <img loading="lazy" decoding="async" src="/images/tituloCarru/serviciosbg.webp" className="fondopro" alt="Background" />
+            <img loading="lazy" decoding="async" src={t('ver')} className="titulo-img" alt="Our Projects" />
+            <img loading="lazy" decoding="async" src={t('hor')} className="titulo-img-horizon" alt="Our Projects" />
           </div>
 
           {projects.map((project) => {
@@ -414,7 +414,7 @@ export default function ProjectsSection() {
                   )}
                 <div className={`bg-carousel ${isCarouselActive ? 'active' : ''}`}>
                   {project.slides.map((slide, index) => (
-                    <img
+                    <img loading="lazy" decoding="async"
                       key={index}
                       src={slide}
                       alt=""
@@ -423,8 +423,8 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                   <Link href={project.href} className="z-[30]">
-                    <img src={project.title} className="titulo-hover" alt={project.id} />
-                    <img src={project.titleMobile} className="titulo-hover-mobile" alt={project.id} />
+                    <img loading="lazy" decoding="async" src={project.title} className="titulo-hover" alt={project.id} />
+                    <img loading="lazy" decoding="async" src={project.titleMobile} className="titulo-hover-mobile" alt={project.id} />
                   </Link>
                   
                   {isMobile && isExpanded && (

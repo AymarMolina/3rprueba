@@ -1,17 +1,15 @@
 'use client'
+import { montserrat } from "@/lib/fonts"
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { Link } from "@/i18n/navigation"
-import { Montserrat } from "next/font/google"
 import BlogCTA from "@/components/blog/BlogCTA"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import type { BlogPost } from "@/lib/supabase/types"
 
 gsap.registerPlugin(ScrollTrigger)
-
-const montserrat = Montserrat({ subsets: ["latin"] })
 
 export default function BlogPostView({ post, locale, minutesRead, relatedPosts = [] }: { post: BlogPost; locale: string; minutesRead?: number; relatedPosts?: BlogPost[] }) {
   const heroRef = useRef<HTMLDivElement>(null)

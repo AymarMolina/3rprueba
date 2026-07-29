@@ -1,5 +1,5 @@
+import { poppins } from "@/lib/fonts"
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -14,12 +14,6 @@ import { TEL_MAIN } from "@/lib/contact";
 import ReactLenis from "lenis/react";
 import Script from "next/script";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  variable: "--font-poppins",
-  display: 'swap',
-});
 
 const lenisOptions = {
   lerp: 0.1,

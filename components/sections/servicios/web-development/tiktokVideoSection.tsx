@@ -1,9 +1,7 @@
 'use client';
+import { montserrat, playfair } from "@/lib/fonts"
 import { useTranslations } from 'next-intl';
-import { Montserrat, Playfair_Display } from 'next/font/google';
 
-const montserrat = Montserrat({ subsets: ['latin'] });
-const playfair = Playfair_Display({ subsets: ['latin'], style: ['italic'] });
 
 const TIKTOK_VIDEO_ID = '7614254330253790485';
 const TIKTOK_URL = `https://www.tiktok.com/@3rcore/video/${TIKTOK_VIDEO_ID}`;

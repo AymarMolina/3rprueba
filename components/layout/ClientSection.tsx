@@ -1,7 +1,7 @@
 "use client";
+import { montserrat as ubuntu } from "@/lib/fonts"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Ubuntu } from 'next/font/google';
 import { useTranslations } from "next-intl"
 
 interface Client {
@@ -10,7 +10,6 @@ interface Client {
   className?: string; 
 }
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 const clients: Client[] = [
   { name: '2K Logo', logo: '/images/Logos/2kLogo.webp', className: "lg:-translate-y-5" },
