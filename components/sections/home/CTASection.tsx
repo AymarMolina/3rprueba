@@ -1,9 +1,9 @@
 "use client";
+import { playfair, playfair as trirong, poppins } from "@/lib/fonts"
 
 import { useRef } from "react";
 import { WA_MAIN } from "@/lib/contact";
 import Image from "next/image";
-import { Playfair_Display, Poppins, Trirong } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -11,22 +11,8 @@ import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "700"],
-});
 
-const trirong = Trirong({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "700"],
-});
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-});
 
 const StatsAndCTA = () => {
   const t = useTranslations("CTA");

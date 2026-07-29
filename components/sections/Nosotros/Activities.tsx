@@ -1,17 +1,12 @@
+import { poppins } from "@/lib/fonts"
 
 import {
   DraggableCardBody,
   DraggableCardContainer,
 } from "@/components/ui/draggable-card";
-import { Playfair_Display, Poppins } from "next/font/google";
 import { useTranslations } from "next-intl";
 
 
-const poppins = Poppins({ 
-  subsets: ["latin"], 
-  style: ['italic'], 
-  weight: ["400"]
-});
 export function DraggableCardDemo() {
 
   const t = useTranslations('MomentsSection');

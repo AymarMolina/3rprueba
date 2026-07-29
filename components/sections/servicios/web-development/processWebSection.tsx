@@ -1,5 +1,5 @@
 'use client';
-import { Trirong } from 'next/font/google';
+import { playfair as trirong } from "@/lib/fonts"
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -7,11 +7,6 @@ import { useTranslations } from 'next-intl';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const trirong = Trirong({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "700"],
-});
 
 const ProcessWebSection = () => {
 

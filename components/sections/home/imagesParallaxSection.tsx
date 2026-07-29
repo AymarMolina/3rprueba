@@ -16,13 +16,19 @@ const ParallaxRow = ({ images, x, className }: { images: string[], x: MotionValu
           key={idx} 
           className="relative w-[300px] h-[200px] md:w-[450px] md:h-[300px] overflow-hidden border-none"
         >
-          <Image 
-            src={src} 
+          {/* Esta galería vive DEBAJO del fold (tras Hero/TeamSection/
+              ProjectsSection/CTASection en el home). `priority` aquí
+              competía por ancho de banda con el LCP real del hero — cada
+              una de las 5 filas reiniciaba su propio idx<2, sumando 7
+              preloads de alta prioridad para imágenes que el usuario ni
+              siquiera ve al cargar. Sin priority, next/image las carga lazy
+              por defecto. */}
+          <Image
+            src={src}
             alt={`parallax-img-${idx}`}
             fill
             sizes="40vw"
             className="object-cover"
-            priority={idx < 2}
           />
         </div>
       ))}

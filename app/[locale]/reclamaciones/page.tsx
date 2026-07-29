@@ -1,12 +1,11 @@
 "use client";
+import { montserrat } from "@/lib/fonts"
 
-import { Montserrat } from "next/font/google";
 import { useState } from "react"; 
 import { useTranslations } from "next-intl"
 
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const ComplaintsForm = () => {
 

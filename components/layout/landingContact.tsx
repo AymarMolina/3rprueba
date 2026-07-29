@@ -1,11 +1,10 @@
 "use client";
+import { montserrat } from "@/lib/fonts"
 
-import { Montserrat } from "next/font/google";
 import { useState } from "react"; 
 import { useTranslations } from "next-intl"
 import { useRouter } from "next/navigation";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 const LandingContact = () => {
   const router = useRouter();

@@ -1,8 +1,7 @@
-import { Montserrat } from "next/font/google";
+import { montserrat } from "@/lib/fonts"
 import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default async function GraciasPage({ params }: { params: any }) {
   const { locale } = await params;
