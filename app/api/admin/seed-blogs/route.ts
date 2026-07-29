@@ -74,15 +74,27 @@ export async function POST(req: NextRequest) {
     }
 
     // Check if slug already exists
-    const { data: existing } = await supabase
+    const { data: existing } = await (supabase as any)
       .from("blog_posts")
-      .select("id")
+      .select("id, content, meta_title, meta_description, title")
       .eq("slug", post.slug)
       .eq("locale", "es")
       .maybeSingle()
 
     if (existing?.id) {
-      // Update existing instead of skip — keeps content fresh
+      // Solo actualiza si el seed trae cambios reales. Antes cada re-seed
+      // sobreescribía TODOS los posts con published_at = now → decenas de
+      // artículos con el mismo timestamp al milisegundo (footprint de
+      // publicación en lote y pérdida de la fecha real).
+      const unchanged =
+        existing.content === record.content &&
+        existing.meta_title === record.meta_title &&
+        existing.meta_description === record.meta_description &&
+        existing.title === record.title
+      if (unchanged) {
+        skipped.push(`${post.slug} (unchanged)`)
+        continue
+      }
       const { error } = await (supabase as any)
         .from("blog_posts")
         .update(record)
@@ -102,9 +114,14 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Ping IndexNow with the new blog URLs
-  const blogUrls = SEED_POSTS.map((p) => `https://3rcore.com/es/blogs/${p.slug}`)
-  const indexnowResults = await pingIndexNow(blogUrls)
+  // Ping IndexNow SOLO con URLs nuevas o modificadas (antes mandaba las 50+
+  // en cada corrida aunque nada hubiera cambiado).
+  const changedSlugs = [
+    ...inserted,
+    ...skipped.filter((s) => s.endsWith("(updated)")).map((s) => s.replace(" (updated)", "")),
+  ]
+  const blogUrls = changedSlugs.map((slug) => `https://3rcore.com/es/blogs/${slug}`)
+  const indexnowResults = blogUrls.length ? await pingIndexNow(blogUrls) : []
 
   return NextResponse.json({
     ok: errors.length === 0,
