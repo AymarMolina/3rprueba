@@ -98,22 +98,32 @@ export default function BlogPostView({ post, locale, minutesRead, relatedPosts =
       {/* Article content */}
       <article ref={contentRef} className="relative z-10 max-w-3xl mx-auto px-6 md:px-12 lg:px-0 py-16">
         {(() => {
-          // CTA inline a mitad del artículo (tras la 2ª sección) + CTA al final.
+          // Tres CTAs medibles por posición (cta_variant en dataLayer):
+          // 'top' compacto tras la intro (antes del primer H2), 'inline' a
+          // mitad del artículo (tras la 2ª sección) y 'end' al final.
           const html = post.content || ''
           const marker = '</h2>'
+          // Corte del CTA top: justo antes del primer <h2 (fin de la intro).
+          const firstH2 = html.search(/<h2[\s>]/)
+          const topCut = firstH2 > 200 && html.length > 3000 ? firstH2 : -1
+          // Corte del CTA inline: tras el cierre de la 2ª sección.
           let idx = -1
           for (let i = 0; i < 2; i++) { const n = html.indexOf(marker, idx + 1); if (n === -1) break; idx = n }
-          if (idx !== -1 && html.length - idx > 900) {
-            const cut = idx + marker.length
-            return (
-              <>
-                <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(0, cut) }} />
-                <BlogCTA slug={post.slug} locale={locale} variant="inline" />
-                <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(cut) }} />
-              </>
-            )
+          const inlineCut = idx !== -1 && html.length - idx > 900 ? idx + marker.length : -1
+
+          if (topCut === -1 && inlineCut === -1) {
+            return <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html }} />
           }
-          return <div className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html }} />
+          const cuts = [topCut, inlineCut].filter((c) => c !== -1).sort((a, b) => a - b)
+          const parts: React.ReactNode[] = []
+          let prev = 0
+          cuts.forEach((cut, i) => {
+            parts.push(<div key={`c${i}`} className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(prev, cut) }} />)
+            parts.push(<BlogCTA key={`cta${i}`} slug={post.slug} locale={locale} variant={cut === topCut ? 'top' : 'inline'} />)
+            prev = cut
+          })
+          parts.push(<div key="cend" className="post-content prose-content" dangerouslySetInnerHTML={{ __html: html.slice(prev) }} />)
+          return <>{parts}</>
         })()}
 
         {/* CTA a servicio (medido en GTM) */}

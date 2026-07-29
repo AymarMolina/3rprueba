@@ -17,6 +17,8 @@ export type ServiceKey =
 export const SLUG_MAP: Record<string, ServiceKey> = {
   'cuanto-cuesta-pagina-web-peru-2026': 'web',
   'shopify-vs-woocommerce-peru-2026': 'tiendas',
+  // ---- refresh 2026-07-28 ----
+  'tarifas-publicidad-digital-peru-2026-google-meta-tiktok-linkedin': 'google-ads',
   // ---- blogs imán de LEADS (buyer-intent, 2026-07) ----
   'cuanto-cuesta-agencia-seo-lima-2026': 'seo',
   'cuanto-cuesta-google-ads-lima-agencia-2026': 'google-ads',

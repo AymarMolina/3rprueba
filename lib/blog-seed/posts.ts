@@ -10,6 +10,7 @@ import { TIENDAS_POSTS_2026_07 } from "./posts-tiendas-2026-07"
 import { LEADS_POSTS_2026_07 } from "./posts-leads-2026-07"
 import { LEADS2_POSTS_2026_07 } from "./posts-leads2-2026-07"
 import { LEADS3_POSTS_2026_07 } from "./posts-leads3-2026-07"
+import { REFRESH_POSTS_2026_07_28 } from "./posts-refresh-2026-07-28"
 
 export interface SeedPost {
   title: string
@@ -2998,4 +2999,5 @@ export const SEED_POSTS: SeedPost[] = [
   ...LEADS_POSTS_2026_07,
   ...LEADS2_POSTS_2026_07,
   ...LEADS3_POSTS_2026_07,
+  ...REFRESH_POSTS_2026_07_28,
 ]
