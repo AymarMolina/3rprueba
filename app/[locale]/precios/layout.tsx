@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
     path: '/precios',
     titleEs: 'Precios — Servicios de Marketing Digital en Lima, Perú | 3R Core',
     titleEn: 'Pricing — Digital Marketing Services for US Clients | 3R Core',
-    descriptionEs: 'Precios referenciales de marketing digital en Lima, Perú: branding desde S/500, social media desde S/1,500/mes, SEO S/1,800/mes, Google Ads desde S/1,800/mes y webs desde S/1,800. Precios netos, las facturas peruanas suman 18% de IGV.',
+    descriptionEs: 'Precios referenciales en Lima: branding desde S/500, SEO S/1,800/mes, Google Ads desde S/1,800/mes de gestión y webs desde S/1,800. Netos + 18% IGV.',
     descriptionEn: 'Reference digital marketing pricing for US-based clients: branding from $500, SEO $500/month, social media $800/month, Google Ads management $800/month and websites from $850. Net prices in US Dollars.',
   })
 }

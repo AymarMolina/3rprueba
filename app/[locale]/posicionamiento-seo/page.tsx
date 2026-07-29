@@ -2,7 +2,7 @@
 import { getMessages } from "next-intl/server"
 import type { Metadata } from "next"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/metadata"
-import { buildFAQPageSchema, buildServiceSchema } from "@/lib/seoSchemas"
+import { buildFAQPageSchema, buildServiceSchema, buildSpeakableWebPage } from "@/lib/seoSchemas"
 import LandingClient from "./LandingClient"
 
 export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
@@ -36,7 +36,7 @@ export default async function Posicionamientoseo({ params }: { params: any }) {
     descriptionEs: 'Servicio mensual de posicionamiento SEO orgánico en Google para empresas en Lima, Perú: auditoría, palabras clave, optimización on-page, interlinks, contenido y escalamiento con reporte mensual.',
     descriptionEn: 'Monthly organic SEO positioning service on Google for companies in Lima, Peru: audit, keyword research, on-page optimization, interlinks, content and scaling with monthly reporting.',
     serviceType: 'SEO / Search Engine Optimization',
-    priceRange: 'S/1,800+',
+    minPriceEs: 1800,
     offerPriceEs: 1800,
     offerPriceEn: 500,
     audienceTypes: ['Small business', 'Medium business', 'Enterprise', 'E-commerce', 'B2B', 'Local business'],
@@ -69,11 +69,21 @@ export default async function Posicionamientoseo({ params }: { params: any }) {
     locale
   )
 
+  // Nodo WebPage propio (tiendas, precios y cotizar ya lo tenían; esta página
+  // era la única money page sin el suyo en el grafo).
+  const webPageSchema = buildSpeakableWebPage({
+    locale,
+    path: '/posicionamiento-seo',
+    nameEs: 'Agencia de Posicionamiento SEO en Lima — 3R Core',
+    nameEn: 'SEO Positioning Agency in Lima — 3R Core',
+    cssSelector: ['h1', 'h2', '.faq-answer'],
+  })
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([serviceSchema, faqSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([webPageSchema, serviceSchema, faqSchema, breadcrumbSchema]) }}
       />
       <LandingClient />
     </>

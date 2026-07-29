@@ -82,9 +82,11 @@ export function DraggableCardDemo() {
             alt={item.title}
             className="pointer-events-none relative z-10 h-80 w-80 object-cover"
             />
-            <h3 className={`mt-4 text-center font-serif text-2xl font-bold text-neutral-700 dark:text-neutral-300`}>
+            {/* Etiqueta de tarjeta, no heading: "Sale fulbo?" / "Tengo HAMBRE"
+                salían como H3 en el outline de /nosotros. */}
+            <p className={`mt-4 text-center font-serif text-2xl font-bold text-neutral-700 dark:text-neutral-300`}>
             {item.title}
-            </h3>
+            </p>
         </DraggableCardBody>
         ))}
 

@@ -10,6 +10,7 @@ const COPY = {
   es: {
     eyebrow: '3R Core · Tiendas Virtuales · Lima · Perú',
     h1: 'Agencia de Tiendas Virtuales en Lima, Perú',
+    heroH2: 'Tu tienda online en Shopify, WooCommerce o Tiendanube, lista para vender',
     sub: 'Creamos tu tienda online en Shopify, WooCommerce o Tiendanube: pagos locales (Culqi, Niubiz, Izipay, Yape), catálogo cargado, SEO técnico y lista para vender. Desde S/1,500 de implementación, sin plantillas genéricas.',
     cta: 'Cotiza tu tienda online',
     why: 'Tienda + SEO + Google Ads bajo un mismo techo',
@@ -59,8 +60,8 @@ const COPY = {
     coverageList: ['Shopify', 'WooCommerce', 'Tiendanube', 'Culqi', 'Niubiz', 'Izipay', 'Yape', 'PagoEfectivo', 'Mercado Pago', 'Google Analytics 4'],
     faq: 'Preguntas frecuentes sobre tiendas virtuales',
     faqList: [
-      { q: '¿Cuánto cuesta crear una tienda virtual en Perú?', a: 'La implementación profesional arranca desde S/1,500 e incluye diseño, carga de catálogo, pagos y configuración. Con más productos, integraciones o desarrollo a medida va de S/4,000 a S/25,000. Aparte está la mensualidad de la plataforma (Shopify desde USD 39/mes, Tiendanube desde S/89/mes) o el hosting si es WooCommerce.' },
-      { q: '¿Shopify, WooCommerce o Tiendanube: cuál me conviene?', a: 'Depende de tu caso. Shopify es la más rápida y estable para vender ya. WooCommerce da control total e integraciones a medida. Tiendanube es fuerte en pagos locales y planes accesibles. En el diagnóstico te recomendamos la correcta, sin sesgo.' },
+      { q: '¿Cuánto cuesta crear una tienda virtual en Perú?', a: 'La implementación profesional arranca desde S/1,500 e incluye diseño, carga de catálogo, pagos y configuración sobre Shopify o Tiendanube. Un e-commerce completo en Shopify o WooCommerce (catálogo amplio, pasarela de pago, inventario y panel de administración) arranca desde S/6,500, y con más integraciones o desarrollo a medida el rango llega hasta S/25,000. Aparte está la mensualidad de la plataforma (Shopify desde USD 39/mes, Tiendanube desde S/89/mes) o el hosting si es WooCommerce. El detalle completo está publicado en nuestra página de precios.' },
+      { q: '¿Shopify, WooCommerce o Tiendanube: cuál me conviene?', a: 'Como agencia Shopify, WooCommerce y Tiendanube en Perú no trabajamos casados con una sola plataforma: depende de tu caso. Shopify es la más rápida y estable para vender ya. WooCommerce da control total e integraciones a medida. Tiendanube es fuerte en pagos locales y planes accesibles. En el diagnóstico te recomendamos la correcta, sin sesgo.' },
       { q: '¿Integran pagos peruanos como Yape, Culqi o Niubiz?', a: 'Sí. Configuramos y probamos Culqi, Niubiz, Izipay, Yape, PagoEfectivo y Mercado Pago según tu plataforma, para que tus clientes paguen como están acostumbrados en Perú.' },
       { q: '¿En cuánto tiempo tengo mi tienda lista?', a: 'Una tienda estándar con Shopify o Tiendanube suele estar lista en 2 a 4 semanas. Una tienda WooCommerce a medida o con muchas integraciones puede tomar de 5 a 8 semanas, según la cantidad de productos y la entrega de contenido.' },
       { q: '¿La tienda va a aparecer en Google?', a: 'La construimos con SEO técnico de base (URLs, schema de producto, velocidad, sitemap). Para posicionar de verdad y competir por búsquedas de compra recomendamos sumar nuestro servicio de posicionamiento SEO y/o campañas de Google Ads y Google Shopping.' },
@@ -82,6 +83,7 @@ const COPY = {
   en: {
     eyebrow: '3R Core · Online Stores · Lima · Peru',
     h1: 'Online Store / E-commerce Agency in Lima, Peru',
+    heroH2: 'Your online store on Shopify, WooCommerce or Tiendanube, ready to sell',
     sub: 'We build your online store on Shopify, WooCommerce or Tiendanube: local payments, loaded catalog, technical SEO and ready to sell. From $420 implementation, no generic templates.',
     cta: 'Get a store quote',
     why: 'Store + SEO + Google Ads under one roof',
@@ -131,8 +133,8 @@ const COPY = {
     coverageList: ['Shopify', 'WooCommerce', 'Tiendanube', 'Culqi', 'Niubiz', 'Izipay', 'Yape', 'PagoEfectivo', 'Mercado Pago', 'Google Analytics 4'],
     faq: 'Online store FAQs',
     faqList: [
-      { q: 'How much does it cost to build an online store in Peru?', a: 'Professional implementation starts from $420 and includes design, catalog upload, payments and setup. Larger catalogs, integrations or custom development range from $1,100 to $7,000. The platform monthly cost is separate (Shopify from $39/mo, Tiendanube from ~$24/mo) or hosting for WooCommerce.' },
-      { q: 'Shopify, WooCommerce or Tiendanube — which is best for me?', a: 'It depends. Shopify is the fastest and most stable to start selling. WooCommerce gives full control and custom integrations. Tiendanube is strong on local payments and accessible plans. In the diagnosis we recommend the right one, without bias.' },
+      { q: 'How much does it cost to build an online store in Peru?', a: 'Professional implementation starts from $420 and includes design, catalog upload, payments and setup. A complete e-commerce on Shopify or WooCommerce (large catalog, payment gateway, inventory and admin panel) starts from $1,750, and larger catalogs, integrations or custom development range up to $7,000. The platform monthly cost is separate (Shopify from $39/mo, Tiendanube from ~$24/mo) or hosting for WooCommerce.' },
+      { q: 'Shopify, WooCommerce or Tiendanube — which is best for me?', a: 'As a Shopify, WooCommerce and Tiendanube agency in Peru we are not tied to a single platform — it depends on your case. Shopify is the fastest and most stable to start selling. WooCommerce gives full control and custom integrations. Tiendanube is strong on local payments and accessible plans. In the diagnosis we recommend the right one, without bias.' },
       { q: 'Do you integrate Peruvian payments like Yape, Culqi or Niubiz?', a: 'Yes. We configure and test Culqi, Niubiz, Izipay, Yape, PagoEfectivo and Mercado Pago based on your platform, so customers pay the way they are used to in Peru.' },
       { q: 'How long until my store is ready?', a: 'A standard Shopify or Tiendanube store is usually ready in 2 to 4 weeks. A custom WooCommerce store or one with many integrations can take 5 to 8 weeks, depending on catalog size and content delivery.' },
       { q: 'Will the store show up on Google?', a: 'We build it with baseline technical SEO (URLs, product schema, speed, sitemap). To truly rank for buying searches we recommend adding our SEO service and/or Google Ads and Google Shopping campaigns.' },
@@ -162,7 +164,9 @@ export default async function TiendasVirtualesLimaPage({ params }: Props) {
       <h1 className="sr-only">{t.h1}</h1>
       <section className="px-6 md:px-10 lg:px-20 pt-32 pb-20 max-w-6xl mx-auto">
         <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">{t.eyebrow}</p>
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">{t.h1}</h2>
+        {/* Heading visible distinto del H1 sr-only (antes ambos repetían el
+            mismo texto → H1 y H2 idénticos en la misma página). */}
+        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">{t.heroH2 ?? t.h1}</h2>
         <p className="seo-intro text-lg md:text-xl text-white/80 max-w-3xl mb-10">{t.sub}</p>
         <a href="#cotizar" className="inline-block bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-white/90 transition">{t.cta}</a>
       </section>

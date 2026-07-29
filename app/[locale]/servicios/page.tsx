@@ -6,6 +6,7 @@ import HeroServicios from "@/components/sections/servicios/heroServicios";
 import ServiceAbout from "@/components/sections/servicios/serviciesAbout";
 import MoreServicesSection from "@/components/sections/servicios/MoreServicesSection";
 import { buildSpeakableWebPage } from "@/lib/seoSchemas";
+import { buildServiciosIndexSchemas } from "@/lib/servicios-index-schema";
 
 export default async function Servicios({ params }: { params: any }) {
   const { locale } = await params;
@@ -19,6 +20,10 @@ export default async function Servicios({ params }: { params: any }) {
     cssSelector: ["h1", "h2"],
   });
 
+  // CollectionPage + ItemList + Breadcrumb del índice (antes en el layout,
+  // donde se heredaban en cada página de servicio hija).
+  const indexSchemas = buildServiciosIndexSchemas(locale);
+
   // H1 oculto del índice de servicios (antes vivía en el layout y duplicaba
   // el H1 de cada página de servicio).
   const hiddenH1 = isEn
@@ -29,7 +34,7 @@ export default async function Servicios({ params }: { params: any }) {
     <main>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([speakableSchema, ...indexSchemas]) }}
       />
       <h1 className="sr-only">{hiddenH1}</h1>
       <ServiceAbout></ServiceAbout>

@@ -4,6 +4,7 @@ import { createServerClient } from "@/lib/supabase/server"
 import type { BlogPost } from "@/lib/supabase/types"
 import BlogPostView from "./BlogPostView"
 import { BASE_URL, DEFAULT_OG_IMAGE } from "@/lib/metadata"
+import { buildAuthorNode } from "@/lib/seoSchemas"
 
 export const revalidate = 3600
 
@@ -96,6 +97,13 @@ async function getRelatedPosts(currentId: string, categoryId: string | null, loc
   return pool.slice(off, off + limit)
 }
 
+// Posts legacy (2022-2023) migraron con meta_title = slug crudo
+// ("que-es-el-content-manager-y-cuales-son-sus-objetivos") y ese texto salía
+// como título azul en el SERP → CTR 0 pese a rankear. Si el meta_title parece
+// un slug (todo minúsculas unidas por guiones), se ignora y manda el título
+// real del post.
+const looksLikeSlug = (s: string) => /^[a-z0-9áéíóúñü]+(?:-[a-z0-9áéíóúñü]+)+$/.test(s.trim())
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string; locale: string }> }): Promise<Metadata> {
   const { slug, locale } = await params
   const post = await getPost(slug, locale)
@@ -114,7 +122,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   languages['x-default'] = languages['es'] || languages[locale] || canonical
 
   return {
-    title: post.meta_title || `${post.title} | 3R Core`,
+    title: post.meta_title && !looksLikeSlug(post.meta_title) ? post.meta_title : `${post.title} | 3R Core`,
     description: post.meta_description || post.excerpt || '',
     alternates: {
       canonical,
@@ -175,10 +183,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "headline": post.title,
     "datePublished": post.published_at || post.created_at,
     "dateModified": post.updated_at,
-    "author": {
-      "@type": "Person",
-      "name": post.author_name,
-    },
+    "author": buildAuthorNode(post.author_name),
     "publisher": {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,

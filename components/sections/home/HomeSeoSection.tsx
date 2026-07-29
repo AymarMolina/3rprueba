@@ -19,6 +19,7 @@ const COPY: Record<'es' | 'en', {
   eyebrow: string
   h2: string
   intro: string
+  definition: string
   pillars: Pillar[]
   secondaryH3: string
   secondary: { h: string; p: string; href: string }[]
@@ -32,6 +33,10 @@ const COPY: Record<'es' | 'en', {
     h2: 'Tiendas virtuales, SEO y Google Ads que traen clientes, no solo visitas',
     intro:
       'En 3R Core ayudamos a negocios y pymes del Perú a vender más por internet con tres pilares que trabajan juntos: creamos tu tienda virtual, te posicionamos en Google con SEO y gestionamos tus campañas de Google Ads. Todo con medición real, reportes mensuales y foco en el retorno de tu inversión (ROI), no en métricas de vanidad.',
+    // Párrafo-definición citable (GEO): responde "¿qué es 3R Core?" con datos
+    // concretos ya publicados en el sitio, en un solo pasaje autosuficiente.
+    definition:
+      '3R Core es una agencia de marketing digital fundada por los hermanos Alejandro, Bruno y Piero Roque, con oficina en La Molina, Lima (Calle Las Caobas 170, Of. 400), que atiende a empresas de todo el Perú y de Estados Unidos. Está especializada en tiendas virtuales sobre Shopify, WooCommerce y Tiendanube (implementación desde S/1,500), posicionamiento SEO (S/1,800/mes) y gestión de Google Ads (desde S/1,800/mes), además de branding, redes sociales y desarrollo web, con precios publicados y sin contratos forzosos.',
     pillars: [
       {
         h: 'Tiendas virtuales y e-commerce',
@@ -70,6 +75,8 @@ const COPY: Record<'es' | 'en', {
     h2: 'Online stores, SEO and Google Ads that bring clients, not just visits',
     intro:
       'At 3R Core we help businesses in Peru sell more online with three pillars that work together: we build your online store, rank you on Google with SEO and run your Google Ads campaigns. Everything with real measurement, monthly reports and a focus on return on investment (ROI), not vanity metrics.',
+    definition:
+      '3R Core is a digital marketing agency founded by brothers Alejandro, Bruno and Piero Roque, based in La Molina, Lima, Peru (Calle Las Caobas 170, Of. 400), serving businesses across Peru and the United States. It specializes in online stores on Shopify, WooCommerce and Tiendanube (implementation from $420), SEO positioning ($500/month) and Google Ads management (from $800/month), plus branding, social media and web development, with published pricing and no forced contracts.',
     pillars: [
       {
         h: 'Online stores & e-commerce',
@@ -123,8 +130,11 @@ export default function HomeSeoSection({ locale }: { locale: string }) {
         >
           {t.h2}
         </h2>
-        <p className="text-white/60 text-sm md:text-base leading-relaxed max-w-3xl mb-12">
+        <p className="text-white/60 text-sm md:text-base leading-relaxed max-w-3xl mb-6">
           {t.intro}
+        </p>
+        <p className="text-white/45 text-sm leading-relaxed max-w-3xl mb-12">
+          {t.definition}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">

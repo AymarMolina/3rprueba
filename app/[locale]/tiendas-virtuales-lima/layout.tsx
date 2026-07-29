@@ -9,10 +9,10 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   return generatePageMetadata({
     locale,
     path: '/tiendas-virtuales-lima',
-    titleEs: 'Agencia de Tiendas Virtuales en Lima, Perú — Crea tu Tienda Online | 3R Core',
-    titleEn: 'Online Store / E-commerce Agency in Lima, Peru — Build Your Store | 3R Core',
-    descriptionEs: 'Agencia de tiendas virtuales en Lima: creamos tu tienda online en Shopify, WooCommerce o Tiendanube con pagos locales (Culqi, Niubiz, Izipay, Yape), SEO técnico y lista para vender. Desde S/1,500.',
-    descriptionEn: 'Online store agency in Lima, Peru: we build your e-commerce on Shopify, WooCommerce or Tiendanube with local payments, technical SEO and ready to sell. From $420.',
+    titleEs: 'Tiendas Virtuales en Lima: Shopify, WooCommerce y Tiendanube | 3R Core',
+    titleEn: 'Online Stores in Lima: Shopify, WooCommerce & Tiendanube | 3R Core',
+    descriptionEs: 'Creamos tu tienda online en Shopify, WooCommerce o Tiendanube con pagos peruanos (Yape, Culqi, Izipay), catálogo cargado y SEO técnico. Desde S/1,500.',
+    descriptionEn: 'We build your online store on Shopify, WooCommerce or Tiendanube with local payments, loaded catalog and technical SEO. From $420.',
     ogImage: {
       url: 'https://3rcore.com/og/default.jpg',
       width: 1200,
@@ -42,7 +42,8 @@ export default async function TiendasVirtualesLimaLayout({ children, params }: {
     descriptionEs: 'Diseño y desarrollo de tiendas virtuales para empresas en Lima y Perú: Shopify, WooCommerce y Tiendanube, pasarelas de pago locales, SEO técnico, velocidad y conversión, con soporte y capacitación.',
     descriptionEn: 'Design and development of online stores for companies in Lima and Peru: Shopify, WooCommerce and Tiendanube, local payment gateways, technical SEO, speed and conversion, with support and training.',
     serviceType: 'E-commerce development / Online store creation',
-    priceRange: 'S/1,500 - S/25,000',
+    minPriceEs: 1500,
+    maxPriceEs: 25000,
     offerPriceEs: 1500,
     offerPriceEn: 420,
     areaServed: ['PE', 'US'],
@@ -52,14 +53,14 @@ export default async function TiendasVirtualesLimaLayout({ children, params }: {
     {
       question: isEn ? 'How much does it cost to build an online store in Peru?' : '¿Cuánto cuesta crear una tienda virtual en Perú?',
       answer: isEn
-        ? 'Professional implementation starts from $420 and includes design, catalog upload, payments and setup. Larger catalogs, integrations or custom development range from $1,100 to $7,000. The platform monthly cost is separate (Shopify from $39/mo, Tiendanube from ~$24/mo) or hosting for WooCommerce.'
-        : 'La implementación profesional arranca desde S/1,500 e incluye diseño, carga de catálogo, pagos y configuración. Con más productos, integraciones o desarrollo a medida va de S/4,000 a S/25,000. Aparte está la mensualidad de la plataforma (Shopify desde USD 39/mes, Tiendanube desde S/89/mes) o el hosting si es WooCommerce.',
+        ? 'Professional implementation starts from $420 and includes design, catalog upload, payments and setup. A complete e-commerce on Shopify or WooCommerce (large catalog, payment gateway, inventory and admin panel) starts from $1,750, and larger catalogs, integrations or custom development range up to $7,000. The platform monthly cost is separate (Shopify from $39/mo, Tiendanube from ~$24/mo) or hosting for WooCommerce.'
+        : 'La implementación profesional arranca desde S/1,500 e incluye diseño, carga de catálogo, pagos y configuración sobre Shopify o Tiendanube. Un e-commerce completo en Shopify o WooCommerce (catálogo amplio, pasarela de pago, inventario y panel de administración) arranca desde S/6,500, y con más integraciones o desarrollo a medida el rango llega hasta S/25,000. Aparte está la mensualidad de la plataforma (Shopify desde USD 39/mes, Tiendanube desde S/89/mes) o el hosting si es WooCommerce. El detalle completo está publicado en nuestra página de precios.',
     },
     {
       question: isEn ? 'Shopify, WooCommerce or Tiendanube — which is best for me?' : '¿Shopify, WooCommerce o Tiendanube: cuál me conviene?',
       answer: isEn
-        ? 'It depends. Shopify is the fastest and most stable to start selling. WooCommerce gives full control and custom integrations. Tiendanube is strong on local payments and accessible plans. In the diagnosis we recommend the right one, without bias.'
-        : 'Depende de tu caso. Shopify es la más rápida y estable para vender ya. WooCommerce da control total e integraciones a medida. Tiendanube es fuerte en pagos locales y planes accesibles. En el diagnóstico te recomendamos la correcta, sin sesgo.',
+        ? 'As a Shopify, WooCommerce and Tiendanube agency in Peru we are not tied to a single platform — it depends on your case. Shopify is the fastest and most stable to start selling. WooCommerce gives full control and custom integrations. Tiendanube is strong on local payments and accessible plans. In the diagnosis we recommend the right one, without bias.'
+        : 'Como agencia Shopify, WooCommerce y Tiendanube en Perú no trabajamos casados con una sola plataforma: depende de tu caso. Shopify es la más rápida y estable para vender ya. WooCommerce da control total e integraciones a medida. Tiendanube es fuerte en pagos locales y planes accesibles. En el diagnóstico te recomendamos la correcta, sin sesgo.',
     },
     {
       question: isEn ? 'Do you integrate Peruvian payments like Yape, Culqi or Niubiz?' : '¿Integran pagos peruanos como Yape, Culqi o Niubiz?',

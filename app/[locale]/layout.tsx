@@ -322,7 +322,7 @@ export default async function RootLayout({
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "price": locale === 'en' ? 450 : 1500,
+            "price": locale === 'en' ? 500 : 1800,
             "priceCurrency": locale === 'en' ? "USD" : "PEN",
             "valueAddedTaxIncluded": false
           }
