@@ -22,6 +22,8 @@ const members = [
   { id: 10, name: "Grecia", role: "Social Media Manager", image: "/images/Equipo/Grecia.webp", area:"social media"},
   { id: 11, name: "Nicole", role: "Content Manager", image: "/images/Equipo/Nicole.webp", area:"social media"},
   { id: 12, name: "Claudia", role: "Content Manager", image: "/images/Equipo/Claudia.webp", area:"social media"},
+  { id: 23, name: "Sofia Viso", role: "Content Media", image: "/images/Equipo/Sofia-new.webp", area:"social media"},
+
 
   { id: 13, name: "Josue", role: "Post-Production", image: "/images/Equipo/Josue.webp", area:"design multimedia"},
   { id: 14, name: "Sofia", role: "Film Maker & Designer", image: "/images/Equipo/Sofia.webp", area:"design multimedia"},
