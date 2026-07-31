@@ -22,20 +22,25 @@ const members = [
   { id: 10, name: "Grecia", role: "Social Media Manager", image: "/images/Equipo/Grecia.webp", area:"social media"},
   { id: 11, name: "Nicole", role: "Content Manager", image: "/images/Equipo/Nicole.webp", area:"social media"},
   { id: 12, name: "Claudia", role: "Content Manager", image: "/images/Equipo/Claudia.webp", area:"social media"},
-  { id: 23, name: "Sofia Viso", role: "Content Media", image: "/images/Equipo/Sofia-new.webp", area:"social media"},
+  { id: 23, name: "Sofia", role: "Content Media", image: "/images/Equipo/Sofia-new.webp", area:"social media"},
+  { id: 24, name: "Arianna", role: "Media Creator", image: "/images/Equipo/Arianna.webp", area:"social media"},
+  { id: 26, name: "Valentina", role: "Content Media Creator", image: "/images/Equipo/Valentina.webp", area:"social media"},
+  { id: 27, name: "Mateo", role: "Content Creator Jr.", image: "/images/Equipo/Mateo.webp", area:"social media"},
 
 
   { id: 13, name: "Josue", role: "Post-Production", image: "/images/Equipo/Josue.webp", area:"design multimedia"},
   { id: 14, name: "Sofia", role: "Film Maker & Designer", image: "/images/Equipo/Sofia.webp", area:"design multimedia"},
   { id: 15, name: "Aaron", role: "Designer", image: "/images/Equipo/Aaron.webp", area:"design multimedia" },
   { id: 16, name: "Franco", role: "Designer", image: "/images/Equipo/franco-2.webp", area:"design multimedia"},
-  { id: 17, name: "Stefany", role: "Film Maker &Designer", image: "/images/Equipo/Stefany.webp", area:"design multimedia"},
+  { id: 17, name: "Stefany", role: "Film Maker & Designer", image: "/images/Equipo/Stefany.webp", area:"design multimedia"},
   { id: 18, name: "Karol", role: "Film Maker & Designer", image: "/images/Equipo/Karol.webp", area:"design multimedia"},
   { id: 19, name: "Franco", role: "Designer", image: "/images/Equipo/Franco.webp", area:"design multimedia" },
+  { id: 25, name: "Gianella", role: "Graphic Design & Audiovisual", image: "/images/Equipo/Gianella.webp", area:"design multimedia" },
 
   { id: 20, name: "Aymar", role: "Software Engineer", image: "/images/Equipo/Aymar.webp", area:"Web development & IT" },
   { id: 21, name: "Jose", role: "Seo Manager", image: "/images/Equipo/jose.webp", area:"Web development & IT" },
   { id: 22, name: "Josue", role: "Web Developer", image: "/images/Equipo/josue-1.webp", area:"Web development & IT" },
+  { id: 28, name: "Marxs", role: "Software Engineer", image: "/images/Equipo/Marxs.webp", area:"Web development & IT" },
 
 ];
 
