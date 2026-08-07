@@ -41,6 +41,7 @@ const members = [
   { id: 21, name: "Jose", role: "Seo Manager", image: "/images/Equipo/jose.webp", area:"Web development & IT" },
   { id: 22, name: "Josue", role: "Web Developer", image: "/images/Equipo/josue-1.webp", area:"Web development & IT" },
   { id: 28, name: "Marxs", role: "Software Engineer", image: "/images/Equipo/Marxs.webp", area:"Web development & IT" },
+  { id: 30, name: "Fabián", role: "Diseñador Web UI/UX", image: "/images/Equipo/Marxs.webp", area:"Web development & IT" },
   { id: 29, name: "Bob", role: "AI - Software Engineer Agent", image: "/images/Equipo/bob.webp", area:"Web development & IT" },
 ];
 
