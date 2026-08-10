@@ -10,8 +10,9 @@ const members = [
   { id: 1, name: "Maria Fernanda", role: "Directora de Operaciones", image: "/images/Equipo/Mafer.webp", area:"commercial" },
   { id: 2, name: "Diana", role:"Commercial Supervisor", image:"/images/Equipo/Diana.webp", area:"commercial"},
   { id: 3, name: "Gimena", role: "Commercial", image: "/images/Equipo/Gimena.webp", area:"commercial"},
-  { id: 4, name: "Mariajose", role: "Commercial", image: "/images/Equipo/new.webp", area:"commercial"},
+  { id: 4, name: "Mariajose", role: "Commercial", image: "/images/Equipo/MAJO_RONDON.webp", area:"commercial"},
   { id: 5, name: "Angella", role: "Project Manager", image: "/images/Equipo/Angella.webp", area:"commercial"},
+  { id: 31, name: "Karla", role: "Web Sales", image: "/images/Equipo/KARLA_TOSCANO.webp", area:"commercial"},
 
   { id: 5, name: "Elizabeth", role: "Creative Design Supervisor", image: "/images/Equipo/Elizabeth.webp", area:"branding"},
   { id: 6, name: "Nadia", role: "Brand Manager", image: "/images/Equipo/Nadia.webp", area:"branding" },
