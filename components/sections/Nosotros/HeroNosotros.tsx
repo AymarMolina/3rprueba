@@ -262,7 +262,7 @@ const HeroNosotros = ({ ready = true }: HeroNosotrosProps) => {
       <div ref={blob2Ref} className="absolute bottom-[10%] left-[-5%] w-[280px] md:w-[380px] h-[280px] md:h-[380px] rounded-full bg-[#9C27B0]/20 blur-[110px] z-[1] pointer-events-none" />
 
       <div className="relative z-10 flex items-center h-full mx-auto px-6 sm:px-8 md:px-16 w-full max-w-7xl">
-        <div ref={contentRef} className="flex flex-col items-start w-full max-w-4xl pt-16 sm:pt-20">
+        <div ref={contentRef} className="flex flex-col items-start w-full max-w-4xl md:pt-16 sm:pt-20">
           <div ref={eyebrowRef} className="flex items-center gap-4 mb-3 sm:mb-4">
             <span className="text-white/80 text-[10px] md:text-xs tracking-[0.2em] font-medium uppercase">
               3R CORE • NOSOTROS • LIMA
