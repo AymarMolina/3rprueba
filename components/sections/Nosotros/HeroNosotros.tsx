@@ -231,7 +231,7 @@ const HeroNosotros = ({ ready = true }: HeroNosotrosProps) => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden bg-[#050109]"
+      className="relative min-h-screen h-dvh w-full overflow-hidden bg-[#050109] flex items-center"
     >
       <div className="absolute inset-0 z-0">
         <video
@@ -258,20 +258,20 @@ const HeroNosotros = ({ ready = true }: HeroNosotrosProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
       </div>
 
-      <div ref={blob1Ref} className="absolute top-[-10%] right-[5%] w-[420px] h-[420px] rounded-full bg-[#D11E68]/25 blur-[110px] z-[1] pointer-events-none" />
-      <div ref={blob2Ref} className="absolute bottom-[10%] left-[-5%] w-[380px] h-[380px] rounded-full bg-[#9C27B0]/20 blur-[110px] z-[1] pointer-events-none" />
+      <div ref={blob1Ref} className="absolute top-[-10%] right-[5%] w-[300px] md:w-[420px] h-[300px] md:h-[420px] rounded-full bg-[#D11E68]/25 blur-[110px] z-[1] pointer-events-none" />
+      <div ref={blob2Ref} className="absolute bottom-[10%] left-[-5%] w-[280px] md:w-[380px] h-[280px] md:h-[380px] rounded-full bg-[#9C27B0]/20 blur-[110px] z-[1] pointer-events-none" />
 
-      <div className="relative z-10 flex items-center h-full mx-auto px-6 lg:px-16 w-full">
-        <div ref={contentRef} className="flex flex-col items-start w-full max-w-4xl pt-20">
-          <div ref={eyebrowRef} className="flex items-center gap-4 mb-4">
+      <div className="relative z-10 flex items-center h-full mx-auto px-6 sm:px-8 md:px-16 w-full max-w-7xl">
+        <div ref={contentRef} className="flex flex-col items-start w-full max-w-4xl pt-16 sm:pt-20">
+          <div ref={eyebrowRef} className="flex items-center gap-4 mb-3 sm:mb-4">
             <span className="text-white/80 text-[10px] md:text-xs tracking-[0.2em] font-medium uppercase">
               3R CORE • NOSOTROS • LIMA
             </span>
-            <div className="h-[1px] w-16 bg-white/20"></div>
+            <div className="h-[1px] w-12 sm:w-16 bg-white/20"></div>
           </div>
 
-          <div className="relative mb-8">
-            <h1 ref={titleWrapRef} className="text-5xl md:text-8xl font-extrabold text-white tracking-tight pb-2">
+          <div className="relative mb-6 sm:mb-8 w-full">
+            <h1 ref={titleWrapRef} className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-white tracking-tight pb-2 leading-none">
               <span className="inline-block overflow-hidden align-bottom">
                 <span className="title-word inline-block">Un</span>
               </span>{' '}
@@ -282,36 +282,36 @@ const HeroNosotros = ({ ready = true }: HeroNosotrosProps) => {
                 <span className="title-word inline-block">propio</span>
               </span>
             </h1>
-            <div className="absolute bottom-[-18px] left-0 h-[3px] w-[100%] bg-gradient-to-r from-[#D11E68] to-[#9C27B0]"></div>
+            <div className="absolute bottom-[-10px] sm:bottom-[-18px] left-0 h-[3px] w-[100%] bg-gradient-to-r from-[#D11E68] to-[#9C27B0]"></div>
           </div>
 
-          <p ref={descRef} className="text-white text-base md:text-lg leading-relaxed mb-10 max-w-2xl font-light">
+          <p ref={descRef} className="text-white text-xs sm:text-base md:text-lg leading-relaxed mb-8 sm:mb-10 max-w-2xl font-light">
             Diseñamos, programamos y posicionamos desde La Molina. Tres
             generaciones trabajando sobre el mismo objetivo, sin intermediarios en tu
             proyecto.
           </p>
 
-          <div ref={buttonsRef} className="flex flex-wrap items-center gap-4 mb-14">
-            <button ref={btn1Ref} className="bg-[#1EB059] hover:bg-[#189349] text-white px-7 py-3.5 rounded-full text-[10px] md:text-xs font-bold tracking-[0.15em] transition-colors flex items-center gap-2">
+          <div ref={buttonsRef} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6 sm:mb-14 w-full sm:w-auto">
+            <button ref={btn1Ref} className="bg-[#1EB059] hover:bg-[#189349] text-white px-7 py-3 rounded-full text-[10px] md:text-xs font-bold tracking-[0.15em] transition-colors flex items-center justify-center gap-2 cursor-pointer">
               AGENDAR UNA REUNIÓN
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
               </svg>
             </button>
-            <button ref={btn2Ref} className="border border-white/20 hover:border-white text-white px-7 py-3.5 rounded-full text-[10px] md:text-xs font-bold tracking-[0.15em] transition-colors flex items-center gap-2">
+            <button ref={btn2Ref} className="border border-white/20 hover:border-white text-white px-7 py-3 rounded-full text-[10px] md:text-xs font-bold tracking-[0.15em] transition-colors flex items-center justify-center gap-2 cursor-pointer">
               VER PRECIOS <span className="text-lg leading-none">&rarr;</span>
             </button>
           </div>
 
-          <div ref={badgesRef} className="relative">
-            <div className="flex flex-wrap gap-3 relative z-10">
-              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-[14px] md:text-sm text-white/82 font-light">
+          <div ref={badgesRef} className="relative w-full">
+            <div className="flex flex-wrap gap-2.5 sm:gap-3 relative z-10">
+              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-xs sm:text-sm text-white/82 font-light">
                 <span className="text-[#D11E68]">✓</span> Oficina en La Molina
               </div>
-              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-[14px] md:text-sm text-white/82 font-light">
+              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-xs sm:text-sm text-white/82 font-light">
                 <span className="text-[#D11E68]">✓</span> ~20 personas
               </div>
-              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-[14px] md:text-sm text-white/82 font-light">
+              <div className="border border-white/20 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 text-xs sm:text-sm text-white/82 font-light">
                 <span className="text-[#D11E68]">✓</span> Facturación peruana
               </div>
             </div>
@@ -319,25 +319,25 @@ const HeroNosotros = ({ ready = true }: HeroNosotrosProps) => {
         </div>
       </div>
 
-      <div ref={scrollIndicatorRef} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 cursor-pointer" onClick={handleScrollClick}>
-        <div className="flex flex-col items-center gap-3 group">
-          <div className="flex flex-col items-center gap-2">
-            <div className="relative w-7 h-11 border-2 border-white/30 rounded-full flex items-start justify-center p-1 transition-all duration-300 group-hover:border-white group-hover:scale-105">
-              <div className="scroll-dot w-1 h-2.5 bg-white/50 rounded-full group-hover:bg-white"></div>
+      <div ref={scrollIndicatorRef} className="absolute bottom-2 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 cursor-pointer" onClick={handleScrollClick}>
+        <div className="flex flex-col items-center gap-2 sm:gap-3 group">
+          <div className="flex flex-col items-center gap-1.5 sm:gap-2">
+            <div className="relative w-6 h-10 sm:w-7 sm:h-11 border-2 border-white/30 rounded-full flex items-start justify-center p-1 transition-all duration-300 group-hover:border-white group-hover:scale-105">
+              <div className="scroll-dot w-1 h-2 sm:h-2.5 bg-white/50 rounded-full group-hover:bg-white"></div>
             </div>
             <span className="text-white/50 text-[10px] font-light tracking-widest uppercase transition-colors group-hover:text-white">
               Scroll
             </span>
           </div>
           <div ref={bottomArrowRef}>
-            <svg className="w-4 h-4 text-white/40 transition-colors group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white/40 transition-colors group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 9l6 6 6-6" />
             </svg>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#0a000e] via-[#0a000e]/50 to-transparent z-[6] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-48 bg-gradient-to-t from-[#0a000e] via-[#0a000e]/50 to-transparent z-[6] pointer-events-none" />
     </section>
   );
 };
