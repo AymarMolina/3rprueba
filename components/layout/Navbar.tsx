@@ -11,21 +11,17 @@ const Navbar = () => {
   const t = useTranslations("Navbar");
   const pathname = usePathname();
 
-  // En un post de blog concreto (/blogs/{slug}) no todos los idiomas existen,
-  // así que el cambio de idioma va al listado /blogs (200) en vez de a un
-  // /en/blogs/{slug} inexistente (404). En el resto de páginas conserva la ruta.
   const localeSwitchHref = /^\/blogs\/[^/]+$/.test(pathname) ? "/blogs" : pathname;
 
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isAtTop, setIsAtTop] = useState(true);
   const [servicesOpen, setServicesOpen] = useState(false);
 
-  // Mobile services dropdown state
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileServicesTapped, setMobileServicesTapped] = useState(false);
 
-  // GSAP refs for services dropdown
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownItemsRef = useRef<HTMLAnchorElement[]>([]);
   const servicesBackdropRef = useRef<HTMLDivElement>(null);
@@ -48,7 +44,6 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  // Services dropdown GSAP init
   useEffect(() => {
     if (!dropdownRef.current) return;
     gsap.set(dropdownRef.current, {
@@ -99,7 +94,6 @@ const Navbar = () => {
       onComplete: () => {
         setServicesOpen(false);
         gsap.set(dropdownRef.current, { display: "none" });
-        // Reset items for next open
         gsap.set(dropdownItemsRef.current, { x: -8, opacity: 0 });
       },
     });
@@ -139,14 +133,17 @@ const Navbar = () => {
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+        setIsAtTop(currentScrollY < 10);
+
         if (isOpen) return;
-        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
           setIsVisible(false);
           closeServices();
         } else {
           setIsVisible(true);
         }
-        setLastScrollY(window.scrollY);
+        setLastScrollY(currentScrollY);
       }
     };
     window.addEventListener("scroll", controlNavbar);
@@ -157,7 +154,8 @@ const Navbar = () => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
   }, [isOpen]);
 
-  const services = [
+  // Subopciones del menú desplegable de la barra de navegación superior (desktop)
+  const navDropdownServices = [
     { href: "/posicionamiento-seo", label: "Posicionamiento SEO" },
     { href: "/servicios/google-ads", label: "Google Ads / SEM" },
     { href: "/tiendas-virtuales-lima", label: "Tiendas Virtuales" },
@@ -166,12 +164,28 @@ const Navbar = () => {
     { href: "/servicios/branding", label: "Branding" },
   ];
 
-  const links = [
-    { name: t("nav.home"), href: "/" },
-    { name: t("nav.about us"), href: "/nosotros" },
-    { name: t("nav.services"), href: "/servicios#servicios", isServices: true },
-    { name: t("nav.blogs"), href: "/blogs" },
-    { name: t("nav.contact"), href: "#contacto", isContact: true },
+  // Subopciones para MARKETING DIGITAL en el menú lateral completo
+  const marketingDigitalSublinks = [
+    { href: "/servicios/socialmedia", label: "REDES SOCIALES" },
+    { href: "/servicios/contenido-ugc", label: "CONTENIDO UGC" },
+    { href: "/servicios/google-ads", label: "GOOGLE ADS" },
+    { href: "/servicios/branding", label: "BRANDING" },
+    { href: "/servicios/relaciones-publicas", label: "RELACIONES PÚBLICAS" },
+    { href: "/servicios/influencer-marketing", label: "INFLUENCER MARKETING" },
+  ];
+
+  // Enlaces principales del menú lateral tal cual la imagen
+  const menuLinks = [
+    { name: "INICIO", href: "/" },
+    { name: "NOSOTROS", href: "/nosotros" },
+    { name: "DESARROLLO DE PÁGINAS WEBS", href: "/servicios/web-development" },
+    { name: "DESARROLLO DE TIENDAS VIRTUALES", href: "/tiendas-virtuales-lima" },
+    { name: "POSICIONAMIENTO SEO", href: "/posicionamiento-seo" },
+    { name: "MARKETING DIGITAL", href: "#", isMarketing: true },
+    { name: "CASOS DE ÉXITO", href: "/casos-de-exito" },
+    { name: "PRECIOS", href: "/precios" },
+    { name: "BLOG", href: "/blogs" },
+    { name: "CONTÁCTANOS", href: "#contacto", isContact: true },
   ];
 
   const socialLinks = [
@@ -183,7 +197,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Services backdrop — closes dropdown on outside click */}
       <div
         ref={servicesBackdropRef}
         className="fixed inset-0 z-[49]"
@@ -192,18 +205,14 @@ const Navbar = () => {
       />
 
       <nav
-        className={`fixed top-0 left-0 w-full z-50 bg-[#130218] text-white transition-transform duration-500 ease-in-out
-          ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+        className={`fixed top-0 left-0 w-full z-50 text-white transition-all duration-500 ease-in-out
+          ${isVisible ? "translate-y-0" : "-translate-y-full"}
+          ${isAtTop && !isOpen ? "bg-transparent" : "bg-[#130218]"}`}
       >
         <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12">
           <div className="flex items-center justify-between h-24 lg:h-18 xl:h-24 relative">
-
             <div className="flex items-center gap-6 flex-shrink-0 relative z-[60]">
-
-              <Link
-                href="/"
-                onClick={() => handleScrollTop("/")}
-              >
+              <Link href="/" onClick={() => handleScrollTop("/")}>
                 <div className="relative h-15 w-28 cursor-pointer">
                   <Image
                     src="/icons/LogoFull.webp"
@@ -221,9 +230,7 @@ const Navbar = () => {
                   onClick={() => servicesOpen ? closeServices() : openServices()}
                   className="flex items-center gap-1.5 text-[10px] font-bold tracking-[0.2em] uppercase text-white/70 hover:text-white transition-colors duration-200 focus:outline-none group"
                 >
-                  <span
-                    className="px-3 py-1.5 rounded-full  transition-colors duration-200"
-                  >
+                  <span className="px-3 py-1.5 rounded-full transition-colors duration-200">
                     {t("nav.services")}
                   </span>
                   <svg
@@ -245,7 +252,6 @@ const Navbar = () => {
                   </svg>
                 </button>
 
-                {/* Dropdown panel */}
                 <div
                   ref={dropdownRef}
                   className="absolute top-[calc(100%+12px)] left-0 flex-col gap-1 py-3 px-1 rounded-xl shadow-2xl min-w-[200px] border border-white/10"
@@ -255,16 +261,14 @@ const Navbar = () => {
                     backdropFilter: "blur(16px)",
                   }}
                 >
-                  {/* Gradient accent top bar */}
                   <div
                     className="absolute top-0 left-4 right-4 h-[1px] rounded-full"
                     style={{
-                      backgroundImage:
-                        "linear-gradient(to right, #9C27B0, #FF1A55)",
+                      backgroundImage: "linear-gradient(to right, #9C27B0, #FF1A55)",
                     }}
                   />
 
-                  {services.map((service, i) => (
+                  {navDropdownServices.map((service, i) => (
                     <Link
                       key={service.href}
                       href={service.href}
@@ -278,8 +282,7 @@ const Navbar = () => {
                       <span
                         className="w-1 h-1 rounded-full flex-shrink-0 transition-all duration-200 group-hover/item:scale-125"
                         style={{
-                          background:
-                            "linear-gradient(to right, #9C27B0, #FF1A55)",
+                          background: "linear-gradient(to right, #9C27B0, #FF1A55)",
                         }}
                       />
                       {service.label}
@@ -289,7 +292,6 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Center: tagline */}
             <div
               className={`hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs tracking-wide transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : "opacity-100"
@@ -299,7 +301,6 @@ const Navbar = () => {
               <span className="font-bold ml-2 text-white">{t("bold")}</span>
             </div>
 
-            {/* Right: language + menu */}
             <div className="flex items-center gap-6 relative z-[60]">
               <div
                 className={`flex items-center gap-4 text-xs font-bold tracking-widest transition-opacity duration-300 ${
@@ -377,52 +378,31 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex-1 flex flex-col justify-between bg-[#130218] p-8 sm:p-16 pt-28 lg:pt-16">
+          <div className="flex-1 flex flex-col justify-between bg-[#130218] p-8 sm:p-16 pt-20 lg:pt-12 overflow-y-auto">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-8 right-8 text-sm font-bold tracking-widest uppercase text-white/70 hover:text-white transition-colors cursor-pointer"
+              className="absolute top-8 right-8 text-sm font-bold tracking-widest uppercase text-white/70 hover:text-white transition-colors cursor-pointer z-20"
             >
               {t("clo")}
             </button>
 
             <ul className="flex flex-col space-y-0">
-              {links.map((link, index) => (
+              {menuLinks.map((link, index) => (
                 <li key={link.name} className="group overflow-hidden">
-                  {link.isServices ? (
-                    // Mobile: first tap opens dropdown, second tap navigates
+                  {link.isMarketing ? (
                     <div>
                       <div
-                        className={`flex items-center justify-between text-3xl sm:text-3xl font-bold tracking-tight text-white py-4 sm:py-6 border-b border-white/20 relative transition-all duration-500 transform cursor-pointer
+                        className={`flex items-center justify-between text-lg sm:text-2xl font-bold tracking-tight text-white py-3 sm:py-4 border-b border-white/20 relative transition-all duration-500 transform cursor-pointer
                           ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
                           hover:text-white hover:pl-4
                         `}
-                        style={{ transitionDelay: `${150 + index * 100}ms` }}
+                        style={{ transitionDelay: `${150 + index * 60}ms` }}
                         onClick={() => {
-                          if (!mobileServicesTapped) {
-                            // First tap: open dropdown
-                            setMobileServicesOpen(true);
-                            setMobileServicesTapped(true);
-                          }
-                          // Second tap: handled by the Link below, this div won't catch it
+                          setMobileServicesOpen(!mobileServicesOpen);
                         }}
                       >
                         <span className="absolute top-0 left-0 w-0 h-full z-[-1] transition-all duration-500 group-hover:w-full bg-gradient-to-r from-[rgba(156,39,176,0.25)] to-[rgba(233,30,99,0.25)]" />
-                        {mobileServicesTapped ? (
-                          // Second tap navigates to services page
-                          <Link
-                            href={link.href}
-                            onClick={() => {
-                              setIsOpen(false);
-                              handleScrollTop("/");
-                            }}
-                            className="flex-1"
-                          >
-                            {link.name}
-                          </Link>
-                        ) : (
-                          <span className="flex-1">{link.name}</span>
-                        )}
-                        {/* Chevron indicator */}
+                        <span className="flex-1">{link.name}</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -442,30 +422,21 @@ const Navbar = () => {
                         </svg>
                       </div>
 
-                      {/* Mobile services dropdown */}
                       <div
                         className={`overflow-hidden transition-all duration-400 ease-in-out ${
-                          mobileServicesOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                          mobileServicesOpen ? "max-h-96 opacity-100 py-2" : "max-h-0 opacity-0 py-0"
                         }`}
-                        style={{ transitionDuration: "350ms" }}
                       >
-                        <div className="pl-4 py-2 flex flex-col gap-1 border-b border-white/10">
-                          {/* Gradient accent bar */}
-                          <div
-                            className="h-[1px] w-3/4 rounded-full mb-2"
-                            style={{
-                              backgroundImage: "linear-gradient(to right, #9C27B0, #FF1A55)",
-                            }}
-                          />
-                          {services.map((service) => (
+                        <div className="pl-4 py-2 flex flex-col gap-1.5 border-b border-white/10 bg-black/20 rounded-lg my-1">
+                          {marketingDigitalSublinks.map((sub) => (
                             <Link
-                              key={service.href}
-                              href={service.href}
+                              key={sub.href}
+                              href={sub.href}
                               onClick={() => {
                                 setIsOpen(false);
-                                handleScrollTop(service.href);
+                                handleScrollTop(sub.href);
                               }}
-                              className="flex items-center gap-2.5 py-2.5 text-base font-medium text-white/60 hover:text-white transition-colors duration-200"
+                              className="flex items-center gap-2.5 py-1.5 text-xs sm:text-sm font-medium text-white/60 hover:text-white transition-colors duration-200"
                             >
                               <span
                                 className="w-1.5 h-1.5 rounded-full flex-shrink-0"
@@ -473,7 +444,7 @@ const Navbar = () => {
                                   background: "linear-gradient(to right, #9C27B0, #FF1A55)",
                                 }}
                               />
-                              {service.label}
+                              {sub.label}
                             </Link>
                           ))}
                         </div>
@@ -487,14 +458,14 @@ const Navbar = () => {
                           scrollToContact(e);
                         } else {
                           setIsOpen(false);
-                          handleScrollTop("/");
+                          handleScrollTop(link.href);
                         }
                       }}
-                      className={`block text-3xl sm:text-3xl font-bold tracking-tight text-white py-4 sm:py-6 border-b border-white/20 relative transition-all duration-500 transform
+                      className={`block text-lg sm:text-2xl font-bold tracking-tight text-white py-3 sm:py-4 border-b border-white/20 relative transition-all duration-500 transform
                         ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
                         hover:text-white hover:pl-4
                       `}
-                      style={{ transitionDelay: `${150 + index * 100}ms` }}
+                      style={{ transitionDelay: `${150 + index * 60}ms` }}
                     >
                       <span className="absolute top-0 left-0 w-0 h-full z-[-1] transition-all duration-500 group-hover:w-full bg-gradient-to-r from-[rgba(156,39,176,0.25)] to-[rgba(233,30,99,0.25)]" />
                       {link.name}
@@ -505,7 +476,7 @@ const Navbar = () => {
             </ul>
 
             <div
-              className={`flex flex-col sm:flex-row justify-between items-start sm:items-center text-[10px] sm:text-xs font-bold tracking-widest text-white/50 mt-12 transition-all duration-700 delay-700 transform ${
+              className={`flex flex-col sm:flex-row justify-between items-start sm:items-center text-[10px] sm:text-xs font-bold tracking-widest text-white/50 mt-8 transition-all duration-700 delay-700 transform ${
                 isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
             >

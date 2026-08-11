@@ -1,6 +1,5 @@
 "use client";
-import { montserrat, playfair } from "@/lib/fonts"
-
+import { playfair, poppins, josefin } from "@/lib/fonts";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,24 +8,11 @@ import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const NosotrosSection = () => {
   const t = useTranslations('AboutSection');
-  
-  const titleText = t('title').split(" ");
-  const paragraphText = t('description').split(" ");
-
   const containerRef = useRef(null);
 
-  const keywordsToHighlight = [
-    "Experiencia", "Experiencia,", 
-    "Visión", "Visión,", 
-    "Tecnología", "Tecnología,",
-    "Experience", "Experience,",
-    "Vision", "Vision,",
-    "Technology", "Technology,"
-  ];
+  const titleWords = t('title').split(" ");
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -37,70 +23,50 @@ const NosotrosSection = () => {
         toggleActions: "play none none reverse",
       }
     });
-    
-    tl.from(".title-char-anim", {
-      y: 30, 
-      opacity: 0,
-      filter: "blur(8px)", 
-      stagger: 0.04,      
-      duration: 1,      
-      ease: "power3.out"
+
+    tl.from(".title-word-anim", {
+      y: 20, opacity: 0, filter: "blur(5px)", stagger: 0.1, duration: 1, ease: "power3.out"
     })
-    
-    .from(".team-subtitle", {
-      y: 30,
-      opacity: 0,
-      filter: "blur(10px)",
-      duration: 1.2,
-      ease: "power2.out"
+    .from(".nosotros-subtitle", {
+      y: 20, opacity: 0, filter: "blur(8px)", duration: 1, ease: "power2.out"
     }, "-=0.6") 
-
-    .from(".team-line", {
-      scaleX: 0,
-      opacity: 0,
-      duration: 1.5, 
-      ease: "power3.inOut"
-    }, "-=1.0")
-
-    .from(".char-anim", {
-      opacity: 0,
-      y: 5,
-      filter: "blur(4px)",
-      stagger: 0.005, 
-      duration: 0.5, 
-      ease: "power1.out"
-    }, "-=1.2"); 
+    .from(".nosotros-line", {
+      scaleX: 0, opacity: 0, duration: 1.2, ease: "power3.inOut"
+    }, "-=0.8")
+    .from(".nosotros-desc", {
+      opacity: 0, y: 15, duration: 0.8, ease: "power1.out"
+    }, "-=0.8"); 
 
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="w-full py-20 px-5 flex justify-center items-center overflow-hidden">
-      <div className="max-w-6xl lg:max-w-xl 2xl:max-w-6xl mx-auto text-center">
+    <section ref={containerRef} className="relative w-full py-16 md:py-24 px-5 flex justify-center items-center overflow-hidden">
+      
+      <div className="relative z-10 max-w-6xl mx-auto text-center flex flex-col items-center">
         
-        <h2 className={`team-title ${playfair.className} text-white text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-6 tracking-wide`}>
-          {titleText.map((word, index) => (
-            <span 
-              key={index} 
-              className="title-char-anim inline-block mr-[0.3em]" 
-              style={{ whiteSpace: "pre" }} 
-            >
-              {word}
-            </span>
-          ))}
+        {/* Título: Nosotros */}
+        <h2 className={`team-title ${playfair.className} italic font-light text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl mb-2 tracking-wide leading-tight`}>
+          <span className="sr-only">{t('title')}</span>
+          <span aria-hidden="true">
+            {titleWords.map((word, index) => (
+              <span key={index} className="title-word-anim inline-block mr-[0.25em]">
+                {word}
+              </span>
+            ))}
+          </span>
         </h2>
 
-        <h3 className={`team-subtitle ${montserrat.className} text-[#D11E68] text-3xl md:text-3xl xl:text-4xl 2xl:text-6xl font-medium mb-10 tracking-tight will-change-transform leading-tight bg-clip-text text-transparent`}style={{backgroundImage: 'linear-gradient(to right, #9C27B0 0%, #9C27B0 30%, #FF1A55 100%)'}}>
-         {t('subtitle')}
+        {/* Subtítulo: Potenciamos tus resultados */}
+        <h3 className={`team-subtitle ${poppins.className} text-[#D11E68] font-medium text-4xl sm:text-5xl md:text-4xl lg:text-6xl mb-8 tracking-wide will-change-transform`}>
+          {t('subtitle')}
         </h3>
 
-        <div className="team-line w-full max-w-xl 2xl:max-w-5xl mx-auto h-[1px] bg-white/90 my-10 origin-center will-change-transform"></div>
+        {/* Línea divisoria */}
+        <div className="team-line w-full max-w-5xl mx-auto h-[2px] bg-white/40 mb-8 origin-center will-change-transform"></div>
 
-        <p className={`${montserrat.className} text-white text-xs ms:text-sm lg:text-[12px] 2xl:text-base leading-[2.2] max-w-5xl mx-auto font-normal`}>
-           {t('description')} <span style={{ 
-                  backgroundColor: '#A21F8A', 
-                  padding: '2px 10px', 
-                  borderRadius: '2px' 
-                }}>{t('description1')}</span> {t('description2')}
+        {/* Descripción */}
+        <p className={`team-desc ${josefin.className} text-white font-light text-sm md:text-base lg:text-[1.6rem] leading-relaxed max-w-7xl mx-auto`}>
+          {t('description')}
         </p>
 
       </div>

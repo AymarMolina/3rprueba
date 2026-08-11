@@ -31,7 +31,6 @@ export default function Nosotros() {
       <NosotrosSection />
       <Founders />
       <Team />
-      <DraggableCardDemo/>
       <Gallery/>
       <div  id="contacto">
         <ContactForm/>

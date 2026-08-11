@@ -16,6 +16,7 @@ import PageLoader from '@/components/layout/PageLoader';
 
 import ScrollContactBtn from '@/components/ui/ScrollContactBtn'
 import ReviewsSection from '@/components/layout/ReviewsSection';
+import SocialPortfolio from '@/components/sections/servicios/socialmedia/socialPortfolio';
 
 export default function HomeClient() {
 
@@ -43,8 +44,10 @@ export default function HomeClient() {
         <StatsAndCTA />
         <MosaicoParallax />
         <ClientSection />
-        <ReviewsSection/>
+        <SocialPortfolio/>
         <NewsSection />
+        <ReviewsSection/>
+        
         <div id="contacto">
           <ContactForm />
         </div>

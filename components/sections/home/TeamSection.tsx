@@ -1,5 +1,5 @@
 "use client";
-import { montserrat, playfair } from "@/lib/fonts"
+import { montserrat, playfair, josefin,poppins} from "@/lib/fonts";
 
 import { useRef } from "react";
 import gsap from "gsap";
@@ -9,15 +9,11 @@ import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const TeamSection = () => {
   const t = useTranslations('TeamSection');
   const containerRef = useRef(null);
 
   const titleWords = t('title').split(" ");
-  const descriptionWords = t('description').split(" ");
- 
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -30,29 +26,25 @@ const TeamSection = () => {
     });
 
     tl.from(".title-word-anim", {
-      y: 30, opacity: 0, filter: "blur(8px)", stagger: 0.1, duration: 1, ease: "power3.out"
+      y: 20, opacity: 0, filter: "blur(5px)", stagger: 0.1, duration: 1, ease: "power3.out"
     })
     .from(".team-subtitle", {
-      y: 30, opacity: 0, filter: "blur(10px)", duration: 1.2, ease: "power2.out"
+      y: 20, opacity: 0, filter: "blur(8px)", duration: 1, ease: "power2.out"
     }, "-=0.6") 
     .from(".team-line", {
-      scaleX: 0, opacity: 0, duration: 1.5, ease: "power3.inOut"
-    }, "-=1.0")
-    .from(".word-anim", {
-      opacity: 0, y: 10, filter: "blur(4px)", stagger: 0.02, duration: 0.8, ease: "power1.out"
-    }, "-=1.2"); 
+      scaleX: 0, opacity: 0, duration: 1.2, ease: "power3.inOut"
+    }, "-=0.8")
+    .from(".team-desc", {
+      opacity: 0, y: 15, duration: 0.8, ease: "power1.out"
+    }, "-=0.8"); 
 
   }, { scope: containerRef });
-
   return (
-    <section ref={containerRef} className="relative w-full pt-12 md:pt-14 px-5 flex justify-center items-center overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-18 bg-gradient-to-t from-[#16021B] via-[#16021B]/10 to-black/90 z-0 pointer-events-none" />
-      <div className="max-w-3xl 2xl:max-w-7xl mx-auto text-center">
+    <section ref={containerRef} className="relative w-full py-16 md:py-24 px-5 flex justify-center items-center overflow-hidden">
+      
+      <div className="relative z-10 max-w-6xl mx-auto text-center flex flex-col items-center">
         
-        {/* Las palabras animadas van en spans inline-block sin espacios reales:
-            lectores de pantalla y extractores de texto leían "Somosunequipo".
-            El texto real va en sr-only y la animación queda aria-hidden. */}
-        <h2 className={`team-title ${playfair.className} text-white text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 md:mb-6 tracking-wide leading-tight`}>
+        <h2 className={`team-title ${playfair.className} italic font-light text-white text-4xl sm:text-5xl md:text-5xl lg:text-6xl mb-2 tracking-wide leading-tight`}>
           <span className="sr-only">{t('title')}</span>
           <span aria-hidden="true">
             {titleWords.map((word, index) => (
@@ -63,27 +55,17 @@ const TeamSection = () => {
           </span>
         </h2>
 
-        <h3 className={`team-subtitle ${montserrat.className} text-[#D11E68] text-2xl sm:text-3xl md:text-3xl xl:text-4xl 2xl:text-5xl mb-10 tracking-tight will-change-transform`}>
-          
+        <h3 className={`team-subtitle ${poppins.className} text-[#D11E68] font-medium text-4xl sm:text-5xl md:text-5xl lg:text-6xl mb-8 tracking-wide will-change-transform`}>
           {t('subtitle')}
         </h3>
 
-        <div className="team-line w-full max-w-3xl mx-auto h-[1px] bg-white/40 my-10 origin-center will-change-transform"></div>
+        <div className="team-line w-full max-w-5xl mx-auto h-[2px] bg-white/40 mb-8 origin-center will-change-transform"></div>
 
-        <p className={`${montserrat.className} text-white text-sm sm:text-sm md:text-sm xl:text-sm 2xl:text-xl leading-relaxed max-w-5xl mx-auto md:px-4`}>
-          <span style={{ 
-                  backgroundColor: '#A21F8A', 
-                  padding: '2px 10px', 
-                  borderRadius: '2px' 
-                }}>{t('subray1')}</span> {t('description')} <span style={{ 
-                  backgroundColor: '#A21F8A', 
-                  padding: '2px 10px', 
-                  borderRadius: '2px' 
-                }}>{t('description2')}</span> {t('description3')}
+        <p className={`team-desc ${josefin.className} text-white font-light text-sm md:text-base lg:text-[1.6rem] leading-relaxed max-w-7xl mx-auto`}>
+          {t('description')}
         </p>
 
       </div>
-      
     </section>
   );
 };
