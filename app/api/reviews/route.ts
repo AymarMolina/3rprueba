@@ -4,7 +4,9 @@ import { NextResponse } from "next/server"
 export async function GET() {
   const PLACE_ID = process.env.GOOGLE_PLACE_ID
   const API_KEY = process.env.GOOGLE_PLACES_API_KEY
-
+  console.log("DEBUG PLACE_ID:", PLACE_ID)
+  console.log("DEBUG API_KEY length:", API_KEY?.length)
+  console.log("DEBUG API_KEY starts/ends:", API_KEY?.slice(0, 6), "...", API_KEY?.slice(-4))
   try {
     const res = await fetch(
       `https://places.googleapis.com/v1/places/${PLACE_ID}`,
