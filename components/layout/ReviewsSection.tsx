@@ -26,6 +26,10 @@ const AVATAR_COLORS = [
   "linear-gradient(135deg, #673AB7, #E91E63)",
 ]
 
+// Nombres exactos (como aparecen en Google) de reseñas que NO quieres mostrar.
+// Agrega o quita nombres de esta lista según necesites.
+const EXCLUDED_REVIEWERS = ["Luis Harold Diestra Solis"]
+
 export default function ReviewsSection() {
   const [data, setData] = useState<ReviewsData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -131,7 +135,7 @@ export default function ReviewsSection() {
           className="text-3xl md:text-4xl xl:text-5xl font-black leading-tight mb-4 pb-2 inline-block"
           style={{
             color: "transparent",
-            WebkitTextStroke: "1px rgba(255,255,255,0.50)",
+            WebkitTextStroke: "1px rgba(255,255,255,0.15)",
             borderBottom: "3px solid",
             borderImage: "linear-gradient(90deg, #E91E63, #9C27B0) 1",
           }}
@@ -184,7 +188,7 @@ export default function ReviewsSection() {
                     {review.authorAttribution.displayName}
                   </p>
                   <p className="text-white/30 text-xs">
-                    {data.name} · Reseña de Google
+                    {review.relativePublishTimeDescription}
                   </p>
                 </div>
               </div>
