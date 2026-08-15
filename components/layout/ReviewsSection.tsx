@@ -103,7 +103,9 @@ export default function ReviewsSection() {
     )
   }
 
-  const goodReviews = data?.reviews ?? []
+  const goodReviews = (data?.reviews ?? []).filter(
+    (r) => !EXCLUDED_REVIEWERS.includes(r.authorAttribution.displayName)
+  )
   if (!data || goodReviews.length === 0) return null
 
   const mapsUrl =
@@ -111,6 +113,20 @@ export default function ReviewsSection() {
 
   return (
     <section className="relative w-full py-12 md:py-16 px-6 md:px-12 lg:px-24 overflow-hidden">
+
+      <style jsx>{`
+        .review-scroll {
+          scrollbar-width: thin;
+          scrollbar-color: rgba(233, 30, 99, 0.4) transparent;
+        }
+        .review-scroll::-webkit-scrollbar {
+          width: 4px;
+        }
+        .review-scroll::-webkit-scrollbar-thumb {
+          background: rgba(233, 30, 99, 0.4);
+          border-radius: 4px;
+        }
+      `}</style>
 
       {/* Fondo decorativo */}
       <div
@@ -163,7 +179,7 @@ export default function ReviewsSection() {
             >
               <div className="flex gap-px shrink-0">{renderStars(review.rating)}</div>
 
-              <p className="text-white/70 text-sm leading-relaxed flex-1 overflow-hidden line-clamp-5">
+              <p className="text-white/70 text-sm leading-relaxed flex-1 overflow-y-auto pr-1 review-scroll">
                 «{review.text.text}»
               </p>
 
